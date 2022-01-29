@@ -1,7 +1,9 @@
+import Table from '../components/Table';
+
 export default function Courses() {
-    return (
-        <main>
-            <h2>Courses</h2>
-        </main>
-    );
+  return (
+    <main>
+      <Table type="courses" />
+    </main>
+  );
 }
