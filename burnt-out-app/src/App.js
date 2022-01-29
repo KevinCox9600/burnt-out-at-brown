@@ -8,24 +8,21 @@ function App() {
   return (
     <div className="container-fluid">
       <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <div className="container-fluid">
             <Link to="/courses" className="navbar-brand">Burnt Out at Brown</Link>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Courses</a>
+            <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item">
                   <Link to="/courses" />
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Profs</a>
+                <li className="nav-item">
                   <Link to="/profs" />
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                <li className="nav-item">
                   <Link to="/about" />
                 </li>
               </ul>
@@ -39,7 +36,7 @@ function App() {
         <Route path="profs" element={<Profs />} />
         <Route path="*" element={<Navigate to="courses" />} />
       </Routes>
-      <footer>
+      <footer className="footer">
         <p>This is the footer</p>
       </footer>
     </div>
