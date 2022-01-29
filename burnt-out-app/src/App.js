@@ -1,13 +1,13 @@
-import { Routes, Route, Navigate, Link } from 'react-router-dom';
+import { Routes, Route, Navigate, NavLink, Link } from 'react-router-dom';
 import './App.css';
 import Courses from './routes/courses';
 import Profs from './routes/profs';
 import About from './routes/about';
 
-function App() {
+function App({ to }) {
   return (
     <div className="container-fluid">
-      <header>
+      <header className="sticky-top">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
             <Link to="/courses" className="navbar-brand">Burnt Out at Brown</Link>
@@ -17,13 +17,13 @@ function App() {
             <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link to="/courses" />
+                  <NavLink to="/courses" className={({ isActive }) => isActive ? "active nav-link" : "nav-link"}>Courses</NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link to="/profs" />
+                  <NavLink to="/profs" className={({ isActive }) => isActive ? "active nav-link" : "nav-link"}>Profs</NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link to="/about" />
+                  <NavLink to="/about" className={({ isActive }) => isActive ? "active nav-link" : "nav-link"}>About</NavLink>
                 </li>
               </ul>
             </div>
@@ -36,10 +36,10 @@ function App() {
         <Route path="profs" element={<Profs />} />
         <Route path="*" element={<Navigate to="courses" />} />
       </Routes>
-      <footer className="footer">
+      <footer className="sticky-bottom">
         <p>This is the footer</p>
       </footer>
-    </div>
+    </div >
   );
 }
 
