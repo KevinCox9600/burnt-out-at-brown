@@ -45,12 +45,12 @@ for department_code in filt_departments:
 
                 for r in results:
                     code, title, time, prof = r["code"], r["title"], r["meets"], r["instr"]
-                    classes[code] = {title, time, prof}
+                    classes[code] = {title: title, time: time, prof: prof}
                     
 
 # Write classes to a JSON file
-classes_json = json.dumps(jsonpickle.encode(classes))
-class_list_file = open("class_list.json", "w")
+classes_json = json.dumps(classes)
+class_list_file = open("class_list_new.json", "w")
 class_list_file.write(classes_json)
 class_list_file.close()
 
