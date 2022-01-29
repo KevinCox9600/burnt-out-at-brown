@@ -1,7 +1,9 @@
+import Table from '../components/Table';
+
 export default function Profs() {
   return (
     <main>
-      <h2>Profs</h2>
+      <Table type="profs" />
     </main>
   );
 }
