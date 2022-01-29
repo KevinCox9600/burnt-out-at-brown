@@ -1,3 +1,6 @@
+import CourseRow from "./CourseRow";
+import ProfRow from "./ProfRow";
+
 function header(type) {
   const courseHeader = (
     <thead>
@@ -34,8 +37,8 @@ function rows(dataArray, type) {
     <tbody>
       {dataArray.map((rowData, index) => (
         type === "courses"
-          ? <CourseRow index={index} data={rowData} />
-          : <ProfRow index={index} data={rowData} />
+          ? <CourseRow key={index} data={rowData} />
+          : <ProfRow key={index} data={rowData} />
       ))}
     </tbody>
   );

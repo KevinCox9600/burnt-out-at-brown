@@ -36,7 +36,7 @@ function App({ to }) {
         <Route path="profs" element={<Profs />} />
         <Route path="*" element={<Navigate to="courses" />} />
       </Routes>
-      <footer className="sticky-bottom">
+      <footer className="fixed-bottom">
         <p>This is the footer</p>
       </footer>
     </div >
