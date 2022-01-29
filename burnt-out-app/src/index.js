@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -12,9 +12,10 @@ const rootElement = document.getElementById('root');
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Courses />} />
+      <Route path="courses" element={<Courses />} />
       <Route path="about" element={<About />} />
       <Route path="profs" element={<Profs />} />
+      <Route path="*" element={<Navigate to="courses" />} />
     </Routes>
   </BrowserRouter >,
   rootElement
