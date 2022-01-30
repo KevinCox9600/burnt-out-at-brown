@@ -10,7 +10,7 @@ export default function About() {
             We enable this by sorting courses from least to most time consuming.
           </p>
           <div className="d-flex flex-column align-items-center pt-4">
-            <img src="https://cdn-icons-png.flaticon.com/512/4171/4171624.png" style={{ "width": "70%" }}></img>
+            <img src="work.png" style={{ "width": "70%" }}></img>
             <a className="pt-3" href="https://www.flaticon.com/free-icons/quality-of-life" title="quality of life icons">Quality of life icons created by Eucalyp - Flaticon</a>
           </div>
         </div>
