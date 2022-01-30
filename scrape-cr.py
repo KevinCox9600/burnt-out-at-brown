@@ -17,7 +17,7 @@ page = s.get(ex, cookies = COOKIE_CONSTANTS)
 
 soup = BeautifulSoup(page.content, "html.parser")
 
-all_course_list = []
+all_courses = {"data": []}
 
 for c in class_list_data["data"]:
     dept, num = c['dept'], c['num']
@@ -36,4 +36,9 @@ for c in class_list_data["data"]:
             course[label] = value
         grade_obj = offering.find("div", {"class": "review_data"})["data-test-value"]
         course["grade_obj"] = grade_obj
-        all_course_list.append(course)
+        all_courses["data"].append(course)
+
+classes_json = json.dumps(all_courses)
+class_list_file = open("CR_classes.json", "w")
+class_list_file.write(classes_json)
+class_list_file.close()
