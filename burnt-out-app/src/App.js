@@ -36,8 +36,8 @@ function App({ to }) {
         <Route path="profs" element={<Profs />} />
         <Route path="*" element={<Navigate to="courses" />} />
       </Routes>
-      <footer className="fixed-bottom">
-        <p>This is the footer</p>
+      <footer className="fixed-bottom bg-light pt-3 text-center">
+        <p>If you find any issues, you can contact us at cpax@brown.edu</p>
       </footer>
     </div >
   );

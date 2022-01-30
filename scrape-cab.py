@@ -52,7 +52,7 @@ for department_code in filt_departments:
 # Write classes to a JSON file
 classes_dict = {"data": classes}
 classes_json = json.dumps(classes_dict)
-class_list_file = open("class_list_hihi.json", "w")
+class_list_file = open("class_list.json", "w")
 class_list_file.write(classes_json)
 class_list_file.close()
 
