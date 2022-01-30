@@ -1,5 +1,7 @@
 import CourseRow from "./CourseRow";
 import ProfRow from "./ProfRow";
+// import * as data from "../data/courses.json";
+import React from 'react';
 
 function header(type) {
   const courseHeader = (
@@ -9,9 +11,9 @@ function header(type) {
         <th scope="col">Course</th>
         <th scope="col">Avg Hours</th>
         <th scope="col">Avg Max Hours</th>
-        <th scope="col">Time of day</th>
         <th scope="col">Critical Review Link</th>
         <th scope="col">Avg Class Size</th>
+        <th scope="col">Professor</th>
       </tr>
     </thead>
   );
@@ -30,30 +32,95 @@ function header(type) {
   );
 
   return type === "courses" ? courseHeader : profsHeader;
-}
+};
 
-function rows(dataArray, type) {
+function rows(dataArray, type, sameProf, maxHrs) {
+  const same = sameProf ? "same-prof" : "diff-prof";
   return (
     <tbody>
-      {dataArray.map((rowData, index) => (
+      {dataArray.filter((row) => {
+        return parseInt(row[same]["max-hrs"]) <= maxHrs;
+      }).map((rowData, index) => (
         type === "courses"
-          ? <CourseRow key={index} data={rowData} />
+          ? <CourseRow key={index} data={rowData} sameProf={sameProf} />
           : <ProfRow key={index} data={rowData} />
       ))}
     </tbody>
   );
 }
 
-export default function Table({ type }) {
-  const dataArray = [];
+class Table extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      sameProf: true,
+      maxHrs: 40,
+      avgHrs: 20,
+      prof: "",
+      dept: ""
+    };
 
-  return (
-    <main>
-      <h2 style={{ textTransform: 'capitalize' }}>{type}</h2>
-      <table class="table">
-        {header(type)}
-        {rows(dataArray, type)}
+    this.handleFilterChange = this.handleFilterChange.bind(this);
+  }
+
+  handleFilterChange(event) {
+    console.log("filter change");
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+
+    this.setState({
+      [name]: value
+    });
+  }
+
+  render() {
+    const courses = require('../data/courses.json');
+    const dataArray = courses["data"];
+
+    let filters;
+    if (this.props.type === "courses") {
+      filters = (<form>
+        <input type="text" className="form-control" placeholder="Department" name="dept"
+          value={this.state.dept}
+          onChange={this.handleFilterChange}
+        />
+        <input type="text" className="form-control" placeholder="Professor" name="prof"
+          value={this.state.prf}
+          onChange={this.handleFilterChange}
+        />
+        <input type="number" className="form-control" placeholder="Avg Hours" name="avgHrs"
+          value={this.state.avgHrs}
+          onChange={this.handleFilterChange}
+        />
+        <input type="number" className="form-control" placeholder="Max Hours" name="maxHrs"
+          value={this.state.maxHrs}
+          onChange={this.handleFilterChange} />
+        <div className="form-check form-switch">
+          <input className="form-check-input" type="checkbox" role="switch" id="same-prof" name="sameProf"
+            checked={this.state.sameProf}
+            onChange={this.handleFilterChange} />
+          <label className="form-check-label" htmlFor="same-prof">Same professor</label>
+        </div>
+      </form>);
+    } else {
+      filters = (
+        <form>
+          <input type="text" className="form-control" placeholder="Avg Hours" />
+          <input type="text" className="form-control" placeholder="Max Hours" />
+        </form>
+      );
+    }
+
+    return (<main>
+      <h2 style={{ textTransform: 'capitalize' }}>{this.props.type}</h2>
+      {filters}
+      <table className="table">
+        {header(this.props.type)}
+        {rows(dataArray, this.props.type, this.state.sameProf, this.state.maxHrs)}
       </table>
-    </main>
-  );
+    </main>);
+  }
 }
+
+export default Table;
