@@ -1,3 +1,4 @@
+from enum import unique
 import requests
 from bs4 import BeautifulSoup
 from seleniumwire import webdriver
@@ -26,6 +27,8 @@ subjects = [option['value'] for option in results_s.find_all('option')]
 filt_subjects = str_list = list(filter(None, subjects))
 
 unique_dept = list(set(filt_subjects + filt_departments))
+
+unique_dept = [c.lower() for c in unique_dept]
 
 classes = []
 
