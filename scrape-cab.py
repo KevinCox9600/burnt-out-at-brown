@@ -21,9 +21,15 @@ results = soup.find(id="crit-dept")
 departments = [option['value'] for option in results.find_all('option')]
 filt_departments = str_list = list(filter(None, departments))
 
+results_s = soup.find(id="crit-subject")
+subjects = [option['value'] for option in results_s.find_all('option')]
+filt_subjects = str_list = list(filter(None, subjects))
+
+unique_dept = list(set(filt_subjects + filt_departments))
+
 classes = []
 
-for department_code in filt_departments:
+for department_code in unique_dept:
     driver.get('https://cab.brown.edu')
 
 
@@ -44,6 +50,9 @@ for department_code in filt_departments:
 
                 for r in results:
                     code, title, time, prof = r["code"], r["title"], r["meets"], r["instr"]
+
+                    if prof == "Team" or time == "Course offered online":
+                        continue
 
                     # Split PHP 2510 into PHP, 2510
                     dept_identifier, num = code.split(" ")
