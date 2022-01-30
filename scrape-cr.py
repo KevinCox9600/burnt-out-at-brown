@@ -9,13 +9,6 @@ class_list_file.close()
 
 s = requests.Session()
 
-course_info = []
-
-ex = "https://thecriticalreview.org/search/CSCI/0150"
-
-page = s.get(ex, cookies = COOKIE_CONSTANTS)
-
-soup = BeautifulSoup(page.content, "html.parser")
 
 all_courses = {"data": []}
 
@@ -28,6 +21,8 @@ for c in class_list_data["data"]:
 
     for offering in soup.find_all("div", {"class": "ui tab"}):
         course = {}
+        course["Course Dept"] = dept
+        course["Course Num"] = num
         course["Year"] = offering["data-edition"]
         results = offering.find_all("div", {"class": "ui tiny statistic"})
         for r in results[:6]:
