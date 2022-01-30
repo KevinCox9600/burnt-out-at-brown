@@ -10,13 +10,13 @@
     "num-respondents": 10.6,
     "link": "https://thecriticalreview.org/search/ARAB/0200",
     "same_prof": {
-      "max_hrs": 4.706,
-      "avg_hrs": 3.068,
+      "max_hrs": 11.765,
+      "avg_hrs": 7.67,
       "avg_rating": 4.184
     },
     "all_reviews": {
-      "max_hrs": 4.706,
-      "avg_hrs": 3.068,
+      "max_hrs": 11.765,
+      "avg_hrs": 7.670000000000001,
       "avg_rating": 4.183999999999999
     }
   },
@@ -31,13 +31,13 @@
     "num-respondents": 8.5,
     "link": "https://thecriticalreview.org/search/ARAB/0400",
     "same_prof": {
-      "max_hrs": 5.875,
-      "avg_hrs": 3.3350000000000004,
+      "max_hrs": 11.75,
+      "avg_hrs": 6.670000000000001,
       "avg_rating": 4.154999999999999
     },
     "all_reviews": {
-      "max_hrs": 5.875,
-      "avg_hrs": 3.3350000000000004,
+      "max_hrs": 11.75,
+      "avg_hrs": 6.670000000000001,
       "avg_rating": 4.154999999999999
     }
   },
@@ -52,13 +52,13 @@
     "num-respondents": 11.0,
     "link": "https://thecriticalreview.org/search/ARAB/0600",
     "same_prof": {
-      "max_hrs": 6.363333333333333,
-      "avg_hrs": 3.896666666666667,
+      "max_hrs": 9.545,
+      "avg_hrs": 5.845000000000001,
       "avg_rating": 4.86
     },
     "all_reviews": {
-      "max_hrs": 6.363333333333333,
-      "avg_hrs": 3.896666666666667,
+      "max_hrs": 9.545,
+      "avg_hrs": 5.845000000000001,
       "avg_rating": 4.86
     }
   },
@@ -182,13 +182,13 @@
     "num-respondents": 24.666666666666668,
     "link": "https://thecriticalreview.org/search/ARCH/0520",
     "same_prof": {
-      "max_hrs": 5.066666666666666,
-      "avg_hrs": 2.203333333333333,
+      "max_hrs": 7.6,
+      "avg_hrs": 3.3049999999999997,
       "avg_rating": 4.4433333333333325
     },
     "all_reviews": {
-      "max_hrs": 5.066666666666666,
-      "avg_hrs": 2.203333333333333,
+      "max_hrs": 7.6,
+      "avg_hrs": 3.3049999999999997,
       "avg_rating": 4.4433333333333325
     }
   },
@@ -405,13 +405,13 @@
     "num-respondents": 58.42857142857143,
     "link": "https://thecriticalreview.org/search/PHYS/0030",
     "same_prof": {
-      "max_hrs": 7.080476190476194,
-      "avg_hrs": 3.5028571428571404,
+      "max_hrs": 12.39083333333334,
+      "avg_hrs": 6.1299999999999955,
       "avg_rating": 3.62761904761905
     },
     "all_reviews": {
-      "max_hrs": 7.080476190476194,
-      "avg_hrs": 3.5028571428571404,
+      "max_hrs": 12.39083333333334,
+      "avg_hrs": 6.1299999999999955,
       "avg_rating": 3.62761904761905
     }
   },
@@ -426,13 +426,13 @@
     "num-respondents": 25.7,
     "link": "https://thecriticalreview.org/search/PHYS/0060",
     "same_prof": {
-      "max_hrs": 7.273499999999998,
-      "avg_hrs": 3.398499999999999,
+      "max_hrs": 12.122499999999995,
+      "avg_hrs": 5.664166666666665,
       "avg_rating": 3.9255000000000013
     },
     "all_reviews": {
-      "max_hrs": 7.273499999999996,
-      "avg_hrs": 3.3984999999999994,
+      "max_hrs": 12.122499999999993,
+      "avg_hrs": 5.664166666666666,
       "avg_rating": 3.9255000000000004
     }
   },
@@ -447,13 +447,13 @@
     "num-respondents": 18.1875,
     "link": "https://thecriticalreview.org/search/PHYS/0100",
     "same_prof": {
-      "max_hrs": 1.4506249999999998,
-      "avg_hrs": 0.6875,
+      "max_hrs": 4.6419999999999995,
+      "avg_hrs": 2.2,
       "avg_rating": 3.73125
     },
     "all_reviews": {
-      "max_hrs": 1.4506249999999998,
-      "avg_hrs": 0.6875,
+      "max_hrs": 4.6419999999999995,
+      "avg_hrs": 2.2,
       "avg_rating": 3.73125
     }
   },
@@ -468,13 +468,13 @@
     "num-respondents": 31.2,
     "link": "https://thecriticalreview.org/search/PHYS/0160",
     "same_prof": {
-      "max_hrs": 9.557999999999995,
-      "avg_hrs": 5.675,
+      "max_hrs": 10.619999999999994,
+      "avg_hrs": 6.305555555555555,
       "avg_rating": 3.929000000000001
     },
     "all_reviews": {
-      "max_hrs": 9.557999999999995,
-      "avg_hrs": 5.675,
+      "max_hrs": 10.619999999999994,
+      "avg_hrs": 6.305555555555555,
       "avg_rating": 3.929000000000001
     }
   },
@@ -489,13 +489,13 @@
     "num-respondents": 33.94117647058823,
     "link": "https://thecriticalreview.org/search/PHYS/0220",
     "same_prof": {
-      "max_hrs": 2.500588235294118,
-      "avg_hrs": 1.2176470588235293,
+      "max_hrs": 5.313750000000001,
+      "avg_hrs": 2.5875,
       "avg_rating": 3.99470588235294
     },
     "all_reviews": {
-      "max_hrs": 2.500588235294118,
-      "avg_hrs": 1.2176470588235293,
+      "max_hrs": 5.313750000000001,
+      "avg_hrs": 2.5875,
       "avg_rating": 3.99470588235294
     }
   },
@@ -510,13 +510,13 @@
     "num-respondents": 19.866666666666667,
     "link": "https://thecriticalreview.org/search/PHYS/0500",
     "same_prof": {
-      "max_hrs": 2.6893333333333334,
-      "avg_hrs": 1.532,
+      "max_hrs": 10.085,
+      "avg_hrs": 5.745,
       "avg_rating": 4.083333333333333
     },
     "all_reviews": {
-      "max_hrs": 2.6893333333333334,
-      "avg_hrs": 1.532,
+      "max_hrs": 10.085,
+      "avg_hrs": 5.745,
       "avg_rating": 4.083333333333333
     }
   },
@@ -531,14 +531,14 @@
     "num-respondents": 13.5,
     "link": "https://thecriticalreview.org/search/PHYS/0560",
     "same_prof": {
-      "max_hrs": 8.192083333333334,
-      "avg_hrs": 4.227916666666667,
-      "avg_rating": 3.269999999999999
+      "max_hrs": 16.38416666666667,
+      "avg_hrs": 8.455833333333334,
+      "avg_rating": 3.4121739130434774
     },
     "all_reviews": {
-      "max_hrs": 8.192083333333334,
-      "avg_hrs": 4.227916666666667,
-      "avg_rating": 3.269999999999999
+      "max_hrs": 16.38416666666667,
+      "avg_hrs": 8.455833333333334,
+      "avg_rating": 3.4121739130434774
     }
   },
   "PHYS1100": {
@@ -573,14 +573,14 @@
     "num-respondents": 4.25,
     "link": "https://thecriticalreview.org/search/PHYS/1170",
     "same_prof": {
-      "max_hrs": 4.6675,
-      "avg_hrs": 2.7575000000000003,
-      "avg_rating": 3.19
+      "max_hrs": 9.335,
+      "avg_hrs": 5.515000000000001,
+      "avg_rating": 4.253333333333333
     },
     "all_reviews": {
-      "max_hrs": 4.6675,
-      "avg_hrs": 2.7575000000000003,
-      "avg_rating": 3.19
+      "max_hrs": 9.335,
+      "avg_hrs": 5.515000000000001,
+      "avg_rating": 4.253333333333333
     }
   },
   "PHYS1250": {
@@ -615,13 +615,13 @@
     "num-respondents": 12.454545454545455,
     "link": "https://thecriticalreview.org/search/PHYS/1420",
     "same_prof": {
-      "max_hrs": 2.022727272727273,
-      "avg_hrs": 1.169090909090909,
+      "max_hrs": 11.125,
+      "avg_hrs": 6.43,
       "avg_rating": 4.13
     },
     "all_reviews": {
-      "max_hrs": 2.022727272727273,
-      "avg_hrs": 1.169090909090909,
+      "max_hrs": 11.125,
+      "avg_hrs": 6.43,
       "avg_rating": 4.13
     }
   },
@@ -636,13 +636,13 @@
     "num-respondents": 6.857142857142857,
     "link": "https://thecriticalreview.org/search/PHYS/1560",
     "same_prof": {
-      "max_hrs": 1.6785714285714286,
-      "avg_hrs": 0.8214285714285714,
+      "max_hrs": 11.75,
+      "avg_hrs": 5.75,
       "avg_rating": 4.22
     },
     "all_reviews": {
-      "max_hrs": 1.6785714285714286,
-      "avg_hrs": 0.8214285714285714,
+      "max_hrs": 11.75,
+      "avg_hrs": 5.75,
       "avg_rating": 4.22
     }
   },
@@ -657,13 +657,13 @@
     "num-respondents": 12.416666666666666,
     "link": "https://thecriticalreview.org/search/PHYS/1610",
     "same_prof": {
-      "max_hrs": 6.425000000000001,
-      "avg_hrs": 2.9633333333333334,
+      "max_hrs": 9.637500000000001,
+      "avg_hrs": 4.445,
       "avg_rating": 4.095833333333332
     },
     "all_reviews": {
-      "max_hrs": 6.425000000000001,
-      "avg_hrs": 2.9633333333333334,
+      "max_hrs": 9.637500000000001,
+      "avg_hrs": 4.445,
       "avg_rating": 4.095833333333332
     }
   },
@@ -773,13 +773,13 @@
     "num-respondents": 5.0,
     "link": "https://thecriticalreview.org/search/PHYS/2420",
     "same_prof": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.41
     },
     "all_reviews": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.41
     }
   },
@@ -818,13 +818,13 @@
     "num-respondents": 17.09090909090909,
     "link": "https://thecriticalreview.org/search/CHEM/0400",
     "same_prof": {
-      "max_hrs": 3.48,
-      "avg_hrs": 1.218181818181818,
+      "max_hrs": 12.76,
+      "avg_hrs": 4.466666666666666,
       "avg_rating": 3.606363636363636
     },
     "all_reviews": {
-      "max_hrs": 3.48,
-      "avg_hrs": 1.218181818181818,
+      "max_hrs": 12.76,
+      "avg_hrs": 4.466666666666666,
       "avg_rating": 3.606363636363636
     }
   },
@@ -1257,13 +1257,13 @@
     "num-respondents": 10.25,
     "link": "https://thecriticalreview.org/search/HIST/1800",
     "same_prof": {
-      "max_hrs": 6.375,
-      "avg_hrs": 3.4,
+      "max_hrs": 8.5,
+      "avg_hrs": 4.533333333333333,
       "avg_rating": 4.550000000000001
     },
     "all_reviews": {
-      "max_hrs": 6.375,
-      "avg_hrs": 3.4,
+      "max_hrs": 8.5,
+      "avg_hrs": 4.533333333333333,
       "avg_rating": 4.550000000000001
     }
   },
@@ -1857,13 +1857,13 @@
     "num-respondents": 42.416666666666664,
     "link": "https://thecriticalreview.org/search/PHIL/0010",
     "same_prof": {
-      "max_hrs": 6.548333333333333,
-      "avg_hrs": 2.5158333333333336,
+      "max_hrs": 7.143636363636364,
+      "avg_hrs": 2.7445454545454546,
       "avg_rating": 4.201666666666667
     },
     "all_reviews": {
-      "max_hrs": 6.548333333333333,
-      "avg_hrs": 2.5158333333333336,
+      "max_hrs": 7.143636363636364,
+      "avg_hrs": 2.7445454545454546,
       "avg_rating": 4.201666666666667
     }
   },
@@ -1902,13 +1902,13 @@
     "num-respondents": 20.0,
     "link": "https://thecriticalreview.org/search/PHIL/0040",
     "same_prof": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.025
     },
     "all_reviews": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.025
     }
   },
@@ -1923,13 +1923,13 @@
     "num-respondents": 12.5,
     "link": "https://thecriticalreview.org/search/PHIL/0210",
     "same_prof": {
-      "max_hrs": 4.09,
-      "avg_hrs": 1.5975000000000001,
+      "max_hrs": 8.18,
+      "avg_hrs": 3.1950000000000003,
       "avg_rating": 4.005
     },
     "all_reviews": {
-      "max_hrs": 4.09,
-      "avg_hrs": 1.5975000000000001,
+      "max_hrs": 8.18,
+      "avg_hrs": 3.1950000000000003,
       "avg_rating": 4.005
     }
   },
@@ -2072,13 +2072,13 @@
     "num-respondents": 10.0,
     "link": "https://thecriticalreview.org/search/PHIL/1610",
     "same_prof": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.0
     },
     "all_reviews": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.0
     }
   },
@@ -2606,13 +2606,13 @@
     "num-respondents": 48.416666666666664,
     "link": "https://thecriticalreview.org/search/NEUR/0650",
     "same_prof": {
-      "max_hrs": 1.560833333333333,
-      "avg_hrs": 0.7666666666666667,
+      "max_hrs": 3.7459999999999996,
+      "avg_hrs": 1.8400000000000003,
       "avg_rating": 4.141666666666667
     },
     "all_reviews": {
-      "max_hrs": 1.560833333333333,
-      "avg_hrs": 0.7666666666666667,
+      "max_hrs": 3.7459999999999996,
+      "avg_hrs": 1.8400000000000003,
       "avg_rating": 4.141666666666667
     }
   },
@@ -2627,13 +2627,13 @@
     "num-respondents": 57.42857142857143,
     "link": "https://thecriticalreview.org/search/NEUR/1020",
     "same_prof": {
-      "max_hrs": 1.16,
-      "avg_hrs": 0.41428571428571426,
+      "max_hrs": 8.12,
+      "avg_hrs": 2.9,
       "avg_rating": 3.8314285714285714
     },
     "all_reviews": {
-      "max_hrs": 1.16,
-      "avg_hrs": 0.41428571428571426,
+      "max_hrs": 8.12,
+      "avg_hrs": 2.9,
       "avg_rating": 3.8314285714285714
     }
   },
@@ -2648,13 +2648,13 @@
     "num-respondents": 22.071428571428573,
     "link": "https://thecriticalreview.org/search/NEUR/1040",
     "same_prof": {
-      "max_hrs": 2.7964285714285713,
-      "avg_hrs": 1.3021428571428573,
+      "max_hrs": 9.7875,
+      "avg_hrs": 4.5575,
       "avg_rating": 4.3307142857142855
     },
     "all_reviews": {
-      "max_hrs": 2.7964285714285713,
-      "avg_hrs": 1.3021428571428573,
+      "max_hrs": 9.7875,
+      "avg_hrs": 4.5575,
       "avg_rating": 4.3307142857142855
     }
   },
@@ -2711,13 +2711,13 @@
     "num-respondents": 14.666666666666666,
     "link": "https://thecriticalreview.org/search/NEUR/1600",
     "same_prof": {
-      "max_hrs": 3.4299999999999997,
-      "avg_hrs": 1.3073333333333332,
+      "max_hrs": 10.29,
+      "avg_hrs": 3.9219999999999997,
       "avg_rating": 4.549333333333333
     },
     "all_reviews": {
-      "max_hrs": 3.4299999999999997,
-      "avg_hrs": 1.3073333333333332,
+      "max_hrs": 10.29,
+      "avg_hrs": 3.9219999999999997,
       "avg_rating": 4.549333333333333
     }
   },
@@ -2732,13 +2732,13 @@
     "num-respondents": 28.0,
     "link": "https://thecriticalreview.org/search/NEUR/1660",
     "same_prof": {
-      "max_hrs": 1.9,
-      "avg_hrs": 1.0,
+      "max_hrs": 9.5,
+      "avg_hrs": 5.0,
       "avg_rating": 4.216
     },
     "all_reviews": {
-      "max_hrs": 1.9,
-      "avg_hrs": 1.0,
+      "max_hrs": 9.5,
+      "avg_hrs": 5.0,
       "avg_rating": 4.216
     }
   },
@@ -2801,13 +2801,13 @@
     "num-respondents": 52.1875,
     "link": "https://thecriticalreview.org/search/PHP/0320",
     "same_prof": {
-      "max_hrs": 3.0387500000000003,
-      "avg_hrs": 1.3275000000000001,
+      "max_hrs": 6.945714285714287,
+      "avg_hrs": 3.0342857142857147,
       "avg_rating": 3.8281250000000036
     },
     "all_reviews": {
-      "max_hrs": 3.0387500000000003,
-      "avg_hrs": 1.3275000000000001,
+      "max_hrs": 6.945714285714287,
+      "avg_hrs": 3.0342857142857143,
       "avg_rating": 3.828125000000004
     }
   },
@@ -3047,13 +3047,13 @@
     "num-respondents": 31.0,
     "link": "https://thecriticalreview.org/search/PHP/2080",
     "same_prof": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 3.2
     },
     "all_reviews": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 3.2
     }
   },
@@ -3395,13 +3395,13 @@
     "num-respondents": 13.428571428571429,
     "link": "https://thecriticalreview.org/search/ITAL/0110",
     "same_prof": {
-      "max_hrs": 0.5478571428571428,
-      "avg_hrs": 0.35714285714285715,
+      "max_hrs": 7.67,
+      "avg_hrs": 5.0,
       "avg_rating": 4.4992857142857146
     },
     "all_reviews": {
-      "max_hrs": 0.5478571428571428,
-      "avg_hrs": 0.35714285714285715,
+      "max_hrs": 7.67,
+      "avg_hrs": 5.0,
       "avg_rating": 4.4992857142857146
     }
   },
@@ -3416,13 +3416,13 @@
     "num-respondents": 14.55,
     "link": "https://thecriticalreview.org/search/ITAL/0200",
     "same_prof": {
-      "max_hrs": 0.1695,
-      "avg_hrs": 0.09725,
+      "max_hrs": 6.78,
+      "avg_hrs": 3.89,
       "avg_rating": 4.186000000000001
     },
     "all_reviews": {
-      "max_hrs": 0.1695,
-      "avg_hrs": 0.09725,
+      "max_hrs": 6.78,
+      "avg_hrs": 3.89,
       "avg_rating": 4.186000000000002
     }
   },
@@ -3437,13 +3437,13 @@
     "num-respondents": 11.04,
     "link": "https://thecriticalreview.org/search/ITAL/0300",
     "same_prof": {
-      "max_hrs": 0.484,
-      "avg_hrs": 0.3132,
+      "max_hrs": 6.05,
+      "avg_hrs": 3.915,
       "avg_rating": 3.996400000000001
     },
     "all_reviews": {
-      "max_hrs": 0.484,
-      "avg_hrs": 0.3132,
+      "max_hrs": 6.05,
+      "avg_hrs": 3.915,
       "avg_rating": 3.996400000000001
     }
   },
@@ -3458,14 +3458,14 @@
     "num-respondents": 11.045454545454545,
     "link": "https://thecriticalreview.org/search/ITAL/0400",
     "same_prof": {
-      "max_hrs": 0.30409090909090913,
-      "avg_hrs": 0.1959090909090909,
-      "avg_rating": 4.009090909090909
+      "max_hrs": 6.69,
+      "avg_hrs": 4.31,
+      "avg_rating": 4.199999999999999
     },
     "all_reviews": {
-      "max_hrs": 0.30409090909090913,
-      "avg_hrs": 0.1959090909090909,
-      "avg_rating": 4.009090909090909
+      "max_hrs": 6.69,
+      "avg_hrs": 4.31,
+      "avg_rating": 4.199999999999999
     }
   },
   "ITAL0600": {
@@ -3479,13 +3479,13 @@
     "num-respondents": 8.11111111111111,
     "link": "https://thecriticalreview.org/search/ITAL/0600",
     "same_prof": {
-      "max_hrs": 0.7622222222222222,
-      "avg_hrs": 0.4444444444444444,
+      "max_hrs": 3.43,
+      "avg_hrs": 2.0,
       "avg_rating": 4.495555555555555
     },
     "all_reviews": {
-      "max_hrs": 0.7622222222222222,
-      "avg_hrs": 0.4444444444444444,
+      "max_hrs": 3.43,
+      "avg_hrs": 2.0,
       "avg_rating": 4.495555555555555
     }
   },
@@ -3516,13 +3516,13 @@
     "num-respondents": 9.5,
     "link": "https://thecriticalreview.org/search/ITAL/1010",
     "same_prof": {
-      "max_hrs": 2.55,
-      "avg_hrs": 1.2690000000000001,
+      "max_hrs": 8.5,
+      "avg_hrs": 4.23,
       "avg_rating": 4.312
     },
     "all_reviews": {
-      "max_hrs": 2.55,
-      "avg_hrs": 1.2690000000000001,
+      "max_hrs": 8.5,
+      "avg_hrs": 4.23,
       "avg_rating": 4.312
     }
   },
@@ -3537,13 +3537,13 @@
     "num-respondents": 4.0,
     "link": "https://thecriticalreview.org/search/ITAL/1020",
     "same_prof": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.6
     },
     "all_reviews": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.6
     }
   },
@@ -3582,13 +3582,13 @@
     "num-respondents": 4.8,
     "link": "https://thecriticalreview.org/search/ITAL/1620",
     "same_prof": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.742
     },
     "all_reviews": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.742
     }
   },
@@ -3675,13 +3675,13 @@
     "num-respondents": 9.0,
     "link": "https://thecriticalreview.org/search/CZCH/1000",
     "same_prof": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.45
     },
     "all_reviews": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.45
     }
   },
@@ -3696,13 +3696,13 @@
     "num-respondents": 7.083333333333333,
     "link": "https://thecriticalreview.org/search/GREK/0110",
     "same_prof": {
-      "max_hrs": 6.381666666666667,
-      "avg_hrs": 3.939166666666667,
+      "max_hrs": 19.145,
+      "avg_hrs": 11.8175,
       "avg_rating": 4.7425
     },
     "all_reviews": {
-      "max_hrs": 6.381666666666667,
-      "avg_hrs": 3.939166666666667,
+      "max_hrs": 19.145,
+      "avg_hrs": 11.8175,
       "avg_rating": 4.7425
     }
   },
@@ -3717,13 +3717,13 @@
     "num-respondents": 7.1875,
     "link": "https://thecriticalreview.org/search/GREK/0200",
     "same_prof": {
-      "max_hrs": 2.8231249999999997,
-      "avg_hrs": 1.769375,
+      "max_hrs": 9.033999999999999,
+      "avg_hrs": 5.662,
       "avg_rating": 4.47375
     },
     "all_reviews": {
-      "max_hrs": 2.8231249999999997,
-      "avg_hrs": 1.769375,
+      "max_hrs": 9.033999999999999,
+      "avg_hrs": 5.662,
       "avg_rating": 4.47375
     }
   },
@@ -3738,13 +3738,13 @@
     "num-respondents": 6.8,
     "link": "https://thecriticalreview.org/search/GREK/0400",
     "same_prof": {
-      "max_hrs": 5.89,
-      "avg_hrs": 3.3239999999999994,
+      "max_hrs": 9.816666666666666,
+      "avg_hrs": 5.539999999999999,
       "avg_rating": 4.45
     },
     "all_reviews": {
-      "max_hrs": 5.89,
-      "avg_hrs": 3.3239999999999994,
+      "max_hrs": 9.816666666666666,
+      "avg_hrs": 5.539999999999999,
       "avg_rating": 4.45
     }
   },
@@ -3775,13 +3775,13 @@
     "num-respondents": 6.8,
     "link": "https://thecriticalreview.org/search/GREK/1820",
     "same_prof": {
-      "max_hrs": 3.5780000000000003,
-      "avg_hrs": 1.734,
+      "max_hrs": 17.89,
+      "avg_hrs": 8.67,
       "avg_rating": 4.62
     },
     "all_reviews": {
-      "max_hrs": 3.5780000000000003,
-      "avg_hrs": 1.734,
+      "max_hrs": 17.89,
+      "avg_hrs": 8.67,
       "avg_rating": 4.62
     }
   },
@@ -3894,13 +3894,13 @@
     "num-respondents": 8.0,
     "link": "https://thecriticalreview.org/search/ENGL/0200D",
     "same_prof": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.27
     },
     "all_reviews": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.27
     }
   },
@@ -4818,14 +4818,14 @@
     "num-respondents": 21.375,
     "link": "https://thecriticalreview.org/search/BIOL/0080",
     "same_prof": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
-      "avg_rating": 3.9662499999999996
+      "max_hrs": -1,
+      "avg_hrs": -1,
+      "avg_rating": 4.532857142857142
     },
     "all_reviews": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
-      "avg_rating": 3.9662499999999996
+      "max_hrs": -1,
+      "avg_hrs": -1,
+      "avg_rating": 4.532857142857142
     }
   },
   "BIOL0150D": {
@@ -4902,13 +4902,13 @@
     "num-respondents": 88.29411764705883,
     "link": "https://thecriticalreview.org/search/BIOL/0280",
     "same_prof": {
-      "max_hrs": 10.554117647058824,
-      "avg_hrs": 3.180588235294117,
+      "max_hrs": 19.935555555555556,
+      "avg_hrs": 6.007777777777776,
       "avg_rating": 4.056470588235296
     },
     "all_reviews": {
-      "max_hrs": 10.554117647058824,
-      "avg_hrs": 3.180588235294117,
+      "max_hrs": 19.935555555555556,
+      "avg_hrs": 6.007777777777776,
       "avg_rating": 4.056470588235296
     }
   },
@@ -4944,13 +4944,13 @@
     "num-respondents": 71.28571428571429,
     "link": "https://thecriticalreview.org/search/BIOL/0420",
     "same_prof": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 3.9014285714285726
     },
     "all_reviews": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 3.9014285714285726
     }
   },
@@ -4965,13 +4965,13 @@
     "num-respondents": 17.4,
     "link": "https://thecriticalreview.org/search/BIOL/0430",
     "same_prof": {
-      "max_hrs": 7.128,
-      "avg_hrs": 2.4200000000000004,
+      "max_hrs": 11.88,
+      "avg_hrs": 4.033333333333334,
       "avg_rating": 4.4
     },
     "all_reviews": {
-      "max_hrs": 7.128,
-      "avg_hrs": 2.4200000000000004,
+      "max_hrs": 11.88,
+      "avg_hrs": 4.033333333333334,
       "avg_rating": 4.4
     }
   },
@@ -5015,13 +5015,13 @@
     "num-respondents": 89.85714285714286,
     "link": "https://thecriticalreview.org/search/BIOL/0500",
     "same_prof": {
-      "max_hrs": 3.4514285714285715,
-      "avg_hrs": 1.162857142857143,
+      "max_hrs": 12.08,
+      "avg_hrs": 4.07,
       "avg_rating": 4.338571428571428
     },
     "all_reviews": {
-      "max_hrs": 3.4514285714285715,
-      "avg_hrs": 1.162857142857143,
+      "max_hrs": 12.08,
+      "avg_hrs": 4.07,
       "avg_rating": 4.338571428571428
     }
   },
@@ -5036,14 +5036,14 @@
     "num-respondents": 23.333333333333332,
     "link": "https://thecriticalreview.org/search/BIOL/0510",
     "same_prof": {
-      "max_hrs": 3.264666666666666,
-      "avg_hrs": 1.332,
-      "avg_rating": 3.338666666666667
+      "max_hrs": 9.793999999999999,
+      "avg_hrs": 3.996,
+      "avg_rating": 3.8523076923076927
     },
     "all_reviews": {
-      "max_hrs": 3.264666666666666,
-      "avg_hrs": 1.3319999999999999,
-      "avg_rating": 3.3386666666666662
+      "max_hrs": 9.793999999999999,
+      "avg_hrs": 3.9959999999999996,
+      "avg_rating": 3.8523076923076918
     }
   },
   "BIOL0940G": {
@@ -5081,13 +5081,13 @@
     "num-respondents": 21.545454545454547,
     "link": "https://thecriticalreview.org/search/BIOL/1100",
     "same_prof": {
-      "max_hrs": 4.049090909090909,
-      "avg_hrs": 1.4200000000000002,
+      "max_hrs": 7.423333333333333,
+      "avg_hrs": 2.6033333333333335,
       "avg_rating": 4.142727272727273
     },
     "all_reviews": {
-      "max_hrs": 4.049090909090909,
-      "avg_hrs": 1.4200000000000002,
+      "max_hrs": 7.423333333333333,
+      "avg_hrs": 2.6033333333333335,
       "avg_rating": 4.142727272727273
     }
   },
@@ -5102,13 +5102,13 @@
     "num-respondents": 16.0,
     "link": "https://thecriticalreview.org/search/BIOL/1150",
     "same_prof": {
-      "max_hrs": 10.946666666666667,
-      "avg_hrs": 4.376666666666666,
+      "max_hrs": 13.136000000000001,
+      "avg_hrs": 5.252,
       "avg_rating": 4.123333333333334
     },
     "all_reviews": {
-      "max_hrs": 10.946666666666667,
-      "avg_hrs": 4.376666666666666,
+      "max_hrs": 13.136000000000001,
+      "avg_hrs": 5.252,
       "avg_rating": 4.123333333333334
     }
   },
@@ -5123,13 +5123,13 @@
     "num-respondents": 43.5625,
     "link": "https://thecriticalreview.org/search/BIOL/1160",
     "same_prof": {
-      "max_hrs": 10.27875,
-      "avg_hrs": 2.418125,
+      "max_hrs": 14.950909090909091,
+      "avg_hrs": 3.517272727272727,
       "avg_rating": 4.22625
     },
     "all_reviews": {
-      "max_hrs": 10.27875,
-      "avg_hrs": 2.418125,
+      "max_hrs": 14.950909090909091,
+      "avg_hrs": 3.517272727272727,
       "avg_rating": 4.22625
     }
   },
@@ -5236,13 +5236,13 @@
     "num-respondents": 24.375,
     "link": "https://thecriticalreview.org/search/BIOL/1540",
     "same_prof": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.12875
     },
     "all_reviews": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.12875
     }
   },
@@ -5265,13 +5265,13 @@
     "num-respondents": 22.0,
     "link": "https://thecriticalreview.org/search/BIOL/1550",
     "same_prof": {
-      "max_hrs": 6.715,
-      "avg_hrs": 2.135,
+      "max_hrs": 11.191666666666666,
+      "avg_hrs": 3.5583333333333327,
       "avg_rating": 4.1
     },
     "all_reviews": {
-      "max_hrs": 6.715,
-      "avg_hrs": 2.135,
+      "max_hrs": 11.191666666666666,
+      "avg_hrs": 3.5583333333333327,
       "avg_rating": 4.1
     }
   },
@@ -5294,13 +5294,13 @@
     "num-respondents": 28.125,
     "link": "https://thecriticalreview.org/search/BIOL/1600",
     "same_prof": {
-      "max_hrs": 5.78625,
-      "avg_hrs": 1.6675,
+      "max_hrs": 9.258,
+      "avg_hrs": 2.668,
       "avg_rating": 4.35125
     },
     "all_reviews": {
-      "max_hrs": 5.78625,
-      "avg_hrs": 1.6675,
+      "max_hrs": 9.258,
+      "avg_hrs": 2.668,
       "avg_rating": 4.35125
     }
   },
@@ -5323,14 +5323,14 @@
     "num-respondents": 29.333333333333332,
     "link": "https://thecriticalreview.org/search/BIOL/1820",
     "same_prof": {
-      "max_hrs": 6.201666666666667,
-      "avg_hrs": 2.643333333333333,
-      "avg_rating": 3.47
+      "max_hrs": 9.3025,
+      "avg_hrs": 3.965,
+      "avg_rating": 4.164
     },
     "all_reviews": {
-      "max_hrs": 6.201666666666667,
-      "avg_hrs": 2.643333333333333,
-      "avg_rating": 3.47
+      "max_hrs": 9.3025,
+      "avg_hrs": 3.965,
+      "avg_rating": 4.164
     }
   },
   "BIOL1865": {
@@ -5503,13 +5503,13 @@
     "num-respondents": 19.375,
     "link": "https://thecriticalreview.org/search/CHEM/1230",
     "same_prof": {
-      "max_hrs": 4.9818750000000005,
-      "avg_hrs": 1.7487499999999998,
+      "max_hrs": 11.387142857142859,
+      "avg_hrs": 3.997142857142857,
       "avg_rating": 4.4275
     },
     "all_reviews": {
-      "max_hrs": 4.9818750000000005,
-      "avg_hrs": 1.7487499999999998,
+      "max_hrs": 11.387142857142859,
+      "avg_hrs": 3.997142857142857,
       "avg_rating": 4.4275
     }
   },
@@ -5540,13 +5540,13 @@
     "num-respondents": 1.0,
     "link": "https://thecriticalreview.org/search/AFRI/1050A",
     "same_prof": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.56
     },
     "all_reviews": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.56
     }
   },
@@ -5561,13 +5561,13 @@
     "num-respondents": 2.0,
     "link": "https://thecriticalreview.org/search/AFRI/1050D",
     "same_prof": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.83
     },
     "all_reviews": {
-      "max_hrs": 0.0,
-      "avg_hrs": 0.0,
+      "max_hrs": -1,
+      "avg_hrs": -1,
       "avg_rating": 4.83
     }
   },
@@ -5582,13 +5582,13 @@
     "num-respondents": 7.285714285714286,
     "link": "https://thecriticalreview.org/search/AFRI/1050E",
     "same_prof": {
-      "max_hrs": 8.877142857142859,
-      "avg_hrs": 3.504285714285714,
+      "max_hrs": 10.356666666666667,
+      "avg_hrs": 4.088333333333333,
       "avg_rating": 4.305714285714286
     },
     "all_reviews": {
-      "max_hrs": 8.877142857142859,
-      "avg_hrs": 3.504285714285714,
+      "max_hrs": 10.356666666666667,
+      "avg_hrs": 4.088333333333333,
       "avg_rating": 4.305714285714286
     }
   },
@@ -5884,13 +5884,13 @@
     "num-respondents": 21.642857142857142,
     "link": "https://thecriticalreview.org/search/ENVS/1350",
     "same_prof": {
-      "max_hrs": 4.588571428571429,
-      "avg_hrs": 2.045714285714286,
+      "max_hrs": 8.030000000000001,
+      "avg_hrs": 3.58,
       "avg_rating": 4.006428571428573
     },
     "all_reviews": {
-      "max_hrs": 4.588571428571429,
-      "avg_hrs": 2.045714285714286,
+      "max_hrs": 8.030000000000001,
+      "avg_hrs": 3.58,
       "avg_rating": 4.006428571428573
     }
   },
@@ -5971,13 +5971,13 @@
     "num-respondents": 15.714285714285714,
     "link": "https://thecriticalreview.org/search/HNDI/0200",
     "same_prof": {
-      "max_hrs": 1.0285714285714287,
-      "avg_hrs": 0.6285714285714287,
+      "max_hrs": 7.2,
+      "avg_hrs": 4.4,
       "avg_rating": 4.375714285714286
     },
     "all_reviews": {
-      "max_hrs": 1.0285714285714287,
-      "avg_hrs": 0.6285714285714287,
+      "max_hrs": 7.2,
+      "avg_hrs": 4.4,
       "avg_rating": 4.375714285714286
     }
   },
