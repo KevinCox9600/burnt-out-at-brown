@@ -1,8 +1,8 @@
 {
   "data": [{
-      "code": "rMST 420",
+      "code": "HIST 400",
       "dept": "rMST",
-      "name": "American Weed: Marijuana!!",
+      "name": "The History of Capitalism",
       "prof": "Cevin Kox",
       "same-prof": {
         "avg-hrs": "2",
@@ -23,10 +23,10 @@
       "cr-link": "https://thecriticalreview.org/"
     },
     {
-      "code": "AMST 421",
-      "dept": "AMST",
-      "name": "American Weed: Marijuana!!",
-      "prof": "Cevin Kox",
+      "code": "CS 1730",
+      "dept": "CS",
+      "name": "Programming Languages",
+      "prof": "Ssabel Iharon",
       "same-prof": {
         "avg-hrs": "20",
         "max-hrs": "10",
@@ -46,10 +46,10 @@
       "cr-link": "https://thecriticalreview.org/"
     },
     {
-      "code": "AMST 422",
-      "dept": "AMST",
-      "name": "American Weed: Marijuana!!",
-      "prof": "Cevin Kox",
+      "code": "ENGL 100",
+      "dept": "ENGL",
+      "name": "Asian American Literature",
+      "prof": "Heyton Lo",
       "same-prof": {
         "avg-hrs": "4",
         "max-hrs": "10",
@@ -69,10 +69,10 @@
       "cr-link": "https://thecriticalreview.org/"
     },
     {
-      "code": "AMST 423",
-      "dept": "AMST",
-      "name": "American Weed: Marijuana!!",
-      "prof": "Cevin Kox",
+      "code": "ARAB 100",
+      "dept": "ARAB",
+      "name": "First-Year Arabic",
+      "prof": "Ssabel Iharon",
       "same-prof": {
         "avg-hrs": "5",
         "max-hrs": "10",
@@ -92,10 +92,10 @@
       "cr-link": "https://thecriticalreview.org/"
     },
     {
-      "code": "sMST 424",
-      "dept": "sMST",
-      "name": "American Weed: Marijuana!!",
-      "prof": "Cevin Kox",
+      "code": "PHIL 1950",
+      "dept": "PHIL",
+      "name": "Philosophy of Language",
+      "prof": "Dared Junn",
       "same-prof": {
         "avg-hrs": "2",
         "max-hrs": "10",
@@ -115,10 +115,10 @@
       "cr-link": "https://thecriticalreview.org/"
     },
     {
-      "code": "AMST 425",
-      "dept": "AMST",
-      "name": "American Weed: Marijuana!!",
-      "prof": "Cevin Kox",
+      "code": "BIOL 200",
+      "dept": "BIOL",
+      "name": "Biology of Hearing",
+      "prof": "Dared Junn",
       "same-prof": {
         "avg-hrs": "2",
         "max-hrs": "10",
@@ -138,10 +138,10 @@
       "cr-link": "https://thecriticalreview.org/"
     },
     {
-      "code": "AMST 426",
-      "dept": "AMST",
-      "name": "American Weed: Marijuana!!",
-      "prof": "Cevin Kox",
+      "code": "MATH 1530",
+      "dept": "MATH",
+      "name": "Abstract Algebra",
+      "prof": "Heyton Lo",
       "same-prof": {
         "avg-hrs": "2",
         "max-hrs": "10",
@@ -161,9 +161,9 @@
       "cr-link": "https://thecriticalreview.org/"
     },
     {
-      "code": "AMST 427",
+      "code": "AMST 420",
       "dept": "AMST",
-      "name": "American Weed: Marijuana!!",
+      "name": "American Weed: Marijuana",
       "prof": "Cevin Kox",
       "same-prof": {
         "avg-hrs": "2",
