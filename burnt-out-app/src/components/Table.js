@@ -71,9 +71,13 @@ class Table extends React.Component {
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
 
+    // set the state
     this.setState({
       [name]: value
     });
+    console.log('state:', this.state);
+
+    // filter the data
   }
 
   render() {
@@ -122,12 +126,29 @@ class Table extends React.Component {
       prof: this.state.prof
     };
 
+
+    // filter the data
+    let filteredDataArray = [];
+    for (let courseNum in dataArray) {
+      let courseData = dataArray[courseNum];
+      let sameProfKey = filterValues.sameProf ? 'same-prof' : 'diff-prof';
+      let underMaxHrs = courseData[sameProfKey]['max-hrs'];
+      let underAvgHrs = courseData[sameProfKey]['avg-hrs'];
+      let sameDept = courseData.dept.toLowerCase().includes(filterValues.dept.toLowerCase());;
+      let correctProf = courseData.prof.toLowerCase().includes(filterValues.prof.toLowerCase());
+      if (underMaxHrs && underAvgHrs && sameDept && correctProf) {
+        filteredDataArray.push({ courseNum, ...courseData });
+      }
+    }
+
+    // sort the data
+
     return (<main>
       <h2 style={{ textTransform: 'capitalize' }}>{this.props.type}</h2>
       {filters}
       <table className="table">
         {header(this.props.type)}
-        {rows(dataArray, this.props.type, filterValues)}
+        {rows(filteredDataArray, this.props.type, filterValues)}
       </table>
     </main>);
   }
