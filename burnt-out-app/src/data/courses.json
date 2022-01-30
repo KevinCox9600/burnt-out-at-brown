@@ -1,188 +1,187 @@
 {
-  "data": [
-    {
-      "code" : "AMST 420",
-      "dept" : "AMST",
-      "name" : "American Weed: Marijuana!!",
-      "prof" : "Cevin Kox",
+  "data": [{
+      "code": "rMST 420",
+      "dept": "rMST",
+      "name": "American Weed: Marijuana!!",
+      "prof": "Cevin Kox",
       "same-prof": {
-        "avg-hrs" : "2",
-        "max-hrs" : "10",
-        "avg-size" : "200",
-        "avg-res" : "150",
-        "avg-grade" : "A",
-        "min-grade" : "B"
+        "avg-hrs": "2",
+        "max-hrs": "10",
+        "avg-size": "200",
+        "avg-res": "150",
+        "avg-grade": "A",
+        "min-grade": "B"
       },
       "diff-prof": {
-        "avg-hrs" : "3",
-        "max-hrs" : "14",
-        "avg-size" : "200",
-        "avg-res" : "150",
-        "avg-grade" : "A",
-        "min-grade" : "B"
+        "avg-hrs": "3",
+        "max-hrs": "14",
+        "avg-size": "200",
+        "avg-res": "150",
+        "avg-grade": "A",
+        "min-grade": "B"
       },
-      "cr-link" : "https://thecriticalreview.org/"
+      "cr-link": "https://thecriticalreview.org/"
     },
     {
-      "code" : "AMST 421",
-      "dept" : "AMST",
-      "name" : "American Weed: Marijuana!!",
-      "prof" : "Cevin Kox",
+      "code": "AMST 421",
+      "dept": "AMST",
+      "name": "American Weed: Marijuana!!",
+      "prof": "Cevin Kox",
       "same-prof": {
-        "avg-hrs" : "2",
-        "max-hrs" : "10",
-        "avg-size" : "200",
-        "avg-res" : "150",
-        "avg-grade" : "A",
-        "min-grade" : "B"
+        "avg-hrs": "20",
+        "max-hrs": "10",
+        "avg-size": "200",
+        "avg-res": "150",
+        "avg-grade": "A",
+        "min-grade": "B"
       },
       "diff-prof": {
-        "avg-hrs" : "2",
-        "max-hrs" : "10",
-        "avg-size" : "200",
-        "avg-res" : "150",
-        "avg-grade" : "A",
-        "min-grade" : "B"
+        "avg-hrs": "5",
+        "max-hrs": "10",
+        "avg-size": "200",
+        "avg-res": "150",
+        "avg-grade": "A",
+        "min-grade": "B"
       },
-      "cr-link" : "https://thecriticalreview.org/"
+      "cr-link": "https://thecriticalreview.org/"
     },
     {
-      "code" : "AMST 422",
-      "dept" : "AMST",
-      "name" : "American Weed: Marijuana!!",
-      "prof" : "Cevin Kox",
+      "code": "AMST 422",
+      "dept": "AMST",
+      "name": "American Weed: Marijuana!!",
+      "prof": "Cevin Kox",
       "same-prof": {
-        "avg-hrs" : "2",
-        "max-hrs" : "10",
-        "avg-size" : "200",
-        "avg-res" : "150",
-        "avg-grade" : "A",
-        "min-grade" : "B"
+        "avg-hrs": "4",
+        "max-hrs": "10",
+        "avg-size": "200",
+        "avg-res": "150",
+        "avg-grade": "A",
+        "min-grade": "B"
       },
       "diff-prof": {
-        "avg-hrs" : "2",
-        "max-hrs" : "10",
-        "avg-size" : "200",
-        "avg-res" : "150",
-        "avg-grade" : "A",
-        "min-grade" : "B"
+        "avg-hrs": "2",
+        "max-hrs": "10",
+        "avg-size": "200",
+        "avg-res": "150",
+        "avg-grade": "A",
+        "min-grade": "B"
       },
-      "cr-link" : "https://thecriticalreview.org/"
+      "cr-link": "https://thecriticalreview.org/"
     },
     {
-      "code" : "AMST 423",
-      "dept" : "AMST",
-      "name" : "American Weed: Marijuana!!",
-      "prof" : "Cevin Kox",
+      "code": "AMST 423",
+      "dept": "AMST",
+      "name": "American Weed: Marijuana!!",
+      "prof": "Cevin Kox",
       "same-prof": {
-        "avg-hrs" : "2",
-        "max-hrs" : "10",
-        "avg-size" : "200",
-        "avg-res" : "150",
-        "avg-grade" : "A",
-        "min-grade" : "B"
+        "avg-hrs": "5",
+        "max-hrs": "10",
+        "avg-size": "200",
+        "avg-res": "150",
+        "avg-grade": "A",
+        "min-grade": "B"
       },
       "diff-prof": {
-        "avg-hrs" : "2",
-        "max-hrs" : "10",
-        "avg-size" : "200",
-        "avg-res" : "150",
-        "avg-grade" : "A",
-        "min-grade" : "B"
+        "avg-hrs": "2",
+        "max-hrs": "10",
+        "avg-size": "200",
+        "avg-res": "150",
+        "avg-grade": "A",
+        "min-grade": "B"
       },
-      "cr-link" : "https://thecriticalreview.org/"
+      "cr-link": "https://thecriticalreview.org/"
     },
     {
-      "code" : "AMST 424",
-      "dept" : "AMST",
-      "name" : "American Weed: Marijuana!!",
-      "prof" : "Cevin Kox",
+      "code": "sMST 424",
+      "dept": "sMST",
+      "name": "American Weed: Marijuana!!",
+      "prof": "Cevin Kox",
       "same-prof": {
-        "avg-hrs" : "2",
-        "max-hrs" : "10",
-        "avg-size" : "200",
-        "avg-res" : "150",
-        "avg-grade" : "A",
-        "min-grade" : "B"
+        "avg-hrs": "2",
+        "max-hrs": "10",
+        "avg-size": "200",
+        "avg-res": "150",
+        "avg-grade": "A",
+        "min-grade": "B"
       },
       "diff-prof": {
-        "avg-hrs" : "2",
-        "max-hrs" : "10",
-        "avg-size" : "200",
-        "avg-res" : "150",
-        "avg-grade" : "A",
-        "min-grade" : "B"
+        "avg-hrs": "2",
+        "max-hrs": "10",
+        "avg-size": "200",
+        "avg-res": "150",
+        "avg-grade": "A",
+        "min-grade": "B"
       },
-      "cr-link" : "https://thecriticalreview.org/"
+      "cr-link": "https://thecriticalreview.org/"
     },
     {
-      "code" : "AMST 425",
-      "dept" : "AMST",
-      "name" : "American Weed: Marijuana!!",
-      "prof" : "Cevin Kox",
+      "code": "AMST 425",
+      "dept": "AMST",
+      "name": "American Weed: Marijuana!!",
+      "prof": "Cevin Kox",
       "same-prof": {
-        "avg-hrs" : "2",
-        "max-hrs" : "10",
-        "avg-size" : "200",
-        "avg-res" : "150",
-        "avg-grade" : "A",
-        "min-grade" : "B"
+        "avg-hrs": "2",
+        "max-hrs": "10",
+        "avg-size": "200",
+        "avg-res": "150",
+        "avg-grade": "A",
+        "min-grade": "B"
       },
       "diff-prof": {
-        "avg-hrs" : "2",
-        "max-hrs" : "10",
-        "avg-size" : "200",
-        "avg-res" : "150",
-        "avg-grade" : "A",
-        "min-grade" : "B"
+        "avg-hrs": "2",
+        "max-hrs": "10",
+        "avg-size": "200",
+        "avg-res": "150",
+        "avg-grade": "A",
+        "min-grade": "B"
       },
-      "cr-link" : "https://thecriticalreview.org/"
+      "cr-link": "https://thecriticalreview.org/"
     },
     {
-      "code" : "AMST 426",
-      "dept" : "AMST",
-      "name" : "American Weed: Marijuana!!",
-      "prof" : "Cevin Kox",
+      "code": "AMST 426",
+      "dept": "AMST",
+      "name": "American Weed: Marijuana!!",
+      "prof": "Cevin Kox",
       "same-prof": {
-        "avg-hrs" : "2",
-        "max-hrs" : "10",
-        "avg-size" : "200",
-        "avg-res" : "150",
-        "avg-grade" : "A",
-        "min-grade" : "B"
+        "avg-hrs": "2",
+        "max-hrs": "10",
+        "avg-size": "200",
+        "avg-res": "150",
+        "avg-grade": "A",
+        "min-grade": "B"
       },
       "diff-prof": {
-        "avg-hrs" : "2",
-        "max-hrs" : "10",
-        "avg-size" : "200",
-        "avg-res" : "150",
-        "avg-grade" : "A",
-        "min-grade" : "B"
+        "avg-hrs": "2",
+        "max-hrs": "10",
+        "avg-size": "200",
+        "avg-res": "150",
+        "avg-grade": "A",
+        "min-grade": "B"
       },
-      "cr-link" : "https://thecriticalreview.org/"
+      "cr-link": "https://thecriticalreview.org/"
     },
     {
-      "code" : "AMST 427",
-      "dept" : "AMST",
-      "name" : "American Weed: Marijuana!!",
-      "prof" : "Cevin Kox",
+      "code": "AMST 427",
+      "dept": "AMST",
+      "name": "American Weed: Marijuana!!",
+      "prof": "Cevin Kox",
       "same-prof": {
-        "avg-hrs" : "2",
-        "max-hrs" : "10",
-        "avg-size" : "200",
-        "avg-res" : "150",
-        "avg-grade" : "A",
-        "min-grade" : "B"
+        "avg-hrs": "2",
+        "max-hrs": "10",
+        "avg-size": "200",
+        "avg-res": "150",
+        "avg-grade": "A",
+        "min-grade": "B"
       },
       "diff-prof": {
-        "avg-hrs" : "2",
-        "max-hrs" : "10",
-        "avg-size" : "200",
-        "avg-res" : "150",
-        "avg-grade" : "A",
-        "min-grade" : "B"
+        "avg-hrs": "2",
+        "max-hrs": "10",
+        "avg-size": "200",
+        "avg-res": "150",
+        "avg-grade": "A",
+        "min-grade": "B"
       },
-      "cr-link" : "https://thecriticalreview.org/"
+      "cr-link": "https://thecriticalreview.org/"
     }
   ]
 }
