@@ -7,10 +7,10 @@ function header(type) {
   const courseHeader = (
     <thead>
       <tr>
-        {/* <th scope="col">Avg Hours</th> */}
+        {/* <th scope="col">Avg Grade</th> */}
+        <th scope="col">Avg Hours</th>
         <th scope="col">Course</th>
-        <th scope="col">Avg Grade</th>
-        <th scope="col">Avg Max Hours</th>
+        <th scope="col">Max Hours</th>
         <th scope="col">Critical Review Link</th>
         <th scope="col">Avg Class Size</th>
         <th scope="col">Professor</th>
@@ -133,7 +133,7 @@ class Table extends React.Component {
     // for (let courseNum in dataArray) {
     for (let courseNum in dataObj) {
       let courseData = dataObj[courseNum];
-      if (!courseData[sameProfKey]) {
+      if (!courseData[sameProfKey] || courseData[sameProfKey]['max_hrs'] < 0 || courseData[sameProfKey]['avg_hrs'] < 0) {
         continue;
       }
       // console.log(courseNum);
