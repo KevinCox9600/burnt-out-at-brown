@@ -6,11 +6,11 @@ import About from './routes/about';
 
 function App({ to }) {
   return (
-    <div className="container-fluid">
+    <div>
       <header className="sticky-top">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
-            <Link to="/courses" className="navbar-brand">Burnt Out at Brown</Link>
+            <Link to="/courses" className="navbar-brand"><img style={{ height: '64px' }} src='/burntout_brown.png' /></Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -30,12 +30,14 @@ function App({ to }) {
           </div>
         </nav>
       </header>
-      <Routes>
-        <Route path="courses" element={<Courses />} />
-        <Route path="about" element={<About />} />
-        <Route path="profs" element={<Profs />} />
-        <Route path="*" element={<Navigate to="courses" />} />
-      </Routes>
+      <div className="container-fluid">
+        <Routes>
+          <Route path="courses" element={<Courses />} />
+          <Route path="about" element={<About />} />
+          <Route path="profs" element={<Profs />} />
+          <Route path="*" element={<Navigate to="courses" />} />
+        </Routes>
+      </div>
       <footer className="fixed-bottom bg-light pt-3 text-center">
         <p>If you find any issues, you can contact us at cpax@brown.edu</p>
       </footer>
