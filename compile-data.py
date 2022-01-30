@@ -7,7 +7,7 @@ import re
 from helpers.stats import calc_max_hrs, calc_avg_hrs, calc_avg_rating
 
 cr_data = {}
-CLASS_LIST_FILE = "./class_list.json"
+CLASS_LIST_FILE = "./class_list_unique.json"
 REVIEWS_LIST_FILE = "./class_objs.json"
 with open(CLASS_LIST_FILE) as class_file, open(REVIEWS_LIST_FILE) as reviews_file:
     class_data = json.load(class_file)

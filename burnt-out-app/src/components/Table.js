@@ -7,10 +7,10 @@ function header(type) {
   const courseHeader = (
     <thead>
       <tr>
+        {/* <th scope="col">Avg Grade</th> */}
         <th scope="col">Avg Hours</th>
         <th scope="col">Course</th>
-        <th scope="col">Avg Grade</th>
-        <th scope="col">Avg Max Hours</th>
+        <th scope="col">Max Hours</th>
         <th scope="col">Critical Review Link</th>
         <th scope="col">Avg Class Size</th>
         <th scope="col">Professor</th>
@@ -35,12 +35,12 @@ function header(type) {
 };
 
 function rows(dataArray, type, filterValues) {
-  const same = filterValues.sameProf ? "same-prof" : "diff-prof";
+  const same = filterValues.sameProf ? "same_prof" : "all_reviews";
   return (
     <tbody>
       {dataArray.filter((row) => {
-        const belowMaxHrs = parseInt(row[same]["max-hrs"]) <= filterValues.maxHrs;
-        const belowAvgHrs = parseInt(row[same]["avg-hrs"]) <= filterValues.avgHrs;
+        const belowMaxHrs = parseInt(row[same]["max_hrs"]) <= filterValues.maxHrs;
+        const belowAvgHrs = parseInt(row[same]["avg_hrs"]) <= filterValues.avgHrs;
         return belowMaxHrs && belowAvgHrs;
       }).map((rowData, index) => (
         type === "courses"
@@ -75,14 +75,14 @@ class Table extends React.Component {
     this.setState({
       [name]: value
     });
-    console.log('state:', this.state);
 
     // filter the data
   }
 
   render() {
-    const courses = require('../data/courses.json');
-    const dataArray = courses["data"];
+    // const courses = require('../data/courses.json');
+    // const dataArray = courses["data"];
+    const dataObj = require('../data/compiled_course_data.json');
 
     let filters;
     if (this.props.type === "courses") {
@@ -129,21 +129,28 @@ class Table extends React.Component {
 
     // filter the data
     let filteredDataArray = [];
-    let sameProfKey = filterValues.sameProf ? 'same-prof' : 'diff-prof';
-    for (let courseNum in dataArray) {
-      let courseData = dataArray[courseNum];
-      let underMaxHrs = courseData[sameProfKey]['max-hrs'];
-      let underAvgHrs = courseData[sameProfKey]['avg-hrs'];
+    let sameProfKey = filterValues.sameProf ? 'same_prof' : 'all_reviews';
+    // for (let courseNum in dataArray) {
+    for (let courseNum in dataObj) {
+      let courseData = dataObj[courseNum];
+      if (!courseData[sameProfKey] || courseData[sameProfKey]['max_hrs'] <= 0 || courseData[sameProfKey]['avg_hrs'] <= 0) {
+        continue;
+      }
+      // console.log(courseNum);
+      // console.log(courseData, sameProfKey, courseData[sameProfKey]);
+      let underMaxHrs = courseData[sameProfKey]['max_hrs'] < parseInt(filterValues.maxHrs);
+      let underAvgHrs = courseData[sameProfKey]['avg_hrs'] < parseInt(filterValues.avgHrs);
       let sameDept = courseData.dept.toLowerCase().includes(filterValues.dept.toLowerCase());;
       let correctProf = courseData.prof.toLowerCase().includes(filterValues.prof.toLowerCase());
       if (underMaxHrs && underAvgHrs && sameDept && correctProf) {
+        courseData['cr-link'] = `https://thecriticalreview.org/search/${courseData.dept}/${courseData.num}`;
         filteredDataArray.push({ courseNum, ...courseData });
       }
     }
 
     // sort the data
     filteredDataArray.sort((a, b) => {
-      console.log(a.dept);
+      // console.log(a.dept);
       if (a.dept < b.dept) {
         return -1;
       } else if (a.dept === b.debt) {
@@ -152,7 +159,10 @@ class Table extends React.Component {
         return 1;
       }
     });
-    filteredDataArray.sort((a, b) => a[sameProfKey]['avg-hrs'] - b[sameProfKey]['avg-hrs']);
+    filteredDataArray.sort((a, b) => a[sameProfKey]['avg_hrs'] - b[sameProfKey]['avg_hrs']);
+
+    // limit size to 50
+    filteredDataArray = filteredDataArray.slice(0, 500);
 
     return (<main>
       <h2 style={{ textTransform: 'capitalize', marginTop: "20px" }}>{this.props.type}</h2>
