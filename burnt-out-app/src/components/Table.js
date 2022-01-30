@@ -123,7 +123,7 @@ class Table extends React.Component {
     };
 
     return (<main>
-      <h2 style={{ textTransform: 'capitalize' }}>{this.props.type}</h2>
+      <h2 style={{ textTransform: 'capitalize', marginTop: "20px" }}>{this.props.type}</h2>
       {filters}
       <table className="table">
         {header(this.props.type)}
