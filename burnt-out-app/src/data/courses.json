@@ -166,7 +166,7 @@
       "name": "American Weed: Marijuana",
       "prof": "Cevin Kox",
       "same-prof": {
-        "avg-hrs": "2",
+        "avg-hrs": "9",
         "max-hrs": "10",
         "avg-size": "200",
         "avg-res": "150",
@@ -174,7 +174,7 @@
         "min-grade": "B"
       },
       "diff-prof": {
-        "avg-hrs": "2",
+        "avg-hrs": "9",
         "max-hrs": "10",
         "avg-size": "200",
         "avg-res": "150",
