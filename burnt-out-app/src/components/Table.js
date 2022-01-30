@@ -7,7 +7,7 @@ function header(type) {
   const courseHeader = (
     <thead>
       <tr>
-        <th scope="col">Avg Grade</th>
+        {/* <th scope="col">Avg Grade</th> */}
         <th scope="col">Course</th>
         <th scope="col">Avg Hours</th>
         <th scope="col">Avg Max Hours</th>
@@ -75,7 +75,6 @@ class Table extends React.Component {
     this.setState({
       [name]: value
     });
-    console.log('state:', this.state);
 
     // filter the data
   }
@@ -137,10 +136,10 @@ class Table extends React.Component {
       if (!courseData[sameProfKey]) {
         continue;
       }
-      console.log(courseNum);
-      console.log(courseData, sameProfKey, courseData[sameProfKey]);
-      let underMaxHrs = courseData[sameProfKey]['max_hrs'];
-      let underAvgHrs = courseData[sameProfKey]['avg_hrs'];
+      // console.log(courseNum);
+      // console.log(courseData, sameProfKey, courseData[sameProfKey]);
+      let underMaxHrs = courseData[sameProfKey]['max_hrs'] < parseInt(filterValues.maxHrs);
+      let underAvgHrs = courseData[sameProfKey]['avg_hrs'] < parseInt(filterValues.avgHrs);
       let sameDept = courseData.dept.toLowerCase().includes(filterValues.dept.toLowerCase());;
       let correctProf = courseData.prof.toLowerCase().includes(filterValues.prof.toLowerCase());
       if (underMaxHrs && underAvgHrs && sameDept && correctProf) {
@@ -150,7 +149,7 @@ class Table extends React.Component {
 
     // sort the data
     filteredDataArray.sort((a, b) => {
-      console.log(a.dept);
+      // console.log(a.dept);
       if (a.dept < b.dept) {
         return -1;
       } else if (a.dept === b.debt) {
