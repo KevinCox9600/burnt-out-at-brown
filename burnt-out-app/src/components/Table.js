@@ -160,6 +160,7 @@ class Table extends React.Component {
       }
     });
     filteredDataArray.sort((a, b) => a[sameProfKey]['avg_hrs'] - b[sameProfKey]['avg_hrs']);
+    filteredDataArray = filteredDataArray.slice(0, 50);
 
     return (<main>
       <h2 style={{ textTransform: 'capitalize' }}>{this.props.type}</h2>;
