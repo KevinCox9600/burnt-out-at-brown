@@ -71,9 +71,13 @@ class Table extends React.Component {
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
 
+    // set the state
     this.setState({
       [name]: value
     });
+    console.log('state:', this.state);
+
+    // filter the data
   }
 
   render() {
@@ -122,14 +126,42 @@ class Table extends React.Component {
       prof: this.state.prof
     };
 
+
+    // filter the data
+    let filteredDataArray = [];
+    let sameProfKey = filterValues.sameProf ? 'same-prof' : 'diff-prof';
+    for (let courseNum in dataArray) {
+      let courseData = dataArray[courseNum];
+      let underMaxHrs = courseData[sameProfKey]['max-hrs'];
+      let underAvgHrs = courseData[sameProfKey]['avg-hrs'];
+      let sameDept = courseData.dept.toLowerCase().includes(filterValues.dept.toLowerCase());;
+      let correctProf = courseData.prof.toLowerCase().includes(filterValues.prof.toLowerCase());
+      if (underMaxHrs && underAvgHrs && sameDept && correctProf) {
+        filteredDataArray.push({ courseNum, ...courseData });
+      }
+    }
+
+    // sort the data
+    filteredDataArray.sort((a, b) => {
+      console.log(a.dept);
+      if (a.dept < b.dept) {
+        return -1;
+      } else if (a.dept === b.debt) {
+        return 0;
+      } else {
+        return 1;
+      }
+    });
+    filteredDataArray.sort((a, b) => a[sameProfKey]['avg-hrs'] - b[sameProfKey]['avg-hrs']);
+
     return (<main>
-      <h2 style={{ textTransform: 'capitalize' }}>{this.props.type}</h2>
+      <h2 style={{ textTransform: 'capitalize' }}>{this.props.type}</h2>;
       {filters}
       <table className="table">
         {header(this.props.type)}
-        {rows(dataArray, this.props.type, filterValues)}
+        {rows(filteredDataArray, this.props.type, filterValues)}
       </table>
-    </main>);
+    </main >);
   }
 }
 
