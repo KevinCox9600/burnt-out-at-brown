@@ -133,7 +133,7 @@ class Table extends React.Component {
     // for (let courseNum in dataArray) {
     for (let courseNum in dataObj) {
       let courseData = dataObj[courseNum];
-      if (!courseData[sameProfKey] || courseData[sameProfKey]['max_hrs'] < 0 || courseData[sameProfKey]['avg_hrs'] < 0) {
+      if (!courseData[sameProfKey] || courseData[sameProfKey]['max_hrs'] <= 0 || courseData[sameProfKey]['avg_hrs'] <= 0) {
         continue;
       }
       // console.log(courseNum);
