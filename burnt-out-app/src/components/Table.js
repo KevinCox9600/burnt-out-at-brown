@@ -7,9 +7,9 @@ function header(type) {
   const courseHeader = (
     <thead>
       <tr>
-        {/* <th scope="col">Avg Grade</th> */}
+        {/* <th scope="col">Avg Hours</th> */}
         <th scope="col">Course</th>
-        <th scope="col">Avg Hours</th>
+        <th scope="col">Avg Grade</th>
         <th scope="col">Avg Max Hours</th>
         <th scope="col">Critical Review Link</th>
         <th scope="col">Avg Class Size</th>
@@ -162,7 +162,7 @@ class Table extends React.Component {
     filteredDataArray = filteredDataArray.slice(0, 50);
 
     return (<main>
-      <h2 style={{ textTransform: 'capitalize' }}>{this.props.type}</h2>;
+      <h2 style={{ textTransform: 'capitalize', marginTop: "20px" }}>{this.props.type}</h2>
       {filters}
       <table className="table">
         {header(this.props.type)}
