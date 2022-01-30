@@ -56,12 +56,12 @@ for c in class_list_data["data"]:
 
 
 classes_json = json.dumps(courses)
-class_list_file = open("class_objs", "w")
+class_list_file = open("class_objs.json", "w")
 class_list_file.write(classes_json)
 class_list_file.close()
 
 profs_json = json.dumps(profs)
-class_list_file = open("prof_objs", "w")
+class_list_file = open("prof_objs.json", "w")
 class_list_file.write(profs_json)
 class_list_file.close()
 
