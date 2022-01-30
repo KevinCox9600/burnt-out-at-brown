@@ -7,9 +7,9 @@ function header(type) {
   const courseHeader = (
     <thead>
       <tr>
-        <th scope="col">Avg Grade</th>
-        <th scope="col">Course</th>
         <th scope="col">Avg Hours</th>
+        <th scope="col">Course</th>
+        <th scope="col">Avg Grade</th>
         <th scope="col">Avg Max Hours</th>
         <th scope="col">Critical Review Link</th>
         <th scope="col">Avg Class Size</th>
