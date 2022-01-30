@@ -5,7 +5,6 @@ from selenium.webdriver.common.keys import Keys
 from webdriver_manager.chrome import ChromeDriverManager
 from seleniumwire.utils import decode
 import json
-import jsonpickle
 
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
@@ -22,8 +21,8 @@ results = soup.find(id="crit-dept")
 departments = [option['value'] for option in results.find_all('option')]
 filt_departments = str_list = list(filter(None, departments))
 
-# Might have to wait for this to load
-classes = {}
+classes = []
+
 for department_code in filt_departments:
     driver.get('https://cab.brown.edu')
 
@@ -45,12 +44,15 @@ for department_code in filt_departments:
 
                 for r in results:
                     code, title, time, prof = r["code"], r["title"], r["meets"], r["instr"]
-                    classes[code] = {title: title, time: time, prof: prof}
-                    
 
+                    # Split PHP 2510 into PHP, 2510
+                    dept_identifier, num = code.split(" ")
+                    classes.append({"num": num, "dept": dept_identifier, "name": title, "time": time, "prof": prof})
+                    
 # Write classes to a JSON file
-classes_json = json.dumps(classes)
-class_list_file = open("class_list_new.json", "w")
+classes_dict = {"data": classes}
+classes_json = json.dumps(classes_dict)
+class_list_file = open("class_list.json", "w")
 class_list_file.write(classes_json)
 class_list_file.close()
 
