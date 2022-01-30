@@ -34,15 +34,17 @@ function header(type) {
   return type === "courses" ? courseHeader : profsHeader;
 };
 
-function rows(dataArray, type, sameProf, maxHrs) {
-  const same = sameProf ? "same-prof" : "diff-prof";
+function rows(dataArray, type, filterValues) {
+  const same = filterValues.sameProf ? "same-prof" : "diff-prof";
   return (
     <tbody>
       {dataArray.filter((row) => {
-        return parseInt(row[same]["max-hrs"]) <= maxHrs;
+        const belowMaxHrs = parseInt(row[same]["max-hrs"]) <= filterValues.maxHrs;
+        const belowAvgHrs = parseInt(row[same]["avg-hrs"]) <= filterValues.avgHrs;
+        return belowMaxHrs && belowAvgHrs;
       }).map((rowData, index) => (
         type === "courses"
-          ? <CourseRow key={index} data={rowData} sameProf={sameProf} />
+          ? <CourseRow key={index} data={rowData} sameProf={filterValues.sameProf} />
           : <ProfRow key={index} data={rowData} />
       ))}
     </tbody>
@@ -112,12 +114,20 @@ class Table extends React.Component {
       );
     }
 
+    let filterValues = {
+      sameProf: this.state.sameProf,
+      maxHrs: this.state.maxHrs,
+      avgHrs: this.state.avgHrs,
+      dept: this.state.dept,
+      prof: this.state.prof
+    };
+
     return (<main>
       <h2 style={{ textTransform: 'capitalize' }}>{this.props.type}</h2>
       {filters}
       <table className="table">
         {header(this.props.type)}
-        {rows(dataArray, this.props.type, this.state.sameProf, this.state.maxHrs)}
+        {rows(dataArray, this.props.type, filterValues)}
       </table>
     </main>);
   }
