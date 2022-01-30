@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from cookie import COOKIE_CONSTANTS
 import json
 
-class_list_file = open('class_list.json')
+class_list_file = open('class_list_unique.json')
 class_list_data = json.load(class_list_file)
 class_list_file.close()
 
