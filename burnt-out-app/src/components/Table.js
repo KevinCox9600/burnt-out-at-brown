@@ -34,12 +34,12 @@ function header(type) {
   return type === "courses" ? courseHeader : profsHeader;
 };
 
-function rows(dataArray, type, sameProf, maxHours) {
+function rows(dataArray, type, sameProf, maxHrs) {
   const same = sameProf ? "same-prof" : "diff-prof";
   return (
     <tbody>
       {dataArray.filter((row) => {
-        return parseInt(row[same]["max-hrs"]) <= maxHours;
+        return parseInt(row[same]["max-hrs"]) <= maxHrs;
       }).map((rowData, index) => (
         type === "courses"
           ? <CourseRow key={index} data={rowData} sameProf={sameProf} />
@@ -54,7 +54,10 @@ class Table extends React.Component {
     super(props);
     this.state = {
       sameProf: true,
-      maxHours: 17
+      maxHrs: 40,
+      avgHrs: 20,
+      prof: "",
+      dept: ""
     };
 
     this.handleFilterChange = this.handleFilterChange.bind(this);
@@ -78,10 +81,21 @@ class Table extends React.Component {
     let filters;
     if (this.props.type === "courses") {
       filters = (<form>
-        <input type="text" className="form-control" placeholder="Department" />
-        <input type="text" className="form-control" placeholder="Professor" />
-        <input type="text" className="form-control" placeholder="Avg Hours" />
-        <input type="number" className="form-control" placeholder="Max Hours" name="maxHours" value={this.state.maxHours} onChange={this.handleFilterChange} />
+        <input type="text" className="form-control" placeholder="Department" name="dept"
+          value={this.state.dept}
+          onChange={this.handleFilterChange}
+        />
+        <input type="text" className="form-control" placeholder="Professor" name="prof"
+          value={this.state.prf}
+          onChange={this.handleFilterChange}
+        />
+        <input type="number" className="form-control" placeholder="Avg Hours" name="avgHrs"
+          value={this.state.avgHrs}
+          onChange={this.handleFilterChange}
+        />
+        <input type="number" className="form-control" placeholder="Max Hours" name="maxHrs"
+          value={this.state.maxHrs}
+          onChange={this.handleFilterChange} />
         <div className="form-check form-switch">
           <input className="form-check-input" type="checkbox" role="switch" id="same-prof" name="sameProf"
             checked={this.state.sameProf}
@@ -103,7 +117,7 @@ class Table extends React.Component {
       {filters}
       <table className="table">
         {header(this.props.type)}
-        {rows(dataArray, this.props.type, this.state.sameProf, this.state.maxHours)}
+        {rows(dataArray, this.props.type, this.state.sameProf, this.state.maxHrs)}
       </table>
     </main>);
   }
