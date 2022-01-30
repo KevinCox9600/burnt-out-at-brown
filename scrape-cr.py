@@ -37,7 +37,7 @@ for c in class_list_data["data"]:
         review["Name"] = name
         review["Prof"] = prof
         review["Time"] = time
-        review["Link"] = "https://thecriticalreview.org/search/{dept}/{num}"
+        review["Link"] = f"https://thecriticalreview.org/search/{dept}/{num}"
 
         # order of tiny stats is course rating, prof rating, avg hours, max hours, respondents, and class size
         results = offering.find_all("div", {"class": "ui tiny statistic"})
