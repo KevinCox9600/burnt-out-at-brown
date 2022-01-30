@@ -165,7 +165,7 @@ class Table extends React.Component {
     filteredDataArray = filteredDataArray.slice(0, 500);
 
     return (<main>
-      <h2 style={{ textTransform: 'capitalize', marginTop: "20px" }}>{this.props.type}</h2>
+      <h2 style={{ textTransform: 'capitalize', marginTop: "20px" }}>Courses - Spring 2022</h2>
       {filters}
       <table className="table">
         {header(this.props.type)}
