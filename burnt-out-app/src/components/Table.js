@@ -143,6 +143,7 @@ class Table extends React.Component {
       let sameDept = courseData.dept.toLowerCase().includes(filterValues.dept.toLowerCase());;
       let correctProf = courseData.prof.toLowerCase().includes(filterValues.prof.toLowerCase());
       if (underMaxHrs && underAvgHrs && sameDept && correctProf) {
+        courseData['cr-link'] = `https://thecriticalreview.org/search/${courseData.dept}/${courseData.num}`;
         filteredDataArray.push({ courseNum, ...courseData });
       }
     }
@@ -159,7 +160,9 @@ class Table extends React.Component {
       }
     });
     filteredDataArray.sort((a, b) => a[sameProfKey]['avg_hrs'] - b[sameProfKey]['avg_hrs']);
-    filteredDataArray = filteredDataArray.slice(0, 50);
+
+    // limit size to 50
+    filteredDataArray = filteredDataArray.slice(0, 500);
 
     return (<main>
       <h2 style={{ textTransform: 'capitalize', marginTop: "20px" }}>{this.props.type}</h2>
