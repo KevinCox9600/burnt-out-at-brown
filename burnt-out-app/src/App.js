@@ -6,7 +6,7 @@ import About from './routes/about';
 
 function App({ to }) {
   return (
-    <div className="container-fluid">
+    <div>
       <header className="sticky-top">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
@@ -30,12 +30,14 @@ function App({ to }) {
           </div>
         </nav>
       </header>
-      <Routes>
-        <Route path="courses" element={<Courses />} />
-        <Route path="about" element={<About />} />
-        <Route path="profs" element={<Profs />} />
-        <Route path="*" element={<Navigate to="courses" />} />
-      </Routes>
+      <div className="container-fluid">
+        <Routes>
+          <Route path="courses" element={<Courses />} />
+          <Route path="about" element={<About />} />
+          <Route path="profs" element={<Profs />} />
+          <Route path="*" element={<Navigate to="courses" />} />
+        </Routes>
+      </div>
       <footer className="fixed-bottom bg-light pt-3 text-center">
         <p>If you find any issues, you can contact us at cpax@brown.edu</p>
       </footer>
