@@ -1,0 +1,6005 @@
+{
+  "ARAB0200": {
+    "dept": "ARAB",
+    "num": "0200",
+    "code": "ARAB0200",
+    "name": "First-Year Arabic",
+    "prof": "M. Faiza",
+    "time": "MW 2-2:50p; TTh 2:30-3:50p",
+    "size": 13.0,
+    "num-respondents": 10.6,
+    "link": "https://thecriticalreview.org/search/ARAB/0200",
+    "same_prof": {
+      "max_hrs": 4.706,
+      "avg_hrs": 3.068,
+      "avg_rating": 4.184
+    },
+    "all_reviews": {
+      "max_hrs": 4.706,
+      "avg_hrs": 3.068,
+      "avg_rating": 4.183999999999999
+    }
+  },
+  "ARAB0400": {
+    "dept": "ARAB",
+    "num": "0400",
+    "code": "ARAB0400",
+    "name": "Second-Year Arabic",
+    "prof": "E. Belmont Flores",
+    "time": "MW 1-1:50p; TTh 1-2:20p",
+    "size": 14.5,
+    "num-respondents": 8.5,
+    "link": "https://thecriticalreview.org/search/ARAB/0400",
+    "same_prof": {
+      "max_hrs": 5.875,
+      "avg_hrs": 3.3350000000000004,
+      "avg_rating": 4.154999999999999
+    },
+    "all_reviews": {
+      "max_hrs": 5.875,
+      "avg_hrs": 3.3350000000000004,
+      "avg_rating": 4.154999999999999
+    }
+  },
+  "ARAB0600": {
+    "dept": "ARAB",
+    "num": "0600",
+    "code": "ARAB0600",
+    "name": "Third-Year Arabic",
+    "prof": "M. Faiza",
+    "time": "MTWTh 12-12:50p",
+    "size": 15.0,
+    "num-respondents": 11.0,
+    "link": "https://thecriticalreview.org/search/ARAB/0600",
+    "same_prof": {
+      "max_hrs": 6.363333333333333,
+      "avg_hrs": 3.896666666666667,
+      "avg_rating": 4.86
+    },
+    "all_reviews": {
+      "max_hrs": 6.363333333333333,
+      "avg_hrs": 3.896666666666667,
+      "avg_rating": 4.86
+    }
+  },
+  "ARAB0800B": {
+    "dept": "ARAB",
+    "num": "0800B",
+    "code": "ARAB0800B",
+    "name": "Advanced Arabic II: Arabic of the Quran",
+    "prof": "A. Hassan",
+    "time": "MWF 2-2:50p"
+  },
+  "ARAB0950": {
+    "dept": "ARAB",
+    "num": "0950",
+    "code": "ARAB0950",
+    "name": "Advanced Reading and Composition: Arabic Fiction in the West",
+    "prof": "M. Faiza",
+    "time": "TTh 10:30-11:50a"
+  },
+  "COLT1310E": {
+    "dept": "COLT",
+    "num": "1310E",
+    "code": "COLT1310E",
+    "name": "A Classical Islamic Education: Readings in Arabic Literature",
+    "prof": "E. Muhanna",
+    "time": "W 3-5:30p",
+    "size": 6.0,
+    "num-respondents": 4.0,
+    "link": "https://thecriticalreview.org/search/COLT/1310E",
+    "same_prof": {
+      "max_hrs": 11.0,
+      "avg_hrs": 5.25,
+      "avg_rating": 4.66
+    },
+    "all_reviews": {
+      "max_hrs": 11.0,
+      "avg_hrs": 5.25,
+      "avg_rating": 4.66
+    }
+  },
+  "MDVL1310E": {
+    "dept": "MDVL",
+    "num": "1310E",
+    "code": "MDVL1310E",
+    "name": "A Classical Islamic Education: Readings in Arabic Literature (COLT 1310E)",
+    "prof": "See details",
+    "time": ""
+  },
+  "FREN1710J": {
+    "dept": "FREN",
+    "num": "1710J",
+    "code": "FREN1710J",
+    "name": "Geopolitics and Identity Divides in the Middle East",
+    "prof": "M. Alsahoui",
+    "time": "MWF 1-1:50p"
+  },
+  "HEBR0600": {
+    "dept": "HEBR",
+    "num": "0600",
+    "code": "HEBR0600",
+    "name": "Issues in Contemporary Israeli Society, Politics, and Culture in Hebrew",
+    "prof": "D. Jacobson",
+    "time": "MWF 10-10:50a"
+  },
+  "MES0100": {
+    "dept": "MES",
+    "num": "0100",
+    "code": "MES0100",
+    "name": "The Middle East: Cultures & Societies",
+    "prof": "A. Winder",
+    "time": "MWF 10-10:50a"
+  },
+  "RELS0095B": {
+    "dept": "RELS",
+    "num": "0095B",
+    "code": "RELS0095B",
+    "name": "Islam in Fiction: History, Romance, Satire",
+    "prof": "S. Bashir",
+    "time": "M 3-5:30p"
+  },
+  "RELS2050": {
+    "dept": "RELS",
+    "num": "2050",
+    "code": "RELS2050",
+    "name": "Religious Identities in Sasanian Persia",
+    "prof": "J. Han",
+    "time": "MWF 8-8:50a"
+  },
+  "TKSH1100": {
+    "dept": "TKSH",
+    "num": "1100",
+    "code": "TKSH1100",
+    "name": "Introductory Ottoman Turkish I",
+    "prof": "E. Ozdemir",
+    "time": "MWF 12-12:50p"
+  },
+  "ARCH0156": {
+    "dept": "ARCH",
+    "num": "0156",
+    "code": "ARCH0156",
+    "name": "Architecture and Urbanism of the African Diaspora (HIAA 0770)",
+    "prof": "See details",
+    "time": ""
+  },
+  "ARCH0255": {
+    "dept": "ARCH",
+    "num": "0255",
+    "code": "ARCH0255",
+    "name": "Monsters",
+    "prof": "F. Rojas Silva",
+    "time": "TTh 9-10:20a"
+  },
+  "ARCH0520": {
+    "dept": "ARCH",
+    "num": "0520",
+    "code": "ARCH0520",
+    "name": "Roman Archaeology and Art",
+    "prof": "C. Rice",
+    "time": "MWF 11-11:50a",
+    "size": 44.666666666666664,
+    "num-respondents": 24.666666666666668,
+    "link": "https://thecriticalreview.org/search/ARCH/0520",
+    "same_prof": {
+      "max_hrs": 5.066666666666666,
+      "avg_hrs": 2.203333333333333,
+      "avg_rating": 4.4433333333333325
+    },
+    "all_reviews": {
+      "max_hrs": 5.066666666666666,
+      "avg_hrs": 2.203333333333333,
+      "avg_rating": 4.4433333333333325
+    }
+  },
+  "ARCH0529": {
+    "dept": "ARCH",
+    "num": "0529",
+    "code": "ARCH0529",
+    "name": "Swords, Sandals, and Saunas: The Roman Army in War and Peace",
+    "prof": "T. Franconi",
+    "time": "MWF 2-2:50p"
+  },
+  "ARCH0537": {
+    "dept": "ARCH",
+    "num": "0537",
+    "code": "ARCH0537",
+    "name": "Making and Unmaking the World: Ancient Empires and Their Aftermath",
+    "prof": "A. Marko",
+    "time": "MWF 1-1:50p"
+  },
+  "ARCH1152": {
+    "dept": "ARCH",
+    "num": "1152",
+    "code": "ARCH1152",
+    "name": "Bandits and Barbarians: Exploring Subaltern Resilience and State Power (ANTH 1145)",
+    "prof": "See details",
+    "time": ""
+  },
+  "ARCH1170": {
+    "dept": "ARCH",
+    "num": "1170",
+    "code": "ARCH1170",
+    "name": "Community Archaeology in Providence and Beyond",
+    "prof": "M. Rothenberg",
+    "time": "T 4-6:30p"
+  },
+  "ARCH1211": {
+    "dept": "ARCH",
+    "num": "1211",
+    "code": "ARCH1211",
+    "name": "The Body in Medieval Art (HIAA 1440E)",
+    "prof": "See details",
+    "time": ""
+  },
+  "ARCH1305": {
+    "dept": "ARCH",
+    "num": "1305",
+    "code": "ARCH1305",
+    "name": "Myth and Narrative in Greek Art",
+    "prof": "C. Beeby",
+    "time": "TTh 10:30-11:50a"
+  },
+  "ARCH1439": {
+    "dept": "ARCH",
+    "num": "1439",
+    "code": "ARCH1439",
+    "name": "Jerusalem Divided: Politics and Cultural Heritage (URBN 1870K)",
+    "prof": "See details",
+    "time": ""
+  },
+  "ARCH1538": {
+    "dept": "ARCH",
+    "num": "1538",
+    "code": "ARCH1538",
+    "name": "Heritage Under Fire: From Conflict to Understanding, Memory, and Reconciliation",
+    "prof": "N. Munawar",
+    "time": "MWF 12-12:50p"
+  },
+  "ARCH1635": {
+    "dept": "ARCH",
+    "num": "1635",
+    "code": "ARCH1635",
+    "name": "The Great Heresy: Egypt in the Amarna Period",
+    "prof": "L. Bestock",
+    "time": "TTh 1-2:20p",
+    "size": 29.0,
+    "num-respondents": 19.5,
+    "link": "https://thecriticalreview.org/search/ARCH/1635",
+    "same_prof": {
+      "max_hrs": 10.51,
+      "avg_hrs": 3.41,
+      "avg_rating": 4.655
+    },
+    "all_reviews": {
+      "max_hrs": 10.51,
+      "avg_hrs": 3.41,
+      "avg_rating": 4.655
+    }
+  },
+  "ARCH1703A": {
+    "dept": "ARCH",
+    "num": "1703A",
+    "code": "ARCH1703A",
+    "name": "Water and Architecture (HIAA 1101C)",
+    "prof": "See details",
+    "time": ""
+  },
+  "ARCH1765": {
+    "dept": "ARCH",
+    "num": "1765",
+    "code": "ARCH1765",
+    "name": "Pandemics, Pathogens, and Plagues in the Greek and Roman Worlds",
+    "prof": "T. Franconi",
+    "time": "TTh 10:30-11:50a",
+    "size": 16.0,
+    "num-respondents": 9.0,
+    "link": "https://thecriticalreview.org/search/ARCH/1765",
+    "same_prof": {
+      "max_hrs": 12.29,
+      "avg_hrs": 4.86,
+      "avg_rating": 4.5
+    },
+    "all_reviews": {
+      "max_hrs": 12.29,
+      "avg_hrs": 4.86,
+      "avg_rating": 4.5
+    }
+  },
+  "ARCH1771": {
+    "dept": "ARCH",
+    "num": "1771",
+    "code": "ARCH1771",
+    "name": "Archaeology of Death (ANTH 1623)",
+    "prof": "See details",
+    "time": ""
+  },
+  "ARCH1772": {
+    "dept": "ARCH",
+    "num": "1772",
+    "code": "ARCH1772",
+    "name": "The Human Skeleton (ANTH 1720)",
+    "prof": "See details",
+    "time": ""
+  },
+  "ARCH1781": {
+    "dept": "ARCH",
+    "num": "1781",
+    "code": "ARCH1781",
+    "name": "Violence: A Brief History (HIST 1700)",
+    "prof": "See details",
+    "time": ""
+  },
+  "ARCH1797": {
+    "dept": "ARCH",
+    "num": "1797",
+    "code": "ARCH1797",
+    "name": "A Migration Crisis? Displacement, Materiality, and Experience (MGRK 1210)",
+    "prof": "See details",
+    "time": ""
+  },
+  "ARCH1830": {
+    "dept": "ARCH",
+    "num": "1830",
+    "code": "ARCH1830",
+    "name": "Fake! History of the Inauthentic",
+    "prof": "F. Rojas Silva",
+    "time": "TTh 2:30-3:50p"
+  },
+  "ARCH1877": {
+    "dept": "ARCH",
+    "num": "1877",
+    "code": "ARCH1877",
+    "name": "The Pictured Text (ANTH 1830)",
+    "prof": "See details",
+    "time": ""
+  },
+  "ARCH2158": {
+    "dept": "ARCH",
+    "num": "2158",
+    "code": "ARCH2158",
+    "name": "Decolonial Matters: Thinking from the South (HMAN 2401M)",
+    "prof": "See details",
+    "time": ""
+  },
+  "ARCH2555": {
+    "dept": "ARCH",
+    "num": "2555",
+    "code": "ARCH2555",
+    "name": "Museum Interpretation Practices (PHUM 2014)",
+    "prof": "See details",
+    "time": ""
+  },
+  "ARCH2558": {
+    "dept": "ARCH",
+    "num": "2558",
+    "code": "ARCH2558",
+    "name": "Methods in Public Humanities (PHUM 2020)",
+    "prof": "See details",
+    "time": ""
+  },
+  "ARCH2670": {
+    "dept": "ARCH",
+    "num": "2670",
+    "code": "ARCH2670",
+    "name": "Between the Sahara and the Sea: North Africa in the Ancient World",
+    "prof": "C. Rice",
+    "time": "W 3-5:30p"
+  },
+  "ARCH2858": {
+    "dept": "ARCH",
+    "num": "2858",
+    "code": "ARCH2858",
+    "name": "Archaeology in the Digital Age (ANTH 2202)",
+    "prof": "See details",
+    "time": ""
+  },
+  "PHYS0030": {
+    "dept": "PHYS",
+    "num": "0030",
+    "code": "PHYS0030",
+    "name": "Basic Physics A",
+    "prof": "Li/Tang",
+    "time": "F 9-10:50a",
+    "size": 134.76190476190476,
+    "num-respondents": 58.42857142857143,
+    "link": "https://thecriticalreview.org/search/PHYS/0030",
+    "same_prof": {
+      "max_hrs": 7.080476190476194,
+      "avg_hrs": 3.5028571428571404,
+      "avg_rating": 3.62761904761905
+    },
+    "all_reviews": {
+      "max_hrs": 7.080476190476194,
+      "avg_hrs": 3.5028571428571404,
+      "avg_rating": 3.62761904761905
+    }
+  },
+  "PHYS0060": {
+    "dept": "PHYS",
+    "num": "0060",
+    "code": "PHYS0060",
+    "name": "Foundations of Electromagnetism and Modern Physics",
+    "prof": "Ling/Pelcovits",
+    "time": "TBA",
+    "size": 42.55,
+    "num-respondents": 25.7,
+    "link": "https://thecriticalreview.org/search/PHYS/0060",
+    "same_prof": {
+      "max_hrs": 7.273499999999998,
+      "avg_hrs": 3.398499999999999,
+      "avg_rating": 3.9255000000000013
+    },
+    "all_reviews": {
+      "max_hrs": 7.273499999999996,
+      "avg_hrs": 3.3984999999999994,
+      "avg_rating": 3.9255000000000004
+    }
+  },
+  "PHYS0100": {
+    "dept": "PHYS",
+    "num": "0100",
+    "code": "PHYS0100",
+    "name": "Flat Earth to Quantum Uncertainty: On the Nature and Meaning of Scientific Explanation",
+    "prof": "S. Gates",
+    "time": "TTh 2:30-3:50p",
+    "size": 34.6875,
+    "num-respondents": 18.1875,
+    "link": "https://thecriticalreview.org/search/PHYS/0100",
+    "same_prof": {
+      "max_hrs": 1.4506249999999998,
+      "avg_hrs": 0.6875,
+      "avg_rating": 3.73125
+    },
+    "all_reviews": {
+      "max_hrs": 1.4506249999999998,
+      "avg_hrs": 0.6875,
+      "avg_rating": 3.73125
+    }
+  },
+  "PHYS0160": {
+    "dept": "PHYS",
+    "num": "0160",
+    "code": "PHYS0160",
+    "name": "Introduction to Relativity, Waves and Quantum Physics",
+    "prof": "Ling/Heintz",
+    "time": "TBA",
+    "size": 48.4,
+    "num-respondents": 31.2,
+    "link": "https://thecriticalreview.org/search/PHYS/0160",
+    "same_prof": {
+      "max_hrs": 9.557999999999995,
+      "avg_hrs": 5.675,
+      "avg_rating": 3.929000000000001
+    },
+    "all_reviews": {
+      "max_hrs": 9.557999999999995,
+      "avg_hrs": 5.675,
+      "avg_rating": 3.929000000000001
+    }
+  },
+  "PHYS0220": {
+    "dept": "PHYS",
+    "num": "0220",
+    "code": "PHYS0220",
+    "name": "Astronomy",
+    "prof": "G. Tucker",
+    "time": "TTh 10:30-11:50a",
+    "size": 76.41176470588235,
+    "num-respondents": 33.94117647058823,
+    "link": "https://thecriticalreview.org/search/PHYS/0220",
+    "same_prof": {
+      "max_hrs": 2.500588235294118,
+      "avg_hrs": 1.2176470588235293,
+      "avg_rating": 3.99470588235294
+    },
+    "all_reviews": {
+      "max_hrs": 2.500588235294118,
+      "avg_hrs": 1.2176470588235293,
+      "avg_rating": 3.99470588235294
+    }
+  },
+  "PHYS0500": {
+    "dept": "PHYS",
+    "num": "0500",
+    "code": "PHYS0500",
+    "name": "Advanced Classical Mechanics",
+    "prof": "M. Dorca",
+    "time": "TTh 6:40-8p",
+    "size": 29.133333333333333,
+    "num-respondents": 19.866666666666667,
+    "link": "https://thecriticalreview.org/search/PHYS/0500",
+    "same_prof": {
+      "max_hrs": 2.6893333333333334,
+      "avg_hrs": 1.532,
+      "avg_rating": 4.083333333333333
+    },
+    "all_reviews": {
+      "max_hrs": 2.6893333333333334,
+      "avg_hrs": 1.532,
+      "avg_rating": 4.083333333333333
+    }
+  },
+  "PHYS0560": {
+    "dept": "PHYS",
+    "num": "0560",
+    "code": "PHYS0560",
+    "name": "Experiments in Modern Physics",
+    "prof": "V. Mitrovic",
+    "time": "T 2:30-5:20p",
+    "size": 21.791666666666668,
+    "num-respondents": 13.5,
+    "link": "https://thecriticalreview.org/search/PHYS/0560",
+    "same_prof": {
+      "max_hrs": 8.192083333333334,
+      "avg_hrs": 4.227916666666667,
+      "avg_rating": 3.269999999999999
+    },
+    "all_reviews": {
+      "max_hrs": 8.192083333333334,
+      "avg_hrs": 4.227916666666667,
+      "avg_rating": 3.269999999999999
+    }
+  },
+  "PHYS1100": {
+    "dept": "PHYS",
+    "num": "1100",
+    "code": "PHYS1100",
+    "name": "General Relativity",
+    "prof": "A. Volovich",
+    "time": "TTh 9-10:20a",
+    "size": 22.25,
+    "num-respondents": 14.0,
+    "link": "https://thecriticalreview.org/search/PHYS/1100",
+    "same_prof": {
+      "max_hrs": 12.0375,
+      "avg_hrs": 6.5575,
+      "avg_rating": 3.9299999999999997
+    },
+    "all_reviews": {
+      "max_hrs": 12.0375,
+      "avg_hrs": 6.5575,
+      "avg_rating": 3.9299999999999997
+    }
+  },
+  "PHYS1170": {
+    "dept": "PHYS",
+    "num": "1170",
+    "code": "PHYS1170",
+    "name": "Introduction to Nuclear and High Energy Physics",
+    "prof": "J. Fan",
+    "time": "MWF 2-2:50p",
+    "size": 6.0,
+    "num-respondents": 4.25,
+    "link": "https://thecriticalreview.org/search/PHYS/1170",
+    "same_prof": {
+      "max_hrs": 4.6675,
+      "avg_hrs": 2.7575000000000003,
+      "avg_rating": 3.19
+    },
+    "all_reviews": {
+      "max_hrs": 4.6675,
+      "avg_hrs": 2.7575000000000003,
+      "avg_rating": 3.19
+    }
+  },
+  "PHYS1250": {
+    "dept": "PHYS",
+    "num": "1250",
+    "code": "PHYS1250",
+    "name": "Stellar Structure and the Interstellar Medium",
+    "prof": "I. Dell'Antonio",
+    "time": "MWF 1-1:50p",
+    "size": 10.5,
+    "num-respondents": 6.666666666666667,
+    "link": "https://thecriticalreview.org/search/PHYS/1250",
+    "same_prof": {
+      "max_hrs": 9.465,
+      "avg_hrs": 4.88,
+      "avg_rating": 4.208333333333333
+    },
+    "all_reviews": {
+      "max_hrs": 9.465,
+      "avg_hrs": 4.88,
+      "avg_rating": 4.208333333333333
+    }
+  },
+  "PHYS1420": {
+    "dept": "PHYS",
+    "num": "1420",
+    "code": "PHYS1420",
+    "name": "Quantum Mechanics B",
+    "prof": "D. Feldman",
+    "time": "MWF 9-9:50a",
+    "size": 15.454545454545455,
+    "num-respondents": 12.454545454545455,
+    "link": "https://thecriticalreview.org/search/PHYS/1420",
+    "same_prof": {
+      "max_hrs": 2.022727272727273,
+      "avg_hrs": 1.169090909090909,
+      "avg_rating": 4.13
+    },
+    "all_reviews": {
+      "max_hrs": 2.022727272727273,
+      "avg_hrs": 1.169090909090909,
+      "avg_rating": 4.13
+    }
+  },
+  "PHYS1560": {
+    "dept": "PHYS",
+    "num": "1560",
+    "code": "PHYS1560",
+    "name": "Modern Physics Laboratory",
+    "prof": "G. Landsberg",
+    "time": "WF 2-4:50p",
+    "size": 8.142857142857142,
+    "num-respondents": 6.857142857142857,
+    "link": "https://thecriticalreview.org/search/PHYS/1560",
+    "same_prof": {
+      "max_hrs": 1.6785714285714286,
+      "avg_hrs": 0.8214285714285714,
+      "avg_rating": 4.22
+    },
+    "all_reviews": {
+      "max_hrs": 1.6785714285714286,
+      "avg_hrs": 0.8214285714285714,
+      "avg_rating": 4.22
+    }
+  },
+  "PHYS1610": {
+    "dept": "PHYS",
+    "num": "1610",
+    "code": "PHYS1610",
+    "name": "Biological Physics",
+    "prof": "D. Stein",
+    "time": "TTh 2:30-3:50p",
+    "size": 14.75,
+    "num-respondents": 12.416666666666666,
+    "link": "https://thecriticalreview.org/search/PHYS/1610",
+    "same_prof": {
+      "max_hrs": 6.425000000000001,
+      "avg_hrs": 2.9633333333333334,
+      "avg_rating": 4.095833333333332
+    },
+    "all_reviews": {
+      "max_hrs": 6.425000000000001,
+      "avg_hrs": 2.9633333333333334,
+      "avg_rating": 4.095833333333332
+    }
+  },
+  "PHYS1970J": {
+    "dept": "PHYS",
+    "num": "1970J",
+    "code": "PHYS1970J",
+    "name": "Introduction to Fluids",
+    "prof": "J. Marston",
+    "time": "TTh 1-2:20p",
+    "size": 6.0,
+    "num-respondents": 5.0,
+    "link": "https://thecriticalreview.org/search/PHYS/1970J",
+    "same_prof": {
+      "max_hrs": 15.8,
+      "avg_hrs": 9.8,
+      "avg_rating": 3.9
+    },
+    "all_reviews": {
+      "max_hrs": 15.8,
+      "avg_hrs": 9.8,
+      "avg_rating": 3.9
+    }
+  },
+  "PHYS2010": {
+    "dept": "PHYS",
+    "num": "2010",
+    "code": "PHYS2010",
+    "name": "Techniques in Experimental Physics",
+    "prof": "R. Gaitskell",
+    "time": "W 3-5:30p",
+    "size": 15.0,
+    "num-respondents": 5.0,
+    "link": "https://thecriticalreview.org/search/PHYS/2010",
+    "same_prof": {
+      "max_hrs": 15.75,
+      "avg_hrs": 9.2,
+      "avg_rating": 2.05
+    },
+    "all_reviews": {
+      "max_hrs": 15.75,
+      "avg_hrs": 9.2,
+      "avg_rating": 2.05
+    }
+  },
+  "PHYS2040": {
+    "dept": "PHYS",
+    "num": "2040",
+    "code": "PHYS2040",
+    "name": "Classical Theoretical Physics II",
+    "prof": "M. Spradlin",
+    "time": "TTh 10:30-11:50a"
+  },
+  "PHYS2060": {
+    "dept": "PHYS",
+    "num": "2060",
+    "code": "PHYS2060",
+    "name": "Quantum Mechanics",
+    "prof": "A. Jevicki",
+    "time": "MWF 10-10:50a"
+  },
+  "PHYS2100": {
+    "dept": "PHYS",
+    "num": "2100",
+    "code": "PHYS2100",
+    "name": "General Relativity",
+    "prof": "A. Volovich",
+    "time": "TTh 9-10:20a"
+  },
+  "PHYS2140": {
+    "dept": "PHYS",
+    "num": "2140",
+    "code": "PHYS2140",
+    "name": "Statistical Mechanics",
+    "prof": "T. Powers",
+    "time": "TTh 1-2:20p",
+    "size": 41.0,
+    "num-respondents": 15.0,
+    "link": "https://thecriticalreview.org/search/PHYS/2140",
+    "same_prof": {
+      "max_hrs": 11.5,
+      "avg_hrs": 5.86,
+      "avg_rating": 4.46
+    },
+    "all_reviews": {
+      "max_hrs": 11.5,
+      "avg_hrs": 5.86,
+      "avg_rating": 4.46
+    }
+  },
+  "PHYS2300": {
+    "dept": "PHYS",
+    "num": "2300",
+    "code": "PHYS2300",
+    "name": "Quantum Theory of Fields I",
+    "prof": "S. Alexander",
+    "time": "TTh 2:30-3:50p"
+  },
+  "PHYS2420": {
+    "dept": "PHYS",
+    "num": "2420",
+    "code": "PHYS2420",
+    "name": "Solid State Physics II",
+    "prof": "A. Gromov",
+    "time": "MWF 2-2:50p",
+    "size": 7.0,
+    "num-respondents": 5.0,
+    "link": "https://thecriticalreview.org/search/PHYS/2420",
+    "same_prof": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.41
+    },
+    "all_reviews": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.41
+    }
+  },
+  "PHYS2630": {
+    "dept": "PHYS",
+    "num": "2630",
+    "code": "PHYS2630",
+    "name": "Biological Physics",
+    "prof": "D. Stein",
+    "time": "TTh 2:30-3:50p"
+  },
+  "PHYS2970": {
+    "dept": "PHYS",
+    "num": "2970",
+    "code": "PHYS2970",
+    "name": "Preliminary Examination Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "PHYS2990": {
+    "dept": "PHYS",
+    "num": "2990",
+    "code": "PHYS2990",
+    "name": "Thesis Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "CHEM0400": {
+    "dept": "CHEM",
+    "num": "0400",
+    "code": "CHEM0400",
+    "name": "Biophysical and Bioinorganic Chemistry",
+    "prof": "E. Kim",
+    "time": "TTh 10:30-11:50a",
+    "size": 19.454545454545453,
+    "num-respondents": 17.09090909090909,
+    "link": "https://thecriticalreview.org/search/CHEM/0400",
+    "same_prof": {
+      "max_hrs": 3.48,
+      "avg_hrs": 1.218181818181818,
+      "avg_rating": 3.606363636363636
+    },
+    "all_reviews": {
+      "max_hrs": 3.48,
+      "avg_hrs": 1.218181818181818,
+      "avg_rating": 3.606363636363636
+    }
+  },
+  "EEPS0850": {
+    "dept": "EEPS",
+    "num": "0850",
+    "code": "EEPS0850",
+    "name": "Weather and Climate",
+    "prof": "M. Hastings",
+    "time": "TTh 10:30-11:50a",
+    "size": 15.0,
+    "num-respondents": 7.0,
+    "link": "https://thecriticalreview.org/search/EEPS/0850",
+    "same_prof": {
+      "max_hrs": 8.0,
+      "avg_hrs": 3.5,
+      "avg_rating": 4.04
+    },
+    "all_reviews": {
+      "max_hrs": 8.0,
+      "avg_hrs": 3.5,
+      "avg_rating": 4.04
+    }
+  },
+  "EEPS1330": {
+    "dept": "EEPS",
+    "num": "1330",
+    "code": "EEPS1330",
+    "name": "Global Environmental Remote Sensing",
+    "prof": "J. Mustard",
+    "time": "MWF 2-2:50p"
+  },
+  "EEPS1620": {
+    "dept": "EEPS",
+    "num": "1620",
+    "code": "EEPS1620",
+    "name": "Continuum Physics of the Solid Earth",
+    "prof": "Huber/Tsai",
+    "time": "TTh 2:30-3:50p"
+  },
+  "NAHU0200": {
+    "dept": "NAHU",
+    "num": "0200",
+    "code": "NAHU0200",
+    "name": "Beginning Nahuatl II",
+    "prof": "de la Cruz Cruz/Farias Velasco",
+    "time": "TTh 10a-12p"
+  },
+  "NAHU0400": {
+    "dept": "NAHU",
+    "num": "0400",
+    "code": "NAHU0400",
+    "name": "Nahuatl II",
+    "prof": "E. de la Cruz Cruz",
+    "time": "TTh 3-5p"
+  },
+  "LACA0200": {
+    "dept": "LACA",
+    "num": "0200",
+    "code": "LACA0200",
+    "name": "Beginning Nahuatl II (NAHU 0200)",
+    "prof": "See details",
+    "time": ""
+  },
+  "SAST0145": {
+    "dept": "SAST",
+    "num": "0145",
+    "code": "SAST0145",
+    "name": "Karma, Rebirth and Liberation: Life and Death in South Asian Religions",
+    "prof": "Moore-Gerety/Prostak",
+    "time": "TTh 1-2:20p"
+  },
+  "SAST0525": {
+    "dept": "SAST",
+    "num": "0525",
+    "code": "SAST0525",
+    "name": "The History and Practice of Yoga in India and Beyond",
+    "prof": "Moore-Gerety/Morrow",
+    "time": "T 4-6:30p"
+  },
+  "SAST0735": {
+    "dept": "SAST",
+    "num": "0735",
+    "code": "SAST0735",
+    "name": "South Asia in the World and the World in South Asia",
+    "prof": "N. Islam",
+    "time": "T 4-6:30p"
+  },
+  "PLSH0200": {
+    "dept": "PLSH",
+    "num": "0200",
+    "code": "PLSH0200",
+    "name": "Introductory Polish",
+    "prof": "P. Duda",
+    "time": "MTWF 12-12:50p",
+    "size": 7.0,
+    "num-respondents": 7.0,
+    "link": "https://thecriticalreview.org/search/PLSH/0200",
+    "same_prof": {
+      "max_hrs": 5.17,
+      "avg_hrs": 4.0,
+      "avg_rating": 4.98
+    },
+    "all_reviews": {
+      "max_hrs": 5.17,
+      "avg_hrs": 4.0,
+      "avg_rating": 4.98
+    }
+  },
+  "PLSH1050": {
+    "dept": "PLSH",
+    "num": "1050",
+    "code": "PLSH1050",
+    "name": "Polish Cinema: Uneven Histories, Uneasy Aesthetics",
+    "prof": "Duda/Oklot",
+    "time": "T 4-6:30p"
+  },
+  "HIST0150D": {
+    "dept": "HIST",
+    "num": "0150D",
+    "code": "HIST0150D",
+    "name": "Refugees: A Twentieth-Century History",
+    "prof": "V. Zamindar",
+    "time": "MWF 12-12:50p",
+    "size": 57.5,
+    "num-respondents": 25.5,
+    "link": "https://thecriticalreview.org/search/HIST/0150D",
+    "same_prof": {
+      "max_hrs": 9.265,
+      "avg_hrs": 3.1950000000000003,
+      "avg_rating": 4.11
+    },
+    "all_reviews": {
+      "max_hrs": 9.265,
+      "avg_hrs": 3.1950000000000003,
+      "avg_rating": 4.11
+    }
+  },
+  "HIST0150G": {
+    "dept": "HIST",
+    "num": "0150G",
+    "code": "HIST0150G",
+    "name": "History of Law: Great Trials",
+    "prof": "H. Case",
+    "time": "MWF 1-1:50p",
+    "size": 114.5,
+    "num-respondents": 57.0,
+    "link": "https://thecriticalreview.org/search/HIST/0150G",
+    "same_prof": {
+      "max_hrs": 8.440000000000001,
+      "avg_hrs": 4.365,
+      "avg_rating": 4.395
+    },
+    "all_reviews": {
+      "max_hrs": 8.440000000000001,
+      "avg_hrs": 4.365,
+      "avg_rating": 4.395
+    }
+  },
+  "HIST0150J": {
+    "dept": "HIST",
+    "num": "0150J",
+    "code": "HIST0150J",
+    "name": "The Ocean in Global History",
+    "prof": "G. Rocha",
+    "time": "TTh 10:30-11:50a",
+    "size": 26.0,
+    "num-respondents": 4.0,
+    "link": "https://thecriticalreview.org/search/HIST/0150J",
+    "same_prof": {
+      "max_hrs": 9.5,
+      "avg_hrs": 4.25,
+      "avg_rating": 3.41
+    },
+    "all_reviews": {
+      "max_hrs": 9.5,
+      "avg_hrs": 4.25,
+      "avg_rating": 3.41
+    }
+  },
+  "HIST0228A": {
+    "dept": "HIST",
+    "num": "0228A",
+    "code": "HIST0228A",
+    "name": "War, Tyranny, and Peace in Modern Europe",
+    "prof": "O. Bartov",
+    "time": "TTh 2:30-3:50p",
+    "size": 44.0,
+    "num-respondents": 8.0,
+    "link": "https://thecriticalreview.org/search/HIST/0228A",
+    "same_prof": {
+      "max_hrs": 11.0,
+      "avg_hrs": 6.38,
+      "avg_rating": 4.17
+    },
+    "all_reviews": {
+      "max_hrs": 11.0,
+      "avg_hrs": 6.38,
+      "avg_rating": 4.17
+    }
+  },
+  "HIST0234": {
+    "dept": "HIST",
+    "num": "0234",
+    "code": "HIST0234",
+    "name": "Modern Latin America",
+    "prof": "D. Rodriguez",
+    "time": "MWF 10-10:50a"
+  },
+  "HIST0250": {
+    "dept": "HIST",
+    "num": "0250",
+    "code": "HIST0250",
+    "name": "American Exceptionalism: The History of an Idea",
+    "prof": "M. Vorenberg",
+    "time": "MWF 9-9:50a"
+  },
+  "HIST0522G": {
+    "dept": "HIST",
+    "num": "0522G",
+    "code": "HIST0522G",
+    "name": "An Empire and Republic: The Dutch Golden Age",
+    "prof": "H. Cook",
+    "time": "Th 4-6:30p",
+    "size": 11.5,
+    "num-respondents": 11.5,
+    "link": "https://thecriticalreview.org/search/HIST/0522G",
+    "same_prof": {
+      "max_hrs": 8.73,
+      "avg_hrs": 3.8150000000000004,
+      "avg_rating": 4.359999999999999
+    },
+    "all_reviews": {
+      "max_hrs": 8.73,
+      "avg_hrs": 3.8150000000000004,
+      "avg_rating": 4.359999999999999
+    }
+  },
+  "HIST0557F": {
+    "dept": "HIST",
+    "num": "0557F",
+    "code": "HIST0557F",
+    "name": "The US in the World",
+    "prof": "S. Simeonov",
+    "time": "T 4-6:30p"
+  },
+  "HIST0558C": {
+    "dept": "HIST",
+    "num": "0558C",
+    "code": "HIST0558C",
+    "name": "LatinX Social Movement History",
+    "prof": "M. Ocegueda",
+    "time": "M 3-5:30p"
+  },
+  "HIST0574A": {
+    "dept": "HIST",
+    "num": "0574A",
+    "code": "HIST0574A",
+    "name": "The Silk Road, Past and Present",
+    "prof": "C. Brokaw",
+    "time": "W 3-5:30p"
+  },
+  "HIST0623C": {
+    "dept": "HIST",
+    "num": "0623C",
+    "code": "HIST0623C",
+    "name": "Americans in the USSR",
+    "prof": "E. Pollock",
+    "time": "M 3-5:30p"
+  },
+  "HIST0637D": {
+    "dept": "HIST",
+    "num": "0637D",
+    "code": "HIST0637D",
+    "name": "From Saint Domingue to Haiti: The Haitian Revolution and US Reverberations.",
+    "prof": "S. Cummings",
+    "time": "T 4-6:30p"
+  },
+  "HIST0650B": {
+    "dept": "HIST",
+    "num": "0650B",
+    "code": "HIST0650B",
+    "name": "Well-Behaved Women Seldom Make History: Women and Power During the American Revolution",
+    "prof": "S. Pearlman Shapiro",
+    "time": "T 4-6:30p"
+  },
+  "HIST0654A": {
+    "dept": "HIST",
+    "num": "0654A",
+    "code": "HIST0654A",
+    "name": "Welfare States and a History of Modern Life",
+    "prof": "R. Self",
+    "time": "M 3-5:30p",
+    "size": 15.5,
+    "num-respondents": 11.25,
+    "link": "https://thecriticalreview.org/search/HIST/0654A",
+    "same_prof": {
+      "max_hrs": 10.75,
+      "avg_hrs": 5.5725,
+      "avg_rating": 4.4475
+    },
+    "all_reviews": {
+      "max_hrs": 10.75,
+      "avg_hrs": 5.5725,
+      "avg_rating": 4.4475
+    }
+  },
+  "HIST0676A": {
+    "dept": "HIST",
+    "num": "0676A",
+    "code": "HIST0676A",
+    "name": "History of the Laboratory",
+    "prof": "G. Elliott",
+    "time": "T 4-6:30p"
+  },
+  "HIST0930S": {
+    "dept": "HIST",
+    "num": "0930S",
+    "code": "HIST0930S",
+    "name": "Beyond Orientalism: Understanding 'East Asia' (EAST 0010)",
+    "prof": "See details",
+    "time": ""
+  },
+  "HIST0980N": {
+    "dept": "HIST",
+    "num": "0980N",
+    "code": "HIST0980N",
+    "name": "Islam in Fiction: History, Romance, Satire (RELS 0095B)",
+    "prof": "See details",
+    "time": ""
+  },
+  "HIST1112": {
+    "dept": "HIST",
+    "num": "1112",
+    "code": "HIST1112",
+    "name": "China's Early Modern Empires",
+    "prof": "C. Brokaw",
+    "time": "TTh 2:30-3:50p"
+  },
+  "HIST1122": {
+    "dept": "HIST",
+    "num": "1122",
+    "code": "HIST1122",
+    "name": "China Pop: The Social History of Chinese Popular Culture",
+    "prof": "R. Nedostup",
+    "time": "TTh 1-2:20p"
+  },
+  "HIST1262F": {
+    "dept": "HIST",
+    "num": "1262F",
+    "code": "HIST1262F",
+    "name": "Women, Gender, and Feminism in Early Modern Italy",
+    "prof": "C. Castiglione",
+    "time": "TTh 2:30-3:50p"
+  },
+  "HIST1266D": {
+    "dept": "HIST",
+    "num": "1266D",
+    "code": "HIST1266D",
+    "name": "British History, 1660-1800",
+    "prof": "T. Harris",
+    "time": "MWF 2-2:50p",
+    "size": 16.8,
+    "num-respondents": 11.0,
+    "link": "https://thecriticalreview.org/search/HIST/1266D",
+    "same_prof": {
+      "max_hrs": 12.918000000000001,
+      "avg_hrs": 5.779999999999999,
+      "avg_rating": 4.376
+    },
+    "all_reviews": {
+      "max_hrs": 12.918000000000001,
+      "avg_hrs": 5.779999999999999,
+      "avg_rating": 4.376
+    }
+  },
+  "HIST1502": {
+    "dept": "HIST",
+    "num": "1502",
+    "code": "HIST1502",
+    "name": "The Early Republic United States",
+    "prof": "Rockman/Gould",
+    "time": "TTh 10:30-11:50a"
+  },
+  "HIST1505": {
+    "dept": "HIST",
+    "num": "1505",
+    "code": "HIST1505",
+    "name": "Making America Modern",
+    "prof": "L. Rieppel",
+    "time": "MWF 1-1:50p"
+  },
+  "HIST1531": {
+    "dept": "HIST",
+    "num": "1531",
+    "code": "HIST1531",
+    "name": "Movement Politics in Modern America",
+    "prof": "R. Self",
+    "time": "TTh 1-2:20p"
+  },
+  "HIST1700": {
+    "dept": "HIST",
+    "num": "1700",
+    "code": "HIST1700",
+    "name": "Violence: A Brief History",
+    "prof": "J. Conant",
+    "time": "MWF 11-11:50a",
+    "size": 10.0,
+    "num-respondents": 6.0,
+    "link": "https://thecriticalreview.org/search/HIST/1700",
+    "same_prof": {
+      "max_hrs": 6.2,
+      "avg_hrs": 2.33,
+      "avg_rating": 4.21
+    },
+    "all_reviews": {
+      "max_hrs": 6.2,
+      "avg_hrs": 2.33,
+      "avg_rating": 4.21
+    }
+  },
+  "HIST1800": {
+    "dept": "HIST",
+    "num": "1800",
+    "code": "HIST1800",
+    "name": "Religion and Power in North America to 1865",
+    "prof": "C. Grasso",
+    "time": "TTh 1-2:20p",
+    "size": 14.5,
+    "num-respondents": 10.25,
+    "link": "https://thecriticalreview.org/search/HIST/1800",
+    "same_prof": {
+      "max_hrs": 6.375,
+      "avg_hrs": 3.4,
+      "avg_rating": 4.550000000000001
+    },
+    "all_reviews": {
+      "max_hrs": 6.375,
+      "avg_hrs": 3.4,
+      "avg_rating": 4.550000000000001
+    }
+  },
+  "HIST1825F": {
+    "dept": "HIST",
+    "num": "1825F",
+    "code": "HIST1825F",
+    "name": "Nature, Knowledge, Power in Renaissance Europe",
+    "prof": "T. Nummedal",
+    "time": "MWF 10-10:50a",
+    "size": 20.666666666666668,
+    "num-respondents": 11.666666666666666,
+    "link": "https://thecriticalreview.org/search/HIST/1825F",
+    "same_prof": {
+      "max_hrs": 10.146666666666667,
+      "avg_hrs": 4.276666666666666,
+      "avg_rating": 4.486666666666667
+    },
+    "all_reviews": {
+      "max_hrs": 10.146666666666667,
+      "avg_hrs": 4.276666666666666,
+      "avg_rating": 4.486666666666667
+    }
+  },
+  "HIST1830M": {
+    "dept": "HIST",
+    "num": "1830M",
+    "code": "HIST1830M",
+    "name": "From Medieval Bedlam to Prozac Nation: Intimate Histories of Psychiatry and Self",
+    "prof": "J. Lambe",
+    "time": "MWF 11-11:50a",
+    "size": 55.0,
+    "num-respondents": 43.0,
+    "link": "https://thecriticalreview.org/search/HIST/1830M",
+    "same_prof": {
+      "max_hrs": 8.665,
+      "avg_hrs": 3.79,
+      "avg_rating": 4.375
+    },
+    "all_reviews": {
+      "max_hrs": 8.665,
+      "avg_hrs": 3.79,
+      "avg_rating": 4.375
+    }
+  },
+  "HIST1931M": {
+    "dept": "HIST",
+    "num": "1931M",
+    "code": "HIST1931M",
+    "name": "The Persian Empire and Achaemenid Culture (CLAS 1230)",
+    "prof": "See details",
+    "time": ""
+  },
+  "HIST1948": {
+    "dept": "HIST",
+    "num": "1948",
+    "code": "HIST1948",
+    "name": "Global Palestine",
+    "prof": "A. Winder",
+    "time": "W 3-5:30p"
+  },
+  "HIST1956A": {
+    "dept": "HIST",
+    "num": "1956A",
+    "code": "HIST1956A",
+    "name": "Thinking Historically: A History of History Writing",
+    "prof": "K. Sacks",
+    "time": "Th 4-6:30p",
+    "size": 9.0,
+    "num-respondents": 5.5,
+    "link": "https://thecriticalreview.org/search/HIST/1956A",
+    "same_prof": {
+      "max_hrs": 11.835,
+      "avg_hrs": 7.665,
+      "avg_rating": 4.449999999999999
+    },
+    "all_reviews": {
+      "max_hrs": 11.835,
+      "avg_hrs": 7.665,
+      "avg_rating": 4.449999999999999
+    }
+  },
+  "HIST1960J": {
+    "dept": "HIST",
+    "num": "1960J",
+    "code": "HIST1960J",
+    "name": "More-Than-Human Histories of Africa",
+    "prof": "N. Jacobs",
+    "time": "M 3-5:30p"
+  },
+  "HIST1961A": {
+    "dept": "HIST",
+    "num": "1961A",
+    "code": "HIST1961A",
+    "name": "Memory and Justice in East Asia",
+    "prof": "R. Nedostup",
+    "time": "M 3-5:30p"
+  },
+  "HIST1964D": {
+    "dept": "HIST",
+    "num": "1964D",
+    "code": "HIST1964D",
+    "name": "Women in Early Modern England",
+    "prof": "T. Harris",
+    "time": "M 3-5:30p",
+    "size": 3.0,
+    "num-respondents": 3.0,
+    "link": "https://thecriticalreview.org/search/HIST/1964D",
+    "same_prof": {
+      "max_hrs": 12.83,
+      "avg_hrs": 6.665,
+      "avg_rating": 4.6899999999999995
+    },
+    "all_reviews": {
+      "max_hrs": 12.83,
+      "avg_hrs": 6.665,
+      "avg_rating": 4.6899999999999995
+    }
+  },
+  "HIST1964H": {
+    "dept": "HIST",
+    "num": "1964H",
+    "code": "HIST1964H",
+    "name": "Race and Empire in 18th Century France",
+    "prof": "J. Revill",
+    "time": "W 3-5:30p"
+  },
+  "HIST1970G": {
+    "dept": "HIST",
+    "num": "1970G",
+    "code": "HIST1970G",
+    "name": "Captive Voices: Atlantic Slavery in the Digital Age",
+    "prof": "L. Fisher",
+    "time": "W 3-5:30p",
+    "size": 10.0,
+    "num-respondents": 6.0,
+    "link": "https://thecriticalreview.org/search/HIST/1970G",
+    "same_prof": {
+      "max_hrs": 7.0,
+      "avg_hrs": 4.17,
+      "avg_rating": 4.3
+    },
+    "all_reviews": {
+      "max_hrs": 7.0,
+      "avg_hrs": 4.17,
+      "avg_rating": 4.3
+    }
+  },
+  "HIST1972J": {
+    "dept": "HIST",
+    "num": "1972J",
+    "code": "HIST1972J",
+    "name": "Racial Capitalism and U.S. Liberal Empire",
+    "prof": "N. Shibusawa",
+    "time": "Th 4-6:30p"
+  },
+  "HIST1977I": {
+    "dept": "HIST",
+    "num": "1977I",
+    "code": "HIST1977I",
+    "name": "Gender, Race, and Medicine in the Americas",
+    "prof": "D. Rodriguez",
+    "time": "W 3-5:30p",
+    "size": 26.0,
+    "num-respondents": 25.0,
+    "link": "https://thecriticalreview.org/search/HIST/1977I",
+    "same_prof": {
+      "max_hrs": 10.33,
+      "avg_hrs": 4.84,
+      "avg_rating": 4.39
+    },
+    "all_reviews": {
+      "max_hrs": 10.33,
+      "avg_hrs": 4.84,
+      "avg_rating": 4.39
+    }
+  },
+  "HIST1978E": {
+    "dept": "HIST",
+    "num": "1978E",
+    "code": "HIST1978E",
+    "name": "Nationalism and the Nation in Modern Europe",
+    "prof": "J. Wang",
+    "time": "F 3-5:30p"
+  },
+  "HIST1981M": {
+    "dept": "HIST",
+    "num": "1981M",
+    "code": "HIST1981M",
+    "name": "A Classical Islamic Education (COLT 1310E)",
+    "prof": "See details",
+    "time": ""
+  },
+  "HIST1981N": {
+    "dept": "HIST",
+    "num": "1981N",
+    "code": "HIST1981N",
+    "name": "Death in the West (CLAS 1420)",
+    "prof": "See details",
+    "time": ""
+  },
+  "HIST1992": {
+    "dept": "HIST",
+    "num": "1992",
+    "code": "HIST1992",
+    "name": "History Honors Workshop for Prospective Thesis Writers",
+    "prof": "J. Johnson",
+    "time": "W 3-5:30p"
+  },
+  "HIST1993": {
+    "dept": "HIST",
+    "num": "1993",
+    "code": "HIST1993",
+    "name": "History Honors Workshop for Thesis Writers, Part I",
+    "prof": "J. Johnson",
+    "time": "M 3-5:30p"
+  },
+  "HIST1994": {
+    "dept": "HIST",
+    "num": "1994",
+    "code": "HIST1994",
+    "name": "History Honors Workshop for Thesis Writers, Part II",
+    "prof": "Johnson/Case",
+    "time": "M 3-5:30p"
+  },
+  "HIST2890": {
+    "dept": "HIST",
+    "num": "2890",
+    "code": "HIST2890",
+    "name": "Preliminary Examination Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "HIST2950": {
+    "dept": "HIST",
+    "num": "2950",
+    "code": "HIST2950",
+    "name": "Professionalization Seminar",
+    "prof": "F. Ahmed",
+    "time": "Th 9:30a-12p"
+  },
+  "HIST2960": {
+    "dept": "HIST",
+    "num": "2960",
+    "code": "HIST2960",
+    "name": "Prospectus Development Seminar",
+    "prof": "L. Fisher",
+    "time": "Th 9-11:30a"
+  },
+  "HIST2970E": {
+    "dept": "HIST",
+    "num": "2970E",
+    "code": "HIST2970E",
+    "name": "Early Modern Continental Europe - Reading",
+    "prof": "H. Cook",
+    "time": "M 3-5:30p"
+  },
+  "HIST2971Y": {
+    "dept": "HIST",
+    "num": "2971Y",
+    "code": "HIST2971Y",
+    "name": "Graduate Readings in Atlantic World",
+    "prof": "G. Rocha",
+    "time": "Th 6:30-9p"
+  },
+  "HIST2981F": {
+    "dept": "HIST",
+    "num": "2981F",
+    "code": "HIST2981F",
+    "name": "The Politics of Knowledge",
+    "prof": "L. Rieppel",
+    "time": "Th 4-6:30p"
+  },
+  "HIST2981U": {
+    "dept": "HIST",
+    "num": "2981U",
+    "code": "HIST2981U",
+    "name": "U.S. Empire and Capitalist Modernity",
+    "prof": "N. Shibusawa",
+    "time": "F 3-5:30p"
+  },
+  "HIST2990": {
+    "dept": "HIST",
+    "num": "2990",
+    "code": "HIST2990",
+    "name": "Thesis Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "EMOW0522G": {
+    "dept": "EMOW",
+    "num": "0522G",
+    "code": "EMOW0522G",
+    "name": "An Empire and Republic: The Dutch Golden Age (HIST 0522G)",
+    "prof": "See details",
+    "time": ""
+  },
+  "EMOW1266D": {
+    "dept": "EMOW",
+    "num": "1266D",
+    "code": "EMOW1266D",
+    "name": "British History, 1660-1800 (HIST 1266D)",
+    "prof": "See details",
+    "time": ""
+  },
+  "EMOW1825F": {
+    "dept": "EMOW",
+    "num": "1825F",
+    "code": "EMOW1825F",
+    "name": "Nature, Knowledge, and Power in Renaissance Europe (HIST 1825F)",
+    "prof": "See details",
+    "time": ""
+  },
+  "EMOW2970E": {
+    "dept": "EMOW",
+    "num": "2970E",
+    "code": "EMOW2970E",
+    "name": "Early Modern Continental Europe - Reading (HIST 2970E)",
+    "prof": "See details",
+    "time": ""
+  },
+  "LACA0234": {
+    "dept": "LACA",
+    "num": "0234",
+    "code": "LACA0234",
+    "name": "Modern Latin America (HIST 0234)",
+    "prof": "See details",
+    "time": ""
+  },
+  "LACA1977I": {
+    "dept": "LACA",
+    "num": "1977I",
+    "code": "LACA1977I",
+    "name": "Gender, Race, and Medicine in the Americas (HIST 1977I)",
+    "prof": "See details",
+    "time": ""
+  },
+  "MDVL1213": {
+    "dept": "MDVL",
+    "num": "1213",
+    "code": "MDVL1213",
+    "name": "Memories of the Medieval in the Age of White Supremacy(HIST 1213)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS0385A": {
+    "dept": "STS",
+    "num": "0385A",
+    "code": "STS0385A",
+    "name": "History of the Laboratory (HIST 0676A)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS1390J": {
+    "dept": "STS",
+    "num": "1390J",
+    "code": "STS1390J",
+    "name": "From Medieval Bedlam to Prozac Nation: Intimate Histories of Psychiatry and Self (HIST 1830M)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS1390K": {
+    "dept": "STS",
+    "num": "1390K",
+    "code": "STS1390K",
+    "name": "Nature, Knowledge, Power in Renaissance Europe (HIST 1825F)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS1390T": {
+    "dept": "STS",
+    "num": "1390T",
+    "code": "STS1390T",
+    "name": "Gender, Race, and Medicine in the Americas (HIST 1977I)",
+    "prof": "See details",
+    "time": ""
+  },
+  "AFRIXLIST": {
+    "dept": "AFRI",
+    "num": "XLIST",
+    "code": "AFRIXLIST",
+    "name": "Courses of Interest to Concentrators in Africana Studies",
+    "prof": "See details",
+    "time": ""
+  },
+  "EAST1936": {
+    "dept": "EAST",
+    "num": "1936",
+    "code": "EAST1936",
+    "name": "Memory and Justice in East Asia",
+    "prof": "R. Nedostup",
+    "time": "M 3-5:30p"
+  },
+  "AMST0170E": {
+    "dept": "AMST",
+    "num": "0170E",
+    "code": "AMST0170E",
+    "name": "Black to the Future: Race as Science Fiction",
+    "prof": "K. Murphy",
+    "time": "TTh 2:30-3:50p"
+  },
+  "AMST0190L": {
+    "dept": "AMST",
+    "num": "0190L",
+    "code": "AMST0190L",
+    "name": "Cry for Justice: Asian American Literature of Social Activism",
+    "prof": "Y. Feng",
+    "time": "MW 8:30-9:50a"
+  },
+  "AMST0190N": {
+    "dept": "AMST",
+    "num": "0190N",
+    "code": "AMST0190N",
+    "name": "Health as Morality in American Life",
+    "prof": "N. Lake",
+    "time": "TTh 2:30-3:50p"
+  },
+  "AMST0192L": {
+    "dept": "AMST",
+    "num": "0192L",
+    "code": "AMST0192L",
+    "name": "Making Metropolitan \"Man\u201d: The Politics of Human Being in Modern Urban Space",
+    "prof": "M. Goldman",
+    "time": "TTh 1-2:20p"
+  },
+  "AMST0192M": {
+    "dept": "AMST",
+    "num": "0192M",
+    "code": "AMST0192M",
+    "name": "Martinique and the Black Radical Imagination",
+    "prof": "B. Brown",
+    "time": "TTh 6:40-8p"
+  },
+  "AMST1611O": {
+    "dept": "AMST",
+    "num": "1611O",
+    "code": "AMST1611O",
+    "name": "Race and Early American Film: The Birth of an Industry",
+    "prof": "K. Weygold",
+    "time": "F 12-12:50p"
+  },
+  "AMST1700Q": {
+    "dept": "AMST",
+    "num": "1700Q",
+    "code": "AMST1700Q",
+    "name": "Latinx Digital Humanities",
+    "prof": "K. Escudero",
+    "time": "TTh 10:30-11:50a"
+  },
+  "AMST1800": {
+    "dept": "AMST",
+    "num": "1800",
+    "code": "AMST1800",
+    "name": "Honors Seminar",
+    "prof": "D. Weinstein",
+    "time": "M 3-5:30p"
+  },
+  "AMST1900P": {
+    "dept": "AMST",
+    "num": "1900P",
+    "code": "AMST1900P",
+    "name": "Essaying Culture",
+    "prof": "R. Rodriguez",
+    "time": "TTh 1-2:20p",
+    "size": 19.0,
+    "num-respondents": 16.0,
+    "link": "https://thecriticalreview.org/search/AMST/1900P",
+    "same_prof": {
+      "max_hrs": 8.8,
+      "avg_hrs": 4.13,
+      "avg_rating": 4.66
+    },
+    "all_reviews": {
+      "max_hrs": 8.8,
+      "avg_hrs": 4.13,
+      "avg_rating": 4.66
+    }
+  },
+  "AMST1902K": {
+    "dept": "AMST",
+    "num": "1902K",
+    "code": "AMST1902K",
+    "name": "Collections and Colonialism",
+    "prof": "S. Abramowitz",
+    "time": "T 4-6:30p"
+  },
+  "AMST1903A": {
+    "dept": "AMST",
+    "num": "1903A",
+    "code": "AMST1903A",
+    "name": "Missing: Museums, Memorials, & Gentrification",
+    "prof": "M. Goddard",
+    "time": "TTh 9-10:20a"
+  },
+  "AMST1905Z": {
+    "dept": "AMST",
+    "num": "1905Z",
+    "code": "AMST1905Z",
+    "name": "Eyes on the Prize: Literary Fiction as Cultural Capital",
+    "prof": "B. Haviland",
+    "time": "W 3-5:30p"
+  },
+  "AMST1907B": {
+    "dept": "AMST",
+    "num": "1907B",
+    "code": "AMST1907B",
+    "name": "Indigenous Peoples and Places: How Lines Are Drawn",
+    "prof": "R. Caldwell",
+    "time": "W 3-5:30p"
+  },
+  "AMST2220Y": {
+    "dept": "AMST",
+    "num": "2220Y",
+    "code": "AMST2220Y",
+    "name": "Aesthetics of Relation: Minoritarian Gestures in the Visual Realm",
+    "prof": "L. Alvarado",
+    "time": "W 9-11:30a"
+  },
+  "AMST2221": {
+    "dept": "AMST",
+    "num": "2221",
+    "code": "AMST2221",
+    "name": "Museum Exhibitions",
+    "prof": "S. Lubar",
+    "time": "TTh 10:30-11:50a"
+  },
+  "AMST2525": {
+    "dept": "AMST",
+    "num": "2525",
+    "code": "AMST2525",
+    "name": "American Studies MA Capstone",
+    "prof": "K. Escudero",
+    "time": "Th 4-6:30p"
+  },
+  "AMST2990": {
+    "dept": "AMST",
+    "num": "2990",
+    "code": "AMST2990",
+    "name": "Thesis Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "LACA1700Q": {
+    "dept": "LACA",
+    "num": "1700Q",
+    "code": "LACA1700Q",
+    "name": "Latinx Digital Humanities (AMST 1700Q)",
+    "prof": "See details",
+    "time": ""
+  },
+  "PHUM1912": {
+    "dept": "PHUM",
+    "num": "1912",
+    "code": "PHUM1912",
+    "name": "Collections & Colonialism (AMST 1902K)",
+    "prof": "See details",
+    "time": ""
+  },
+  "PHUM2310": {
+    "dept": "PHUM",
+    "num": "2310",
+    "code": "PHUM2310",
+    "name": "Museum Exhibitions (AMST 2221)",
+    "prof": "See details",
+    "time": ""
+  },
+  "PHIL0001": {
+    "dept": "PHIL",
+    "num": "0001",
+    "code": "PHIL0001",
+    "name": "Kabbalah: An Introduction to Jewish Mysticism (RELS 0340)",
+    "prof": "See details",
+    "time": ""
+  },
+  "PHIL0001A": {
+    "dept": "PHIL",
+    "num": "0001A",
+    "code": "PHIL0001A",
+    "name": "Death: Religion, Philosophy, Law (RELS 0800)",
+    "prof": "See details",
+    "time": ""
+  },
+  "PHIL0010": {
+    "dept": "PHIL",
+    "num": "0010",
+    "code": "PHIL0010",
+    "name": "The Place of Persons",
+    "prof": "D. Christensen",
+    "time": "MWF 11-11:50a",
+    "size": 68.83333333333333,
+    "num-respondents": 42.416666666666664,
+    "link": "https://thecriticalreview.org/search/PHIL/0010",
+    "same_prof": {
+      "max_hrs": 6.548333333333333,
+      "avg_hrs": 2.5158333333333336,
+      "avg_rating": 4.201666666666667
+    },
+    "all_reviews": {
+      "max_hrs": 6.548333333333333,
+      "avg_hrs": 2.5158333333333336,
+      "avg_rating": 4.201666666666667
+    }
+  },
+  "PHIL0012": {
+    "dept": "PHIL",
+    "num": "0012",
+    "code": "PHIL0012",
+    "name": "Knowledge and Reality",
+    "prof": "A. Tsvetkov",
+    "time": "MWF 10-10:50a"
+  },
+  "PHIL0013": {
+    "dept": "PHIL",
+    "num": "0013",
+    "code": "PHIL0013",
+    "name": "Paradoxes",
+    "prof": "M. Christman",
+    "time": "MWF 12-12:50p"
+  },
+  "PHIL0016": {
+    "dept": "PHIL",
+    "num": "0016",
+    "code": "PHIL0016",
+    "name": "Language, Thought, and Reality: Themes in the Analytic Tradition",
+    "prof": "S. McGrath",
+    "time": "MWF 1-1:50p"
+  },
+  "PHIL0040": {
+    "dept": "PHIL",
+    "num": "0040",
+    "code": "PHIL0040",
+    "name": "Critical Reasoning",
+    "prof": "E. Guindon",
+    "time": "M 3-5:30p",
+    "size": 31.25,
+    "num-respondents": 20.0,
+    "link": "https://thecriticalreview.org/search/PHIL/0040",
+    "same_prof": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.025
+    },
+    "all_reviews": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.025
+    }
+  },
+  "PHIL0210": {
+    "dept": "PHIL",
+    "num": "0210",
+    "code": "PHIL0210",
+    "name": "Early Modern Philosophy",
+    "prof": "P. Guyer",
+    "time": "MWF 12-12:50p",
+    "size": 19.75,
+    "num-respondents": 12.5,
+    "link": "https://thecriticalreview.org/search/PHIL/0210",
+    "same_prof": {
+      "max_hrs": 4.09,
+      "avg_hrs": 1.5975000000000001,
+      "avg_rating": 4.005
+    },
+    "all_reviews": {
+      "max_hrs": 4.09,
+      "avg_hrs": 1.5975000000000001,
+      "avg_rating": 4.005
+    }
+  },
+  "PHIL0402": {
+    "dept": "PHIL",
+    "num": "0402",
+    "code": "PHIL0402",
+    "name": "Moral Pluralism",
+    "prof": "J. Netter",
+    "time": "TTh 9-10:20a"
+  },
+  "PHIL0993": {
+    "dept": "PHIL",
+    "num": "0993",
+    "code": "PHIL0993",
+    "name": "Political Philosophy: Historical Issues",
+    "prof": "P. Guyer",
+    "time": "W 3-5:30p"
+  },
+  "PHIL0994": {
+    "dept": "PHIL",
+    "num": "0994",
+    "code": "PHIL0994",
+    "name": "Recent Developments in the Philosophy of Language",
+    "prof": "C. Hill",
+    "time": "TTh 2:30-3:50p"
+  },
+  "PHIL0995": {
+    "dept": "PHIL",
+    "num": "0995",
+    "code": "PHIL0995",
+    "name": "Free Will and Moral Responsibility",
+    "prof": "N. Arpaly",
+    "time": "Th 4-6:30p"
+  },
+  "PHIL1110A": {
+    "dept": "PHIL",
+    "num": "1110A",
+    "code": "PHIL1110A",
+    "name": "Plato",
+    "prof": "J. Broackes",
+    "time": "TTh 2:30-3:50p"
+  },
+  "PHIL1120": {
+    "dept": "PHIL",
+    "num": "1120",
+    "code": "PHIL1120",
+    "name": "Aristotle",
+    "prof": "M. Gill",
+    "time": "TTh 10:30-11:50a"
+  },
+  "PHIL1155": {
+    "dept": "PHIL",
+    "num": "1155",
+    "code": "PHIL1155",
+    "name": "Hellenistic Ethics",
+    "prof": "E. Kress",
+    "time": "TTh 1-2:20p"
+  },
+  "PHIL1202": {
+    "dept": "PHIL",
+    "num": "1202",
+    "code": "PHIL1202",
+    "name": "Locke, Leibniz, Anne Conway",
+    "prof": "J. Broackes",
+    "time": "TTh 10:30-11:50a"
+  },
+  "PHIL1284": {
+    "dept": "PHIL",
+    "num": "1284",
+    "code": "PHIL1284",
+    "name": "History of Moral Philosophy",
+    "prof": "C. Larmore",
+    "time": "W 3-5:30p"
+  },
+  "PHIL1360": {
+    "dept": "PHIL",
+    "num": "1360",
+    "code": "PHIL1360",
+    "name": "Twentieth-Century Analytic Philosophy",
+    "prof": "J. Schechter",
+    "time": "MWF 2-2:50p"
+  },
+  "PHIL1440": {
+    "dept": "PHIL",
+    "num": "1440",
+    "code": "PHIL1440",
+    "name": "The Nature of Morality",
+    "prof": "J. Dreier",
+    "time": "TTh 10:30-11:50a"
+  },
+  "PHIL1501": {
+    "dept": "PHIL",
+    "num": "1501",
+    "code": "PHIL1501",
+    "name": "Well-Being",
+    "prof": "B. Reginster",
+    "time": "TTh 2:30-3:50p"
+  },
+  "PHIL1502": {
+    "dept": "PHIL",
+    "num": "1502",
+    "code": "PHIL1502",
+    "name": "Philosophy of Race and Gender",
+    "prof": "A. Bjurman Pautz",
+    "time": "TTh 1-2:20p"
+  },
+  "PHIL1560": {
+    "dept": "PHIL",
+    "num": "1560",
+    "code": "PHIL1560",
+    "name": "Philosophy of Law",
+    "prof": "D. Estlund",
+    "time": "MWF 12-12:50p"
+  },
+  "PHIL1561": {
+    "dept": "PHIL",
+    "num": "1561",
+    "code": "PHIL1561",
+    "name": "Ethics, Economics, and the Future",
+    "prof": "R. Doody",
+    "time": "TTh 1-2:20p"
+  },
+  "PHIL1576": {
+    "dept": "PHIL",
+    "num": "1576",
+    "code": "PHIL1576",
+    "name": "Pornography",
+    "prof": "R. Heck",
+    "time": "MWF 1-1:50p"
+  },
+  "PHIL1610": {
+    "dept": "PHIL",
+    "num": "1610",
+    "code": "PHIL1610",
+    "name": "Decision Theory: Foundations and Applications",
+    "prof": "J. Dreier",
+    "time": "TTh 9-10:20a",
+    "size": 13.5,
+    "num-respondents": 10.0,
+    "link": "https://thecriticalreview.org/search/PHIL/1610",
+    "same_prof": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.0
+    },
+    "all_reviews": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.0
+    }
+  },
+  "PHIL1635": {
+    "dept": "PHIL",
+    "num": "1635",
+    "code": "PHIL1635",
+    "name": "Advanced Deductive Logic",
+    "prof": "E. Guindon",
+    "time": "MWF 11-11:50a"
+  },
+  "PHIL1775": {
+    "dept": "PHIL",
+    "num": "1775",
+    "code": "PHIL1775",
+    "name": "Philosophy of Quantum Mechanics",
+    "prof": "E. Miller",
+    "time": "M 3-5:30p"
+  },
+  "PHIL1785": {
+    "dept": "PHIL",
+    "num": "1785",
+    "code": "PHIL1785",
+    "name": "Philosophy of the Environment: Environmental Utopias",
+    "prof": "D. Frank",
+    "time": "MWF 9-9:50a",
+    "size": 15.0,
+    "num-respondents": 6.0,
+    "link": "https://thecriticalreview.org/search/PHIL/1785",
+    "same_prof": {
+      "max_hrs": 8.83,
+      "avg_hrs": 2.33,
+      "avg_rating": 4.0
+    },
+    "all_reviews": {
+      "max_hrs": 8.83,
+      "avg_hrs": 2.33,
+      "avg_rating": 4.0
+    }
+  },
+  "PHIL1791": {
+    "dept": "PHIL",
+    "num": "1791",
+    "code": "PHIL1791",
+    "name": "Philosophy of Mind & Epistemology",
+    "prof": "D. Johnson",
+    "time": "Th 4-6:30p"
+  },
+  "PHIL1890I": {
+    "dept": "PHIL",
+    "num": "1890I",
+    "code": "PHIL1890I",
+    "name": "Wittgenstein",
+    "prof": "C. Larmore",
+    "time": "M 3-5:30p"
+  },
+  "PHIL2010": {
+    "dept": "PHIL",
+    "num": "2010",
+    "code": "PHIL2010",
+    "name": "Third Year Workshop",
+    "prof": "N. Arpaly",
+    "time": "MWF 8-8:50a"
+  },
+  "PHIL2020": {
+    "dept": "PHIL",
+    "num": "2020",
+    "code": "PHIL2020",
+    "name": "Dissertation Workshop",
+    "prof": "R. Doody",
+    "time": "MW 8:30-9:50a"
+  },
+  "PHIL2701": {
+    "dept": "PHIL",
+    "num": "2701",
+    "code": "PHIL2701",
+    "name": "Rational Belief and Self-Awareness",
+    "prof": "D. Christensen",
+    "time": "W 3-5:30p"
+  },
+  "PHIL2970": {
+    "dept": "PHIL",
+    "num": "2970",
+    "code": "PHIL2970",
+    "name": "Preliminary Examination Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "PHIL2990": {
+    "dept": "PHIL",
+    "num": "2990",
+    "code": "PHIL2990",
+    "name": "Thesis Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "HMAN1975M": {
+    "dept": "HMAN",
+    "num": "1975M",
+    "code": "HMAN1975M",
+    "name": "Philosophy of the Environment (PHIL 1785)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS1840": {
+    "dept": "STS",
+    "num": "1840",
+    "code": "STS1840",
+    "name": "Philosophy of Quantum Mechanics (PHIL 1775)",
+    "prof": "See details",
+    "time": ""
+  },
+  "CLPS0100": {
+    "dept": "CLPS",
+    "num": "0100",
+    "code": "CLPS0100",
+    "name": "Learning and Conditioning",
+    "prof": "R. Colwill",
+    "time": "W 6-6:50p"
+  },
+  "CLPS0220": {
+    "dept": "CLPS",
+    "num": "0220",
+    "code": "CLPS0220",
+    "name": "Making Decisions",
+    "prof": "S. Sloman",
+    "time": "TTh 10:30-11:50a"
+  },
+  "CLPS0450": {
+    "dept": "CLPS",
+    "num": "0450",
+    "code": "CLPS0450",
+    "name": "Brain Damage and the Mind",
+    "prof": "W. Heindel",
+    "time": "MWF 11-11:50a"
+  },
+  "CLPS0540": {
+    "dept": "CLPS",
+    "num": "0540",
+    "code": "CLPS0540",
+    "name": "Simulating Reality: The (Curious) History and Science of Immersive Experiences",
+    "prof": "Domini/Riva",
+    "time": "M 3-5:30p"
+  },
+  "CLPS0610": {
+    "dept": "CLPS",
+    "num": "0610",
+    "code": "CLPS0610",
+    "name": "Children's Thinking: The Nature of Cognitive Development",
+    "prof": "D. Buchsbaum",
+    "time": "TTh 2:30-3:50p"
+  },
+  "CLPS0700": {
+    "dept": "CLPS",
+    "num": "0700",
+    "code": "CLPS0700",
+    "name": "Social Psychology",
+    "prof": "L. Faille",
+    "time": "MW 8:30-9:50a",
+    "size": 214.33333333333334,
+    "num-respondents": 89.33333333333333,
+    "link": "https://thecriticalreview.org/search/CLPS/0700",
+    "same_prof": {
+      "max_hrs": 8.231111111111112,
+      "avg_hrs": 3.323333333333333,
+      "avg_rating": 4.035555555555556
+    },
+    "all_reviews": {
+      "max_hrs": 8.231111111111112,
+      "avg_hrs": 3.323333333333333,
+      "avg_rating": 4.035555555555556
+    }
+  },
+  "CLPS0800": {
+    "dept": "CLPS",
+    "num": "0800",
+    "code": "CLPS0800",
+    "name": "Language and the Mind",
+    "prof": "J. Morgan",
+    "time": "MWF 1-1:50p",
+    "size": 56.0,
+    "num-respondents": 19.0,
+    "link": "https://thecriticalreview.org/search/CLPS/0800",
+    "same_prof": {
+      "max_hrs": 8.47,
+      "avg_hrs": 2.37,
+      "avg_rating": 2.86
+    },
+    "all_reviews": {
+      "max_hrs": 8.47,
+      "avg_hrs": 2.37,
+      "avg_rating": 2.86
+    }
+  },
+  "CLPS0900": {
+    "dept": "CLPS",
+    "num": "0900",
+    "code": "CLPS0900",
+    "name": "Statistical Methods",
+    "prof": "S. Costa",
+    "time": "MW 8:30-9:50a",
+    "size": 66.66666666666667,
+    "num-respondents": 35.0,
+    "link": "https://thecriticalreview.org/search/CLPS/0900",
+    "same_prof": {
+      "max_hrs": 8.09,
+      "avg_hrs": 4.6066666666666665,
+      "avg_rating": 3.51
+    },
+    "all_reviews": {
+      "max_hrs": 8.09,
+      "avg_hrs": 4.6066666666666665,
+      "avg_rating": 3.51
+    }
+  },
+  "CLPS0950": {
+    "dept": "CLPS",
+    "num": "0950",
+    "code": "CLPS0950",
+    "name": "Introduction to programming",
+    "prof": "H. Keglovits",
+    "time": "MWF 2-2:50p",
+    "size": 47.25,
+    "num-respondents": 18.75,
+    "link": "https://thecriticalreview.org/search/CLPS/0950",
+    "same_prof": {
+      "max_hrs": 17.564999999999998,
+      "avg_hrs": 9.02,
+      "avg_rating": 4.3825
+    },
+    "all_reviews": {
+      "max_hrs": 17.564999999999998,
+      "avg_hrs": 9.02,
+      "avg_rating": 4.3825
+    }
+  },
+  "CLPS1250": {
+    "dept": "CLPS",
+    "num": "1250",
+    "code": "CLPS1250",
+    "name": "Human Factors",
+    "prof": "K. Spoehr",
+    "time": "MWF 11-11:50a"
+  },
+  "CLPS1271": {
+    "dept": "CLPS",
+    "num": "1271",
+    "code": "CLPS1271",
+    "name": "Cognition in the Classroom: Seminar in the Science of Teaching and Learning",
+    "prof": "K. Spoehr",
+    "time": "Th 4-6:30p"
+  },
+  "CLPS1310": {
+    "dept": "CLPS",
+    "num": "1310",
+    "code": "CLPS1310",
+    "name": "Phonology",
+    "prof": "U. Cohen Priva",
+    "time": "MWF 11-11:50a",
+    "size": 12.0,
+    "num-respondents": 10.25,
+    "link": "https://thecriticalreview.org/search/CLPS/1310",
+    "same_prof": {
+      "max_hrs": 10.215,
+      "avg_hrs": 4.8725000000000005,
+      "avg_rating": 4.555
+    },
+    "all_reviews": {
+      "max_hrs": 10.215,
+      "avg_hrs": 4.8725000000000005,
+      "avg_rating": 4.555
+    }
+  },
+  "CLPS1330": {
+    "dept": "CLPS",
+    "num": "1330",
+    "code": "CLPS1330",
+    "name": "Introduction to Syntax",
+    "prof": "P. Jacobson",
+    "time": "TTh 1-2:20p",
+    "size": 14.0,
+    "num-respondents": 11.0,
+    "link": "https://thecriticalreview.org/search/CLPS/1330",
+    "same_prof": {
+      "max_hrs": 7.789999999999999,
+      "avg_hrs": 3.6799999999999997,
+      "avg_rating": 4.03
+    },
+    "all_reviews": {
+      "max_hrs": 7.789999999999999,
+      "avg_hrs": 3.6799999999999997,
+      "avg_rating": 4.03
+    }
+  },
+  "CLPS1342": {
+    "dept": "CLPS",
+    "num": "1342",
+    "code": "CLPS1342",
+    "name": "Compositional Semantics",
+    "prof": "P. Jacobson",
+    "time": "TTh 10:30-11:50a"
+  },
+  "CLPS1420": {
+    "dept": "CLPS",
+    "num": "1420",
+    "code": "CLPS1420",
+    "name": "Cognitive Neuropsychology",
+    "prof": "E. Festa",
+    "time": "T 2:30-3:50p",
+    "size": 37.5,
+    "num-respondents": 35.0,
+    "link": "https://thecriticalreview.org/search/CLPS/1420",
+    "same_prof": {
+      "max_hrs": 9.775,
+      "avg_hrs": 3.8349999999999995,
+      "avg_rating": 4.0249999999999995
+    },
+    "all_reviews": {
+      "max_hrs": 9.775,
+      "avg_hrs": 3.8349999999999995,
+      "avg_rating": 4.0249999999999995
+    }
+  },
+  "CLPS1480B": {
+    "dept": "CLPS",
+    "num": "1480B",
+    "code": "CLPS1480B",
+    "name": "Cognitive Aging and Dementia",
+    "prof": "E. Festa",
+    "time": "TTh 1-2:20p"
+  },
+  "CLPS1500": {
+    "dept": "CLPS",
+    "num": "1500",
+    "code": "CLPS1500",
+    "name": "Perception and Action",
+    "prof": "W. Warren",
+    "time": "TTh 1-2:20p",
+    "size": 12.25,
+    "num-respondents": 10.75,
+    "link": "https://thecriticalreview.org/search/CLPS/1500",
+    "same_prof": {
+      "max_hrs": 9.83125,
+      "avg_hrs": 5.393750000000001,
+      "avg_rating": 4.445
+    },
+    "all_reviews": {
+      "max_hrs": 9.83125,
+      "avg_hrs": 5.393750000000001,
+      "avg_rating": 4.445
+    }
+  },
+  "CLPS1510": {
+    "dept": "CLPS",
+    "num": "1510",
+    "code": "CLPS1510",
+    "name": "Laboratory in Auditory Perception",
+    "prof": "A. Simmons",
+    "time": "M 3-5:30p"
+  },
+  "CLPS1560": {
+    "dept": "CLPS",
+    "num": "1560",
+    "code": "CLPS1560",
+    "name": "Visually-Guided Action and Cognitive Processes",
+    "prof": "J. Song",
+    "time": "Th 4-6:30p",
+    "size": 14.666666666666666,
+    "num-respondents": 9.333333333333334,
+    "link": "https://thecriticalreview.org/search/CLPS/1560",
+    "same_prof": {
+      "max_hrs": 7.496666666666667,
+      "avg_hrs": 3.5100000000000002,
+      "avg_rating": 4.32
+    },
+    "all_reviews": {
+      "max_hrs": 7.496666666666667,
+      "avg_hrs": 3.5100000000000002,
+      "avg_rating": 4.32
+    }
+  },
+  "CLPS1570": {
+    "dept": "CLPS",
+    "num": "1570",
+    "code": "CLPS1570",
+    "name": "Perceptual Learning",
+    "prof": "T. Watanabe",
+    "time": "F 3-5:30p",
+    "size": 22.0,
+    "num-respondents": 6.0,
+    "link": "https://thecriticalreview.org/search/CLPS/1570",
+    "same_prof": {
+      "max_hrs": 5.25,
+      "avg_hrs": 2.25,
+      "avg_rating": 4.3
+    },
+    "all_reviews": {
+      "max_hrs": 5.25,
+      "avg_hrs": 2.25,
+      "avg_rating": 4.3
+    }
+  },
+  "CLPS1580C": {
+    "dept": "CLPS",
+    "num": "1580C",
+    "code": "CLPS1580C",
+    "name": "Visualizing Information",
+    "prof": "L. Welch",
+    "time": "TTh 2:30-3:50p",
+    "size": 16.428571428571427,
+    "num-respondents": 10.142857142857142,
+    "link": "https://thecriticalreview.org/search/CLPS/1580C",
+    "same_prof": {
+      "max_hrs": 6.648571428571428,
+      "avg_hrs": 2.4771428571428573,
+      "avg_rating": 3.932857142857143
+    },
+    "all_reviews": {
+      "max_hrs": 6.648571428571428,
+      "avg_hrs": 2.4771428571428573,
+      "avg_rating": 3.932857142857143
+    }
+  },
+  "CLPS1680G": {
+    "dept": "CLPS",
+    "num": "1680G",
+    "code": "CLPS1680G",
+    "name": "Topics in Developmental Psychology: Play and Imagination",
+    "prof": "D. Sobel",
+    "time": "TTh 10:30-11:50a"
+  },
+  "CLPS1700": {
+    "dept": "CLPS",
+    "num": "1700",
+    "code": "CLPS1700",
+    "name": "Abnormal Psychology",
+    "prof": "C. Ellis",
+    "time": "F 11-11:50a",
+    "size": 157.6,
+    "num-respondents": 40.1,
+    "link": "https://thecriticalreview.org/search/CLPS/1700",
+    "same_prof": {
+      "max_hrs": 9.392999999999999,
+      "avg_hrs": 3.6350000000000002,
+      "avg_rating": 4.356999999999998
+    },
+    "all_reviews": {
+      "max_hrs": 9.392999999999999,
+      "avg_hrs": 3.6350000000000002,
+      "avg_rating": 4.356999999999998
+    }
+  },
+  "CLPS1791": {
+    "dept": "CLPS",
+    "num": "1791",
+    "code": "CLPS1791",
+    "name": "Laboratory in Social Cognition",
+    "prof": "J. Krueger",
+    "time": "TTh 9-10:20a"
+  },
+  "CLPS1950": {
+    "dept": "CLPS",
+    "num": "1950",
+    "code": "CLPS1950",
+    "name": "Deep Learning in Brains, Minds and Machines",
+    "prof": "T. Serre",
+    "time": "MW 8:30-9:50a"
+  },
+  "CLPS2450": {
+    "dept": "CLPS",
+    "num": "2450",
+    "code": "CLPS2450",
+    "name": "Exchange Scholar Program",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "CLPS2970": {
+    "dept": "CLPS",
+    "num": "2970",
+    "code": "CLPS2970",
+    "name": "Preliminary Examination Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "CLPS2980": {
+    "dept": "CLPS",
+    "num": "2980",
+    "code": "CLPS2980",
+    "name": "Foundations of Advanced Statistics",
+    "prof": "B. Malle",
+    "time": "TTh 10:30-11:50a"
+  },
+  "CLPS2990": {
+    "dept": "CLPS",
+    "num": "2990",
+    "code": "CLPS2990",
+    "name": "Thesis Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "LINGXLIST": {
+    "dept": "LING",
+    "num": "XLIST",
+    "code": "LINGXLIST",
+    "name": "Courses of Interest to Concentrators in Linguistics",
+    "prof": "See details",
+    "time": ""
+  },
+  "URBNXLIST": {
+    "dept": "URBN",
+    "num": "XLIST",
+    "code": "URBNXLIST",
+    "name": "Courses of Interest to Concentrators in Urban Studies",
+    "prof": "See details",
+    "time": ""
+  },
+  "NEUR0650": {
+    "dept": "NEUR",
+    "num": "0650",
+    "code": "NEUR0650",
+    "name": "Biology of Hearing",
+    "prof": "J. Simmons",
+    "time": "MWF 1-1:50p",
+    "size": 96.41666666666667,
+    "num-respondents": 48.416666666666664,
+    "link": "https://thecriticalreview.org/search/NEUR/0650",
+    "same_prof": {
+      "max_hrs": 1.560833333333333,
+      "avg_hrs": 0.7666666666666667,
+      "avg_rating": 4.141666666666667
+    },
+    "all_reviews": {
+      "max_hrs": 1.560833333333333,
+      "avg_hrs": 0.7666666666666667,
+      "avg_rating": 4.141666666666667
+    }
+  },
+  "NEUR1020": {
+    "dept": "NEUR",
+    "num": "1020",
+    "code": "NEUR1020",
+    "name": "Principles of Neurobiology",
+    "prof": "C. Aizenman",
+    "time": "TTh 9-10:20a",
+    "size": 97.71428571428571,
+    "num-respondents": 57.42857142857143,
+    "link": "https://thecriticalreview.org/search/NEUR/1020",
+    "same_prof": {
+      "max_hrs": 1.16,
+      "avg_hrs": 0.41428571428571426,
+      "avg_rating": 3.8314285714285714
+    },
+    "all_reviews": {
+      "max_hrs": 1.16,
+      "avg_hrs": 0.41428571428571426,
+      "avg_rating": 3.8314285714285714
+    }
+  },
+  "NEUR1040": {
+    "dept": "NEUR",
+    "num": "1040",
+    "code": "NEUR1040",
+    "name": "Introduction to Neurogenetics",
+    "prof": "K. Kaun",
+    "time": "TTh 10:30-11:50a",
+    "size": 35.42857142857143,
+    "num-respondents": 22.071428571428573,
+    "link": "https://thecriticalreview.org/search/NEUR/1040",
+    "same_prof": {
+      "max_hrs": 2.7964285714285713,
+      "avg_hrs": 1.3021428571428573,
+      "avg_rating": 4.3307142857142855
+    },
+    "all_reviews": {
+      "max_hrs": 2.7964285714285713,
+      "avg_hrs": 1.3021428571428573,
+      "avg_rating": 4.3307142857142855
+    }
+  },
+  "NEUR1540": {
+    "dept": "NEUR",
+    "num": "1540",
+    "code": "NEUR1540",
+    "name": "Neurobiology of Learning and Memory",
+    "prof": "M. Linden",
+    "time": "MWF 11-11:50a",
+    "size": 30.166666666666668,
+    "num-respondents": 23.5,
+    "link": "https://thecriticalreview.org/search/NEUR/1540",
+    "same_prof": {
+      "max_hrs": 11.21,
+      "avg_hrs": 4.251666666666667,
+      "avg_rating": 4.585
+    },
+    "all_reviews": {
+      "max_hrs": 11.21,
+      "avg_hrs": 4.251666666666667,
+      "avg_rating": 4.585
+    }
+  },
+  "NEUR1560": {
+    "dept": "NEUR",
+    "num": "1560",
+    "code": "NEUR1560",
+    "name": "Developmental Neurobiology",
+    "prof": "A. Jaworski",
+    "time": "W 3-5:30p",
+    "size": 11.333333333333334,
+    "num-respondents": 6.333333333333333,
+    "link": "https://thecriticalreview.org/search/NEUR/1560",
+    "same_prof": {
+      "max_hrs": 10.46,
+      "avg_hrs": 5.213333333333334,
+      "avg_rating": 4.576666666666667
+    },
+    "all_reviews": {
+      "max_hrs": 10.46,
+      "avg_hrs": 5.213333333333334,
+      "avg_rating": 4.576666666666667
+    }
+  },
+  "NEUR1600": {
+    "dept": "NEUR",
+    "num": "1600",
+    "code": "NEUR1600",
+    "name": "Experimental Neurobiology",
+    "prof": "J. Stein",
+    "time": "W 1-6p",
+    "size": 17.533333333333335,
+    "num-respondents": 14.666666666666666,
+    "link": "https://thecriticalreview.org/search/NEUR/1600",
+    "same_prof": {
+      "max_hrs": 3.4299999999999997,
+      "avg_hrs": 1.3073333333333332,
+      "avg_rating": 4.549333333333333
+    },
+    "all_reviews": {
+      "max_hrs": 3.4299999999999997,
+      "avg_hrs": 1.3073333333333332,
+      "avg_rating": 4.549333333333333
+    }
+  },
+  "NEUR1660": {
+    "dept": "NEUR",
+    "num": "1660",
+    "code": "NEUR1660",
+    "name": "Neural Computation in Learning and Decision-Making",
+    "prof": "M. Nassar",
+    "time": "TTh 10:30-11:50a",
+    "size": 37.2,
+    "num-respondents": 28.0,
+    "link": "https://thecriticalreview.org/search/NEUR/1660",
+    "same_prof": {
+      "max_hrs": 1.9,
+      "avg_hrs": 1.0,
+      "avg_rating": 4.216
+    },
+    "all_reviews": {
+      "max_hrs": 1.9,
+      "avg_hrs": 1.0,
+      "avg_rating": 4.216
+    }
+  },
+  "NEUR1930L": {
+    "dept": "NEUR",
+    "num": "1930L",
+    "code": "NEUR1930L",
+    "name": "Neurobiology of Love",
+    "prof": "M. Linden",
+    "time": "TTh 1-2:20p"
+  },
+  "NEUR2020": {
+    "dept": "NEUR",
+    "num": "2020",
+    "code": "NEUR2020",
+    "name": "Graduate Proseminar in Neuroscience",
+    "prof": "G. Barnea",
+    "time": "TBA"
+  },
+  "NEUR2040": {
+    "dept": "NEUR",
+    "num": "2040",
+    "code": "NEUR2040",
+    "name": "Advanced Molecular and Cellular Neurobiology II",
+    "prof": "A. Fleischmann",
+    "time": "MW 1-3p"
+  },
+  "NEUR2060": {
+    "dept": "NEUR",
+    "num": "2060",
+    "code": "NEUR2060",
+    "name": "Advanced Systems Neuroscience",
+    "prof": "D. Sheinberg",
+    "time": "TTh 1-3p"
+  },
+  "NEUR2970": {
+    "dept": "NEUR",
+    "num": "2970",
+    "code": "NEUR2970",
+    "name": "Preliminary Examination Preparation",
+    "prof": "D. Sheinberg",
+    "time": "TBA"
+  },
+  "NEUR2990": {
+    "dept": "NEUR",
+    "num": "2990",
+    "code": "NEUR2990",
+    "name": "Thesis Preparation",
+    "prof": "D. Lipscombe",
+    "time": "TBA"
+  },
+  "PHP0320": {
+    "dept": "PHP",
+    "num": "0320",
+    "code": "PHP0320",
+    "name": "Introduction to Public Health",
+    "prof": "TBD",
+    "time": "T 8-8:50p",
+    "size": 101.9375,
+    "num-respondents": 52.1875,
+    "link": "https://thecriticalreview.org/search/PHP/0320",
+    "same_prof": {
+      "max_hrs": 3.0387500000000003,
+      "avg_hrs": 1.3275000000000001,
+      "avg_rating": 3.8281250000000036
+    },
+    "all_reviews": {
+      "max_hrs": 3.0387500000000003,
+      "avg_hrs": 1.3275000000000001,
+      "avg_rating": 3.828125000000004
+    }
+  },
+  "PHP0330": {
+    "dept": "PHP",
+    "num": "0330",
+    "code": "PHP0330",
+    "name": "Public Health Policy",
+    "prof": "J. Fulton",
+    "time": "Th 4-4:50p"
+  },
+  "PHP0400": {
+    "dept": "PHP",
+    "num": "0400",
+    "code": "PHP0400",
+    "name": "Intro. to Health Disparities & Making Connection btw Structure, Social Determinants&Health Equity",
+    "prof": "D. Zelaya",
+    "time": "T 4-6:30p"
+  },
+  "PHP0650": {
+    "dept": "PHP",
+    "num": "0650",
+    "code": "PHP0650",
+    "name": "From Manufacturer to Patient:  Why is the Cost of Prescription Drugs So Darn High?",
+    "prof": "R. Aubert",
+    "time": "TTh 10:30-11:50a"
+  },
+  "PHP0700": {
+    "dept": "PHP",
+    "num": "0700",
+    "code": "PHP0700",
+    "name": "Global Public Health Interventions",
+    "prof": "J. Pellowski",
+    "time": "TTh 2:30-3:50p",
+    "size": 39.0,
+    "num-respondents": 39.0,
+    "link": "https://thecriticalreview.org/search/PHP/0700",
+    "same_prof": {
+      "max_hrs": 6.91,
+      "avg_hrs": 3.0,
+      "avg_rating": 4.13
+    },
+    "all_reviews": {
+      "max_hrs": 6.91,
+      "avg_hrs": 3.0,
+      "avg_rating": 4.13
+    }
+  },
+  "PHP0720": {
+    "dept": "PHP",
+    "num": "0720",
+    "code": "PHP0720",
+    "name": "Public Health and the Environment",
+    "prof": "N. Trivedi",
+    "time": "TTh 10:30-11:50a"
+  },
+  "PHP1511": {
+    "dept": "PHP",
+    "num": "1511",
+    "code": "PHP1511",
+    "name": "Applied Regression Analysis",
+    "prof": "S. Dunsiger",
+    "time": "TTh 9-10:20a"
+  },
+  "PHP1550": {
+    "dept": "PHP",
+    "num": "1550",
+    "code": "PHP1550",
+    "name": "Substance Use and Vulnerability to Addiction",
+    "prof": "Kahler/Cassidy",
+    "time": "Th 4-6:30p"
+  },
+  "PHP1610": {
+    "dept": "PHP",
+    "num": "1610",
+    "code": "PHP1610",
+    "name": "Tobacco, Disease and the Industry: cigs, e-cigs and more",
+    "prof": "J. Ahluwalia",
+    "time": "T 1:30-4p",
+    "size": 15.0,
+    "num-respondents": 15.0,
+    "link": "https://thecriticalreview.org/search/PHP/1610",
+    "same_prof": {
+      "max_hrs": 7.6899999999999995,
+      "avg_hrs": 3.605,
+      "avg_rating": 3.995
+    },
+    "all_reviews": {
+      "max_hrs": 7.6899999999999995,
+      "avg_hrs": 3.605,
+      "avg_rating": 3.995
+    }
+  },
+  "PHP1650": {
+    "dept": "PHP",
+    "num": "1650",
+    "code": "PHP1650",
+    "name": "Race, Racism and Health",
+    "prof": "D. Grigsby",
+    "time": "W 3-5:30p"
+  },
+  "PHP1720": {
+    "dept": "PHP",
+    "num": "1720",
+    "code": "PHP1720",
+    "name": "Environmental Exposure Assessments in Practice",
+    "prof": "E. Walker",
+    "time": "TTh 2:30-3:50p"
+  },
+  "PHP1820": {
+    "dept": "PHP",
+    "num": "1820",
+    "code": "PHP1820",
+    "name": "Designing Education for Better Prisoner and Community Health",
+    "prof": "B. Brockmann",
+    "time": "MW 3-4:20p",
+    "size": 25.0,
+    "num-respondents": 5.0,
+    "link": "https://thecriticalreview.org/search/PHP/1820",
+    "same_prof": {
+      "max_hrs": 10.4,
+      "avg_hrs": 5.6,
+      "avg_rating": 4.45
+    },
+    "all_reviews": {
+      "max_hrs": 10.4,
+      "avg_hrs": 5.6,
+      "avg_rating": 4.45
+    }
+  },
+  "PHP1854": {
+    "dept": "PHP",
+    "num": "1854",
+    "code": "PHP1854",
+    "name": "The Epidemiology and Control of Infectious Diseases",
+    "prof": "A. Bengtson",
+    "time": "MW 9-10:20a",
+    "size": 24.0,
+    "num-respondents": 16.2,
+    "link": "https://thecriticalreview.org/search/PHP/1854",
+    "same_prof": {
+      "max_hrs": 7.2780000000000005,
+      "avg_hrs": 2.82,
+      "avg_rating": 4.4719999999999995
+    },
+    "all_reviews": {
+      "max_hrs": 7.2780000000000005,
+      "avg_hrs": 2.82,
+      "avg_rating": 4.4719999999999995
+    }
+  },
+  "PHP1885": {
+    "dept": "PHP",
+    "num": "1885",
+    "code": "PHP1885",
+    "name": "Measuring Mindfulness",
+    "prof": "J. Proulx",
+    "time": "W 3-5:30p"
+  },
+  "PHP1895": {
+    "dept": "PHP",
+    "num": "1895",
+    "code": "PHP1895",
+    "name": "Mindfulness Epidemiology",
+    "prof": "E. Loucks",
+    "time": "M 3-5:30p"
+  },
+  "PHP2018": {
+    "dept": "PHP",
+    "num": "2018",
+    "code": "PHP2018",
+    "name": "Epidemiology of Cardio-Metabolic Health",
+    "prof": "S. Liu",
+    "time": "T 9:30a-12p"
+  },
+  "PHP2024": {
+    "dept": "PHP",
+    "num": "2024",
+    "code": "PHP2024",
+    "name": "Engaged Scholarship in Maternal and Child Health",
+    "prof": "P. Vivier",
+    "time": "Th 4-5:30p"
+  },
+  "PHP2040": {
+    "dept": "PHP",
+    "num": "2040",
+    "code": "PHP2040",
+    "name": "Survey Research Methods",
+    "prof": "Clark/Rogers",
+    "time": "M 3:30-6p"
+  },
+  "PHP2060": {
+    "dept": "PHP",
+    "num": "2060",
+    "code": "PHP2060",
+    "name": "Qualitative Methods in Health Research",
+    "prof": "Rosen/Collins",
+    "time": "F 9-11:30a",
+    "size": 12.5,
+    "num-respondents": 4.0,
+    "link": "https://thecriticalreview.org/search/PHP/2060",
+    "same_prof": {
+      "max_hrs": 12.54,
+      "avg_hrs": 6.625,
+      "avg_rating": 4.449999999999999
+    },
+    "all_reviews": {
+      "max_hrs": 12.54,
+      "avg_hrs": 6.625,
+      "avg_rating": 4.449999999999999
+    }
+  },
+  "PHP2061": {
+    "dept": "PHP",
+    "num": "2061",
+    "code": "PHP2061",
+    "name": "Qualitative Data Analysis in Public Health Research",
+    "prof": "M. Ag\u00e9nor",
+    "time": "W 1-3:30p"
+  },
+  "PHP2071": {
+    "dept": "PHP",
+    "num": "2071",
+    "code": "PHP2071",
+    "name": "Applied Public Health: Systems and Practice",
+    "prof": "R. Kislak",
+    "time": "T 1-2:20p"
+  },
+  "PHP2080": {
+    "dept": "PHP",
+    "num": "2080",
+    "code": "PHP2080",
+    "name": "Public Health Law and Policy",
+    "prof": "L. Tobin-Tyler",
+    "time": "MW 10:30-11:50a",
+    "size": 35.0,
+    "num-respondents": 31.0,
+    "link": "https://thecriticalreview.org/search/PHP/2080",
+    "same_prof": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 3.2
+    },
+    "all_reviews": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 3.2
+    }
+  },
+  "PHP2120": {
+    "dept": "PHP",
+    "num": "2120",
+    "code": "PHP2120",
+    "name": "Introduction to Methods in Epidemiologic Research",
+    "prof": "Zheng/Giovenco",
+    "time": "TTh 6-7:20p"
+  },
+  "PHP2130": {
+    "dept": "PHP",
+    "num": "2130",
+    "code": "PHP2130",
+    "name": "Human Biology for Public Health",
+    "prof": "K. Kelsey",
+    "time": "F 9:30a-12p"
+  },
+  "PHP2180": {
+    "dept": "PHP",
+    "num": "2180",
+    "code": "PHP2180",
+    "name": "Interpretation and Application of Epidemiology",
+    "prof": "D. Savitz",
+    "time": "Th 2:30-5p"
+  },
+  "PHP2200": {
+    "dept": "PHP",
+    "num": "2200",
+    "code": "PHP2200",
+    "name": "Intermediate Methods in Epidemiologic Research",
+    "prof": "N. Joyce",
+    "time": "T 3-4p"
+  },
+  "PHP2220E": {
+    "dept": "PHP",
+    "num": "2220E",
+    "code": "PHP2220E",
+    "name": "Topics in Environmental and Occupational Epidemiology",
+    "prof": "J. Braun",
+    "time": "Th 9:30a-12p"
+  },
+  "PHP2355": {
+    "dept": "PHP",
+    "num": "2355",
+    "code": "PHP2355",
+    "name": "Designing and Evaluating Public Health Interventions",
+    "prof": "J. Hughto",
+    "time": "TTh 10:30-11:50a",
+    "size": 22.0,
+    "num-respondents": 4.0,
+    "link": "https://thecriticalreview.org/search/PHP/2355",
+    "same_prof": {
+      "max_hrs": 9.75,
+      "avg_hrs": 3.75,
+      "avg_rating": 3.72
+    },
+    "all_reviews": {
+      "max_hrs": 9.75,
+      "avg_hrs": 3.75,
+      "avg_rating": 3.72
+    }
+  },
+  "PHP2360": {
+    "dept": "PHP",
+    "num": "2360",
+    "code": "PHP2360",
+    "name": "Developing + Testing Theory-Driven, Evidence Based\u00a0Psychosocial and Behavioral Health Interventions",
+    "prof": "B. Marcus",
+    "time": "W 1-3:30p"
+  },
+  "PHP2365": {
+    "dept": "PHP",
+    "num": "2365",
+    "code": "PHP2365",
+    "name": "Public Health Issues in LGBT Populations",
+    "prof": "D. Operario",
+    "time": "F 9-11:30a"
+  },
+  "PHP2375": {
+    "dept": "PHP",
+    "num": "2375",
+    "code": "PHP2375",
+    "name": "Communicating Science to Lay Audiences",
+    "prof": "A. Dulin",
+    "time": "W 9-11:30a"
+  },
+  "PHP2380": {
+    "dept": "PHP",
+    "num": "2380",
+    "code": "PHP2380",
+    "name": "Health Communication",
+    "prof": "K. Carey",
+    "time": "M 2:30-5p",
+    "size": 26.0,
+    "num-respondents": 7.0,
+    "link": "https://thecriticalreview.org/search/PHP/2380",
+    "same_prof": {
+      "max_hrs": 4.83,
+      "avg_hrs": 2.71,
+      "avg_rating": 3.23
+    },
+    "all_reviews": {
+      "max_hrs": 4.83,
+      "avg_hrs": 2.71,
+      "avg_rating": 3.23
+    }
+  },
+  "PHP2400": {
+    "dept": "PHP",
+    "num": "2400",
+    "code": "PHP2400",
+    "name": "The U.S. Health Care System: Case Studies in Financing, Delivery, Regulation and Public Health",
+    "prof": "C. Koller",
+    "time": "F 1-3:30p"
+  },
+  "PHP2415": {
+    "dept": "PHP",
+    "num": "2415",
+    "code": "PHP2415",
+    "name": "Introduction to Evidence-based Medicine",
+    "prof": "Saldanha/Konnyu",
+    "time": "W 9-11:30a",
+    "size": 10.0,
+    "num-respondents": 3.0,
+    "link": "https://thecriticalreview.org/search/PHP/2415",
+    "same_prof": {
+      "max_hrs": 6.33,
+      "avg_hrs": 3.67,
+      "avg_rating": 4.25
+    },
+    "all_reviews": {
+      "max_hrs": 6.33,
+      "avg_hrs": 3.67,
+      "avg_rating": 4.25
+    }
+  },
+  "PHP2440": {
+    "dept": "PHP",
+    "num": "2440",
+    "code": "PHP2440",
+    "name": "Introduction to Pharmacoepidemiology",
+    "prof": "T. Shireman",
+    "time": "TTh 10:30-11:50a"
+  },
+  "PHP2470": {
+    "dept": "PHP",
+    "num": "2470",
+    "code": "PHP2470",
+    "name": "Topics in Clinical, Translational and Health Services Research",
+    "prof": "A. Trivedi",
+    "time": "Th 3:30-5p"
+  },
+  "PHP2480": {
+    "dept": "PHP",
+    "num": "2480",
+    "code": "PHP2480",
+    "name": "Selected Topics in Global Health Economics",
+    "prof": "O. Galarraga",
+    "time": "F 9:30a-12p"
+  },
+  "PHP2508": {
+    "dept": "PHP",
+    "num": "2508",
+    "code": "PHP2508",
+    "name": "BioStatistics and Data Analysis II",
+    "prof": "Gjelsvik/Linkletter",
+    "time": "T 3-4:20p"
+  },
+  "PHP2511": {
+    "dept": "PHP",
+    "num": "2511",
+    "code": "PHP2511",
+    "name": "Applied Regression Analysis",
+    "prof": "S. Dunsiger",
+    "time": "TTh 9-10:20a"
+  },
+  "PHP2516": {
+    "dept": "PHP",
+    "num": "2516",
+    "code": "PHP2516",
+    "name": "Applied Longitudinal Data Analysis",
+    "prof": "S. Chrysanthopoulou",
+    "time": "MW 9-10:20a"
+  },
+  "PHP2517": {
+    "dept": "PHP",
+    "num": "2517",
+    "code": "PHP2517",
+    "name": "Applied Multilevel Data Analysis",
+    "prof": "S. Chrysanthopoulou",
+    "time": "MW 9-10:20a"
+  },
+  "PHP2530": {
+    "dept": "PHP",
+    "num": "2530",
+    "code": "PHP2530",
+    "name": "Bayesian Statistical Methods",
+    "prof": "R. Gutman",
+    "time": "TTh 1-2:20p"
+  },
+  "PHP2561": {
+    "dept": "PHP",
+    "num": "2561",
+    "code": "PHP2561",
+    "name": "Methods in Informatics and Data Science for Health",
+    "prof": "Chen/Sarkar",
+    "time": "M 3-5:30p"
+  },
+  "PHP2580": {
+    "dept": "PHP",
+    "num": "2580",
+    "code": "PHP2580",
+    "name": "Statistical Inference II",
+    "prof": "C. Gatsonis",
+    "time": "MW 10:30-11:50a"
+  },
+  "PHP2602": {
+    "dept": "PHP",
+    "num": "2602",
+    "code": "PHP2602",
+    "name": "Analysis of Lifetime Data",
+    "prof": "J. Steingrimsson",
+    "time": "TTh 2:30-3:50p"
+  },
+  "PHP2605": {
+    "dept": "PHP",
+    "num": "2605",
+    "code": "PHP2605",
+    "name": "Generalized Linear Models",
+    "prof": "A. Eloyan",
+    "time": "MW 1-2:20p"
+  },
+  "PHP2650": {
+    "dept": "PHP",
+    "num": "2650",
+    "code": "PHP2650",
+    "name": "Statistical Learning and Big Data",
+    "prof": "A. Paul",
+    "time": "TTh 10:30-11:50a"
+  },
+  "PHP2690H": {
+    "dept": "PHP",
+    "num": "2690H",
+    "code": "PHP2690H",
+    "name": "Design of Experiments",
+    "prof": "C. Schmid",
+    "time": "MW 1-2:20p"
+  },
+  "PHP2730": {
+    "dept": "PHP",
+    "num": "2730",
+    "code": "PHP2730",
+    "name": "Including the Excluded: Global Health Ethics",
+    "prof": "Kuo/Bulled",
+    "time": "T 10a-12:30p"
+  },
+  "PHP2950": {
+    "dept": "PHP",
+    "num": "2950",
+    "code": "PHP2950",
+    "name": "Doctoral Seminar in Public Health",
+    "prof": "J. Hogan",
+    "time": "M 4-4:50p"
+  },
+  "PHP2990": {
+    "dept": "PHP",
+    "num": "2990",
+    "code": "PHP2990",
+    "name": "Thesis Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "PHUM1140": {
+    "dept": "PHUM",
+    "num": "1140",
+    "code": "PHUM1140",
+    "name": "Writing for Activists",
+    "prof": "See details",
+    "time": ""
+  },
+  "PHUM1805": {
+    "dept": "PHUM",
+    "num": "1805",
+    "code": "PHUM1805",
+    "name": "Making the Invisible Visible: Global Urban Typologies in the 20th and 21st Century",
+    "prof": "P. Meuser",
+    "time": "T 4-6:30p"
+  },
+  "PHUM2013": {
+    "dept": "PHUM",
+    "num": "2013",
+    "code": "PHUM2013",
+    "name": "Management of Cultural Institutions",
+    "prof": "G. Gifford",
+    "time": "M 3-5:30p"
+  },
+  "PHUM2020": {
+    "dept": "PHUM",
+    "num": "2020",
+    "code": "PHUM2020",
+    "name": "Methods in Public Humanities",
+    "prof": "D. Neumann",
+    "time": "W 3-5:30p"
+  },
+  "PHUM2022": {
+    "dept": "PHUM",
+    "num": "2022",
+    "code": "PHUM2022",
+    "name": "Public in Persons: Along Humanities\u2019 Ethical Edges",
+    "prof": "D. O'Donoghue",
+    "time": "Th 4-6:30p"
+  },
+  "PHUM2025": {
+    "dept": "PHUM",
+    "num": "2025",
+    "code": "PHUM2025",
+    "name": "Semester Practicum in Public Humanities",
+    "prof": "R. Potvin",
+    "time": "TBA"
+  },
+  "HIAAXLIST": {
+    "dept": "HIAA",
+    "num": "XLIST",
+    "code": "HIAAXLIST",
+    "name": "Courses of Interest to Concentrators",
+    "prof": "See details",
+    "time": ""
+  },
+  "ITAL0110": {
+    "dept": "ITAL",
+    "num": "0110",
+    "code": "ITAL0110",
+    "name": "Intensive Elementary Italian",
+    "prof": "Abbona-Sneider/Fantarella",
+    "time": "MTWTh 11a-12:50p",
+    "size": 13.0,
+    "num-respondents": 13.428571428571429,
+    "link": "https://thecriticalreview.org/search/ITAL/0110",
+    "same_prof": {
+      "max_hrs": 0.5478571428571428,
+      "avg_hrs": 0.35714285714285715,
+      "avg_rating": 4.4992857142857146
+    },
+    "all_reviews": {
+      "max_hrs": 0.5478571428571428,
+      "avg_hrs": 0.35714285714285715,
+      "avg_rating": 4.4992857142857146
+    }
+  },
+  "ITAL0200": {
+    "dept": "ITAL",
+    "num": "0200",
+    "code": "ITAL0200",
+    "name": "Elementary Italian",
+    "prof": "Abbona-Sneider/Conti",
+    "time": "MW 10-10:50a; TTh 10:30-11:50a",
+    "size": 15.625,
+    "num-respondents": 14.55,
+    "link": "https://thecriticalreview.org/search/ITAL/0200",
+    "same_prof": {
+      "max_hrs": 0.1695,
+      "avg_hrs": 0.09725,
+      "avg_rating": 4.186000000000001
+    },
+    "all_reviews": {
+      "max_hrs": 0.1695,
+      "avg_hrs": 0.09725,
+      "avg_rating": 4.186000000000002
+    }
+  },
+  "ITAL0300": {
+    "dept": "ITAL",
+    "num": "0300",
+    "code": "ITAL0300",
+    "name": "Intermediate Italian I",
+    "prof": "Abbona-Sneider/Zambon",
+    "time": "MWF 10-10:50a",
+    "size": 12.4,
+    "num-respondents": 11.04,
+    "link": "https://thecriticalreview.org/search/ITAL/0300",
+    "same_prof": {
+      "max_hrs": 0.484,
+      "avg_hrs": 0.3132,
+      "avg_rating": 3.996400000000001
+    },
+    "all_reviews": {
+      "max_hrs": 0.484,
+      "avg_hrs": 0.3132,
+      "avg_rating": 3.996400000000001
+    }
+  },
+  "ITAL0400": {
+    "dept": "ITAL",
+    "num": "0400",
+    "code": "ITAL0400",
+    "name": "Intermediate Italian II",
+    "prof": "C. Abbona-Sneider",
+    "time": "MWF 11-11:50a",
+    "size": 12.772727272727273,
+    "num-respondents": 11.045454545454545,
+    "link": "https://thecriticalreview.org/search/ITAL/0400",
+    "same_prof": {
+      "max_hrs": 0.30409090909090913,
+      "avg_hrs": 0.1959090909090909,
+      "avg_rating": 4.009090909090909
+    },
+    "all_reviews": {
+      "max_hrs": 0.30409090909090913,
+      "avg_hrs": 0.1959090909090909,
+      "avg_rating": 4.009090909090909
+    }
+  },
+  "ITAL0600": {
+    "dept": "ITAL",
+    "num": "0600",
+    "code": "ITAL0600",
+    "name": "Advanced Italian II",
+    "prof": "C. Abbona-Sneider",
+    "time": "MWF 12-12:50p",
+    "size": 9.444444444444445,
+    "num-respondents": 8.11111111111111,
+    "link": "https://thecriticalreview.org/search/ITAL/0600",
+    "same_prof": {
+      "max_hrs": 0.7622222222222222,
+      "avg_hrs": 0.4444444444444444,
+      "avg_rating": 4.495555555555555
+    },
+    "all_reviews": {
+      "max_hrs": 0.7622222222222222,
+      "avg_hrs": 0.4444444444444444,
+      "avg_rating": 4.495555555555555
+    }
+  },
+  "ITAL0701": {
+    "dept": "ITAL",
+    "num": "0701",
+    "code": "ITAL0701",
+    "name": "Simulating Reality: The (Curious) History and Science of Immersive Experiences.",
+    "prof": "Domini/Riva",
+    "time": "M 3-5:30p"
+  },
+  "ITAL0910": {
+    "dept": "ITAL",
+    "num": "0910",
+    "code": "ITAL0910",
+    "name": "Italian EcoCinema Earth Ecologies and Cinema: The Anthro/Bio/Geo/Morphic Machine",
+    "prof": "A. Sisto",
+    "time": "TTh 1-2:20p"
+  },
+  "ITAL1010": {
+    "dept": "ITAL",
+    "num": "1010",
+    "code": "ITAL1010",
+    "name": "Dante in English Translation: Dante's World and the Invention of Modernity",
+    "prof": "R. Martinez",
+    "time": "TTh 10:30-11:50a",
+    "size": 14.7,
+    "num-respondents": 9.5,
+    "link": "https://thecriticalreview.org/search/ITAL/1010",
+    "same_prof": {
+      "max_hrs": 2.55,
+      "avg_hrs": 1.2690000000000001,
+      "avg_rating": 4.312
+    },
+    "all_reviews": {
+      "max_hrs": 2.55,
+      "avg_hrs": 1.2690000000000001,
+      "avg_rating": 4.312
+    }
+  },
+  "ITAL1020": {
+    "dept": "ITAL",
+    "num": "1020",
+    "code": "ITAL1020",
+    "name": "Decameron: Technologies of Representation, Medieval to Modern",
+    "prof": "C. Bruhns",
+    "time": "W 3-5:30p",
+    "size": 6.0,
+    "num-respondents": 4.0,
+    "link": "https://thecriticalreview.org/search/ITAL/1020",
+    "same_prof": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.6
+    },
+    "all_reviews": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.6
+    }
+  },
+  "ITAL1262": {
+    "dept": "ITAL",
+    "num": "1262",
+    "code": "ITAL1262",
+    "name": "Women, Gender, and Feminism in Early Modern Italy",
+    "prof": "C. Castiglione",
+    "time": "TTh 2:30-3:50p"
+  },
+  "ITAL1400W": {
+    "dept": "ITAL",
+    "num": "1400W",
+    "code": "ITAL1400W",
+    "name": "Mammamia Figure Italiane Del Materno / Italian Figures of Motherhood",
+    "prof": "L. Odello",
+    "time": "T 4-6:30p"
+  },
+  "ITAL1400X": {
+    "dept": "ITAL",
+    "num": "1400X",
+    "code": "ITAL1400X",
+    "name": "The Female Gaze in Italian Cinema",
+    "prof": "L. Odello",
+    "time": "M 3-5:30p"
+  },
+  "ITAL1620": {
+    "dept": "ITAL",
+    "num": "1620",
+    "code": "ITAL1620",
+    "name": "The Divina Commedia: Dante's Paradiso: Justifying a Cosmos",
+    "prof": "R. Martinez",
+    "time": "Th 4-6:30p",
+    "size": 6.4,
+    "num-respondents": 4.8,
+    "link": "https://thecriticalreview.org/search/ITAL/1620",
+    "same_prof": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.742
+    },
+    "all_reviews": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.742
+    }
+  },
+  "ITAL2050": {
+    "dept": "ITAL",
+    "num": "2050",
+    "code": "ITAL2050",
+    "name": "Microhistory",
+    "prof": "C. Castiglione",
+    "time": "F 3-5:30p"
+  },
+  "ITAL2820": {
+    "dept": "ITAL",
+    "num": "2820",
+    "code": "ITAL2820",
+    "name": "Italian Studies Colloquium",
+    "prof": "M. Riva",
+    "time": "F 12-1:30p"
+  },
+  "ITAL2970": {
+    "dept": "ITAL",
+    "num": "2970",
+    "code": "ITAL2970",
+    "name": "Preliminary Examination Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "ITAL2990": {
+    "dept": "ITAL",
+    "num": "2990",
+    "code": "ITAL2990",
+    "name": "Thesis Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "EMOW1262": {
+    "dept": "EMOW",
+    "num": "1262",
+    "code": "EMOW1262",
+    "name": "Women, Gender, Feminism in Early Modern Italy (ITAL 1262)",
+    "prof": "See details",
+    "time": ""
+  },
+  "MCM0902W": {
+    "dept": "MCM",
+    "num": "0902W",
+    "code": "MCM0902W",
+    "name": "Simulating Reality: The (Curious) History and Science of Immersive Experiences (ITAL 0701)",
+    "prof": "See details",
+    "time": ""
+  },
+  "MCM0902X": {
+    "dept": "MCM",
+    "num": "0902X",
+    "code": "MCM0902X",
+    "name": "Italian EcoCinema Earth Ecologies and Cinema: The Anthro/Bio/Geo/Morphic Machine (ITAL 0910)",
+    "prof": "See details",
+    "time": ""
+  },
+  "MDVL1620": {
+    "dept": "MDVL",
+    "num": "1620",
+    "code": "MDVL1620",
+    "name": "The Divina Commedia: Paradiso (ITAL 1620)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS0410": {
+    "dept": "STS",
+    "num": "0410",
+    "code": "STS0410",
+    "name": "Simulating Reality: The (Curious) History and Science of Immersive Experiences (ITAL 0701)",
+    "prof": "See details",
+    "time": ""
+  },
+  "CZCH1000": {
+    "dept": "CZCH",
+    "num": "1000",
+    "code": "CZCH1000",
+    "name": "Dimensions of Czech Animation: Contexts, Interpretations, and Dialogs with the East",
+    "prof": "M. Fidler",
+    "time": "W 3-5:30p",
+    "size": 10.0,
+    "num-respondents": 9.0,
+    "link": "https://thecriticalreview.org/search/CZCH/1000",
+    "same_prof": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.45
+    },
+    "all_reviews": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.45
+    }
+  },
+  "GREK0110": {
+    "dept": "GREK",
+    "num": "0110",
+    "code": "GREK0110",
+    "name": "Intensive Introduction to Ancient Greek",
+    "prof": "J. Fischer",
+    "time": "MTWThF 12-12:50p",
+    "size": 8.416666666666666,
+    "num-respondents": 7.083333333333333,
+    "link": "https://thecriticalreview.org/search/GREK/0110",
+    "same_prof": {
+      "max_hrs": 6.381666666666667,
+      "avg_hrs": 3.939166666666667,
+      "avg_rating": 4.7425
+    },
+    "all_reviews": {
+      "max_hrs": 6.381666666666667,
+      "avg_hrs": 3.939166666666667,
+      "avg_rating": 4.7425
+    }
+  },
+  "GREK0200": {
+    "dept": "GREK",
+    "num": "0200",
+    "code": "GREK0200",
+    "name": "Essentials of the Greek Language",
+    "prof": "M. Ziegler",
+    "time": "MWF 9-9:50a",
+    "size": 7.9375,
+    "num-respondents": 7.1875,
+    "link": "https://thecriticalreview.org/search/GREK/0200",
+    "same_prof": {
+      "max_hrs": 2.8231249999999997,
+      "avg_hrs": 1.769375,
+      "avg_rating": 4.47375
+    },
+    "all_reviews": {
+      "max_hrs": 2.8231249999999997,
+      "avg_hrs": 1.769375,
+      "avg_rating": 4.47375
+    }
+  },
+  "GREK0400": {
+    "dept": "GREK",
+    "num": "0400",
+    "code": "GREK0400",
+    "name": "Introduction to Greek Literature",
+    "prof": "M. Carley",
+    "time": "MWF 9-9:50a",
+    "size": 7.2,
+    "num-respondents": 6.8,
+    "link": "https://thecriticalreview.org/search/GREK/0400",
+    "same_prof": {
+      "max_hrs": 5.89,
+      "avg_hrs": 3.3239999999999994,
+      "avg_rating": 4.45
+    },
+    "all_reviews": {
+      "max_hrs": 5.89,
+      "avg_hrs": 3.3239999999999994,
+      "avg_rating": 4.45
+    }
+  },
+  "GREK1110H": {
+    "dept": "GREK",
+    "num": "1110H",
+    "code": "GREK1110H",
+    "name": "The Odyssey",
+    "prof": "P. Nieto Hernandez",
+    "time": "MWF 2-2:50p"
+  },
+  "GREK1110I": {
+    "dept": "GREK",
+    "num": "1110I",
+    "code": "GREK1110I",
+    "name": "Selections from Greek Authors:  Thucydides",
+    "prof": "A. Scafuro",
+    "time": "TTh 2:30-3:50p"
+  },
+  "GREK1820": {
+    "dept": "GREK",
+    "num": "1820",
+    "code": "GREK1820",
+    "name": "Greek Literature Survey after 450 BCE",
+    "prof": "S. Kidd",
+    "time": "MWF 9-9:50a",
+    "size": 10.0,
+    "num-respondents": 6.8,
+    "link": "https://thecriticalreview.org/search/GREK/1820",
+    "same_prof": {
+      "max_hrs": 3.5780000000000003,
+      "avg_hrs": 1.734,
+      "avg_rating": 4.62
+    },
+    "all_reviews": {
+      "max_hrs": 3.5780000000000003,
+      "avg_hrs": 1.734,
+      "avg_rating": 4.62
+    }
+  },
+  "GREK2110G": {
+    "dept": "GREK",
+    "num": "2110G",
+    "code": "GREK2110G",
+    "name": "Identity, Repatriation, and Justice: International Relations Among Greek Cities 700 BCE - 90 BCE",
+    "prof": "A. Scafuro",
+    "time": "W 3-5:30p"
+  },
+  "GREK2970": {
+    "dept": "GREK",
+    "num": "2970",
+    "code": "GREK2970",
+    "name": "Preliminary Exam Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "GREK2990": {
+    "dept": "GREK",
+    "num": "2990",
+    "code": "GREK2990",
+    "name": "Thesis Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "ENGL0100A": {
+    "dept": "ENGL",
+    "num": "0100A",
+    "code": "ENGL0100A",
+    "name": "How To Read A Poem",
+    "prof": "M. Rabb",
+    "time": "TTh 10:30-11:50a",
+    "size": 31.0,
+    "num-respondents": 24.0,
+    "link": "https://thecriticalreview.org/search/ENGL/0100A",
+    "same_prof": {
+      "max_hrs": 8.3,
+      "avg_hrs": 3.61,
+      "avg_rating": 3.57
+    },
+    "all_reviews": {
+      "max_hrs": 8.3,
+      "avg_hrs": 3.61,
+      "avg_rating": 3.57
+    }
+  },
+  "ENGL0100D": {
+    "dept": "ENGL",
+    "num": "0100D",
+    "code": "ENGL0100D",
+    "name": "Matters of Romance",
+    "prof": "E. Bryan",
+    "time": "MWF 11-11:50a"
+  },
+  "ENGL0100V": {
+    "dept": "ENGL",
+    "num": "0100V",
+    "code": "ENGL0100V",
+    "name": "Inventing Asian American Literature",
+    "prof": "A. Dun",
+    "time": "F 2-2:50p"
+  },
+  "ENGL0150S": {
+    "dept": "ENGL",
+    "num": "0150S",
+    "code": "ENGL0150S",
+    "name": "The Roaring Twenties",
+    "prof": "T. Katz",
+    "time": "TTh 2:30-3:50p"
+  },
+  "ENGL0150X": {
+    "dept": "ENGL",
+    "num": "0150X",
+    "code": "ENGL0150X",
+    "name": "The Claims of Fiction",
+    "prof": "O. George",
+    "time": "TTh 2:30-3:50p"
+  },
+  "ENGL0200A": {
+    "dept": "ENGL",
+    "num": "0200A",
+    "code": "ENGL0200A",
+    "name": "Risk/Rupture/Remains: Contemporary Queer Media and Poetics",
+    "prof": "S. Jackshaw",
+    "time": "MWF 10-10:50a",
+    "size": 5.0,
+    "num-respondents": 5.0,
+    "link": "https://thecriticalreview.org/search/ENGL/0200A",
+    "same_prof": {
+      "max_hrs": 7.67,
+      "avg_hrs": 3.8,
+      "avg_rating": 3.99
+    },
+    "all_reviews": {
+      "max_hrs": 7.67,
+      "avg_hrs": 3.8,
+      "avg_rating": 3.99
+    }
+  },
+  "ENGL0200D": {
+    "dept": "ENGL",
+    "num": "0200D",
+    "code": "ENGL0200D",
+    "name": "Literature and the Social Contract",
+    "prof": "J. Quirk",
+    "time": "MWF 11-11:50a",
+    "size": 10.0,
+    "num-respondents": 8.0,
+    "link": "https://thecriticalreview.org/search/ENGL/0200D",
+    "same_prof": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.27
+    },
+    "all_reviews": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.27
+    }
+  },
+  "ENGL0200E": {
+    "dept": "ENGL",
+    "num": "0200E",
+    "code": "ENGL0200E",
+    "name": "Giving way: Poetry, Performance, Film",
+    "prof": "B. Rosenberg",
+    "time": "MWF 2-2:50p"
+  },
+  "ENGL0200F": {
+    "dept": "ENGL",
+    "num": "0200F",
+    "code": "ENGL0200F",
+    "name": "Wild and Unruly: Black Women\u2019s Belonging, Place, and Self in Storytelling",
+    "prof": "S. Sobande",
+    "time": "MWF 1-1:50p",
+    "size": 17.0,
+    "num-respondents": 17.0,
+    "link": "https://thecriticalreview.org/search/ENGL/0200F",
+    "same_prof": {
+      "max_hrs": 7.18,
+      "avg_hrs": 3.82,
+      "avg_rating": 4.41
+    },
+    "all_reviews": {
+      "max_hrs": 7.18,
+      "avg_hrs": 3.82,
+      "avg_rating": 4.41
+    }
+  },
+  "ENGL0200W": {
+    "dept": "ENGL",
+    "num": "0200W",
+    "code": "ENGL0200W",
+    "name": "Comedy and Cruelty",
+    "prof": "F. Ciccone",
+    "time": "TTh 9-10:20a"
+  },
+  "ENGL0200Y": {
+    "dept": "ENGL",
+    "num": "0200Y",
+    "code": "ENGL0200Y",
+    "name": "Show Me the Money: Advertising and Capitalism in American Literature",
+    "prof": "A. Halstead",
+    "time": "MWF 10-10:50a"
+  },
+  "ENGL0310H": {
+    "dept": "ENGL",
+    "num": "0310H",
+    "code": "ENGL0310H",
+    "name": "New and Imagined Worlds in the English Renaissance",
+    "prof": "C. Yates",
+    "time": "MWF 11-11:50a"
+  },
+  "ENGL0700R": {
+    "dept": "ENGL",
+    "num": "0700R",
+    "code": "ENGL0700R",
+    "name": "Modernist Cities",
+    "prof": "T. Katz",
+    "time": "TTh 1-2:20p"
+  },
+  "ENGL0700U": {
+    "dept": "ENGL",
+    "num": "0700U",
+    "code": "ENGL0700U",
+    "name": "Modernism and Race",
+    "prof": "P. Armstrong",
+    "time": "MWF 11-11:50a"
+  },
+  "ENGL0710Q": {
+    "dept": "ENGL",
+    "num": "0710Q",
+    "code": "ENGL0710Q",
+    "name": "American Literature in the Era of Segregation",
+    "prof": "R. Murray",
+    "time": "TTh 10:30-11:50a"
+  },
+  "ENGL0711D": {
+    "dept": "ENGL",
+    "num": "0711D",
+    "code": "ENGL0711D",
+    "name": "Literature and Social Mobility",
+    "prof": "M. Gastiger",
+    "time": "MWF 2-2:50p"
+  },
+  "ENGL0900": {
+    "dept": "ENGL",
+    "num": "0900",
+    "code": "ENGL0900",
+    "name": "Critical Reading and Writing I: The Academic Essay",
+    "prof": "T. Holman",
+    "time": "MWF 1-1:50p",
+    "size": 16.636363636363637,
+    "num-respondents": 13.727272727272727,
+    "link": "https://thecriticalreview.org/search/ENGL/0900",
+    "same_prof": {
+      "max_hrs": 6.919545454545456,
+      "avg_hrs": 3.215909090909091,
+      "avg_rating": 4.308636363636364
+    },
+    "all_reviews": {
+      "max_hrs": 6.9195454545454576,
+      "avg_hrs": 3.215909090909091,
+      "avg_rating": 4.308636363636363
+    }
+  },
+  "ENGL0930": {
+    "dept": "ENGL",
+    "num": "0930",
+    "code": "ENGL0930",
+    "name": "Introduction to Creative Nonfiction: Writing the World",
+    "prof": "R. Ward",
+    "time": "MWF 9-9:50a",
+    "size": 17.363636363636363,
+    "num-respondents": 12.909090909090908,
+    "link": "https://thecriticalreview.org/search/ENGL/0930",
+    "same_prof": {
+      "max_hrs": 7.108181818181818,
+      "avg_hrs": 3.3654545454545457,
+      "avg_rating": 4.334545454545455
+    },
+    "all_reviews": {
+      "max_hrs": 7.108181818181818,
+      "avg_hrs": 3.3654545454545444,
+      "avg_rating": 4.334545454545455
+    }
+  },
+  "ENGL1030F": {
+    "dept": "ENGL",
+    "num": "1030F",
+    "code": "ENGL1030F",
+    "name": "The Artist in the Archives",
+    "prof": "M. Stewart",
+    "time": "TTh 10:30-11:50a",
+    "size": 15.0,
+    "num-respondents": 8.5,
+    "link": "https://thecriticalreview.org/search/ENGL/1030F",
+    "same_prof": {
+      "max_hrs": 9.98,
+      "avg_hrs": 4.98,
+      "avg_rating": 4.37
+    },
+    "all_reviews": {
+      "max_hrs": 9.98,
+      "avg_hrs": 4.98,
+      "avg_rating": 4.37
+    }
+  },
+  "ENGL1050A": {
+    "dept": "ENGL",
+    "num": "1050A",
+    "code": "ENGL1050A",
+    "name": "Narrative",
+    "prof": "E. Hardy",
+    "time": "MWF 1-1:50p"
+  },
+  "ENGL1050B": {
+    "dept": "ENGL",
+    "num": "1050B",
+    "code": "ENGL1050B",
+    "name": "True Stories",
+    "prof": "K. Schapira",
+    "time": "F 3-5:30p"
+  },
+  "ENGL1050E": {
+    "dept": "ENGL",
+    "num": "1050E",
+    "code": "ENGL1050E",
+    "name": "Sportswriting",
+    "prof": "J. Readey",
+    "time": "Th 4-6:30p",
+    "size": 17.0,
+    "num-respondents": 17.0,
+    "link": "https://thecriticalreview.org/search/ENGL/1050E",
+    "same_prof": {
+      "max_hrs": 6.535,
+      "avg_hrs": 2.795,
+      "avg_rating": 4.63
+    },
+    "all_reviews": {
+      "max_hrs": 6.535,
+      "avg_hrs": 2.795,
+      "avg_rating": 4.63
+    }
+  },
+  "ENGL1050F": {
+    "dept": "ENGL",
+    "num": "1050F",
+    "code": "ENGL1050F",
+    "name": "Line Work: Experiments in Short-Form Writing",
+    "prof": "M. Stewart",
+    "time": "Th 4-6:30p",
+    "size": 19.0,
+    "num-respondents": 3.0,
+    "link": "https://thecriticalreview.org/search/ENGL/1050F",
+    "same_prof": {
+      "max_hrs": 8.67,
+      "avg_hrs": 5.67,
+      "avg_rating": 4.73
+    },
+    "all_reviews": {
+      "max_hrs": 8.67,
+      "avg_hrs": 5.67,
+      "avg_rating": 4.73
+    }
+  },
+  "ENGL1050H": {
+    "dept": "ENGL",
+    "num": "1050H",
+    "code": "ENGL1050H",
+    "name": "Journalistic Writing",
+    "prof": "J. Batten",
+    "time": "MW 8:30-9:50a"
+  },
+  "ENGL1050Q": {
+    "dept": "ENGL",
+    "num": "1050Q",
+    "code": "ENGL1050Q",
+    "name": "Writing the Family",
+    "prof": "E. Hipchen",
+    "time": "M 3-5:30p"
+  },
+  "ENGL1140A": {
+    "dept": "ENGL",
+    "num": "1140A",
+    "code": "ENGL1140A",
+    "name": "Intellectual Pleasures: Reading/Writing the Literary Text",
+    "prof": "L. Stanley",
+    "time": "TTh 9-10:20a"
+  },
+  "ENGL1140E": {
+    "dept": "ENGL",
+    "num": "1140E",
+    "code": "ENGL1140E",
+    "name": "Writing for Activists",
+    "prof": "K. Schapira",
+    "time": "Th 4-6:30p"
+  },
+  "ENGL1160F": {
+    "dept": "ENGL",
+    "num": "1160F",
+    "code": "ENGL1160F",
+    "name": "Reporting Crime and Justice",
+    "prof": "T. Breton",
+    "time": "M 3-5:30p",
+    "size": 9.0,
+    "num-respondents": 7.0,
+    "link": "https://thecriticalreview.org/search/ENGL/1160F",
+    "same_prof": {
+      "max_hrs": 14.6,
+      "avg_hrs": 7.86,
+      "avg_rating": 4.77
+    },
+    "all_reviews": {
+      "max_hrs": 14.6,
+      "avg_hrs": 7.86,
+      "avg_rating": 4.77
+    }
+  },
+  "ENGL1180M": {
+    "dept": "ENGL",
+    "num": "1180M",
+    "code": "ENGL1180M",
+    "name": "Special Delivery: Letters and Diaries",
+    "prof": "C. DeBoer-Langworthy",
+    "time": "TTh 9-10:20a"
+  },
+  "ENGL1180X": {
+    "dept": "ENGL",
+    "num": "1180X",
+    "code": "ENGL1180X",
+    "name": "Anne Carson, Maggie Nelson, Claudia Rankine",
+    "prof": "M. Arnold",
+    "time": "TTh 1-2:20p"
+  },
+  "ENGL1190C": {
+    "dept": "ENGL",
+    "num": "1190C",
+    "code": "ENGL1190C",
+    "name": "Advanced Creative Nonfiction: Biography",
+    "prof": "C. DeBoer-Langworthy",
+    "time": "W 3-5:30p"
+  },
+  "ENGL1190F": {
+    "dept": "ENGL",
+    "num": "1190F",
+    "code": "ENGL1190F",
+    "name": "My So-Called Life: The Art of the Literary Memoir",
+    "prof": "M. Arnold",
+    "time": "T 4-6:30p"
+  },
+  "ENGL1190U": {
+    "dept": "ENGL",
+    "num": "1190U",
+    "code": "ENGL1190U",
+    "name": "Nature Writing",
+    "prof": "E. Rush",
+    "time": "MWF 2-2:50p",
+    "size": 10.333333333333334,
+    "num-respondents": 8.0,
+    "link": "https://thecriticalreview.org/search/ENGL/1190U",
+    "same_prof": {
+      "max_hrs": 7.346666666666667,
+      "avg_hrs": 3.64,
+      "avg_rating": 4.39
+    },
+    "all_reviews": {
+      "max_hrs": 7.346666666666667,
+      "avg_hrs": 3.64,
+      "avg_rating": 4.39
+    }
+  },
+  "ENGL1190Z": {
+    "dept": "ENGL",
+    "num": "1190Z",
+    "code": "ENGL1190Z",
+    "name": "The Art of Craft",
+    "prof": "R. Ward",
+    "time": "MWF 12-12:50p"
+  },
+  "ENGL1310B": {
+    "dept": "ENGL",
+    "num": "1310B",
+    "code": "ENGL1310B",
+    "name": "American Degenerates",
+    "prof": "J. Egan",
+    "time": "MWF 9-9:50a"
+  },
+  "ENGL1311G": {
+    "dept": "ENGL",
+    "num": "1311G",
+    "code": "ENGL1311G",
+    "name": "Shakespeare, Love and Friendship",
+    "prof": "J. Kuzner",
+    "time": "TTh 10:30-11:50a"
+  },
+  "ENGL1311N": {
+    "dept": "ENGL",
+    "num": "1311N",
+    "code": "ENGL1311N",
+    "name": "England and the Renaissance",
+    "prof": "S. Foley",
+    "time": "MWF 10-10:50a"
+  },
+  "ENGL1361F": {
+    "dept": "ENGL",
+    "num": "1361F",
+    "code": "ENGL1361F",
+    "name": "Spenser and Shakespeare",
+    "prof": "S. Foley",
+    "time": "M 3-5:30p"
+  },
+  "ENGL1361Q": {
+    "dept": "ENGL",
+    "num": "1361Q",
+    "code": "ENGL1361Q",
+    "name": "Medieval Race",
+    "prof": "M. Min",
+    "time": "TTh 2:30-3:50p"
+  },
+  "ENGL1511P": {
+    "dept": "ENGL",
+    "num": "1511P",
+    "code": "ENGL1511P",
+    "name": "Realism, Modernism, Postmodernism: The American Novel and its Traditions",
+    "prof": "S. Marsh",
+    "time": "F 11-11:50a"
+  },
+  "ENGL1561Y": {
+    "dept": "ENGL",
+    "num": "1561Y",
+    "code": "ENGL1561Y",
+    "name": "In Excess: Rossetti, Hopkins, Wilde",
+    "prof": "J. Khalip",
+    "time": "F 3-5:30p"
+  },
+  "ENGL1562B": {
+    "dept": "ENGL",
+    "num": "1562B",
+    "code": "ENGL1562B",
+    "name": "Somebodies, Nobodies, and Other Others: 18th-Century Women's Writing",
+    "prof": "M. Rabb",
+    "time": "W 3-5:30p"
+  },
+  "ENGL1710J": {
+    "dept": "ENGL",
+    "num": "1710J",
+    "code": "ENGL1710J",
+    "name": "Modern African Literature",
+    "prof": "O. George",
+    "time": "TTh 9-10:20a"
+  },
+  "ENGL1710P": {
+    "dept": "ENGL",
+    "num": "1710P",
+    "code": "ENGL1710P",
+    "name": "The Literature and Culture of Black Power Reconsidered",
+    "prof": "R. Murray",
+    "time": "TTh 2:30-3:50p"
+  },
+  "ENGL1711Q": {
+    "dept": "ENGL",
+    "num": "1711Q",
+    "code": "ENGL1711Q",
+    "name": "Poetic Modernisms: Now!",
+    "prof": "A. Smailbegovic",
+    "time": "TTh 9-10:20a"
+  },
+  "ENGL1900Y": {
+    "dept": "ENGL",
+    "num": "1900Y",
+    "code": "ENGL1900Y",
+    "name": "Medieval Manuscript Studies: Paleography, Codicology, and Interpretation",
+    "prof": "E. Bryan",
+    "time": "W 3-5:30p"
+  },
+  "ENGL1900Z": {
+    "dept": "ENGL",
+    "num": "1900Z",
+    "code": "ENGL1900Z",
+    "name": "Neuroaesthetics and Reading",
+    "prof": "P. Armstrong",
+    "time": "F 3-5:30p"
+  },
+  "ENGL1901L": {
+    "dept": "ENGL",
+    "num": "1901L",
+    "code": "ENGL1901L",
+    "name": "Cronenberg/Lynch",
+    "prof": "R. Rambuss",
+    "time": "W 3-5:30p"
+  },
+  "ENGL1901N": {
+    "dept": "ENGL",
+    "num": "1901N",
+    "code": "ENGL1901N",
+    "name": "The Sublime",
+    "prof": "M. Redfield",
+    "time": "M 3-5:30p"
+  },
+  "ENGL1901P": {
+    "dept": "ENGL",
+    "num": "1901P",
+    "code": "ENGL1901P",
+    "name": "Waves and Edges: Poetry and the Sea",
+    "prof": "A. Smailbegovic",
+    "time": "TTh 1-2:20p"
+  },
+  "ENGL1901Q": {
+    "dept": "ENGL",
+    "num": "1901Q",
+    "code": "ENGL1901Q",
+    "name": "You Better Work: Sexuality, Labor, Blackness",
+    "prof": "T. Reid",
+    "time": "TTh 1-2:20p"
+  },
+  "ENGL1992": {
+    "dept": "ENGL",
+    "num": "1992",
+    "code": "ENGL1992",
+    "name": "Senior Honors Thesis in English",
+    "prof": "J. Khalip",
+    "time": "TBA"
+  },
+  "ENGL1994": {
+    "dept": "ENGL",
+    "num": "1994",
+    "code": "ENGL1994",
+    "name": "Senior Honors Thesis in Nonfiction Writing",
+    "prof": "K. Schapira",
+    "time": "TBA"
+  },
+  "ENGL2361D": {
+    "dept": "ENGL",
+    "num": "2361D",
+    "code": "ENGL2361D",
+    "name": "Persons and Things in Early Modern England",
+    "prof": "C. Scozzaro",
+    "time": "M 3-5:30p"
+  },
+  "ENGL2900X": {
+    "dept": "ENGL",
+    "num": "2900X",
+    "code": "ENGL2900X",
+    "name": "Postcolonial Theory",
+    "prof": "L. Gandhi",
+    "time": "M 3-5:30p"
+  },
+  "ENGL2901R": {
+    "dept": "ENGL",
+    "num": "2901R",
+    "code": "ENGL2901R",
+    "name": "Technologies of Memory",
+    "prof": "Burrows/Reichman",
+    "time": "W 3-5:30p"
+  },
+  "ENGL2970": {
+    "dept": "ENGL",
+    "num": "2970",
+    "code": "ENGL2970",
+    "name": "Preliminary Examination Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "ENGL2990": {
+    "dept": "ENGL",
+    "num": "2990",
+    "code": "ENGL2990",
+    "name": "Thesis Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "ENGLXLIST": {
+    "dept": "ENGL",
+    "num": "XLIST",
+    "code": "ENGLXLIST",
+    "name": "Courses of Interest to Students Concentrating in English",
+    "prof": "See details",
+    "time": ""
+  },
+  "COLT1310Q": {
+    "dept": "COLT",
+    "num": "1310Q",
+    "code": "COLT1310Q",
+    "name": "England and the Renaissance (ENGL 1311N)",
+    "prof": "See details",
+    "time": ""
+  },
+  "COLT1610A": {
+    "dept": "COLT",
+    "num": "1610A",
+    "code": "COLT1610A",
+    "name": "The Sublime (ENGL 1901N)",
+    "prof": "See details",
+    "time": ""
+  },
+  "HMAN1975P": {
+    "dept": "HMAN",
+    "num": "1975P",
+    "code": "HMAN1975P",
+    "name": "Medieval Race (ENGL 1361Q)",
+    "prof": "See details",
+    "time": ""
+  },
+  "HMAN2401K": {
+    "dept": "HMAN",
+    "num": "2401K",
+    "code": "HMAN2401K",
+    "name": "Technologies of Memory (ENGL 2901R)",
+    "prof": "See details",
+    "time": ""
+  },
+  "HMAN2401L": {
+    "dept": "HMAN",
+    "num": "2401L",
+    "code": "HMAN2401L",
+    "name": "Postcolonial Theory (ENGL 2900X)",
+    "prof": "See details",
+    "time": ""
+  },
+  "LITR1220J": {
+    "dept": "LITR",
+    "num": "1220J",
+    "code": "LITR1220J",
+    "name": "Waves and Edges: Poetry and the Sea (ENGL 1901P)",
+    "prof": "See details",
+    "time": ""
+  },
+  "MCM1506Y": {
+    "dept": "MCM",
+    "num": "1506Y",
+    "code": "MCM1506Y",
+    "name": "Croenberg/Lynch (ENGL 1901L)",
+    "prof": "See details",
+    "time": ""
+  },
+  "MCM2101D": {
+    "dept": "MCM",
+    "num": "2101D",
+    "code": "MCM2101D",
+    "name": "Postcolonial Theory (ENGL 2900X)",
+    "prof": "See details",
+    "time": ""
+  },
+  "MDVL0100D": {
+    "dept": "MDVL",
+    "num": "0100D",
+    "code": "MDVL0100D",
+    "name": "Matters of Romance (ENGL 0100D)",
+    "prof": "See details",
+    "time": ""
+  },
+  "MDVL1900Y": {
+    "dept": "MDVL",
+    "num": "1900Y",
+    "code": "MDVL1900Y",
+    "name": "Medieval Manuscript Studies: Paleography, Codicology, and Interpretation (ENGL 1900Y)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS1280A": {
+    "dept": "STS",
+    "num": "1280A",
+    "code": "STS1280A",
+    "name": "Neuroaesthetics and Reading (ENGL 1900Z)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS1280B": {
+    "dept": "STS",
+    "num": "1280B",
+    "code": "STS1280B",
+    "name": "Nature Writing (ENGL 1190U)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS0050": {
+    "dept": "STS",
+    "num": "0050",
+    "code": "STS0050",
+    "name": "Science Fictions: The Misuse of Science in Public Life",
+    "prof": "C. Dean",
+    "time": "T 4-6:30p",
+    "size": 13.0,
+    "num-respondents": 13.0,
+    "link": "https://thecriticalreview.org/search/STS/0050",
+    "same_prof": {
+      "max_hrs": 6.77,
+      "avg_hrs": 2.31,
+      "avg_rating": 4.13
+    },
+    "all_reviews": {
+      "max_hrs": 6.77,
+      "avg_hrs": 2.31,
+      "avg_rating": 4.13
+    }
+  },
+  "STS0120": {
+    "dept": "STS",
+    "num": "0120",
+    "code": "STS0120",
+    "name": "Culture and Health (ANTH 0300)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS0294A": {
+    "dept": "STS",
+    "num": "0294A",
+    "code": "STS0294A",
+    "name": "Climate Solutions - A Multidisciplinary Perspective (ENVS 0465)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS0360": {
+    "dept": "STS",
+    "num": "0360",
+    "code": "STS0360",
+    "name": "Art and Technology from Futurism to Hacktivism (HIAA 0820)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS0470": {
+    "dept": "STS",
+    "num": "0470",
+    "code": "STS0470",
+    "name": "Digital Media (MCM 0230)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS0701": {
+    "dept": "STS",
+    "num": "0701",
+    "code": "STS0701",
+    "name": "Dirty Computer: Race, Queerness, and Science Fiction",
+    "prof": "M. Kargbo",
+    "time": "Th 4-6:30p"
+  },
+  "STS1000": {
+    "dept": "STS",
+    "num": "1000",
+    "code": "STS1000",
+    "name": "Introduction to Science, Technology and Society: Theories and Controversies",
+    "prof": "D. Weinstein",
+    "time": "TTh 10:30-11:50a",
+    "size": 12.0,
+    "num-respondents": 11.0,
+    "link": "https://thecriticalreview.org/search/STS/1000",
+    "same_prof": {
+      "max_hrs": 9.55,
+      "avg_hrs": 3.82,
+      "avg_rating": 3.46
+    },
+    "all_reviews": {
+      "max_hrs": 9.55,
+      "avg_hrs": 3.82,
+      "avg_rating": 3.46
+    }
+  },
+  "STS1122": {
+    "dept": "STS",
+    "num": "1122",
+    "code": "STS1122",
+    "name": "Bioethics and Culture (ANTH 1242)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS1122A": {
+    "dept": "STS",
+    "num": "1122A",
+    "code": "STS1122A",
+    "name": "Race, Racialization, and Health (ANTH 1315)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS1300B": {
+    "dept": "STS",
+    "num": "1300B",
+    "code": "STS1300B",
+    "name": "Birding Communities (ENVS 1557)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS1300C": {
+    "dept": "STS",
+    "num": "1300C",
+    "code": "STS1300C",
+    "name": "Podcasting for the Common Good (ENVS 1421)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS1570": {
+    "dept": "STS",
+    "num": "1570",
+    "code": "STS1570",
+    "name": "Technologies of/and the Body - Mediated Visions (MCM 1506O)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS1694B": {
+    "dept": "STS",
+    "num": "1694B",
+    "code": "STS1694B",
+    "name": "Artists and Scientists as Partners: Theory to Practice (TAPS 1281Z)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS1694C": {
+    "dept": "STS",
+    "num": "1694C",
+    "code": "STS1694C",
+    "name": "Choreorobotics (TAPS 1750)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS1700S": {
+    "dept": "STS",
+    "num": "1700S",
+    "code": "STS1700S",
+    "name": "Cripping Technoscience: Disability, Knowledge, (Re)Invention",
+    "prof": "E. Rogers",
+    "time": "M 3-5:30p"
+  },
+  "STS1705": {
+    "dept": "STS",
+    "num": "1705",
+    "code": "STS1705",
+    "name": "The Medium(s) of Animation: Plasticity, Labor, Technology",
+    "prof": "C. Guan",
+    "time": "F 3-5:30p"
+  },
+  "STS1771P": {
+    "dept": "STS",
+    "num": "1771P",
+    "code": "STS1771P",
+    "name": "Energy Policy and Politics (ENVS 1925)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS2700H": {
+    "dept": "STS",
+    "num": "2700H",
+    "code": "STS2700H",
+    "name": "Global Histories of Psychiatry and Anti-Psychiatry Since 1945 (HMAN 2401H)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS2700I": {
+    "dept": "STS",
+    "num": "2700I",
+    "code": "STS2700I",
+    "name": "Data and Society (DATA 2080)",
+    "prof": "See details",
+    "time": ""
+  },
+  "STS2700J": {
+    "dept": "STS",
+    "num": "2700J",
+    "code": "STS2700J",
+    "name": "Privacy and Personal Data Protection (CSCI 2002)",
+    "prof": "See details",
+    "time": ""
+  },
+  "HMAN1975Q": {
+    "dept": "HMAN",
+    "num": "1975Q",
+    "code": "HMAN1975Q",
+    "name": "Cripping Technoscience (STS 1700)",
+    "prof": "See details",
+    "time": ""
+  },
+  "MCM1506Z": {
+    "dept": "MCM",
+    "num": "1506Z",
+    "code": "MCM1506Z",
+    "name": "Medium(s) of Animation: Plasticity, Labor, Technology (STS 1705)",
+    "prof": "See details",
+    "time": ""
+  },
+  "BIOL2010B": {
+    "dept": "BIOL",
+    "num": "2010B",
+    "code": "BIOL2010B",
+    "name": "Introduction to Data Science in Molecular Biology",
+    "prof": "N. Neretti",
+    "time": "T 10a-1p"
+  },
+  "MPA2066": {
+    "dept": "MPA",
+    "num": "2066",
+    "code": "MPA2066",
+    "name": "Introduction to Statistical Machine Learning",
+    "prof": "P. Stey",
+    "time": "T 4-6:30p"
+  },
+  "MPA2160": {
+    "dept": "MPA",
+    "num": "2160",
+    "code": "MPA2160",
+    "name": "Management and Implementation in Public and Non-Profit Organizations",
+    "prof": "W. Allen",
+    "time": "Th 4-6:30p"
+  },
+  "MPA2228": {
+    "dept": "MPA",
+    "num": "2228",
+    "code": "MPA2228",
+    "name": "Communication on the Political and Global Stage",
+    "prof": "D. Wade",
+    "time": "W 5-7:20p"
+  },
+  "MPA2230": {
+    "dept": "MPA",
+    "num": "2230",
+    "code": "MPA2230",
+    "name": "Issues for Future Diplomats",
+    "prof": "R. Boucher",
+    "time": "W 3-5:30p"
+  },
+  "MPA2475": {
+    "dept": "MPA",
+    "num": "2475",
+    "code": "MPA2475",
+    "name": "Policy Problems of the 21st Century",
+    "prof": "A. Plane",
+    "time": "M 3-5:30p"
+  },
+  "MPA2606": {
+    "dept": "MPA",
+    "num": "2606",
+    "code": "MPA2606",
+    "name": "Public Policy and Politics in Partisan Times",
+    "prof": "Schiller/Cicilline",
+    "time": "M 9-11:30a"
+  },
+  "MPA2800": {
+    "dept": "MPA",
+    "num": "2800",
+    "code": "MPA2800",
+    "name": "Policy in Action Consultancy",
+    "prof": "D. Bahar",
+    "time": "TTh 1-2:20p"
+  },
+  "BIOL0040": {
+    "dept": "BIOL",
+    "num": "0040",
+    "code": "BIOL0040",
+    "name": "Nutrition for Fitness and Physical Activity",
+    "prof": "M. Flynn",
+    "time": "T 4-6:30p",
+    "size": 18.75,
+    "num-respondents": 14.75,
+    "link": "https://thecriticalreview.org/search/BIOL/0040",
+    "same_prof": {
+      "max_hrs": 8.6475,
+      "avg_hrs": 2.7375,
+      "avg_rating": 4.382499999999999
+    },
+    "all_reviews": {
+      "max_hrs": 8.6475,
+      "avg_hrs": 2.7375,
+      "avg_rating": 4.382499999999999
+    }
+  },
+  "BIOL0080": {
+    "dept": "BIOL",
+    "num": "0080",
+    "code": "BIOL0080",
+    "name": "Biotechnology Management",
+    "prof": "B. Bready",
+    "time": "T 4-6:30p",
+    "size": 31.375,
+    "num-respondents": 21.375,
+    "link": "https://thecriticalreview.org/search/BIOL/0080",
+    "same_prof": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 3.9662499999999996
+    },
+    "all_reviews": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 3.9662499999999996
+    }
+  },
+  "BIOL0150D": {
+    "dept": "BIOL",
+    "num": "0150D",
+    "code": "BIOL0150D",
+    "name": "Techniques in Regenerative Medicine: Cells, Scaffolds and Staining",
+    "prof": "T. Achilli",
+    "time": "F 3-5p",
+    "size": 11.0,
+    "num-respondents": 6.0,
+    "link": "https://thecriticalreview.org/search/BIOL/0150D",
+    "same_prof": {
+      "max_hrs": 2.6550000000000002,
+      "avg_hrs": 0.855,
+      "avg_rating": 4.08
+    },
+    "all_reviews": {
+      "max_hrs": 2.6550000000000002,
+      "avg_hrs": 0.855,
+      "avg_rating": 4.08
+    }
+  },
+  "BIOL0160": {
+    "dept": "BIOL",
+    "num": "0160",
+    "code": "BIOL0160",
+    "name": "Plants, Food, and People",
+    "prof": "P. Heywood",
+    "time": "TTh 10:30-11:50a",
+    "size": 21.0,
+    "num-respondents": 7.0,
+    "link": "https://thecriticalreview.org/search/BIOL/0160",
+    "same_prof": {
+      "max_hrs": 9.17,
+      "avg_hrs": 3.86,
+      "avg_rating": 4.32
+    },
+    "all_reviews": {
+      "max_hrs": 9.17,
+      "avg_hrs": 3.86,
+      "avg_rating": 4.32
+    }
+  },
+  "BIOL0190S": {
+    "dept": "BIOL",
+    "num": "0190S",
+    "code": "BIOL0190S",
+    "name": "Phage Hunters, Part II",
+    "prof": "Zhou/Taylor",
+    "time": "WF 3-5:30p",
+    "size": 19.5,
+    "num-respondents": 16.0,
+    "link": "https://thecriticalreview.org/search/BIOL/0190S",
+    "same_prof": {
+      "max_hrs": 8.125,
+      "avg_hrs": 2.8049999999999997,
+      "avg_rating": 4.359999999999999
+    },
+    "all_reviews": {
+      "max_hrs": 8.125,
+      "avg_hrs": 2.8049999999999997,
+      "avg_rating": 4.359999999999999
+    }
+  },
+  "BIOL0280": {
+    "dept": "BIOL",
+    "num": "0280",
+    "code": "BIOL0280",
+    "name": "Biochemistry",
+    "prof": "S. Taylor",
+    "time": "Su 7-8:30p",
+    "size": 232.35294117647058,
+    "num-respondents": 88.29411764705883,
+    "link": "https://thecriticalreview.org/search/BIOL/0280",
+    "same_prof": {
+      "max_hrs": 10.554117647058824,
+      "avg_hrs": 3.180588235294117,
+      "avg_rating": 4.056470588235296
+    },
+    "all_reviews": {
+      "max_hrs": 10.554117647058824,
+      "avg_hrs": 3.180588235294117,
+      "avg_rating": 4.056470588235296
+    }
+  },
+  "BIOL0285": {
+    "dept": "BIOL",
+    "num": "0285",
+    "code": "BIOL0285",
+    "name": "Inquiry in Biochemistry: From Gene to Protein Function",
+    "prof": "Jogl/Sobieraj",
+    "time": "T 4-5p",
+    "size": 17.2,
+    "num-respondents": 13.4,
+    "link": "https://thecriticalreview.org/search/BIOL/0285",
+    "same_prof": {
+      "max_hrs": 9.454,
+      "avg_hrs": 3.6560000000000006,
+      "avg_rating": 3.869999999999999
+    },
+    "all_reviews": {
+      "max_hrs": 9.454,
+      "avg_hrs": 3.6560000000000006,
+      "avg_rating": 3.869999999999999
+    }
+  },
+  "BIOL0420": {
+    "dept": "BIOL",
+    "num": "0420",
+    "code": "BIOL0420",
+    "name": "Principles of Ecology",
+    "prof": "J. Witman",
+    "time": "Th 4:30-6p",
+    "size": 90.42857142857143,
+    "num-respondents": 71.28571428571429,
+    "link": "https://thecriticalreview.org/search/BIOL/0420",
+    "same_prof": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 3.9014285714285726
+    },
+    "all_reviews": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 3.9014285714285726
+    }
+  },
+  "BIOL0430": {
+    "dept": "BIOL",
+    "num": "0430",
+    "code": "BIOL0430",
+    "name": "The Evolution of Plant Diversity",
+    "prof": "R. Kartzinel",
+    "time": "Th 1-4p",
+    "size": 21.7,
+    "num-respondents": 17.4,
+    "link": "https://thecriticalreview.org/search/BIOL/0430",
+    "same_prof": {
+      "max_hrs": 7.128,
+      "avg_hrs": 2.4200000000000004,
+      "avg_rating": 4.4
+    },
+    "all_reviews": {
+      "max_hrs": 7.128,
+      "avg_hrs": 2.4200000000000004,
+      "avg_rating": 4.4
+    }
+  },
+  "BIOL0450": {
+    "dept": "BIOL",
+    "num": "0450",
+    "code": "BIOL0450",
+    "name": "Evolutionary Behavioral Ecology",
+    "prof": "M. Fuxjager",
+    "time": "MWF 9-9:50a"
+  },
+  "BIOL0495": {
+    "dept": "BIOL",
+    "num": "0495",
+    "code": "BIOL0495",
+    "name": "Statistical Analysis of Biological Data",
+    "prof": "E. Huerta-Sanchez",
+    "time": "T 8-10p",
+    "size": 54.42857142857143,
+    "num-respondents": 41.285714285714285,
+    "link": "https://thecriticalreview.org/search/BIOL/0495",
+    "same_prof": {
+      "max_hrs": 11.418571428571429,
+      "avg_hrs": 5.725714285714285,
+      "avg_rating": 4.538571428571427
+    },
+    "all_reviews": {
+      "max_hrs": 11.418571428571429,
+      "avg_hrs": 5.725714285714285,
+      "avg_rating": 4.538571428571427
+    }
+  },
+  "BIOL0500": {
+    "dept": "BIOL",
+    "num": "0500",
+    "code": "BIOL0500",
+    "name": "Cell and Molecular Biology",
+    "prof": "Webb/Valdez",
+    "time": "MW 3-4:20p",
+    "size": 157.85714285714286,
+    "num-respondents": 89.85714285714286,
+    "link": "https://thecriticalreview.org/search/BIOL/0500",
+    "same_prof": {
+      "max_hrs": 3.4514285714285715,
+      "avg_hrs": 1.162857142857143,
+      "avg_rating": 4.338571428571428
+    },
+    "all_reviews": {
+      "max_hrs": 3.4514285714285715,
+      "avg_hrs": 1.162857142857143,
+      "avg_rating": 4.338571428571428
+    }
+  },
+  "BIOL0510": {
+    "dept": "BIOL",
+    "num": "0510",
+    "code": "BIOL0510",
+    "name": "Introductory Microbiology",
+    "prof": "A. Dugan",
+    "time": "T 1-3:50p",
+    "size": 40.266666666666666,
+    "num-respondents": 23.333333333333332,
+    "link": "https://thecriticalreview.org/search/BIOL/0510",
+    "same_prof": {
+      "max_hrs": 3.264666666666666,
+      "avg_hrs": 1.332,
+      "avg_rating": 3.338666666666667
+    },
+    "all_reviews": {
+      "max_hrs": 3.264666666666666,
+      "avg_hrs": 1.3319999999999999,
+      "avg_rating": 3.3386666666666662
+    }
+  },
+  "BIOL0940G": {
+    "dept": "BIOL",
+    "num": "0940G",
+    "code": "BIOL0940G",
+    "name": "Antibiotic Drug Discovery: Identifying Novel Soil Microbes to Combat Antibiotic Resistance",
+    "prof": "T. Achilli",
+    "time": "F 12-2:50p"
+  },
+  "BIOL0946": {
+    "dept": "BIOL",
+    "num": "0946",
+    "code": "BIOL0946",
+    "name": "Research Design + Quantitative Methods for the Health Sciences",
+    "prof": "K. Monteiro",
+    "time": "W 3-5:30p"
+  },
+  "BIOL1040": {
+    "dept": "BIOL",
+    "num": "1040",
+    "code": "BIOL1040",
+    "name": "Ultrastructure/Bioimaging",
+    "prof": "G. Williams",
+    "time": "M 2-5p"
+  },
+  "BIOL1100": {
+    "dept": "BIOL",
+    "num": "1100",
+    "code": "BIOL1100",
+    "name": "Cell Physiology and Biophysics",
+    "prof": "Horrigan/Zimmerman",
+    "time": "M 3-5:30p",
+    "size": 46.90909090909091,
+    "num-respondents": 21.545454545454547,
+    "link": "https://thecriticalreview.org/search/BIOL/1100",
+    "same_prof": {
+      "max_hrs": 4.049090909090909,
+      "avg_hrs": 1.4200000000000002,
+      "avg_rating": 4.142727272727273
+    },
+    "all_reviews": {
+      "max_hrs": 4.049090909090909,
+      "avg_hrs": 1.4200000000000002,
+      "avg_rating": 4.142727272727273
+    }
+  },
+  "BIOL1150": {
+    "dept": "BIOL",
+    "num": "1150",
+    "code": "BIOL1150",
+    "name": "Stem Cell Engineering",
+    "prof": "E. Darling",
+    "time": "F 9a-12p",
+    "size": 17.0,
+    "num-respondents": 16.0,
+    "link": "https://thecriticalreview.org/search/BIOL/1150",
+    "same_prof": {
+      "max_hrs": 10.946666666666667,
+      "avg_hrs": 4.376666666666666,
+      "avg_rating": 4.123333333333334
+    },
+    "all_reviews": {
+      "max_hrs": 10.946666666666667,
+      "avg_hrs": 4.376666666666666,
+      "avg_rating": 4.123333333333334
+    }
+  },
+  "BIOL1160": {
+    "dept": "BIOL",
+    "num": "1160",
+    "code": "BIOL1160",
+    "name": "Principles of Exercise Physiology",
+    "prof": "A. Sobieraj",
+    "time": "MWF 12-12:50p",
+    "size": 58.625,
+    "num-respondents": 43.5625,
+    "link": "https://thecriticalreview.org/search/BIOL/1160",
+    "same_prof": {
+      "max_hrs": 10.27875,
+      "avg_hrs": 2.418125,
+      "avg_rating": 4.22625
+    },
+    "all_reviews": {
+      "max_hrs": 10.27875,
+      "avg_hrs": 2.418125,
+      "avg_rating": 4.22625
+    }
+  },
+  "BIOL1222A": {
+    "dept": "BIOL",
+    "num": "1222A",
+    "code": "BIOL1222A",
+    "name": "Current Topics in Functional Genomics",
+    "prof": "W. Fairbrother",
+    "time": "W 3-5:30p"
+  },
+  "BIOL1250": {
+    "dept": "BIOL",
+    "num": "1250",
+    "code": "BIOL1250",
+    "name": "Host-microbiome Interactions in Health and Disease",
+    "prof": "Belenky/Vaishnava",
+    "time": "Th 2-4:30p",
+    "size": 17.666666666666668,
+    "num-respondents": 11.0,
+    "link": "https://thecriticalreview.org/search/BIOL/1250",
+    "same_prof": {
+      "max_hrs": 8.383333333333335,
+      "avg_hrs": 2.98,
+      "avg_rating": 4.133333333333333
+    },
+    "all_reviews": {
+      "max_hrs": 8.383333333333335,
+      "avg_hrs": 2.98,
+      "avg_rating": 4.133333333333333
+    }
+  },
+  "BIOL1330": {
+    "dept": "BIOL",
+    "num": "1330",
+    "code": "BIOL1330",
+    "name": "Biology of Reproduction",
+    "prof": "G. Wessel",
+    "time": "M 3-5:30p",
+    "size": 18.25,
+    "num-respondents": 13.75,
+    "link": "https://thecriticalreview.org/search/BIOL/1330",
+    "same_prof": {
+      "max_hrs": 11.4225,
+      "avg_hrs": 3.88,
+      "avg_rating": 4.445
+    },
+    "all_reviews": {
+      "max_hrs": 11.4225,
+      "avg_hrs": 3.88,
+      "avg_rating": 4.445
+    }
+  },
+  "BIOL1450": {
+    "dept": "BIOL",
+    "num": "1450",
+    "code": "BIOL1450",
+    "name": "Community Ecology",
+    "prof": "J. Kellner",
+    "time": "MW 8:30-9:50a",
+    "size": 35.0,
+    "num-respondents": 27.0,
+    "link": "https://thecriticalreview.org/search/BIOL/1450",
+    "same_prof": {
+      "max_hrs": 7.15,
+      "avg_hrs": 2.52,
+      "avg_rating": 4.87
+    },
+    "all_reviews": {
+      "max_hrs": 7.15,
+      "avg_hrs": 2.52,
+      "avg_rating": 4.87
+    }
+  },
+  "BIOL1530": {
+    "dept": "BIOL",
+    "num": "1530",
+    "code": "BIOL1530",
+    "name": "Emergency Medical Systems: An Anatomy of Critical Performance",
+    "prof": "Becker/Karim",
+    "time": "W 3-5:30p",
+    "size": 22.0,
+    "num-respondents": 8.0,
+    "link": "https://thecriticalreview.org/search/BIOL/1530",
+    "same_prof": {
+      "max_hrs": 9.5,
+      "avg_hrs": 4.75,
+      "avg_rating": 3.48
+    },
+    "all_reviews": {
+      "max_hrs": 9.5,
+      "avg_hrs": 4.75,
+      "avg_rating": 3.48
+    }
+  },
+  "BIOL1540": {
+    "dept": "BIOL",
+    "num": "1540",
+    "code": "BIOL1540",
+    "name": "Molecular Genetics",
+    "prof": "Bender/Huang",
+    "time": "TTh 2:30-3:50p",
+    "size": 26.875,
+    "num-respondents": 24.375,
+    "link": "https://thecriticalreview.org/search/BIOL/1540",
+    "same_prof": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.12875
+    },
+    "all_reviews": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.12875
+    }
+  },
+  "BIOL1545": {
+    "dept": "BIOL",
+    "num": "1545",
+    "code": "BIOL1545",
+    "name": "Human Genetics and Genomics",
+    "prof": "E. Morrow",
+    "time": "TTh 9-10:20a"
+  },
+  "BIOL1550": {
+    "dept": "BIOL",
+    "num": "1550",
+    "code": "BIOL1550",
+    "name": "Biology of Emerging Microbial Diseases",
+    "prof": "C. de Graffenried",
+    "time": "Th 12-12:50p",
+    "size": 30.9,
+    "num-respondents": 22.0,
+    "link": "https://thecriticalreview.org/search/BIOL/1550",
+    "same_prof": {
+      "max_hrs": 6.715,
+      "avg_hrs": 2.135,
+      "avg_rating": 4.1
+    },
+    "all_reviews": {
+      "max_hrs": 6.715,
+      "avg_hrs": 2.135,
+      "avg_rating": 4.1
+    }
+  },
+  "BIOL1555": {
+    "dept": "BIOL",
+    "num": "1555",
+    "code": "BIOL1555",
+    "name": "Methods in\u00a0Informatics\u00a0and Data Science for\u00a0Health",
+    "prof": "Chen/Sarkar",
+    "time": "M 3-5:30p"
+  },
+  "BIOL1600": {
+    "dept": "BIOL",
+    "num": "1600",
+    "code": "BIOL1600",
+    "name": "Development of Vaccines to Infectious Diseases",
+    "prof": "Vaishnava/Beura",
+    "time": "MW 3-4:20p",
+    "size": 50.25,
+    "num-respondents": 28.125,
+    "link": "https://thecriticalreview.org/search/BIOL/1600",
+    "same_prof": {
+      "max_hrs": 5.78625,
+      "avg_hrs": 1.6675,
+      "avg_rating": 4.35125
+    },
+    "all_reviews": {
+      "max_hrs": 5.78625,
+      "avg_hrs": 1.6675,
+      "avg_rating": 4.35125
+    }
+  },
+  "BIOL1610": {
+    "dept": "BIOL",
+    "num": "1610",
+    "code": "BIOL1610",
+    "name": "Experimental Neurobiology",
+    "prof": "J. Stein",
+    "time": "W 1-6p"
+  },
+  "BIOL1820": {
+    "dept": "BIOL",
+    "num": "1820",
+    "code": "BIOL1820",
+    "name": "Environmental Health and Disease",
+    "prof": "J. Plavicki",
+    "time": "TTh 10:30-11:50a",
+    "size": 41.666666666666664,
+    "num-respondents": 29.333333333333332,
+    "link": "https://thecriticalreview.org/search/BIOL/1820",
+    "same_prof": {
+      "max_hrs": 6.201666666666667,
+      "avg_hrs": 2.643333333333333,
+      "avg_rating": 3.47
+    },
+    "all_reviews": {
+      "max_hrs": 6.201666666666667,
+      "avg_hrs": 2.643333333333333,
+      "avg_rating": 3.47
+    }
+  },
+  "BIOL1865": {
+    "dept": "BIOL",
+    "num": "1865",
+    "code": "BIOL1865",
+    "name": "Toxicology",
+    "prof": "D. Spade",
+    "time": "TTh 1-2:20p"
+  },
+  "BIOL1885": {
+    "dept": "BIOL",
+    "num": "1885",
+    "code": "BIOL1885",
+    "name": "Human Anatomy and Biomechanics",
+    "prof": "Swartz/Brainerd",
+    "time": "T 3-5p"
+  },
+  "BIOL2018": {
+    "dept": "BIOL",
+    "num": "2018",
+    "code": "BIOL2018",
+    "name": "Management Strategies in Biotechnology",
+    "prof": "Y. Jong",
+    "time": "M 5-7:30p",
+    "size": 13.0,
+    "num-respondents": 5.0,
+    "link": "https://thecriticalreview.org/search/BIOL/2018",
+    "same_prof": {
+      "max_hrs": 13.2,
+      "avg_hrs": 5.0,
+      "avg_rating": 4.58
+    },
+    "all_reviews": {
+      "max_hrs": 13.2,
+      "avg_hrs": 5.0,
+      "avg_rating": 4.58
+    }
+  },
+  "BIOL2040": {
+    "dept": "BIOL",
+    "num": "2040",
+    "code": "BIOL2040",
+    "name": "Ultrastructure/Bioimaging",
+    "prof": "G. Williams",
+    "time": "M 2-5p"
+  },
+  "BIOL2145": {
+    "dept": "BIOL",
+    "num": "2145",
+    "code": "BIOL2145",
+    "name": "Molecular Targets of Drug Discovery",
+    "prof": "D. Horrigan",
+    "time": "T 10a-12:30p",
+    "size": 13.0,
+    "num-respondents": 5.0,
+    "link": "https://thecriticalreview.org/search/BIOL/2145",
+    "same_prof": {
+      "max_hrs": 10.33,
+      "avg_hrs": 4.33,
+      "avg_rating": 4.55
+    },
+    "all_reviews": {
+      "max_hrs": 10.33,
+      "avg_hrs": 4.33,
+      "avg_rating": 4.55
+    }
+  },
+  "BIOL2167": {
+    "dept": "BIOL",
+    "num": "2167",
+    "code": "BIOL2167",
+    "name": "In Vitro Models for Disease",
+    "prof": "J. Schell",
+    "time": "T 10a-12:30p"
+  },
+  "BIOL2222B": {
+    "dept": "BIOL",
+    "num": "2222B",
+    "code": "BIOL2222B",
+    "name": "Current Topics in Functional Genomics",
+    "prof": "W. Fairbrother",
+    "time": "W 3-5:30p"
+  },
+  "BIOL2240": {
+    "dept": "BIOL",
+    "num": "2240",
+    "code": "BIOL2240",
+    "name": "Biomedical Engineering and Biotechnology Seminar",
+    "prof": "Morgan/Mathiowitz",
+    "time": "T 4-6:30p"
+  },
+  "BIOL2350": {
+    "dept": "BIOL",
+    "num": "2350",
+    "code": "BIOL2350",
+    "name": "The Biology of Aging",
+    "prof": "Tatar/Lapierre",
+    "time": "Th 2-5p"
+  },
+  "BIOL2528": {
+    "dept": "BIOL",
+    "num": "2528",
+    "code": "BIOL2528",
+    "name": "Innovation and Commercialization in Medical Devices, Diagnostics, and Wearables",
+    "prof": "M. Analoui",
+    "time": "Th 9:30a-12p",
+    "size": 22.0,
+    "num-respondents": 4.0,
+    "link": "https://thecriticalreview.org/search/BIOL/2528",
+    "same_prof": {
+      "max_hrs": 10.0,
+      "avg_hrs": 5.5,
+      "avg_rating": 4.47
+    },
+    "all_reviews": {
+      "max_hrs": 10.0,
+      "avg_hrs": 5.5,
+      "avg_rating": 4.47
+    }
+  },
+  "BIOL2540": {
+    "dept": "BIOL",
+    "num": "2540",
+    "code": "BIOL2540",
+    "name": "Molecular Genetics",
+    "prof": "Bender/Huang",
+    "time": "TTh 2:30-3:50p"
+  },
+  "BIOL2545": {
+    "dept": "BIOL",
+    "num": "2545",
+    "code": "BIOL2545",
+    "name": "Human Genetics and Genomics",
+    "prof": "E. Morrow",
+    "time": "TTh 9-10:20a"
+  },
+  "BIOL2865": {
+    "dept": "BIOL",
+    "num": "2865",
+    "code": "BIOL2865",
+    "name": "Toxicology",
+    "prof": "D. Spade",
+    "time": "TTh 1-2:20p"
+  },
+  "BIOL2970": {
+    "dept": "BIOL",
+    "num": "2970",
+    "code": "BIOL2970",
+    "name": "Preliminary Examination Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "BIOL2990": {
+    "dept": "BIOL",
+    "num": "2990",
+    "code": "BIOL2990",
+    "name": "Thesis Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "CHEM1230": {
+    "dept": "CHEM",
+    "num": "1230",
+    "code": "CHEM1230",
+    "name": "Chemical Biology",
+    "prof": "J. Morin",
+    "time": "TTh 9-10:20a",
+    "size": 25.4375,
+    "num-respondents": 19.375,
+    "link": "https://thecriticalreview.org/search/CHEM/1230",
+    "same_prof": {
+      "max_hrs": 4.9818750000000005,
+      "avg_hrs": 1.7487499999999998,
+      "avg_rating": 4.4275
+    },
+    "all_reviews": {
+      "max_hrs": 4.9818750000000005,
+      "avg_hrs": 1.7487499999999998,
+      "avg_rating": 4.4275
+    }
+  },
+  "AFRI0130": {
+    "dept": "AFRI",
+    "num": "0130",
+    "code": "AFRI0130",
+    "name": "This is America: Reimagining the American Saga",
+    "prof": "M. Scott",
+    "time": "TTh 10:30-11:50a"
+  },
+  "AFRI0400": {
+    "dept": "AFRI",
+    "num": "0400",
+    "code": "AFRI0400",
+    "name": "Badmen and Blues Women Explorations in African American Culture",
+    "prof": "D. Swails",
+    "time": "TTh 10:30-11:50a"
+  },
+  "AFRI1050A": {
+    "dept": "AFRI",
+    "num": "1050A",
+    "code": "AFRI1050A",
+    "name": "Advanced RPM Playwriting",
+    "prof": "E. Terry-Morgan",
+    "time": "W 10a-12:30p",
+    "size": 1.0,
+    "num-respondents": 1.0,
+    "link": "https://thecriticalreview.org/search/AFRI/1050A",
+    "same_prof": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.56
+    },
+    "all_reviews": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.56
+    }
+  },
+  "AFRI1050D": {
+    "dept": "AFRI",
+    "num": "1050D",
+    "code": "AFRI1050D",
+    "name": "Intermediate RPM Playwriting",
+    "prof": "E. Terry-Morgan",
+    "time": "W 10a-12:30p",
+    "size": 3.0,
+    "num-respondents": 2.0,
+    "link": "https://thecriticalreview.org/search/AFRI/1050D",
+    "same_prof": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.83
+    },
+    "all_reviews": {
+      "max_hrs": 0.0,
+      "avg_hrs": 0.0,
+      "avg_rating": 4.83
+    }
+  },
+  "AFRI1050E": {
+    "dept": "AFRI",
+    "num": "1050E",
+    "code": "AFRI1050E",
+    "name": "RPM Playwriting",
+    "prof": "E. Terry-Morgan",
+    "time": "W 10a-12:30p",
+    "size": 7.714285714285714,
+    "num-respondents": 7.285714285714286,
+    "link": "https://thecriticalreview.org/search/AFRI/1050E",
+    "same_prof": {
+      "max_hrs": 8.877142857142859,
+      "avg_hrs": 3.504285714285714,
+      "avg_rating": 4.305714285714286
+    },
+    "all_reviews": {
+      "max_hrs": 8.877142857142859,
+      "avg_hrs": 3.504285714285714,
+      "avg_rating": 4.305714285714286
+    }
+  },
+  "AFRI1075": {
+    "dept": "AFRI",
+    "num": "1075",
+    "code": "AFRI1075",
+    "name": "Providence Housing Ecosystem, Development, Displacement and Gentrification",
+    "prof": "D. Ritchie",
+    "time": "T 4-6:30p"
+  },
+  "AFRI1100C": {
+    "dept": "AFRI",
+    "num": "1100C",
+    "code": "AFRI1100C",
+    "name": "Slavery and Empire in the United States",
+    "prof": "Z. Sell",
+    "time": "M 3-5:30p",
+    "size": 5.0,
+    "num-respondents": 5.0,
+    "link": "https://thecriticalreview.org/search/AFRI/1100C",
+    "same_prof": {
+      "max_hrs": 11.0,
+      "avg_hrs": 6.4,
+      "avg_rating": 4.69
+    },
+    "all_reviews": {
+      "max_hrs": 11.0,
+      "avg_hrs": 6.4,
+      "avg_rating": 4.69
+    }
+  },
+  "AFRI1135": {
+    "dept": "AFRI",
+    "num": "1135",
+    "code": "AFRI1135",
+    "name": "Reading with Black Caribbean Women Writers",
+    "prof": "W. Harding",
+    "time": "MWF 2-2:50p"
+  },
+  "AFRI1205": {
+    "dept": "AFRI",
+    "num": "1205",
+    "code": "AFRI1205",
+    "name": "Racial Passing in Literature, Life, and Film",
+    "prof": "M. Guterl",
+    "time": "TTh 9-10:20a"
+  },
+  "AFRI1270": {
+    "dept": "AFRI",
+    "num": "1270",
+    "code": "AFRI1270",
+    "name": "Slavery, Democracy, and Racial Violence in the Americas",
+    "prof": "M. Rosanova Ferraro",
+    "time": "F 3-5:30p"
+  },
+  "AFRI1330": {
+    "dept": "AFRI",
+    "num": "1330",
+    "code": "AFRI1330",
+    "name": "Africana Studies Junior Seminar",
+    "prof": "Biggs/Jackson",
+    "time": "TTh 1-2:20p"
+  },
+  "AFRI1360": {
+    "dept": "AFRI",
+    "num": "1360",
+    "code": "AFRI1360",
+    "name": "Africana Studies: Knowledge, Texts and Methodology",
+    "prof": "P. Henry",
+    "time": "Th 4-6:30p",
+    "size": 14.0,
+    "num-respondents": 12.0,
+    "link": "https://thecriticalreview.org/search/AFRI/1360",
+    "same_prof": {
+      "max_hrs": 8.64,
+      "avg_hrs": 4.58,
+      "avg_rating": 4.19
+    },
+    "all_reviews": {
+      "max_hrs": 8.64,
+      "avg_hrs": 4.58,
+      "avg_rating": 4.19
+    }
+  },
+  "AFRI1430": {
+    "dept": "AFRI",
+    "num": "1430",
+    "code": "AFRI1430",
+    "name": "Lincoln in the Archive: Material Culture, Representation, and Race",
+    "prof": "R. Ater",
+    "time": "T 4-6:30p"
+  },
+  "AFRI1600": {
+    "dept": "AFRI",
+    "num": "1600",
+    "code": "AFRI1600",
+    "name": "Caribbean Popular Culture: Reggae, Dancehall, and Calypso",
+    "prof": "D. Maye",
+    "time": "TTh 2:30-3:50p"
+  },
+  "AFRI2002": {
+    "dept": "AFRI",
+    "num": "2002",
+    "code": "AFRI2002",
+    "name": "Theories of Africana Thought: Literary and Expressive Cultures",
+    "prof": "L. Biggs",
+    "time": "W 3-5:30p"
+  },
+  "AFRI2040": {
+    "dept": "AFRI",
+    "num": "2040",
+    "code": "AFRI2040",
+    "name": "Introduction to Black Women\u2019s Studies",
+    "prof": "N. Rooks",
+    "time": "M 3-5:30p"
+  },
+  "AFRI2970": {
+    "dept": "AFRI",
+    "num": "2970",
+    "code": "AFRI2970",
+    "name": "Preliminary Examination Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "AFRI2990": {
+    "dept": "AFRI",
+    "num": "2990",
+    "code": "AFRI2990",
+    "name": "Thesis Preparation",
+    "prof": "TBD",
+    "time": "TBA"
+  },
+  "HMAN1975O": {
+    "dept": "HMAN",
+    "num": "1975O",
+    "code": "HMAN1975O",
+    "name": "Caribbean Popular Culture (AFRI 1600)",
+    "prof": "See details",
+    "time": ""
+  },
+  "LACA1600": {
+    "dept": "LACA",
+    "num": "1600",
+    "code": "LACA1600",
+    "name": "Caribbean Popular Culture: Reggae, Dancehall, and Calypso (AFRI 1600)",
+    "prof": "See details",
+    "time": ""
+  },
+  "COST0030": {
+    "dept": "COST",
+    "num": "0030",
+    "code": "COST0030",
+    "name": "Sound, Song and Salvation in South Asia",
+    "prof": "S. Reddy",
+    "time": "TTh 9-10:20a"
+  },
+  "COST0100": {
+    "dept": "COST",
+    "num": "0100",
+    "code": "COST0100",
+    "name": "Introduction to Contemplative Studies",
+    "prof": "H. Roth",
+    "time": "TTh 12-12:50p",
+    "size": 14.0,
+    "num-respondents": 10.0,
+    "link": "https://thecriticalreview.org/search/COST/0100",
+    "same_prof": {
+      "max_hrs": 5.6,
+      "avg_hrs": 2.7,
+      "avg_rating": 3.89
+    },
+    "all_reviews": {
+      "max_hrs": 5.6,
+      "avg_hrs": 2.7,
+      "avg_rating": 3.89
+    }
+  },
+  "COST0145": {
+    "dept": "COST",
+    "num": "0145",
+    "code": "COST0145",
+    "name": "Karma, Rebirth and Liberation: Life and Death in South Asian Religions",
+    "prof": "Moore-Gerety/Prostak",
+    "time": "TTh 1-2:20p"
+  },
+  "COST0525": {
+    "dept": "COST",
+    "num": "0525",
+    "code": "COST0525",
+    "name": "The History and Practice of Yoga in India and Beyond",
+    "prof": "Moore-Gerety/Morrow",
+    "time": "T 4-6:30p",
+    "size": 10.0,
+    "num-respondents": 1.0,
+    "link": "https://thecriticalreview.org/search/COST/0525",
+    "same_prof": {
+      "max_hrs": 4.0,
+      "avg_hrs": 3.0,
+      "avg_rating": 4.28
+    },
+    "all_reviews": {
+      "max_hrs": 4.0,
+      "avg_hrs": 3.0,
+      "avg_rating": 4.28
+    }
+  },
+  "COST0535": {
+    "dept": "COST",
+    "num": "0535",
+    "code": "COST0535",
+    "name": "Self Transformation and Transcendence in Later Daoist Contemplative Traditions",
+    "prof": "L. Difiori",
+    "time": "MW 12-12:50p"
+  },
+  "COST1020": {
+    "dept": "COST",
+    "num": "1020",
+    "code": "COST1020",
+    "name": "Cognitive Neuroscience of Meditation",
+    "prof": "S. Lazar",
+    "time": "T 4-6:30p",
+    "size": 21.4,
+    "num-respondents": 11.8,
+    "link": "https://thecriticalreview.org/search/COST/1020",
+    "same_prof": {
+      "max_hrs": 8.324,
+      "avg_hrs": 3.6260000000000003,
+      "avg_rating": 3.7979999999999996
+    },
+    "all_reviews": {
+      "max_hrs": 8.324,
+      "avg_hrs": 3.6260000000000003,
+      "avg_rating": 3.7979999999999996
+    }
+  },
+  "COST1420": {
+    "dept": "COST",
+    "num": "1420",
+    "code": "COST1420",
+    "name": "The Contemplative Foundations of Classical Daoism",
+    "prof": "H. Roth",
+    "time": "TTh 12-12:50p"
+  },
+  "COST1885": {
+    "dept": "COST",
+    "num": "1885",
+    "code": "COST1885",
+    "name": "Measuring Mindfulness",
+    "prof": "J. Proulx",
+    "time": "W 3-5:30p"
+  },
+  "COST1950": {
+    "dept": "COST",
+    "num": "1950",
+    "code": "COST1950",
+    "name": "Senior Concentrators' Seminar",
+    "prof": "L. Difiori",
+    "time": "TTh 12-12:50p"
+  },
+  "EDUC0550": {
+    "dept": "EDUC",
+    "num": "0550",
+    "code": "EDUC0550",
+    "name": "Current Issues in US Higher Education",
+    "prof": "L. Page",
+    "time": "TTh 2:30-3:50p"
+  },
+  "ENGN1150": {
+    "dept": "ENGN",
+    "num": "1150",
+    "code": "ENGN1150",
+    "name": "Environmental Engineering Design",
+    "prof": "E. Suuberg",
+    "time": "MW 8:30-9:50a"
+  },
+  "ENGN1931H": {
+    "dept": "ENGN",
+    "num": "1931H",
+    "code": "ENGN1931H",
+    "name": "Capital Formation & Financing Growth",
+    "prof": "B. Gibbs",
+    "time": "TTh 1-2:20p"
+  },
+  "ENVS1350": {
+    "dept": "ENVS",
+    "num": "1350",
+    "code": "ENVS1350",
+    "name": "Environmental Economics and Policy",
+    "prof": "A. Poterack",
+    "time": "MWF 2-2:50p",
+    "size": 33.92857142857143,
+    "num-respondents": 21.642857142857142,
+    "link": "https://thecriticalreview.org/search/ENVS/1350",
+    "same_prof": {
+      "max_hrs": 4.588571428571429,
+      "avg_hrs": 2.045714285714286,
+      "avg_rating": 4.006428571428573
+    },
+    "all_reviews": {
+      "max_hrs": 4.588571428571429,
+      "avg_hrs": 2.045714285714286,
+      "avg_rating": 4.006428571428573
+    }
+  },
+  "HMAN1971S": {
+    "dept": "HMAN",
+    "num": "1971S",
+    "code": "HMAN1971S",
+    "name": "Introduction to iPhone/iPad Moviemaking Using 3-D and 360 VR Comparisons",
+    "prof": "T. Bogosian",
+    "time": "T 4-6:30p",
+    "size": 19.333333333333332,
+    "num-respondents": 17.22222222222222,
+    "link": "https://thecriticalreview.org/search/HMAN/1971S",
+    "same_prof": {
+      "max_hrs": 7.665555555555557,
+      "avg_hrs": 3.3211111111111107,
+      "avg_rating": 4.252222222222223
+    },
+    "all_reviews": {
+      "max_hrs": 7.665555555555557,
+      "avg_hrs": 3.3211111111111107,
+      "avg_rating": 4.252222222222223
+    }
+  },
+  "IAPA0900": {
+    "dept": "IAPA",
+    "num": "0900",
+    "code": "IAPA0900",
+    "name": "How We Compete: The Race for Industrial Supremacy Over Time and Place",
+    "prof": "E. Steinfeld",
+    "time": "MW 8:30-9:50a"
+  },
+  "IAPA1555": {
+    "dept": "IAPA",
+    "num": "1555",
+    "code": "IAPA1555",
+    "name": "The Political Economy of Strategy:  From the Financial Revolution to the Revolution in Military Affa",
+    "prof": "Dennis/Toprani",
+    "time": "TTh 6:40-8p"
+  },
+  "POLS1825E": {
+    "dept": "POLS",
+    "num": "1825E",
+    "code": "POLS1825E",
+    "name": "Health Care Politics and Policy",
+    "prof": "E. Patashnik",
+    "time": "M 3-5:30p"
+  },
+  "TAPS1280U": {
+    "dept": "TAPS",
+    "num": "1280U",
+    "code": "TAPS1280U",
+    "name": "Voice Over for the Actor",
+    "prof": "S. dAngelo",
+    "time": "TTh 1-3:50p",
+    "size": 12.0,
+    "num-respondents": 6.0,
+    "link": "https://thecriticalreview.org/search/TAPS/1280U",
+    "same_prof": {
+      "max_hrs": 5.8,
+      "avg_hrs": 2.6,
+      "avg_rating": 4.33
+    },
+    "all_reviews": {
+      "max_hrs": 5.8,
+      "avg_hrs": 2.6,
+      "avg_rating": 4.33
+    }
+  },
+  "HNDI0200": {
+    "dept": "HNDI",
+    "num": "0200",
+    "code": "HNDI0200",
+    "name": "Beginning Hindi or Urdu",
+    "prof": "Mishra/Koul",
+    "time": "MTWThF 12-12:50p",
+    "size": 21.714285714285715,
+    "num-respondents": 15.714285714285714,
+    "link": "https://thecriticalreview.org/search/HNDI/0200",
+    "same_prof": {
+      "max_hrs": 1.0285714285714287,
+      "avg_hrs": 0.6285714285714287,
+      "avg_rating": 4.375714285714286
+    },
+    "all_reviews": {
+      "max_hrs": 1.0285714285714287,
+      "avg_hrs": 0.6285714285714287,
+      "avg_rating": 4.375714285714286
+    }
+  },
+  "HNDI0400": {
+    "dept": "HNDI",
+    "num": "0400",
+    "code": "HNDI0400",
+    "name": "Intermediate Hindi-Urdu",
+    "prof": "Sokolosky/Koul",
+    "time": "MTWThF 10-10:50a",
+    "size": 10.0,
+    "num-respondents": 5.0,
+    "link": "https://thecriticalreview.org/search/HNDI/0400",
+    "same_prof": {
+      "max_hrs": 6.25,
+      "avg_hrs": 3.6,
+      "avg_rating": 4.33
+    },
+    "all_reviews": {
+      "max_hrs": 6.25,
+      "avg_hrs": 3.6,
+      "avg_rating": 4.33
+    }
+  }
+}
