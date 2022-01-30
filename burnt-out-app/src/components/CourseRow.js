@@ -3,7 +3,7 @@ export default function CourseRow({ data, sameProf }) {
   return (
     <tr>
       <td>{data[same]["avg-grade"]}</td>
-      <td>{data["name"]}</td>
+      <td>{data["code"] + " - " + data["name"]}</td>
       <td>{data[same]["avg-hrs"]}</td>
       <td>{data[same]["max-hrs"]}</td>
       <td><a href={data["cr-link"]}>{data["cr-link"]}</a></td>
