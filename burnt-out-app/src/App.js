@@ -35,7 +35,12 @@ function App({ to }) {
         </Routes>
       </div>
       <footer className="fixed-bottom pt-3 text-center" style={{ backgroundColor: "rgb(244,240,236)" }}>
-        <p>For questions, comments, or concerns, contact us at cpax@brown.edu 🐻</p>
+        <p>For questions, comments, or concerns, contact us at&nbsp;
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSebtY940Fu93KNPj52LHuz8Yha4fWiU4PlgrKI85QPcT6hEfw/viewform" target="_blank" rel="noreferrer noopener">
+            cpax@brown.edu
+          </a>
+          &nbsp;🐻
+        </p>
       </footer>
     </div >
   );
