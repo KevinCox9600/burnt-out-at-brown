@@ -96,7 +96,7 @@ class Table extends React.Component {
             value={this.state.prf}
             onChange={this.handleFilterChange}
           />
-          <input type="number" className="form-control" placeholder="Avg Hours" name="avgHrs"
+          {/* <input type="number" className="form-control" placeholder="Avg Hours" name="avgHrs"
             value={this.state.avgHrs}
             onChange={this.handleFilterChange}
           />
@@ -108,7 +108,7 @@ class Table extends React.Component {
               checked={this.state.sameProf}
               onChange={this.handleFilterChange} />
             <label className="form-check-label" htmlFor="same-prof">Same professor</label>
-          </div>
+          </div> */}
         </form>
       );
     } else {
