@@ -86,29 +86,31 @@ class Table extends React.Component {
 
     let filters;
     if (this.props.type === "courses") {
-      filters = (<form>
-        <input type="text" className="form-control" placeholder="Department" name="dept"
-          value={this.state.dept}
-          onChange={this.handleFilterChange}
-        />
-        <input type="text" className="form-control" placeholder="Professor" name="prof"
-          value={this.state.prf}
-          onChange={this.handleFilterChange}
-        />
-        <input type="number" className="form-control" placeholder="Avg Hours" name="avgHrs"
-          value={this.state.avgHrs}
-          onChange={this.handleFilterChange}
-        />
-        <input type="number" className="form-control" placeholder="Max Hours" name="maxHrs"
-          value={this.state.maxHrs}
-          onChange={this.handleFilterChange} />
-        <div className="form-check form-switch">
-          <input className="form-check-input" type="checkbox" role="switch" id="same-prof" name="sameProf"
-            checked={this.state.sameProf}
+      filters = (
+        <form>
+          <input type="text" className="form-control" placeholder="Department" name="dept"
+            value={this.state.dept}
+            onChange={this.handleFilterChange}
+          />
+          <input type="text" className="form-control" placeholder="Professor" name="prof"
+            value={this.state.prf}
+            onChange={this.handleFilterChange}
+          />
+          <input type="number" className="form-control" placeholder="Avg Hours" name="avgHrs"
+            value={this.state.avgHrs}
+            onChange={this.handleFilterChange}
+          />
+          <input type="number" className="form-control" placeholder="Max Hours" name="maxHrs"
+            value={this.state.maxHrs}
             onChange={this.handleFilterChange} />
-          <label className="form-check-label" htmlFor="same-prof">Same professor</label>
-        </div>
-      </form>);
+          <div className="form-check form-switch">
+            <input className="form-check-input" type="checkbox" role="switch" id="same-prof" name="sameProf"
+              checked={this.state.sameProf}
+              onChange={this.handleFilterChange} />
+            <label className="form-check-label" htmlFor="same-prof">Same professor</label>
+          </div>
+        </form>
+      );
     } else {
       filters = (
         <form>
