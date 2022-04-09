@@ -32,6 +32,7 @@ unique_dept = [c.lower() for c in unique_dept]
 
 classes = []
 
+# for each department, find all courses
 for department_code in unique_dept:
     driver.get('https://cab.brown.edu')
 
@@ -42,6 +43,7 @@ for department_code in unique_dept:
     input_field.send_keys(Keys.RETURN)
     driver.find_element_by_id("search-button").click()
 
+    # find request of the department's courses and process results
     for request in driver.requests:
         if request.response:
 
@@ -51,13 +53,16 @@ for department_code in unique_dept:
                 dict = json.loads(str_body)
                 results = dict["results"]
 
+                # process results
                 for r in results:
                     code, title, time, prof = r["code"], r["title"], r["meets"], r["instr"]
 
+                    # skip online courses and courses taught by multiple professors
+                    # do we want to do this?
                     if prof == "Team" or time == "Course offered online":
                         continue
 
-                    # Split PHP 2510 into PHP, 2510
+                    # Split PHP 2510 into [PHP, 2510]
                     dept_identifier, num = code.split(" ")
                     classes.append({"num": num, "dept": dept_identifier, "name": title, "time": time, "prof": prof})
                     
