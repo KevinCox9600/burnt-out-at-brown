@@ -20,8 +20,10 @@ Finally, the data is compiled with compile_data.py, which aggregates
 
 ## How to run
 1. Update semester in `constants.py`
-2. `python scrape-cab.py` outputs to class_list.json
-3. Go to critical review and get all cookies, putting them in cookies.py as object named
+2. Go to critical review and get all cookies, putting them in cookies.py as object named
    COOKIE_CONSTANTS. Cannot be dumped with document.cookie because of HTTP only session id.
-4. `python scrape-cr.py` outputs to class_objs.json and prof_objs.json
-5. `python compile-data.py` outputs to compiled_course_data.json
+4. Run `python scrap-cab.py && python scrape-cr.py && compile-data.py` or manually:
+   1. `python scrape-cab.py` outputs to data/semester/class_list.json
+   2. `python scrape-cr.py` outputs to data/semester/class_objs.json and
+      data/semester/prof_objs.json
+   1. `python compile-data.py` outputs to burnt-out-app/src/data/semester/compiled_course_data.json
