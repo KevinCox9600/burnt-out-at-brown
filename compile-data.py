@@ -1,11 +1,11 @@
 from functools import reduce
-import pprint
 import json
-from collections import Counter
+import os
 import re
-from constants import CLASS_LIST_FILE, CLASS_REVIEWS_LIST_FILE, COMPILED_DATA_FILE
 
+from constants import CLASS_LIST_FILE, CLASS_REVIEWS_LIST_FILE, COMPILED_DATA_FILE
 from helpers.stats import calc_max_hrs, calc_avg_hrs, calc_avg_rating
+
 
 cr_data = {}
 with open(CLASS_LIST_FILE) as class_file, open(CLASS_REVIEWS_LIST_FILE) as reviews_file:
@@ -67,5 +67,6 @@ with open(CLASS_LIST_FILE) as class_file, open(CLASS_REVIEWS_LIST_FILE) as revie
 
 # write compiled data to file
 courses_json = json.dumps(courses)
+os.makedirs(os.path.dirname(COMPILED_DATA_FILE), exist_ok=True)
 with open(COMPILED_DATA_FILE, "w") as f:
     f.write(courses_json)

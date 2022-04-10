@@ -2,15 +2,16 @@
 Scrapes CAB (Courses @ Brown) for the current term and outputs into class_list.json
 """
 
-import requests
-from bs4 import BeautifulSoup
-from seleniumwire import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
-from seleniumwire.utils import decode
 import json
+import os
+import requests
 import time
+from bs4 import BeautifulSoup
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from seleniumwire import webdriver
+from seleniumwire.utils import decode
+from webdriver_manager.chrome import ChromeDriverManager
 
 from constants import CLASS_LIST_FILE, CAB_URL
 
@@ -114,6 +115,7 @@ for department_code in unique_dept:
 # Write classes to a JSON file
 classes_dict = {"data": classes}
 classes_json = json.dumps(classes_dict)
+os.makedirs(os.path.dirname(CLASS_LIST_FILE), exist_ok=True)
 with open(CLASS_LIST_FILE, "w") as class_list_file:
     class_list_file.write(classes_json)
 
