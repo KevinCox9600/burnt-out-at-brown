@@ -3,6 +3,8 @@ import ProfRow from "./ProfRow";
 // import * as data from "../data/courses.json";
 import React from 'react';
 
+const SEMESTER = 'fall2022'; // in format `${lowerCaseSeason}${year}`
+
 function header(type) {
   const courseHeader = (
     <thead>
@@ -82,7 +84,7 @@ class Table extends React.Component {
   render() {
     // const courses = require('../data/courses.json');
     // const dataArray = courses["data"];
-    const dataObj = require('../data/compiled_course_data.json');
+    const dataObj = require(`../data/${SEMESTER}/compiled_course_data.json`);
 
     let filters;
     if (this.props.type === "courses") {
@@ -166,11 +168,15 @@ class Table extends React.Component {
     // limit size to 50
     filteredDataArray = filteredDataArray.slice(0, 500);
 
+    const semesterText = SEMESTER.match(/[a-zA-Z]+|[0-9]+/g);
+    const season = semesterText[0].charAt(0).toUpperCase() + semesterText[0].slice(1).toLowerCase();
+    const year = semesterText[1];
+
     return (<main>
-      <h2 style={{ textTransform: 'capitalize', marginTop: "20px" }}>Courses - Spring 2022</h2>
+      <h2 style={{ textTransform: 'capitalize', marginTop: "20px" }}>Courses - {season} {year}</h2>
       {filters}
       <div className="table-responsive">
-        <table className="table">
+        <table className="table" style={{ 'margin-bottom': 0 }}>
           {header(this.props.type)}
           {rows(filteredDataArray, this.props.type, filterValues)}
         </table>
