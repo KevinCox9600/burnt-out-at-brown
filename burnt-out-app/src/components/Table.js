@@ -144,7 +144,12 @@ class Table extends React.Component {
       // console.log(courseData, sameProfKey, courseData[sameProfKey]);
       let underMaxHrs = courseData[sameProfKey]['max_hrs'] < parseInt(filterValues.maxHrs);
       let underAvgHrs = courseData[sameProfKey]['avg_hrs'] < parseInt(filterValues.avgHrs);
-      let sameDept = courseData.dept.toLowerCase().includes(filterValues.dept.toLowerCase());;
+      let sameDept = false || !filterValues.dept;
+      for (let dept of filterValues.dept.split(/\s/g)) {
+        if (dept) {
+          sameDept = sameDept || courseData.dept.toLowerCase().includes(dept.toLowerCase());;
+        }
+      }
       let correctProf = courseData.prof.toLowerCase().includes(filterValues.prof.toLowerCase());
       if (underMaxHrs && underAvgHrs && sameDept && correctProf) {
         courseData['cr-link'] = `https://thecriticalreview.org/search/${courseData.dept}/${courseData.num}`;
