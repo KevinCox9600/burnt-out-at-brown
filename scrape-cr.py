@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from cookie import COOKIE_CONSTANTS
 import json
 
-class_list_file = open("class_list_unique.json")
+class_list_file = open("class_list.json")
 class_list_data = json.load(class_list_file)
 class_list_file.close()
 
@@ -14,7 +14,13 @@ courses = {}
 profs = {}
 
 
-for c in class_list_data["data"]:
+data = class_list_data["data"]
+data_length = len(data)
+print("data length:", data_length)
+for iterations, c in enumerate(data):
+    if iterations % 100 == 0:
+        print(f"iterations: {iterations} / {data_length}")
+
     dept, num, prof, time, name = c["dept"], c["num"], c["prof"], c["time"], c["name"]
 
     if prof not in profs:  # prof key not yet created
