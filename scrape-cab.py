@@ -1,3 +1,7 @@
+"""
+Scrapes CAB (Courses @ Brown) for the current term and outputs into class_list.json
+"""
+
 import requests
 from bs4 import BeautifulSoup
 from seleniumwire import webdriver
@@ -18,8 +22,8 @@ def wait_for_response(driver, seconds_to_wait=10):
             for request in driver.requests
             if f"keyword={department_code}" in request.url
         ]
+        # for each request, check if request exists, and if it does, return it
         for request in search_requests:
-            # check if request exists, and if it does, return it
             if request.response:
                 return request
     print("No response found")
@@ -67,17 +71,10 @@ for department_code in unique_dept:
 
     # find request of the department's courses and process results
     print(department_code)
-    # time.sleep(5)
-    # [print(request.url) for request in search_requests]
-    # go until a response exists or 10 seconds have elapsed
     request = wait_for_response(driver)
     if request:
         if f"keyword={department_code}" in request.url:
             if request.response:
-
-                # if f'keyword={department_code}' in request.url:
-                #     print('HERE', request.url, request.response.body)
-                # if request.url == f"https://cab.brown.edu/api/?page=fose&route=search&keyword={department_code}&is_ind_study=N&is_canc=N":
                 body = decode(
                     request.response.body,
                     request.response.headers.get("Content-Encoding", "identity"),
