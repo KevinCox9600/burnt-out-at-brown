@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from cookie import COOKIE_CONSTANTS
 import json
+import os
 
 from constants import CLASS_LIST_FILE, CLASS_REVIEWS_LIST_FILE, PROF_REVIEWS_LIST_FILE
 
@@ -66,10 +67,12 @@ for iterations, c in enumerate(data):
 
 
 classes_json = json.dumps(courses)
+os.makedirs(os.path.dirname(CLASS_REVIEWS_LIST_FILE), exist_ok=True)
 with open(CLASS_REVIEWS_LIST_FILE, "w") as class_reviews_file:
     class_reviews_file.write(classes_json)
 
 profs_json = json.dumps(profs)
+os.makedirs(os.path.dirname(PROF_REVIEWS_LIST_FILE), exist_ok=True)
 with open(PROF_REVIEWS_LIST_FILE, "w") as prof_reviews_file:
     prof_reviews_file.write(profs_json)
 

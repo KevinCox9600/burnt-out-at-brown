@@ -11,6 +11,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from seleniumwire.utils import decode
 import json
 import time
+import os
 
 from constants import CLASS_LIST_FILE, CAB_URL
 
@@ -114,6 +115,7 @@ for department_code in unique_dept:
 # Write classes to a JSON file
 classes_dict = {"data": classes}
 classes_json = json.dumps(classes_dict)
+os.makedirs(os.path.dirname(CLASS_LIST_FILE), exist_ok=True)
 with open(CLASS_LIST_FILE, "w") as class_list_file:
     class_list_file.write(classes_json)
 

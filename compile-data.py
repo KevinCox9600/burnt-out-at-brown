@@ -1,7 +1,6 @@
 from functools import reduce
-import pprint
+import os
 import json
-from collections import Counter
 import re
 from constants import CLASS_LIST_FILE, CLASS_REVIEWS_LIST_FILE, COMPILED_DATA_FILE
 
@@ -67,5 +66,6 @@ with open(CLASS_LIST_FILE) as class_file, open(CLASS_REVIEWS_LIST_FILE) as revie
 
 # write compiled data to file
 courses_json = json.dumps(courses)
+os.makedirs(os.path.dirname(COMPILED_DATA_FILE), exist_ok=True)
 with open(COMPILED_DATA_FILE, "w") as f:
     f.write(courses_json)
