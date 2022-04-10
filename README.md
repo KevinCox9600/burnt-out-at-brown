@@ -19,7 +19,7 @@ data, such as sorting courses or professors by least workload.
 Finally, the data is compiled with compile_data.py, which aggregates
 
 ## How to run
-1. Update semester in `constants.py`
+1. Update semester in `constants.py` and at the top of `Table.js`
 2. Go to critical review and get all cookies, putting them in cookies.py as object named
    COOKIE_CONSTANTS. Cannot be dumped with document.cookie because of HTTP only session id.
 4. Run `python scrap-cab.py && python scrape-cr.py && compile-data.py` or manually:

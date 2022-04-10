@@ -3,6 +3,8 @@ import ProfRow from "./ProfRow";
 // import * as data from "../data/courses.json";
 import React from 'react';
 
+const SEMESTER = 'fall2022';
+
 function header(type) {
   const courseHeader = (
     <thead>
@@ -82,7 +84,7 @@ class Table extends React.Component {
   render() {
     // const courses = require('../data/courses.json');
     // const dataArray = courses["data"];
-    const dataObj = require('../data/compiled_course_data.json');
+    const dataObj = require(`../data/${SEMESTER}/compiled_course_data.json`);
 
     let filters;
     if (this.props.type === "courses") {
