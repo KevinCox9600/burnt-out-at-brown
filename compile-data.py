@@ -3,13 +3,12 @@ import pprint
 import json
 from collections import Counter
 import re
+from constants import CLASS_LIST_FILE, CLASS_REVIEWS_LIST_FILE
 
 from helpers.stats import calc_max_hrs, calc_avg_hrs, calc_avg_rating
 
 cr_data = {}
-CLASS_LIST_FILE = "./class_list_unique.json"
-REVIEWS_LIST_FILE = "./class_objs.json"
-with open(CLASS_LIST_FILE) as class_file, open(REVIEWS_LIST_FILE) as reviews_file:
+with open(CLASS_LIST_FILE) as class_file, open(CLASS_REVIEWS_LIST_FILE) as reviews_file:
     class_data = json.load(class_file)
     cr_data = json.load(reviews_file)
 
@@ -39,14 +38,11 @@ with open(CLASS_LIST_FILE) as class_file, open(REVIEWS_LIST_FILE) as reviews_fil
         )
 
         # general calculated fields
-        course_dict["size"] = (
-            reduce(
-                lambda acc, cr: acc + int(re.sub("[^0-9]", "", cr["Class Size"])),
-                course_crs,
-                0,
-            )
-            / len(course_crs)
-        )
+        course_dict["size"] = reduce(
+            lambda acc, cr: acc + int(re.sub("[^0-9]", "", cr["Class Size"])),
+            course_crs,
+            0,
+        ) / len(course_crs)
         course_dict["num-respondents"] = reduce(
             lambda acc, cr: acc + int(cr["Respondents"]), course_crs, 0
         ) / len(course_crs)

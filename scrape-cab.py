@@ -12,6 +12,8 @@ from seleniumwire.utils import decode
 import json
 import time
 
+from constants import CLASS_LIST_FILE, CAB_URL
+
 
 def wait_for_response(driver, seconds_to_wait=10):
     """Wait for the one of the requests to have response and return request."""
@@ -32,7 +34,6 @@ def wait_for_response(driver, seconds_to_wait=10):
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 
-CAB_URL = "https://cab.brown.edu/"
 
 print("loading CAB")
 page = requests.get(CAB_URL)
@@ -113,8 +114,7 @@ for department_code in unique_dept:
 # Write classes to a JSON file
 classes_dict = {"data": classes}
 classes_json = json.dumps(classes_dict)
-class_list_file = open("class_list.json", "w")
-class_list_file.write(classes_json)
-class_list_file.close()
+with open(CLASS_LIST_FILE, "w") as class_list_file:
+    class_list_file.write(classes_json)
 
 driver.quit()
