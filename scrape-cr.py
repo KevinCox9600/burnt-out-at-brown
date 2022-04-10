@@ -1,10 +1,10 @@
-import requests
-from bs4 import BeautifulSoup
-from cookie import COOKIE_CONSTANTS
 import json
 import os
+import requests
+from bs4 import BeautifulSoup
 
 from constants import CLASS_LIST_FILE, CLASS_REVIEWS_LIST_FILE, PROF_REVIEWS_LIST_FILE
+from cookie import COOKIE_CONSTANTS
 
 
 with open(CLASS_LIST_FILE) as class_list_file:

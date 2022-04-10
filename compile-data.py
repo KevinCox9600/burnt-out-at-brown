@@ -1,10 +1,11 @@
 from functools import reduce
-import os
 import json
+import os
 import re
-from constants import CLASS_LIST_FILE, CLASS_REVIEWS_LIST_FILE, COMPILED_DATA_FILE
 
+from constants import CLASS_LIST_FILE, CLASS_REVIEWS_LIST_FILE, COMPILED_DATA_FILE
 from helpers.stats import calc_max_hrs, calc_avg_hrs, calc_avg_rating
+
 
 cr_data = {}
 with open(CLASS_LIST_FILE) as class_file, open(CLASS_REVIEWS_LIST_FILE) as reviews_file:
