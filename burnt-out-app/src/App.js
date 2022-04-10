@@ -27,7 +27,7 @@ function App({ to }) {
           </div>
         </nav>
       </header>
-      <div className="container-fluid" style={{ padding: "0 20px 0 20px" }}>
+      <div id="page-content" className="container-fluid" style={{ padding: "0 20px 0 20px", 'margin-bottom': '56px' }}>
         <Routes>
           <Route path="courses" element={<Courses />} />
           <Route path="about" element={<About />} />

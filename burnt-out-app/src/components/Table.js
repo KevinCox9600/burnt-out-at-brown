@@ -172,7 +172,7 @@ class Table extends React.Component {
       <h2 style={{ textTransform: 'capitalize', marginTop: "20px" }}>Courses - Spring 2022</h2>
       {filters}
       <div className="table-responsive">
-        <table className="table">
+        <table className="table" style={{ 'margin-bottom': 0 }}>
           {header(this.props.type)}
           {rows(filteredDataArray, this.props.type, filterValues)}
         </table>
