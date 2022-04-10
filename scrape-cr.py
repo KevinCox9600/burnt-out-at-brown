@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from cookie import COOKIE_CONSTANTS
 import json
 
-class_list_file = open('class_list_unique.json')
+class_list_file = open("class_list_unique.json")
 class_list_data = json.load(class_list_file)
 class_list_file.close()
 
@@ -15,16 +15,18 @@ profs = {}
 
 
 for c in class_list_data["data"]:
-    dept, num, prof, time, name = c['dept'], c['num'], c['prof'], c['time'], c['name']
+    dept, num, prof, time, name = c["dept"], c["num"], c["prof"], c["time"], c["name"]
 
-    if prof not in profs: # prof key not yet created
-        profs[prof] = [] # instantiate list
+    if prof not in profs:  # prof key not yet created
+        profs[prof] = []  # instantiate list
 
     code = dept + num
-    if code not in courses: # code key not yet created
-        courses[code] = [] # initialize list of reviews (each a dict)
+    if code not in courses:  # code key not yet created
+        courses[code] = []  # initialize list of reviews (each a dict)
 
-    page = s.get(f"https://thecriticalreview.org/search/{dept}/{num}", cookies=COOKIE_CONSTANTS)
+    page = s.get(
+        f"https://thecriticalreview.org/search/{dept}/{num}", cookies=COOKIE_CONSTANTS
+    )
 
     soup = BeautifulSoup(page.content, "html.parser")
 
@@ -64,9 +66,6 @@ profs_json = json.dumps(profs)
 class_list_file = open("prof_objs.json", "w")
 class_list_file.write(profs_json)
 class_list_file.close()
-
-
-
 
 
 # for c in class_list_data["data"]:
