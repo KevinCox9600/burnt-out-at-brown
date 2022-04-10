@@ -73,43 +73,42 @@ for department_code in unique_dept:
     print(department_code)
     request = wait_for_response(driver)
     if request:
-        if f"keyword={department_code}" in request.url:
-            if request.response:
-                body = decode(
-                    request.response.body,
-                    request.response.headers.get("Content-Encoding", "identity"),
+        if request.response:
+            body = decode(
+                request.response.body,
+                request.response.headers.get("Content-Encoding", "identity"),
+            )
+            str_body = body.decode("utf-8")
+            dict = json.loads(str_body)
+            results = dict["results"]
+
+            print(department_code, len(results))
+
+            # process results
+            for r in results:
+                code, title, time_of_class, prof = (
+                    r["code"],
+                    r["title"],
+                    r["meets"],
+                    r["instr"],
                 )
-                str_body = body.decode("utf-8")
-                dict = json.loads(str_body)
-                results = dict["results"]
 
-                print(department_code, len(results))
+                # skip online courses and courses taught by multiple professors
+                # do we want to do this?
+                if prof == "Team" or time_of_class == "Course offered online":
+                    continue
 
-                # process results
-                for r in results:
-                    code, title, time_of_class, prof = (
-                        r["code"],
-                        r["title"],
-                        r["meets"],
-                        r["instr"],
-                    )
-
-                    # skip online courses and courses taught by multiple professors
-                    # do we want to do this?
-                    if prof == "Team" or time_of_class == "Course offered online":
-                        continue
-
-                    # Split PHP 2510 into [PHP, 2510]
-                    dept_identifier, num = code.split(" ")
-                    classes.append(
-                        {
-                            "num": num,
-                            "dept": dept_identifier,
-                            "name": title,
-                            "time": time_of_class,
-                            "prof": prof,
-                        }
-                    )
+                # Split PHP 2510 into [PHP, 2510]
+                dept_identifier, num = code.split(" ")
+                classes.append(
+                    {
+                        "num": num,
+                        "dept": dept_identifier,
+                        "name": title,
+                        "time": time_of_class,
+                        "prof": prof,
+                    }
+                )
 
 # Write classes to a JSON file
 classes_dict = {"data": classes}
