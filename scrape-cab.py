@@ -9,11 +9,16 @@ import json
 import time
 
 
-def wait_for_response(requests, seconds_to_wait=10):
+def wait_for_response(driver, seconds_to_wait=10):
     """Wait for the one of the requests to have response and return request."""
     start_time = time.time()
     while time.time() - start_time < seconds_to_wait:
-        for request in requests:
+        search_requests = [
+            request
+            for request in driver.requests
+            if f"keyword={department_code}" in request.url
+        ]
+        for request in search_requests:
             # check if request exists, and if it does, return it
             if request.response:
                 return request
@@ -60,17 +65,10 @@ for department_code in unique_dept:
     input_field.send_keys(Keys.RETURN)
     driver.find_element(By.ID, "search-button").click()
 
-    time.sleep(1)
-
     # find request of the department's courses and process results
     print(department_code)
-    search_requests = [
-        request
-        for request in driver.requests
-        if f"keyword={department_code}" in request.url
-    ]
     # time.sleep(5)
-    [print(request.url) for request in search_requests]
+    # [print(request.url) for request in search_requests]
     # go until a response exists or 10 seconds have elapsed
     request = wait_for_response(driver)
     if request:
