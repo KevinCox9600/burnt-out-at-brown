@@ -19,8 +19,9 @@ data, such as sorting courses or professors by least workload.
 Finally, the data is compiled with compile_data.py, which aggregates
 
 ## How to run
-1. `python scrape-cab.py` outputs to class_list.json
-2. Go to critical review and get all cookies, putting them in cookies.py as object named
+1. Update semester in `constants.py`
+2. `python scrape-cab.py` outputs to class_list.json
+3. Go to critical review and get all cookies, putting them in cookies.py as object named
    COOKIE_CONSTANTS. Cannot be dumped with document.cookie because of HTTP only session id.
-3. `python scrape-cr.py` outputs to class_objs.json and prof_objs.json
-4. `python compile-data.py` outputs to compiled_course_data.json
+4. `python scrape-cr.py` outputs to class_objs.json and prof_objs.json
+5. `python compile-data.py` outputs to compiled_course_data.json
