@@ -3,9 +3,11 @@ from bs4 import BeautifulSoup
 from cookie import COOKIE_CONSTANTS
 import json
 
-class_list_file = open("class_list.json")
-class_list_data = json.load(class_list_file)
-class_list_file.close()
+from constants import CLASS_LIST_FILE, CLASS_REVIEWS_LIST_FILE, PROF_REVIEWS_LIST_FILE
+
+
+with open(CLASS_LIST_FILE) as class_list_file:
+    class_list_data = json.load(class_list_file)
 
 s = requests.Session()
 
@@ -64,14 +66,12 @@ for iterations, c in enumerate(data):
 
 
 classes_json = json.dumps(courses)
-class_list_file = open("class_objs.json", "w")
-class_list_file.write(classes_json)
-class_list_file.close()
+with open(CLASS_REVIEWS_LIST_FILE, "w") as class_reviews_file:
+    class_reviews_file.write(classes_json)
 
 profs_json = json.dumps(profs)
-class_list_file = open("prof_objs.json", "w")
-class_list_file.write(profs_json)
-class_list_file.close()
+with open(PROF_REVIEWS_LIST_FILE, "w") as prof_reviews_file:
+    prof_reviews_file.write(profs_json)
 
 
 # for c in class_list_data["data"]:
