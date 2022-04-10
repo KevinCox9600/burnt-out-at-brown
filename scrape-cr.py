@@ -66,6 +66,7 @@ for iterations, c in enumerate(data):
         profs[prof].append(review)
 
 
+# write to class and professor files
 classes_json = json.dumps(courses)
 os.makedirs(os.path.dirname(CLASS_REVIEWS_LIST_FILE), exist_ok=True)
 with open(CLASS_REVIEWS_LIST_FILE, "w") as class_reviews_file:
@@ -75,36 +76,3 @@ profs_json = json.dumps(profs)
 os.makedirs(os.path.dirname(PROF_REVIEWS_LIST_FILE), exist_ok=True)
 with open(PROF_REVIEWS_LIST_FILE, "w") as prof_reviews_file:
     prof_reviews_file.write(profs_json)
-
-
-# for c in class_list_data["data"]:
-#     dept, num, prof, time, name = c['dept'], c['num'], c['prof'], c['time'], c['name']
-
-#     code = dept + num
-
-#     page = s.get(f"https://thecriticalreview.org/search/{dept}/{num}", cookies=COOKIE_CONSTANTS)
-
-#     soup = BeautifulSoup(page.content, "html.parser")
-
-#     for offering in soup.find_all("div", {"class": "ui tab"}):
-#         course = {}
-#         course["Course Dept"] = dept
-#         course["Course Num"] = num
-#         course["Prof"] = prof
-#         course["Year"] = offering["data-edition"]
-#         course["Link"] = "https://thecriticalreview.org/search/{dept}/{num}"
-#         course["Time"] = time
-#         results = offering.find_all("div", {"class": "ui tiny statistic"})
-#         for r in results[:6]:
-#             label = r.find("div", {"class": "label"}).text.strip()
-#             value = r.find("div", {"class": "value"}).text.strip()
-#             course[label] = value
-#         grade_obj = offering.find("div", {"class": "review_data"})["data-test-value"]
-#         course["grade_obj"] = grade_obj
-
-#         all_courses[code] = course
-
-# classes_json = json.dumps(all_courses)
-# class_list_file = open("CR_classes.json", "w")
-# class_list_file.write(classes_json)
-# class_list_file.close()
