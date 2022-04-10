@@ -3,7 +3,7 @@ import pprint
 import json
 from collections import Counter
 import re
-from constants import CLASS_LIST_FILE, CLASS_REVIEWS_LIST_FILE
+from constants import CLASS_LIST_FILE, CLASS_REVIEWS_LIST_FILE, COMPILED_DATA_FILE
 
 from helpers.stats import calc_max_hrs, calc_avg_hrs, calc_avg_rating
 
@@ -67,5 +67,5 @@ with open(CLASS_LIST_FILE) as class_file, open(CLASS_REVIEWS_LIST_FILE) as revie
 
 # write compiled data to file
 courses_json = json.dumps(courses)
-with open("compiled_course_data.json", "w") as f:
+with open(COMPILED_DATA_FILE, "w") as f:
     f.write(courses_json)
