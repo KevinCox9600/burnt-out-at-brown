@@ -3,7 +3,11 @@ import ProfRow from "./ProfRow";
 // import * as data from "../data/courses.json";
 import React from 'react';
 
-const SEMESTER = 'fall2022'; // in format `${lowerCaseSeason}${year}`
+const SEMESTERS = [
+  'spring2022',
+  'fall2022',
+];
+const finalSemester = SEMESTERS[SEMESTERS.length - 1];
 
 function header(type) {
   const courseHeader = (
@@ -53,6 +57,13 @@ function rows(dataArray, type, filterValues) {
   );
 }
 
+function getSemesterSeasonAndYear(semester) {
+  const semesterText = semester.match(/[a-zA-Z]+|[0-9]+/g);
+  const season = semesterText[0].charAt(0).toUpperCase() + semesterText[0].slice(1).toLowerCase();
+  const year = semesterText[1];
+  return { season, year };
+}
+
 class Table extends React.Component {
   constructor(props) {
     super(props);
@@ -61,7 +72,8 @@ class Table extends React.Component {
       maxHrs: 40,
       avgHrs: 20,
       prof: "",
-      dept: ""
+      dept: "",
+      semester: finalSemester, // in format `${lowerCaseSeason}${year}`
     };
 
     this.handleFilterChange = this.handleFilterChange.bind(this);
@@ -82,14 +94,27 @@ class Table extends React.Component {
   }
 
   render() {
-    // const courses = require('../data/courses.json');
-    // const dataArray = courses["data"];
-    const dataObj = require(`../data/${SEMESTER}/compiled_course_data.json`);
+    // for security, because if we just display this.state.semester user can probe file structure
+    const semesterToDisplay = SEMESTERS.includes(this.state.semester) ? this.state.semester : finalSemester;
+    const dataObj = require(`../data/${semesterToDisplay}/compiled_course_data.json`);
 
     let filters;
     if (this.props.type === "courses") {
       filters = (
         <form>
+          <select type="select" className="form-control" placeholder="" name="semester"
+            value={this.state.semester}
+            onChange={this.handleFilterChange}
+          >
+            {
+              Array.from({ length: SEMESTERS.length }, (_, i) => (
+                <option key={i} value={SEMESTERS[i]} selected={i == SEMESTERS.length - 1}>
+                  {getSemesterSeasonAndYear(SEMESTERS[i]).season + ' '}
+                  {getSemesterSeasonAndYear(SEMESTERS[i]).year}
+                </option>
+              ))
+            }
+          </select>
           <input type="text" className="form-control" placeholder="Department" name="dept"
             value={this.state.dept}
             onChange={this.handleFilterChange}
@@ -173,7 +198,7 @@ class Table extends React.Component {
     // limit size to 50
     filteredDataArray = filteredDataArray.slice(0, 500);
 
-    const semesterText = SEMESTER.match(/[a-zA-Z]+|[0-9]+/g);
+    const semesterText = this.state.semester.match(/[a-zA-Z]+|[0-9]+/g);
     const season = semesterText[0].charAt(0).toUpperCase() + semesterText[0].slice(1).toLowerCase();
     const year = semesterText[1];
 
