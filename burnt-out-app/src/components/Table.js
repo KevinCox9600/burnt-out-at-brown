@@ -115,7 +115,7 @@ class Table extends React.Component {
               ))
             }
           </select>
-          <input type="text" className="form-control" placeholder="Department" name="dept"
+          <input type="text" className="form-control" placeholder="Departments" name="dept"
             value={this.state.dept}
             onChange={this.handleFilterChange}
           />
