@@ -38,105 +38,99 @@ def wait_for_response(driver, department_code, seconds_to_wait=10):
     return None
 
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
+def scrape_cab():
+    driver = webdriver.Chrome(ChromeDriverManager().install())
 
+    print("loading CAB")
+    page = requests.get(CAB_URL)
 
-print("loading CAB")
-page = requests.get(CAB_URL)
+    # Set up Beautiful Soup parser
+    soup = BeautifulSoup(page.content, "html.parser")
 
-# Set up Beautiful Soup parser
-soup = BeautifulSoup(page.content, "html.parser")
+    # Find all department codes
+    print("getting department codes")
+    results = soup.find(id="crit-dept")
+    departments = [option["value"] for option in results.find_all("option")]
+    filt_departments = str_list = list(filter(None, departments))  # why str_list?
 
-# Find all department codes
-print("getting department codes")
-results = soup.find(id="crit-dept")
-departments = [option["value"] for option in results.find_all("option")]
-filt_departments = str_list = list(filter(None, departments))  # why str_list?
+    print("getting subjects")
+    results_s = soup.find(id="crit-subject")
+    subjects = [option["value"] for option in results_s.find_all("option")]
+    filt_subjects = str_list = list(filter(None, subjects))
 
-print("getting subjects")
-results_s = soup.find(id="crit-subject")
-subjects = [option["value"] for option in results_s.find_all("option")]
-filt_subjects = str_list = list(filter(None, subjects))
+    unique_dept = list(set(filt_subjects + filt_departments))
 
-unique_dept = list(set(filt_subjects + filt_departments))
+    unique_dept = [c.lower() for c in unique_dept]
+    unique_dept.sort()
 
-unique_dept = [c.lower() for c in unique_dept]
-unique_dept.sort()
+    # for each department, find all courses
+    semester_text = f"{SEASON.capitalize()} {YEAR}"
+    classes = []
+    print("finding courses by department")
+    for department_code in unique_dept:
+        driver.get("https://cab.brown.edu")
 
-# select the given term
-# semester_select = soup.find(id="crit-srcdb")
-# semester_option = semester_select.find("option", string=semester_text)
-# semester_option["selected"] = ""
+        # select semester
+        select = Select(driver.find_element_by_id("crit-srcdb"))
+        select.select_by_visible_text(semester_text)
 
-# while True:
-#     print("done")
-#     for i in range(100000000):
-#         1 + 1
+        # search for department
+        input_field = driver.find_element(By.ID, "crit-keyword")
 
-# for each department, find all courses
-semester_text = f"{SEASON.capitalize()} {YEAR}"
-classes = []
-print("finding courses by department")
-for department_code in unique_dept:
-    driver.get("https://cab.brown.edu")
+        input_field.send_keys(department_code)
+        input_field.send_keys(Keys.RETURN)
+        driver.find_element(By.ID, "search-button").click()
 
-    # select semester
-    select = Select(driver.find_element_by_id("crit-srcdb"))
-    select.select_by_visible_text(semester_text)
-
-    # search for department
-    input_field = driver.find_element(By.ID, "crit-keyword")
-
-    input_field.send_keys(department_code)
-    input_field.send_keys(Keys.RETURN)
-    driver.find_element(By.ID, "search-button").click()
-
-    # find request of the department's courses and process results
-    # print(department_code)
-    request = wait_for_response(driver, department_code)
-    if request:
-        if request.response:
-            body = decode(
-                request.response.body,
-                request.response.headers.get("Content-Encoding", "identity"),
-            )
-            str_body = body.decode("utf-8")
-            dict = json.loads(str_body)
-            results = dict["results"]
-
-            print(department_code, len(results))
-
-            # process results
-            for r in results:
-                code, title, time_of_class, prof = (
-                    r["code"],
-                    r["title"],
-                    r["meets"],
-                    r["instr"],
+        # find request of the department's courses and process results
+        # print(department_code)
+        request = wait_for_response(driver, department_code)
+        if request:
+            if request.response:
+                body = decode(
+                    request.response.body,
+                    request.response.headers.get("Content-Encoding", "identity"),
                 )
+                str_body = body.decode("utf-8")
+                dict = json.loads(str_body)
+                results = dict["results"]
 
-                # skip online courses and courses taught by multiple professors
-                # do we want to do this?
-                if prof == "Team" or time_of_class == "Course offered online":
-                    continue
+                print(department_code, len(results))
 
-                # Split PHP 2510 into [PHP, 2510]
-                dept_identifier, num = code.split(" ")
-                classes.append(
-                    {
-                        "num": num,
-                        "dept": dept_identifier,
-                        "name": title,
-                        "time": time_of_class,
-                        "prof": prof,
-                    }
-                )
+                # process results
+                for r in results:
+                    code, title, time_of_class, prof = (
+                        r["code"],
+                        r["title"],
+                        r["meets"],
+                        r["instr"],
+                    )
 
-# Write classes to a JSON file
-classes_dict = {"data": classes}
-classes_json = json.dumps(classes_dict)
-os.makedirs(os.path.dirname(CLASS_LIST_FILE), exist_ok=True)
-with open(CLASS_LIST_FILE, "w") as class_list_file:
-    class_list_file.write(classes_json)
+                    # skip online courses and courses taught by multiple professors
+                    # do we want to do this?
+                    if prof == "Team" or time_of_class == "Course offered online":
+                        continue
 
-driver.quit()
+                    # Split PHP 2510 into [PHP, 2510]
+                    dept_identifier, num = code.split(" ")
+                    classes.append(
+                        {
+                            "num": num,
+                            "dept": dept_identifier,
+                            "name": title,
+                            "time": time_of_class,
+                            "prof": prof,
+                        }
+                    )
+
+    # Write classes to a JSON file
+    classes_dict = {"data": classes}
+    classes_json = json.dumps(classes_dict)
+    os.makedirs(os.path.dirname(CLASS_LIST_FILE), exist_ok=True)
+    with open(CLASS_LIST_FILE, "w") as class_list_file:
+        class_list_file.write(classes_json)
+
+    driver.quit()
+
+
+if __name__ == "__main__":
+    scrape_cab()
