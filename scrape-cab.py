@@ -9,21 +9,26 @@ import time
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import Select
+
+################ USE THIS SHIT
+# https://stackoverflow.com/questions/7867537/how-to-select-a-drop-down-menu-value-with-selenium-using-python
 from seleniumwire import webdriver
 from seleniumwire.utils import decode
 from webdriver_manager.chrome import ChromeDriverManager
 
-from constants import CLASS_LIST_FILE, CAB_URL
+from constants import CLASS_LIST_FILE, CAB_URL, SEASON, YEAR
 
 
-def wait_for_response(driver, seconds_to_wait=10):
+def wait_for_response(driver, department_code, seconds_to_wait=10):
     """Wait for the one of the requests to have response and return request."""
     start_time = time.time()
+    request_url_substring = f"keyword={department_code}"
     while time.time() - start_time < seconds_to_wait:
         search_requests = [
             request
             for request in driver.requests
-            if f"keyword={department_code}" in request.url
+            if request_url_substring in request.url
         ]
         # for each request, check if request exists, and if it does, return it
         for request in search_requests:
@@ -58,13 +63,28 @@ unique_dept = list(set(filt_subjects + filt_departments))
 unique_dept = [c.lower() for c in unique_dept]
 unique_dept.sort()
 
-classes = []
+# select the given term
+# semester_select = soup.find(id="crit-srcdb")
+# semester_option = semester_select.find("option", string=semester_text)
+# semester_option["selected"] = ""
+
+# while True:
+#     print("done")
+#     for i in range(100000000):
+#         1 + 1
 
 # for each department, find all courses
+semester_text = f"{SEASON.capitalize()} {YEAR}"
+classes = []
 print("finding courses by department")
 for department_code in unique_dept:
     driver.get("https://cab.brown.edu")
 
+    # select semester
+    select = Select(driver.find_element_by_id("crit-srcdb"))
+    select.select_by_visible_text(semester_text)
+
+    # search for department
     input_field = driver.find_element(By.ID, "crit-keyword")
 
     input_field.send_keys(department_code)
@@ -72,8 +92,8 @@ for department_code in unique_dept:
     driver.find_element(By.ID, "search-button").click()
 
     # find request of the department's courses and process results
-    print(department_code)
-    request = wait_for_response(driver)
+    # print(department_code)
+    request = wait_for_response(driver, department_code)
     if request:
         if request.response:
             body = decode(
