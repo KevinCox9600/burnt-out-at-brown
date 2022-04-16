@@ -109,7 +109,7 @@ class Table extends React.Component {
           >
             {
               Array.from({ length: SEMESTERS.length }, (_, i) => (
-                <option key={i} value={SEMESTERS[i]} selected={i == SEMESTERS.length - 1}>
+                <option key={i} value={SEMESTERS[i]}>
                   {getSemesterSeasonAndYear(SEMESTERS[i]).season + ' '}
                   {getSemesterSeasonAndYear(SEMESTERS[i]).year}
                 </option>
