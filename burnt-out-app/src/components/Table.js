@@ -6,8 +6,9 @@ import React from 'react';
 const SEMESTERS = [
   'spring2022',
   'fall2022',
+  'spring2023',
 ];
-const finalSemester = SEMESTERS[SEMESTERS.length - 1];
+const DEFAULT_SEMESTER = 'fall2022';
 
 function header(type) {
   const courseHeader = (
@@ -73,7 +74,7 @@ class Table extends React.Component {
       avgHrs: 20,
       prof: "",
       dept: "",
-      semester: finalSemester, // in format `${lowerCaseSeason}${year}`
+      semester: DEFAULT_SEMESTER, // in format `${lowerCaseSeason}${year}`
     };
 
     this.handleFilterChange = this.handleFilterChange.bind(this);
@@ -95,7 +96,7 @@ class Table extends React.Component {
 
   render() {
     // for security, because if we just display this.state.semester user can probe file structure
-    const semesterToDisplay = SEMESTERS.includes(this.state.semester) ? this.state.semester : finalSemester;
+    const semesterToDisplay = SEMESTERS.includes(this.state.semester) ? this.state.semester : DEFAULT_SEMESTER;
     const dataObj = require(`../data/${semesterToDisplay}/compiled_course_data.json`);
 
     let filters;
