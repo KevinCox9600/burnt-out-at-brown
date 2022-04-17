@@ -11,8 +11,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 
-################ USE THIS SHIT
-# https://stackoverflow.com/questions/7867537/how-to-select-a-drop-down-menu-value-with-selenium-using-python
 from seleniumwire import webdriver
 from seleniumwire.utils import decode
 from webdriver_manager.chrome import ChromeDriverManager
@@ -82,7 +80,6 @@ def scrape_cab():
         driver.find_element(By.ID, "search-button").click()
 
         # find request of the department's courses and process results
-        # print(department_code)
         request = wait_for_response(driver, department_code)
         if request:
             if request.response:
