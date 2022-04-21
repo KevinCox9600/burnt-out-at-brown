@@ -31,7 +31,7 @@ def compile_data():
 
 def create_course_dict_from_course(course, cr_data):
     """Creates a dictionary of compiled course data to be passed to the front end."""
-    # default fields
+    ######### default fields #########################
     course_dict = {}
     course_dict["dept"] = course["dept"]
     course_dict["num"] = course["num"]
@@ -40,12 +40,15 @@ def create_course_dict_from_course(course, cr_data):
     course_dict["prof"] = course["prof"]
     course_dict["time"] = course["time"]
 
-    # calculated fields
-
-    # grab all reviews for course
+    # grab all reviews for course, returning if no reviews found
     course_crs = cr_data.get(course_dict["code"])
     if not course_crs:
+        course_dict["cr_data_available"] = "false"
         return course_dict
+    else:
+        course_dict["cr_data_available"] = "true"
+
+    ######### calculated fields ######################
 
     # filter course reviews by same prof
     course_crs_with_same_prof = list(
