@@ -98,6 +98,7 @@ class Table extends React.Component {
     // for security, because if we just display this.state.semester user can probe file structure
     const semesterToDisplay = SEMESTERS.includes(this.state.semester) ? this.state.semester : DEFAULT_SEMESTER;
     const dataObj = require(`../data/${semesterToDisplay}/compiled_course_data.json`);
+    // console.log(dataObj);
 
     let filters;
     if (this.props.type === "courses") {
@@ -207,7 +208,7 @@ class Table extends React.Component {
       <h2 style={{ textTransform: 'capitalize', marginTop: "20px" }}>Courses - {season} {year}</h2>
       {filters}
       <div className="table-responsive">
-        <table className="table" style={{ 'margin-bottom': 0 }}>
+        <table className="table" style={{ 'marginBottom': 0 }}>
           {header(this.props.type)}
           {rows(filteredDataArray, this.props.type, filterValues)}
         </table>

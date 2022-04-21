@@ -3,6 +3,7 @@ import './App.css';
 import Courses from './routes/courses';
 import Profs from './routes/profs';
 import About from './routes/about';
+import Departments from './routes/departments';
 
 function App({ to }) {
   return (
@@ -27,10 +28,11 @@ function App({ to }) {
           </div>
         </nav>
       </header>
-      <div id="page-content" className="container-fluid" style={{ padding: "0 20px 0 20px", 'margin-bottom': '56px' }}>
+      <div id="page-content" className="container-fluid" style={{ padding: "0 20px 0 20px", 'marginBottom': '56px' }}>
         <Routes>
           <Route path="courses" element={<Courses />} />
           <Route path="about" element={<About />} />
+          <Route path="secret" element={<Departments />} />
           <Route path="*" element={<Navigate to="courses" />} />
         </Routes>
       </div>
