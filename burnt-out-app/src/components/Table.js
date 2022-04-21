@@ -161,14 +161,15 @@ class Table extends React.Component {
     // filter the data
     let filteredDataArray = [];
     let sameProfKey = filterValues.sameProf ? 'same_prof' : 'all_reviews';
-    // for (let courseNum in dataArray) {
     for (let courseNum in dataObj) {
       let courseData = dataObj[courseNum];
+      // filter course with no CR data, TODO: filter on cr_data available
+      // if (courseData['cr_data_available'] === 'false') {
+      // continue;
+      // }
       if (!courseData[sameProfKey] || courseData[sameProfKey]['max_hrs'] <= 0 || courseData[sameProfKey]['avg_hrs'] <= 0) {
         continue;
       }
-      // console.log(courseNum);
-      // console.log(courseData, sameProfKey, courseData[sameProfKey]);
       let underMaxHrs = courseData[sameProfKey]['max_hrs'] < parseInt(filterValues.maxHrs);
       let underAvgHrs = courseData[sameProfKey]['avg_hrs'] < parseInt(filterValues.avgHrs);
       let sameDept = false || !filterValues.dept;
