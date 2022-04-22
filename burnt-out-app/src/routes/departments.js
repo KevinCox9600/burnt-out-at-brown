@@ -2,16 +2,21 @@ import { DEFAULT_SEMESTER } from "../data/constants";
 
 function get_rows(departments) {
   // build ordered list of department objects containing name and hours
-  departments.sort((a, b) => a.hours - b.hours);
+  departments.sort((a, b) => a.avg_hours - b.avg_hours);
+  const weightedDepartments = [...departments];
+  weightedDepartments.sort((a, b) => a.weighted_avg_hours - b.weighted_avg_hours);
 
   // return all rows in a tbody tag
   return (
     <tbody>
       {departments.map((dept, index) => {
+        const weightedDept = weightedDepartments[index];
         return (
           <tr>
+            <td>{weightedDept.name}</td>
+            <td>{Math.round(weightedDept.weighted_avg_hours * 100) / 100}</td>
             <td>{dept.name}</td>
-            <td>{Math.round(dept.hours * 100) / 100}</td>
+            <td>{Math.round(dept.avg_hours * 100) / 100}</td>
           </tr>
         );
       })}
@@ -32,6 +37,8 @@ export default function Departments() {
         <table className="table" style={{ 'marginBottom': 0 }}>
           <thead>
             <tr>
+              <th scope="col">Department</th>
+              <th scope="col">Weighted Average hours</th>
               <th scope="col">Department</th>
               <th scope="col">Average hours</th>
             </tr>
