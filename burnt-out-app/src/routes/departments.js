@@ -1,13 +1,22 @@
 import { DEFAULT_SEMESTER } from "../data/constants";
 
+const departments_data = require(`../data/${DEFAULT_SEMESTER}/department_data.json`);
+const avg_class_hours = departments_data.avg_class_hours;
+
+
+function round(num, decimals = 2) {
+  const shift = 10 ** decimals;
+  return Math.floor(num * shift) / shift;
+};
+
 function get_rows(departments) {
   // build ordered list of department objects containing name and hours
-  departments.sort((a, b) => a.avg_hours - b.avg_hours);
+  departments.sort((a, b) => b.avg_hours - a.avg_hours);
   const weightedDepartments = [...departments];
-  weightedDepartments.sort((a, b) => a.weighted_avg_hours - b.weighted_avg_hours);
+  weightedDepartments.sort((a, b) => b.weighted_avg_hours - a.weighted_avg_hours);
 
-  const maxTime = departments[departments.length - 1].avg_hours;
-  const weightedMaxTime = weightedDepartments[weightedDepartments.length - 1].weighted_avg_hours;
+  const maxTime = departments[0].avg_hours;
+  const weightedMaxTime = weightedDepartments[0].weighted_avg_hours;
 
   // return all rows in a tbody tag
   return (
@@ -17,21 +26,21 @@ function get_rows(departments) {
         return (
           <tr key={index}>
             <td>{index + 1}</td>
+            <td>{round(weightedDept.weighted_avg_hours / avg_class_hours)}</td>
             <td>{weightedDept.name}</td>
-            <td>{Math.round(weightedDept.weighted_avg_hours / weightedMaxTime * 100) / 100}</td>
-            <td>{Math.round(weightedDept.weighted_avg_hours * 100) / 100}</td>
+            <td>{round(weightedDept.weighted_avg_hours / weightedMaxTime)}</td>
+            <td style={{ borderRight: '1px solid #dddddd' }}>{round(weightedDept.weighted_avg_hours)}</td>
             <td>{dept.name}</td>
-            <td>{Math.round(dept.avg_hours / maxTime * 100) / 100}</td>
-            <td>{Math.round(dept.avg_hours * 100) / 100}</td>
+            <td>{round(dept.avg_hours / maxTime)}</td>
+            <td>{round(dept.avg_hours)}</td>
           </tr>
         );
       })}
-    </tbody>
+    </tbody >
   );
 }
 
 export default function Departments() {
-  const departments_data = require(`../data/${DEFAULT_SEMESTER}/department_data.json`);
   const departments = departments_data.data;
   console.log(departments);
 
@@ -44,8 +53,9 @@ export default function Departments() {
           <thead>
             <tr>
               <th scope="col">#</th>
+              <th scope="col">Num classes*</th>
               <th scope="col">Department</th>
-              <th scope="col">Proportion of Max</th>
+              <th scope="col">Proportion of Max Weighted</th>
               <th scope="col">Weighted Average hours</th>
               <th scope="col">Department</th>
               <th scope="col">Proportion of Max</th>
@@ -55,6 +65,7 @@ export default function Departments() {
           {rows}
         </table>
       </div>
+      <p>*Calculated based on the number of hours for any class at Brown, weighted by class size</p>
     </div>
   );
 }

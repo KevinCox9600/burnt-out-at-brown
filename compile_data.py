@@ -65,14 +65,18 @@ def compile_department_data(courses):
                 department_data[dept] = new_data
             else:
                 for key, val in new_data.items():
-                    department_data[dept][key] += new_data[key]
+                    department_data[dept][key] += val
 
     if not department_data:
         return False
 
     # use department data to find overall averages
     department_hours = []
+    total_hours = 0
+    total_count = 0
     for dept, dept_dict in department_data.items():
+        total_hours += dept_dict["weighted_hours"]
+        total_count += dept_dict["num_respondents"]
         department_hours.append(
             {
                 "name": dept,
@@ -81,7 +85,13 @@ def compile_department_data(courses):
                 / dept_dict["num_respondents"],
             }
         )
-    departments = {"data": department_hours}
+
+    departments = {
+        "data": department_hours,
+        "avg_class_hours": total_hours / total_count,
+        "total_hours": total_hours,
+        "total_count": total_count,
+    }
 
     return departments
 
