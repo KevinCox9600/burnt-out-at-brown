@@ -6,16 +6,22 @@ function get_rows(departments) {
   const weightedDepartments = [...departments];
   weightedDepartments.sort((a, b) => a.weighted_avg_hours - b.weighted_avg_hours);
 
+  const maxTime = departments[departments.length - 1].avg_hours;
+  const weightedMaxTime = weightedDepartments[weightedDepartments.length - 1].weighted_avg_hours;
+
   // return all rows in a tbody tag
   return (
     <tbody>
       {departments.map((dept, index) => {
         const weightedDept = weightedDepartments[index];
         return (
-          <tr>
+          <tr key={index}>
+            <td>{index + 1}</td>
             <td>{weightedDept.name}</td>
+            <td>{Math.round(weightedDept.weighted_avg_hours / weightedMaxTime * 100) / 100}</td>
             <td>{Math.round(weightedDept.weighted_avg_hours * 100) / 100}</td>
             <td>{dept.name}</td>
+            <td>{Math.round(dept.avg_hours / maxTime * 100) / 100}</td>
             <td>{Math.round(dept.avg_hours * 100) / 100}</td>
           </tr>
         );
@@ -37,9 +43,12 @@ export default function Departments() {
         <table className="table" style={{ 'marginBottom': 0 }}>
           <thead>
             <tr>
+              <th scope="col">#</th>
               <th scope="col">Department</th>
+              <th scope="col">Proportion of Max</th>
               <th scope="col">Weighted Average hours</th>
               <th scope="col">Department</th>
+              <th scope="col">Proportion of Max</th>
               <th scope="col">Average hours</th>
             </tr>
           </thead>
