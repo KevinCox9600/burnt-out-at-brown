@@ -2,13 +2,8 @@ import CourseRow from "./CourseRow";
 import ProfRow from "./ProfRow";
 // import * as data from "../data/courses.json";
 import React from 'react';
+import { SEMESTERS, DEFAULT_SEMESTER } from '../data/constants';
 
-const SEMESTERS = [
-  'spring2022',
-  'fall2022',
-  'spring2023',
-];
-const DEFAULT_SEMESTER = 'fall2022';
 
 function header(type) {
   const courseHeader = (
