@@ -193,8 +193,8 @@ class Table extends React.Component {
     });
     filteredDataArray.sort((a, b) => a[sameProfKey]['avg_hrs'] - b[sameProfKey]['avg_hrs']);
 
-    // limit size to 50
-    filteredDataArray = filteredDataArray.slice(0, 500);
+    // limit size to 500
+    // filteredDataArray = filteredDataArray.slice(0, 500);
 
     const semesterText = this.state.semester.match(/[a-zA-Z]+|[0-9]+/g);
     const season = semesterText[0].charAt(0).toUpperCase() + semesterText[0].slice(1).toLowerCase();
