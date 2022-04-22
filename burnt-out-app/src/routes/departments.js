@@ -48,6 +48,16 @@ export default function Departments() {
   return (
     <div>
       <h1>Departments by hours per week</h1>
+      <ul>
+        <li>
+          {round(departments_data.avg_class_hours)}:
+          Hours of work per week for an average Brown course (on the Critical Review)
+        </li>
+        <li>
+          {Math.round(departments_data.total_count)}:
+          Number of experienced classes
+        </li>
+      </ul>
       <div className="table-responsive">
         <table className="table" style={{ 'marginBottom': 0 }}>
           <thead>
