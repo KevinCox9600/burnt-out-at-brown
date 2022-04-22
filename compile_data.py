@@ -27,38 +27,7 @@ def compile_data():
 
             courses[course_dict["code"]] = course_dict
 
-        # compile department data (department to avg num hours, weighted by respondents)
-        department_data = {}  # department to list of avg hours
-        for _, course_dict in courses.items():
-            if "all_reviews" in course_dict:
-                dept = course_dict["dept"]
-                num_respondents = course_dict["num-respondents"]
-                average_hours = course_dict["all_reviews"]["avg_hrs"]
-                weighted_hours = average_hours * num_respondents
-                new_data = {
-                    "hours": average_hours,
-                    "weighted_hours": weighted_hours,
-                    "count": 1,
-                    "num_respondents": num_respondents,
-                }
-                if dept not in department_data:
-                    department_data[dept] = new_data
-                else:
-                    for key, val in new_data.items():
-                        department_data[dept][key] += new_data[key]
-
-        # use department data to find overall averages
-        department_hours = []
-        for dept, dept_dict in department_data.items():
-            department_hours.append(
-                {
-                    "name": dept,
-                    "avg_hours": dept_dict["hours"] / dept_dict["count"],
-                    "weighted_avg_hours": dept_dict["weighted_hours"]
-                    / dept_dict["num_respondents"],
-                }
-            )
-        departments = {"data": department_hours}
+        departments = compile_department_data(courses)
 
     # write compiled course data to file
     if courses:
@@ -69,12 +38,52 @@ def compile_data():
         f.write(courses_json)
 
     # write department data to file
-    if department_data:
+    if departments:
         print("departments compiled properly")
     department_json = json.dumps(departments)
     os.makedirs(os.path.dirname(DEPARTMENT_DATA_FILE), exist_ok=True)
     with open(DEPARTMENT_DATA_FILE, "w") as f:
         f.write(department_json)
+
+
+def compile_department_data(courses):
+    # compile department data (department to avg num hours, weighted by respondents)
+    department_data = {}  # department to list of avg hours
+    for _, course_dict in courses.items():
+        if "all_reviews" in course_dict:
+            dept = course_dict["dept"]
+            num_respondents = course_dict["num-respondents"]
+            average_hours = course_dict["all_reviews"]["avg_hrs"]
+            weighted_hours = average_hours * num_respondents
+            new_data = {
+                "hours": average_hours,
+                "weighted_hours": weighted_hours,
+                "count": 1,
+                "num_respondents": num_respondents,
+            }
+            if dept not in department_data:
+                department_data[dept] = new_data
+            else:
+                for key, val in new_data.items():
+                    department_data[dept][key] += new_data[key]
+
+    if not department_data:
+        return False
+
+    # use department data to find overall averages
+    department_hours = []
+    for dept, dept_dict in department_data.items():
+        department_hours.append(
+            {
+                "name": dept,
+                "avg_hours": dept_dict["hours"] / dept_dict["count"],
+                "weighted_avg_hours": dept_dict["weighted_hours"]
+                / dept_dict["num_respondents"],
+            }
+        )
+    departments = {"data": department_hours}
+
+    return departments
 
 
 def create_course_dict_from_course(course, cr_data):
