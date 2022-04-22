@@ -32,7 +32,8 @@ export default function Departments() {
         <table className="table" style={{ 'marginBottom': 0 }}>
           <thead>
             <tr>
-              <th></th>
+              <th scope="col">Department</th>
+              <th scope="col">Average hours</th>
             </tr>
           </thead>
           {rows}
