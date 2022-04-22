@@ -3,7 +3,12 @@ import json
 import os
 import re
 
-from constants import CLASS_LIST_FILE, CLASS_REVIEWS_LIST_FILE, COMPILED_DATA_FILE
+from constants import (
+    CLASS_LIST_FILE,
+    CLASS_REVIEWS_LIST_FILE,
+    COMPILED_DATA_FILE,
+    DEPARTMENT_DATA_FILE,
+)
 from helpers.stats import calc_max_hrs, calc_avg_hrs, calc_avg_rating
 
 
@@ -22,11 +27,49 @@ def compile_data():
 
             courses[course_dict["code"]] = course_dict
 
-    # write compiled data to file
+        # compile department data (department to avg num hours, weighted by respondents)
+        department_data = {}  # department to list of avg hours
+        for _, course_dict in courses.items():
+            if "all_reviews" in course_dict:
+                dept = course_dict["dept"]
+                num_respondents = course_dict["num-respondents"]
+                average_hours = course_dict["all_reviews"]["avg_hrs"]
+                sum_of_hours = average_hours * num_respondents
+                if dept not in department_data:
+                    department_data[dept] = {
+                        "sum_of_hours": sum_of_hours,
+                        "count": num_respondents,
+                    }
+                else:
+                    department_data[dept]["sum_of_hours"] += sum_of_hours
+                    department_data[dept]["count"] += num_respondents
+
+        # use department data to find overall averages
+        department_hours = []
+        for dept, dept_dict in department_data.items():
+            department_hours.append(
+                {
+                    "name": dept,
+                    "hours": dept_dict["sum_of_hours"] / dept_dict["count"],
+                }
+            )
+        departments = {"data": department_hours}
+
+    # write compiled course data to file
+    if courses:
+        print("courses compiled properly")
     courses_json = json.dumps(courses)
     os.makedirs(os.path.dirname(COMPILED_DATA_FILE), exist_ok=True)
     with open(COMPILED_DATA_FILE, "w") as f:
         f.write(courses_json)
+
+    # write department data to file
+    if department_data:
+        print("departments compiled properly")
+    department_json = json.dumps(departments)
+    os.makedirs(os.path.dirname(DEPARTMENT_DATA_FILE), exist_ok=True)
+    with open(DEPARTMENT_DATA_FILE, "w") as f:
+        f.write(department_json)
 
 
 def create_course_dict_from_course(course, cr_data):
