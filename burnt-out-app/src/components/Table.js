@@ -160,7 +160,7 @@ class Table extends React.Component {
       let courseData = dataObj[courseNum];
       // filter course with no CR data, TODO: filter on cr_data available
       // if (courseData['cr_data_available'] === 'false') {
-      // continue;
+      //   continue;
       // }
       if (!courseData[sameProfKey] || courseData[sameProfKey]['max_hrs'] <= 0 || courseData[sameProfKey]['avg_hrs'] <= 0) {
         continue;
