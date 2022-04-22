@@ -34,15 +34,18 @@ def compile_data():
                 dept = course_dict["dept"]
                 num_respondents = course_dict["num-respondents"]
                 average_hours = course_dict["all_reviews"]["avg_hrs"]
-                sum_of_hours = average_hours * num_respondents
+                weighted_hours = average_hours * num_respondents
+                new_data = {
+                    "hours": average_hours,
+                    "weighted_hours": weighted_hours,
+                    "count": 1,
+                    "num_respondents": num_respondents,
+                }
                 if dept not in department_data:
-                    department_data[dept] = {
-                        "sum_of_hours": sum_of_hours,
-                        "count": num_respondents,
-                    }
+                    department_data[dept] = new_data
                 else:
-                    department_data[dept]["sum_of_hours"] += sum_of_hours
-                    department_data[dept]["count"] += num_respondents
+                    for key, val in new_data.items():
+                        department_data[dept][key] += new_data[key]
 
         # use department data to find overall averages
         department_hours = []
@@ -50,7 +53,9 @@ def compile_data():
             department_hours.append(
                 {
                     "name": dept,
-                    "hours": dept_dict["sum_of_hours"] / dept_dict["count"],
+                    "avg_hours": dept_dict["hours"] / dept_dict["count"],
+                    "weighted_avg_hours": dept_dict["weighted_hours"]
+                    / dept_dict["num_respondents"],
                 }
             )
         departments = {"data": department_hours}
