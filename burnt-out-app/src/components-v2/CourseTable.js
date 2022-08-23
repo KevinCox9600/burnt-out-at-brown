@@ -60,19 +60,27 @@ class CourseTable extends React.Component {
     };
 
     this.handleFilterChange = this.handleFilterChange.bind(this);
+    this.handleFilterChangeEvent = this.handleFilterChangeEvent.bind(this);
+    this.handleSortChange = this.handleSortChange.bind(this);
+    this.handleSortChangeEvent = this.handleSortChangeEvent.bind(this);
+    this.getSemesterSeasonAndYear = this.getSemesterSeasonAndYear.bind(this);
   }
 
   // METHODS
-  handleFilterChange(event) {
-    const name = event.target.name;
-    const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value;
-
+  handleFilterChange(filter, value) {
     this.setState({
       "filters": {
         ...this.state.filters,
-        [name]: value,
+        [filter]: value,
       }
     });
+  }
+
+  handleFilterChangeEvent(event) {
+    const name = event.target.name;
+    const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value;
+
+    this.handleFilterChange(name, value);
   }
 
   handleSortChange(sortBy) {
@@ -91,6 +99,11 @@ class CourseTable extends React.Component {
     this.setState({
       "sorts": new_sort_state
     });
+  }
+
+  handleSortChangeEvent(event) {
+    const sortBy = event.target.value;
+    this.handleSortChange(sortBy);
   }
 
   getSemesterSeasonAndYear(semester) {
@@ -129,40 +142,54 @@ class CourseTable extends React.Component {
     return (
       <form>
         <div className="row">
-          <div className="input-group m-3 col">
+          <div className="input-group m-sm-3 my-1 col-sm">
             <label htmlFor="semester" className="input-group-text">Semester</label>
             <select className="form-control" name="semester" id="semester"
               value={this.state.filters.semester}
-              onChange={this.handleFilterChange}
+              onChange={this.handleFilterChangeEvent}
             >
               {this.semesterOptions}
             </select>
           </div>
         </div>
         <div className="row">
-          <div className="input-group m-3 col">
+          <div className="input-group m-sm-3 my-1 col-sm">
             <label htmlFor="dept" className="input-group-text">Department</label>
             <input type="text" className="form-control" placeholder="CSCI"
               name="dept" id="dept"
               value={this.state.filters.dept}
-              onChange={this.handleFilterChange}
+              onChange={this.handleFilterChangeEvent}
             />
           </div>
-          <div className="input-group m-3 col">
+          <div className="input-group m-sm-3 my-1 col-sm">
             <label htmlFor="prof" className="input-group-text">Professor</label>
             <input type="text" className="form-control" placeholder="Carberry"
               name="prof" id="prof"
               value={this.state.filters.prof}
-              onChange={this.handleFilterChange} />
+              onChange={this.handleFilterChangeEvent} />
+          </div>
+        </div>
+        <div className="row d-sm-none">
+          <div className="input-group my-1">
+            <label htmlFor="sort-by" className="input-group-text">Rank By</label>
+            <select type="text" className="form-control" placeholder="Avg Hrs"
+              name="sortBy" id="sortBy"
+              value={this.state.sorts.sortBy}
+              onChange={this.handleSortChangeEvent}
+            >
+              <option value="max_hrs">Max Hours</option>
+              <option value="avg_hrs">Avg Hours</option>
+              <option value="size">Avg Size</option>
+            </select>
           </div>
         </div>
         <div className="row">
-          <div className="col">
-            <div className="form-check form-switch">
+          <div className="col-sm">
+            <div className="form-check form-switch mx-sm-3">
               <input className="form-check-input" type="checkbox" role="switch"
                 id="same-prof" name="sameProf"
                 checked={this.state.filters.sameProf}
-                onChange={this.handleFilterChange} />
+                onChange={this.handleFilterChangeEvent} />
               <label htmlFor="same-prof" style={{ fontSize: "smaller" }}>
                 Base stats on same professor
               </label>
@@ -210,11 +237,13 @@ class CourseTable extends React.Component {
           name={rowData["name"]}
           code={rowData["code"]}
           link={rowData["link"]}
-          description={rowData["description"]}
+          description={"This is a college course with a description that is long. It even has multiple sentences with people making different comments. Some say that it is great! Some people say it kind of sucks. Also, it is about math, but also english and philosophy."}
           prof={rowData["prof"]}
           maxHrs={rowData[same]["max_hrs"]}
           avgHrs={rowData[same]["avg_hrs"]}
           avgSize={rowData["size"]}
+          handleFilterChange={this.handleFilterChange}
+          sortBy={this.state.sorts.sortBy}
         />
       ));
   }
@@ -223,24 +252,27 @@ class CourseTable extends React.Component {
     const sortBy = this.state.sorts.sortBy;
     const asc = this.state.sorts.sortAsc;
     return (
-      <main style={{ width: "800px" }} className="container">
+      <main style={{ maxWidth: "768px" }} className="container">
         {this.filterForm}
         < table className="table table-striped" >
           <thead className="table-dark">
             <tr>
-              <th scope="col">Rank</th>
+              <th scope="col" className="d-none d-sm-table-cell">Rank</th>
               <th scope="col" className="w-50">Course</th>
-              <th scope="col" onClick={() => this.handleSortChange("avg_hrs")} role="button" className="user-select-none">
+              <th scope="col" className="d-none d-sm-table-cell user-select-none"
+                onClick={() => this.handleSortChange("avg_hrs")} role="button">
                 Avg Hours
                 {sortBy === "avg_hrs" && asc && <i className="fa-solid fa-caret-down ms-1"></i>}
                 {sortBy === "avg_hrs" && !asc && <i className="fa-solid fa-caret-up ms-1"></i>}
               </th>
-              <th scope="col" onClick={() => this.handleSortChange("max_hrs")} role="button" className="user-select-none">
+              <th scope="col" className="d-none d-sm-table-cell user-select-none"
+                onClick={() => this.handleSortChange("max_hrs")} role="button">
                 Max Hours
                 {sortBy === "max_hrs" && asc && <i className="fa-solid fa-caret-down ms-1"></i>}
                 {sortBy === "max_hrs" && !asc && <i className="fa-solid fa-caret-up ms-1"></i>}
               </th>
-              <th scope="col" onClick={() => this.handleSortChange("size")} role="button" className="user-select-none">
+              <th scope="col" className="d-none d-sm-table-cell user-select-none"
+                onClick={() => this.handleSortChange("size")} role="button">
                 Avg Size
                 {sortBy === "size" && asc && <i className="fa-solid fa-caret-down ms-1"></i>}
                 {sortBy === "size" && !asc && <i className="fa-solid fa-caret-up ms-1"></i>}
