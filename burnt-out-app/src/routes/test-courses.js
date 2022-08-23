@@ -1,8 +1,8 @@
 import React from "react";
-import Table from "../components-v2/Table";
+import CourseTable from "../components-v2/CourseTable";
 
 export default function TestCourses() {
   return (
-    <Table />
+    <CourseTable />
   );
 }
