@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate, NavLink, Link } from 'react-router-dom';
 import './App.css';
 import Courses from './routes/courses';
+import TestCourses from './routes/test-courses';
 import Profs from './routes/profs';
 import About from './routes/about';
 import Departments from './routes/departments';
@@ -30,6 +31,7 @@ function App({ to }) {
       </header>
       <div id="page-content" className="container-fluid" style={{ padding: "0 20px 0 20px", 'marginBottom': '56px' }}>
         <Routes>
+          <Route path="test-courses" element={<TestCourses />} />
           <Route path="courses" element={<Courses />} />
           <Route path="about" element={<About />} />
           <Route path="secret" element={<Departments />} />
