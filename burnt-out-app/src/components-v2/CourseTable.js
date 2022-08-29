@@ -182,6 +182,7 @@ class CourseTable extends React.Component {
               <option value="max_hrs">Max Hours</option>
               <option value="avg_hrs">Avg Hours</option>
               <option value="size">Avg Size</option>
+              <option value="avg_rating">Avg Rating</option>
             </select>
           </div>
         </div>
@@ -248,6 +249,7 @@ class CourseTable extends React.Component {
           maxHrs={rowData[same]["max_hrs"]}
           avgHrs={rowData[same]["avg_hrs"]}
           avgSize={rowData["size"]}
+          avgRating={rowData[same]["avg_rating"]}
           handleFilterChange={this.handleFilterChange}
           sortBy={this.state.sorts.sortBy}
         />
@@ -291,6 +293,12 @@ class CourseTable extends React.Component {
                 Avg Size
                 {sortBy === "size" && asc && <i className="fa-solid fa-caret-down ms-1"></i>}
                 {sortBy === "size" && !asc && <i className="fa-solid fa-caret-up ms-1"></i>}
+              </th>
+              <th scope="col" className="d-none d-sm-table-cell user-select-none"
+                onClick={() => this.handleSortChange("avg_rating")} role="button">
+                Avg Rating
+                {sortBy === "avg_rating" && asc && <i className="fa-solid fa-caret-down ms-1"></i>}
+                {sortBy === "avg_rating" && !asc && <i className="fa-solid fa-caret-up ms-1"></i>}
               </th>
             </tr>
           </thead>

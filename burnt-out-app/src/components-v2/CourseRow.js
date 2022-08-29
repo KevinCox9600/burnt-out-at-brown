@@ -12,6 +12,7 @@ import "./CourseRow.css";
  * - prof (str) - the professor (e.g., K. Fisler)
  * - maxHrs (int) - the max hours for the course
  * - avgHrs (int) - the avg hours for the course
+ * - avgRating (int) - the avg rating for the course
  * - avgSize (int) - the avg size for the course
  * - sortBy (str) - what the table is currently sorted by (e.g., "max_hrs", "size", "avg_hrs")
  * - handleFilterChange (function) - the function to use change the table filters, 
@@ -29,6 +30,7 @@ class CourseRow extends React.Component {
     const avgHrsBadgeType = this.props.sortBy === "avg_hrs" ? "bg-primary" : "bg-secondary";
     const maxHrsBadgeType = this.props.sortBy === "max_hrs" ? "bg-primary" : "bg-secondary";
     const avgSizeBadgeType = this.props.sortBy === "size" ? "bg-primary" : "bg-secondary";
+    const avgRatingBadgeType = this.props.sortBy === "avg_rating" ? "bg-primary" : "bg-secondary";
 
     return (
       <tr>
@@ -62,6 +64,10 @@ class CourseRow extends React.Component {
               {(Math.round(this.props.avgSize * 100) / 100).toFixed(1)} students
               {this.props.sortBy === "size" && <i className="fa-solid fa-caret-down ms-1"></i>}
             </span>
+            <span className={`badge m-1 ${avgRatingBadgeType}`}>
+              {(Math.round(this.props.avgRating * 100) / 100).toFixed(1)} average rating
+              {this.props.sortBy === "avg_rating" && <i className="fa-solid fa-caret-down ms-1"></i>}
+            </span>
           </div>
           <div>
             <a href={this.props.link}>Critical Review</a>
@@ -76,6 +82,9 @@ class CourseRow extends React.Component {
         </td>
         <td className="text-center d-none d-sm-table-cell">
           {(Math.round(this.props.avgSize * 100) / 100).toFixed(1)}
+        </td>
+        <td className="text-center d-none d-sm-table-cell">
+          {(Math.round(this.props.avgRating * 100) / 100).toFixed(1)}
         </td>
       </tr>
     );
