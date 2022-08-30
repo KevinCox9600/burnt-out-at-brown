@@ -17,9 +17,9 @@ class CourseTable extends React.Component {
 
       filters: {
         semester: DEFAULT_SEMESTER, // in format `${lowerCaseSeason}${year}`
-        maxAvgHrs: 20,
-        maxMaxHrs: 40,
-        maxAvgSize: 500,
+        maxAvgHrs: 100, // Do we need this filter?
+        maxMaxHrs: 100, // Do we need this filter?
+        maxAvgSize: 500, // Do we need this filter?
         prof: "",
         dept: "",
         sameProf: true, // whether or not the stats are based on the professor who is teaching that semester.
