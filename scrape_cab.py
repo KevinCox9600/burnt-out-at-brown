@@ -56,16 +56,16 @@ def scrape_cab():
     subjects = [option["value"] for option in results_s.find_all("option")]
     filt_subjects = str_list = list(filter(None, subjects))
 
-    unique_dept = list(set(filt_subjects + filt_departments))
+    unique_depts = list(set(filt_subjects + filt_departments))
 
-    unique_dept = [c.lower() for c in unique_dept]
-    unique_dept.sort()
+    unique_depts = [c.lower() for c in unique_depts]
+    unique_depts.sort()
 
     # for each department, find all courses
     semester_text = f"{SEASON.capitalize()} {YEAR}"
     classes = []
     print("finding courses by department")
-    for department_code in unique_dept:
+    for department_code in unique_depts:
         driver.get("https://cab.brown.edu")
 
         # select semester
