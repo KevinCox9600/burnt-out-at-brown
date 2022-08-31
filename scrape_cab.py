@@ -95,27 +95,38 @@ def scrape_cab():
                 print(department_code, len(results))
 
                 # load detail views
-                print(results[0])
-                for r in results:
-                    urls = [""]
-                    getParams = lambda r: {
-                        "group": f"code:{r['code']}",
-                        "key": f"crn:{r['crn']}",
-                        "srcdb": r["srcdb"],
-                        "matched": f"crn:{r['crn']}",
-                    }
-                    rs = (grequests.post(url, data=getParams(r)) for url in urls)
-                    responses = grequests.map(rs)
-                    print(responses)
-                break
+                details_view_url = "https://cab.brown.edu/api/?page=fose&route=details"
+                get_details_payload = lambda r: {
+                    "group": f"code:{r['code']}",
+                    "key": f"crn:{r['crn']}",
+                    "srcdb": r["srcdb"],
+                    "matched": f"crn:{r['crn']}",
+                }
+                rs = (
+                    grequests.post(details_view_url, json=get_details_payload(r))
+                    for r in results
+                )
+                details_view_responses = grequests.map(rs)
+                # store responses in dictionary accessible by course code
+                details_view_json_by_code = {}
+                for response in details_view_responses:
+                    response_json = response.json()
+                    details_view_json_by_code[response_json["code"]] = response_json
+
+                # TODO: address error: cannot switch to a different thread error
+                # TODO: address error: ERR_CONNECTION_CLOSED
+                # TODO: run unique on courses, or filter by departments
 
                 # process results
                 for r in results:
-                    code, title, time_of_class, prof = (
+                    details = details_view_json_by_code[r["code"]]
+                    code, title, time_of_class, prof, description, is_writ = (
                         r["code"],
                         r["title"],
                         r["meets"],
                         r["instr"],
+                        details["description"],
+                        "WRIT" in details["attr_html"],
                     )
 
                     # skip online courses and courses taught by multiple professors
@@ -132,6 +143,8 @@ def scrape_cab():
                             "name": title,
                             "time": time_of_class,
                             "prof": prof,
+                            "description": description,
+                            "writ": is_writ,
                         }
                     )
 
