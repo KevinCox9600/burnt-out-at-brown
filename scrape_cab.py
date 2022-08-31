@@ -2,6 +2,7 @@
 Scrapes CAB (Courses @ Brown) for the current term and outputs into class_list.json
 """
 
+import grequests
 import json
 import os
 import requests
@@ -92,6 +93,21 @@ def scrape_cab():
                 results = dict["results"]
 
                 print(department_code, len(results))
+
+                # load detail views
+                print(results[0])
+                for r in results:
+                    urls = [""]
+                    getParams = lambda r: {
+                        "group": f"code:{r['code']}",
+                        "key": f"crn:{r['crn']}",
+                        "srcdb": r["srcdb"],
+                        "matched": f"crn:{r['crn']}",
+                    }
+                    rs = (grequests.post(url, data=getParams(r)) for url in urls)
+                    responses = grequests.map(rs)
+                    print(responses)
+                break
 
                 # process results
                 for r in results:
