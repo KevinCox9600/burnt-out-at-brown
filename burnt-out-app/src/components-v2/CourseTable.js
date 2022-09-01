@@ -244,7 +244,8 @@ class CourseTable extends React.Component {
           name={rowData["name"]}
           code={rowData["code"]}
           link={rowData["link"]}
-          description={"This is a college course with a description that is long. It even has multiple sentences with people making different comments. Some say that it is great! Some people say it kind of sucks. Also, it is about math, but also english and philosophy."}
+          // TODO @Kevin add description
+          description={""}
           prof={rowData["prof"]}
           maxHrs={rowData[same]["max_hrs"]}
           avgHrs={rowData[same]["avg_hrs"]}
