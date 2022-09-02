@@ -7,7 +7,7 @@ import Departments from './routes/departments';
 function App({ to }) {
   return (
     <div>
-      <header className="sticky-top">
+      <header className="sticky-top shadow-sm">
         <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "rgb(196, 164, 132)" }}>
           <div className="container-fluid">
             <Link to="/courses" className="navbar-brand"><img style={{ height: '64px' }} src='/burntout_brown.png' /></Link>
@@ -35,7 +35,7 @@ function App({ to }) {
           <Route path="*" element={<Navigate to="courses" />} />
         </Routes>
       </div>
-      <footer className="fixed-bottom pt-3 text-center" style={{ backgroundColor: "rgb(244,240,236)" }}>
+      <footer className="fixed-bottom pt-3 text-center shadow-lg" style={{ backgroundColor: "rgb(244,240,236)" }}>
         <p>For questions, comments, or concerns, contact us at&nbsp;
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSebtY940Fu93KNPj52LHuz8Yha4fWiU4PlgrKI85QPcT6hEfw/viewform" target="_blank" rel="noreferrer noopener">
             cpax@brown.edu
