@@ -1,9 +1,9 @@
-import Table from '../components/Table';
+import CourseTable from '../components/CourseTable';
 
 export default function Courses() {
   return (
     <main>
-      <Table type="courses" />
+      <CourseTable />
     </main>
   );
 }
