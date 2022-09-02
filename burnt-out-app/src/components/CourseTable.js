@@ -337,8 +337,8 @@ class CourseTable extends React.Component {
           rowData[same]["max_hrs"] <= this.state.filters.maxMaxHrs &&
           rowData[same]["avg_hrs"] <= this.state.filters.maxAvgHrs &&
           rowData["size"] <= this.state.filters.maxAvgSize &&
-          rowData["dept"].includes(this.state.filters.dept) &&
-          rowData["prof"].includes(this.state.filters.prof) &&
+          rowData["dept"].toLowerCase().includes(this.state.filters.dept.toLowerCase()) &&
+          rowData["prof"].toLowerCase().includes(this.state.filters.prof.toLowerCase()) &&
           this.courseOccursInScheduledTimeAndDays(rowData['time'])
         );
       })
