@@ -167,7 +167,7 @@ class CourseTable extends React.Component {
     if ((startTime >= 12 || startTime >= 1) && startTime < 5 && timeStr.includes('p') && !this.state.filters.times['PM']) {
       return false;
     }
-    if (startTime > 5 && timeStr.includes('p') && !this.state.filters.times['latePM']) {
+    if (startTime >= 5 && timeStr.includes('p') && !this.state.filters.times['latePM']) {
       return false;
     }
 
