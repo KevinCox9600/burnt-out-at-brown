@@ -120,7 +120,7 @@ def scrape_cab():
                 # process results
                 for r in results:
                     details = details_view_json_by_code[r["code"]]
-                    code, title, time_of_class, prof, description, is_writ = (
+                    code, title, time_of_class, prof, description, writ = (
                         r["code"],
                         r["title"],
                         r["meets"],
@@ -144,7 +144,7 @@ def scrape_cab():
                             "time": time_of_class,
                             "prof": prof,
                             "description": description,
-                            "writ": is_writ,
+                            "writ": writ,
                         }
                     )
 
