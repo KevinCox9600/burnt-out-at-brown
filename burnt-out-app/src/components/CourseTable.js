@@ -400,25 +400,25 @@ class CourseTable extends React.Component {
                   The active sort header, gets a caret indicating sort direction.
                   These headers disappear on mobile view.
               */}
-              <th scope="col" className="d-none d-sm-table-cell user-select-none"
+              <th scope="col" className="d-none d-sm-table-cell user-select-none text-center"
                 onClick={() => this.handleSortChange("avg_hrs")} role="button">
                 Avg Hours
                 {sortBy === "avg_hrs" && asc && <i className="fa-solid fa-caret-down ms-1"></i>}
                 {sortBy === "avg_hrs" && !asc && <i className="fa-solid fa-caret-up ms-1"></i>}
               </th>
-              <th scope="col" className="d-none d-sm-table-cell user-select-none"
+              <th scope="col" className="d-none d-sm-table-cell user-select-none text-center"
                 onClick={() => this.handleSortChange("max_hrs")} role="button">
                 Max Hours
                 {sortBy === "max_hrs" && asc && <i className="fa-solid fa-caret-down ms-1"></i>}
                 {sortBy === "max_hrs" && !asc && <i className="fa-solid fa-caret-up ms-1"></i>}
               </th>
-              <th scope="col" className="d-none d-sm-table-cell user-select-none"
+              <th scope="col" className="d-none d-sm-table-cell user-select-none text-center"
                 onClick={() => this.handleSortChange("size")} role="button">
                 Avg Size
                 {sortBy === "size" && asc && <i className="fa-solid fa-caret-down ms-1"></i>}
                 {sortBy === "size" && !asc && <i className="fa-solid fa-caret-up ms-1"></i>}
               </th>
-              <th scope="col" className="d-none d-sm-table-cell user-select-none"
+              <th scope="col" className="d-none d-sm-table-cell user-select-none text-center"
                 onClick={() => this.handleSortChange("avg_rating")} role="button">
                 Avg Rating
                 {sortBy === "avg_rating" && asc && <i className="fa-solid fa-caret-down ms-1"></i>}
