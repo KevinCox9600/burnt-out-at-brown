@@ -42,10 +42,14 @@ class CourseRow extends React.Component {
             {this.props.code}: {this.props.name}
           </div>
           {/* Clicking on the professor name will automatically filter by that prof. */}
-          <div className="text-secondary fw-bold hover-underline" role="button"
-            onClick={() => this.props.handleFilterChange("prof", this.props.prof)}
-          >
+          <div className="text-secondary fw-bold hover-underline me-1" role="button"
+            onClick={() => this.props.handleFilterChange("prof", this.props.prof)}>
+            <i className="fa-solid fa-chalkboard-user fa-sm me-1"></i>
             {this.props.prof}
+          </div>
+          <div className="text-secondary fw-bold">
+            <i className="fa-regular fa-calendar me-1"></i>
+            {this.props.time}
           </div>
           <div>
             {this.props.description}
