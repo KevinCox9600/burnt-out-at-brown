@@ -1,5 +1,5 @@
 import React from "react";
-
+import ReactToolTip from "react-tooltip";
 import CourseRow from "./CourseRow";
 import { SEMESTERS, DEFAULT_SEMESTER } from '../data/constants';
 
@@ -22,15 +22,20 @@ class CourseTable extends React.Component {
         maxAvgSize: 500, // Do we need this filter?
         prof: "",
         dept: "",
+        days: { "M": true, "T": true, "W": true, "Th": true, "F": true },
+        times: { "earlyAM": true, "AM": true, "PM": true, "latePM": true },
         sameProf: true, // whether or not the stats are based on the professor who is teaching that semester.
       }
     };
 
     this.handleFilterChange = this.handleFilterChange.bind(this);
     this.handleFilterChangeEvent = this.handleFilterChangeEvent.bind(this);
+    this.handleDayFilterChange = this.handleDayFilterChange.bind(this);
+    this.handleTimeFilterChange = this.handleTimeFilterChange.bind(this);
     this.handleSortChange = this.handleSortChange.bind(this);
     this.handleSortChangeEvent = this.handleSortChangeEvent.bind(this);
     this.getSemesterSeasonAndYear = this.getSemesterSeasonAndYear.bind(this);
+    this.courseOccursInScheduledTimeAndDays = this.courseOccursInScheduledTimeAndDays.bind(this);
   }
 
   // METHODS
@@ -57,6 +62,31 @@ class CourseTable extends React.Component {
     const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value;
 
     this.handleFilterChange(name, value);
+  }
+
+  /**
+   * Handles changes to the days filter.
+   * @param {*} event - the change event on any day checkbox.
+   */
+  handleDayFilterChange(event) {
+    const day = event.target.name;
+    const newDays = this.state.filters.days;
+
+    newDays[day] = !newDays[day];
+
+    this.handleFilterChange("days", newDays);
+  }
+  /**
+   * Handles changes to the times filter.
+   * @param {*} event - the change event on any time checkbox.
+   */
+  handleTimeFilterChange(event) {
+    const time = event.target.name;
+    const newTimes = this.state.filters.times;
+
+    newTimes[time] = !newTimes[time];
+
+    this.handleFilterChange("times", newTimes);
   }
 
   /**
@@ -94,7 +124,7 @@ class CourseTable extends React.Component {
 
   /**
    * Given a semester string, return the separate season and year.
-   * @param {*} semester - formatted like `${lowerCaseSeason}${year}` (e.g., "fall2022")
+   * @param {string} semester - formatted like `${lowerCaseSeason}${year}` (e.g., "fall2022")
    * @returns a dictionary with season (uppercase) and year separated.
    */
   getSemesterSeasonAndYear(semester) {
@@ -102,6 +132,47 @@ class CourseTable extends React.Component {
     const season = semesterText[0].charAt(0).toUpperCase() + semesterText[0].slice(1).toLowerCase();
     const year = semesterText[1];
     return { season, year };
+  }
+
+  /**
+   * Given a day-time string, returns whether or not the course should appear.
+   * @param {string} dateTime - formatted like `${days} ${start}-${end}{'a'||'p'}`
+   * @returns {boolean} whether or not the course occurs in the filtered days/times. 
+   */
+  courseOccursInScheduledTimeAndDays(dateTime) {
+    const [daysStr, timeStr] = dateTime.split(" ");
+
+    // check through all days and return false if one of the days is not there
+    for (let i = 0; i < daysStr.length; i++) {
+      if (daysStr[i] == "T" && i + 1 < daysStr.length && daysStr[i + 1] == "h") {
+        if (!this.state.filters.days['Th']) {
+          return false;
+        }
+        i++;
+      } else {
+        if (!this.state.filters.days[daysStr[i]]) {
+          return false;
+        }
+      }
+    }
+
+    // compare all start times to figure out if course shouldn't show
+    const startTime = parseInt(timeStr);
+    if (startTime < 10 && timeStr.includes('a') && !this.state.filters.times['earlyAM']) {
+      return false;
+    }
+    if (startTime >= 10 && parseInt(timeStr) < 12 && timeStr.includes('a') && !this.state.filters.times['AM']) {
+      return false;
+    }
+    if ((startTime >= 12 || startTime >= 1) && startTime < 5 && timeStr.includes('p') && !this.state.filters.times['PM']) {
+      return false;
+    }
+    if (startTime > 5 && timeStr.includes('p') && !this.state.filters.times['latePM']) {
+      return false;
+    }
+
+    return true;
+
   }
 
   // COMPUTED PROPERTIES
@@ -170,6 +241,56 @@ class CourseTable extends React.Component {
               onChange={this.handleFilterChangeEvent} />
           </div>
         </div>
+        {/* Row with Days and Time filters */}
+        <div className="row">
+          <div className="m-sm-3 my-1 col-sm">
+            <div className="btn-group d-flex" role="group" aria-label="Basic checkbox toggle button group">
+              <input type="checkbox" name="M" className="btn-check" id="mon" autoComplete="off"
+                checked={this.state.filters.days['M']} onChange={this.handleDayFilterChange} />
+              <label className="btn btn-outline-primary" htmlFor="mon">Mon</label>
+              <input type="checkbox" name="T" className="btn-check" id="tue" autoComplete="off"
+                checked={this.state.filters.days['T']} onChange={this.handleDayFilterChange} />
+              <label className="btn btn-outline-primary" htmlFor="tue">Tue</label>
+              <input type="checkbox" name="W" className="btn-check" id="wed" autoComplete="off"
+                checked={this.state.filters.days['W']} onChange={this.handleDayFilterChange} />
+              <label className="btn btn-outline-primary" htmlFor="wed">Wed</label>
+              <input type="checkbox" name="Th" className="btn-check" id="thu" autoComplete="off"
+                checked={this.state.filters.days['Th']} onChange={this.handleDayFilterChange} />
+              <label className="btn btn-outline-primary" htmlFor="thu">Thu</label>
+              <input type="checkbox" name="F" className="btn-check" id="fri" autoComplete="off"
+                checked={this.state.filters.days['F']} onChange={this.handleDayFilterChange} />
+              <label className="btn btn-outline-primary" htmlFor="fri">Fri</label>
+            </div>
+          </div>
+          <div className="m-sm-3 my-1 col-sm">
+            <ReactToolTip place="top" type="dark" effect="solid" id="tp-early-am" >
+              Starts before 10am
+            </ReactToolTip>
+            <ReactToolTip place="top" type="dark" effect="solid" id="tp-am" >
+              10am-12pm
+            </ReactToolTip>
+            <ReactToolTip place="top" type="dark" effect="solid" id="tp-pm" >
+              12pm-5pm
+            </ReactToolTip>
+            <ReactToolTip place="top" type="dark" effect="solid" id="tp-late-pm" >
+              Starts after 5pm
+            </ReactToolTip>
+            <div className="btn-group d-flex" role="group" aria-label="Basic checkbox toggle button group">
+              <input type="checkbox" name="earlyAM" className="btn-check" id="early-am" autoComplete="off"
+                checked={this.state.filters.times['earlyAM']} onChange={this.handleTimeFilterChange} />
+              <label className="btn btn-outline-primary" htmlFor="early-am" data-tip data-for="tp-early-am">Early AM</label>
+              <input type="checkbox" name="AM" className="btn-check" id="am" autoComplete="off"
+                checked={this.state.filters.times['AM']} onChange={this.handleTimeFilterChange} />
+              <label className="btn btn-outline-primary" htmlFor="am" data-tip data-for="tp-am">AM</label>
+              <input type="checkbox" name="PM" className="btn-check" id="pm" autoComplete="off"
+                checked={this.state.filters.times['PM']} onChange={this.handleTimeFilterChange} />
+              <label className="btn btn-outline-primary" htmlFor="pm" data-tip data-for="tp-pm">PM</label>
+              <input type="checkbox" name="latePM" className="btn-check" id="late-pm" autoComplete="off"
+                checked={this.state.filters.times['latePM']} onChange={this.handleTimeFilterChange} />
+              <label className="btn btn-outline-primary" htmlFor="late-pm" data-tip data-for="tp-late-pm">Late PM</label>
+            </div>
+          </div>
+        </div>
         {/* Row for mobile view that creates a Rank By select */}
         <div className="row d-sm-none">
           <div className="input-group my-1">
@@ -187,7 +308,7 @@ class CourseTable extends React.Component {
           </div>
         </div>
         {/* Row with switch for basing stats on same professor */}
-        <div className="row">
+        {/* <div className="row">
           <div className="col-sm">
             <div className="form-check form-switch mx-sm-3">
               <input className="form-check-input" type="checkbox" role="switch"
@@ -199,7 +320,7 @@ class CourseTable extends React.Component {
               </label>
             </div>
           </div>
-        </div>
+        </div> */}
       </form>
     );
   }
@@ -217,7 +338,8 @@ class CourseTable extends React.Component {
           rowData[same]["avg_hrs"] <= this.state.filters.maxAvgHrs &&
           rowData["size"] <= this.state.filters.maxAvgSize &&
           rowData["dept"].includes(this.state.filters.dept) &&
-          rowData["prof"].includes(this.state.filters.prof)
+          rowData["prof"].includes(this.state.filters.prof) &&
+          this.courseOccursInScheduledTimeAndDays(rowData['time'])
         );
       })
       .sort((a, b) => {
@@ -247,6 +369,7 @@ class CourseTable extends React.Component {
           // TODO @Kevin add description
           description={""}
           prof={rowData["prof"]}
+          time={rowData["time"]}
           maxHrs={rowData[same]["max_hrs"]}
           avgHrs={rowData[same]["avg_hrs"]}
           avgSize={rowData["size"]}
