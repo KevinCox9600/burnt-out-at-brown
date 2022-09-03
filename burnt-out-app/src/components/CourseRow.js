@@ -42,7 +42,7 @@ class CourseRow extends React.Component {
           <div className="fw-bold">
             {/* Add rank to course name for mobile. */}
             <span className="d-inline d-sm-none">{this.props.rank}. </span>
-            {this.props.code}: {this.props.name}
+            {this.props.code}: {this.props.name} {this.props.writ ? '(WRIT)' : ''}
           </div>
           {/* Clicking on the professor name will automatically filter by that prof. */}
           <div className="text-secondary fw-bold hover-underline me-1" role="button"
