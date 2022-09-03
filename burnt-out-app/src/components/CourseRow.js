@@ -74,7 +74,12 @@ class CourseRow extends React.Component {
             </span>
           </div>
           <div>
-            <a href={this.props.link}>Critical Review</a>
+            <a href={this.props.link} target="_blank" className="d-none d-sm-block">
+              <i className="fa-solid fa-arrow-up-right-from-square me-1"></i>
+              Critical Review
+            </a>
+            {/* Do not open CR in new tab on mobile. */}
+            <a href={this.props.link} className="d-block d-sm-none">Critical Review</a>
           </div>
         </td>
         {/* Include stats in table for web view. */}
