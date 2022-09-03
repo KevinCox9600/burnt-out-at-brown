@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn-group .btn:hover {
+ background-color: #5894ee;
+  /* background-color: #0b5dd7a5; */
+  /* outline: red 1px solid; */
+}
+
+.btn-group input:checked+label:hover{
+  background-color: #0b5ed7;
+}
