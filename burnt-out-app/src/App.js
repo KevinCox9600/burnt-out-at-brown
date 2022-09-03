@@ -28,7 +28,7 @@ function App({ to }) {
           </div>
         </nav>
       </header>
-      <div id="page-content" className="container-fluid" style={{ padding: "0 20px 0 20px", 'marginBottom': '56px' }}>
+      <div id="page-content" className="container-fluid" style={{ padding: "0 20px 0 20px", marginBottom: '56px' }}>
         <Routes>
           <Route path="courses" element={<Courses />} />
           <Route path="about" element={<About />} />
@@ -36,14 +36,6 @@ function App({ to }) {
           <Route path="*" element={<Navigate to="courses" />} />
         </Routes>
       </div>
-      <footer className="fixed-bottom pt-3 text-center" style={{ backgroundColor: "rgb(244,240,236)" }}>
-        <p>For questions, comments, or concerns, contact us at&nbsp;
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSebtY940Fu93KNPj52LHuz8Yha4fWiU4PlgrKI85QPcT6hEfw/viewform" target="_blank" rel="noreferrer noopener">
-            cpax@brown.edu
-          </a>
-          &nbsp;🐻
-        </p>
-      </footer>
     </div >
   );
 }
