@@ -144,7 +144,7 @@ class CourseTable extends React.Component {
 
     // check through all days and return false if one of the days is not there
     for (let i = 0; i < daysStr.length; i++) {
-      if (daysStr[i] == "T" && i + 1 < daysStr.length && daysStr[i + 1] == "h") {
+      if (daysStr[i] === "T" && i + 1 < daysStr.length && daysStr[i + 1] === "h") {
         if (!this.state.filters.days['Th']) {
           return false;
         }
@@ -345,7 +345,7 @@ class CourseTable extends React.Component {
       .sort((a, b) => {
         const sortBy = this.state.sorts.sortBy;
         const asc = this.state.sorts.sortAsc;
-        if (sortBy === "max_hrs" || sortBy == "avg_hrs") {
+        if (sortBy === "max_hrs" || sortBy === "avg_hrs") {
 
           if (a[same][sortBy] === b[same][sortBy]) {
             return asc && a["name"] > b["name"] ? 1 : -1;
@@ -356,9 +356,9 @@ class CourseTable extends React.Component {
           else if (a[same][sortBy] < b[same][sortBy]) {
             return asc ? -1 : 1;
           }
-        } else {
-          return asc && a[sortBy] >= b[sortBy] ? 1 : -1;
         }
+
+        return asc && a[sortBy] >= b[sortBy] ? 1 : -1;
       })
       .map((rowData, index) => (
         <CourseRow key={index}
