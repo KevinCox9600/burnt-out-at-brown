@@ -55,7 +55,11 @@ class CourseRow extends React.Component {
             {this.props.time}
           </div>
           <div>
-            {descriptionWithoutHtml}
+            {/* <div style={{ height: '100px', overflow: 'hidden', textOverflow: 'ellipsis' }}> */}
+            {/* <div>
+              {descriptionWithoutHtml}
+            </div>
+            <button>Expand</button> */}
           </div>
           {/* Include stats under Course header as badges for mobile view. */}
           <div className="d-flex d-sm-none flex-wrap">
