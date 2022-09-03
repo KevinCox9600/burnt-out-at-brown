@@ -64,6 +64,10 @@ class CourseTable extends React.Component {
     this.handleFilterChange(name, value);
   }
 
+  blurFocus(event) {
+    event.target.blur();
+  }
+
   /**
    * Handles changes to the days filter.
    * @param {*} event - the change event on any day checkbox.
@@ -246,19 +250,24 @@ class CourseTable extends React.Component {
           <div className="m-sm-3 my-1 col-sm">
             <div className="btn-group d-flex" role="group" aria-label="Basic checkbox toggle button group">
               <input type="checkbox" name="M" className="btn-check" id="mon" autoComplete="off"
-                checked={this.state.filters.days['M']} onChange={this.handleDayFilterChange} />
+                checked={this.state.filters.days['M']} onChange={this.handleDayFilterChange}
+                onFocus={this.blurFocus} />
               <label className="btn btn-outline-primary" htmlFor="mon">Mon</label>
               <input type="checkbox" name="T" className="btn-check" id="tue" autoComplete="off"
-                checked={this.state.filters.days['T']} onChange={this.handleDayFilterChange} />
+                checked={this.state.filters.days['T']} onChange={this.handleDayFilterChange}
+                onFocus={this.blurFocus} />
               <label className="btn btn-outline-primary" htmlFor="tue">Tue</label>
               <input type="checkbox" name="W" className="btn-check" id="wed" autoComplete="off"
-                checked={this.state.filters.days['W']} onChange={this.handleDayFilterChange} />
+                checked={this.state.filters.days['W']} onChange={this.handleDayFilterChange}
+                onFocus={this.blurFocus} />
               <label className="btn btn-outline-primary" htmlFor="wed">Wed</label>
               <input type="checkbox" name="Th" className="btn-check" id="thu" autoComplete="off"
-                checked={this.state.filters.days['Th']} onChange={this.handleDayFilterChange} />
+                checked={this.state.filters.days['Th']} onChange={this.handleDayFilterChange}
+                onFocus={this.blurFocus} />
               <label className="btn btn-outline-primary" htmlFor="thu">Thu</label>
               <input type="checkbox" name="F" className="btn-check" id="fri" autoComplete="off"
-                checked={this.state.filters.days['F']} onChange={this.handleDayFilterChange} />
+                checked={this.state.filters.days['F']} onChange={this.handleDayFilterChange}
+                onFocus={this.blurFocus} />
               <label className="btn btn-outline-primary" htmlFor="fri">Fri</label>
             </div>
           </div>
@@ -277,16 +286,20 @@ class CourseTable extends React.Component {
             </ReactToolTip>
             <div className="btn-group d-flex" role="group" aria-label="Basic checkbox toggle button group">
               <input type="checkbox" name="earlyAM" className="btn-check" id="early-am" autoComplete="off"
-                checked={this.state.filters.times['earlyAM']} onChange={this.handleTimeFilterChange} />
+                checked={this.state.filters.times['earlyAM']} onChange={this.handleTimeFilterChange}
+                onFocus={this.blurFocus} />
               <label className="btn btn-outline-primary" htmlFor="early-am" data-tip data-for="tp-early-am">Early AM</label>
               <input type="checkbox" name="AM" className="btn-check" id="am" autoComplete="off"
-                checked={this.state.filters.times['AM']} onChange={this.handleTimeFilterChange} />
+                checked={this.state.filters.times['AM']} onChange={this.handleTimeFilterChange}
+                onFocus={this.blurFocus} />
               <label className="btn btn-outline-primary" htmlFor="am" data-tip data-for="tp-am">AM</label>
               <input type="checkbox" name="PM" className="btn-check" id="pm" autoComplete="off"
-                checked={this.state.filters.times['PM']} onChange={this.handleTimeFilterChange} />
+                checked={this.state.filters.times['PM']} onChange={this.handleTimeFilterChange}
+                onFocus={this.blurFocus} />
               <label className="btn btn-outline-primary" htmlFor="pm" data-tip data-for="tp-pm">PM</label>
               <input type="checkbox" name="latePM" className="btn-check" id="late-pm" autoComplete="off"
-                checked={this.state.filters.times['latePM']} onChange={this.handleTimeFilterChange} />
+                checked={this.state.filters.times['latePM']} onChange={this.handleTimeFilterChange}
+                onFocus={this.blurFocus} />
               <label className="btn btn-outline-primary" htmlFor="late-pm" data-tip data-for="tp-late-pm">Late PM</label>
             </div>
           </div>
