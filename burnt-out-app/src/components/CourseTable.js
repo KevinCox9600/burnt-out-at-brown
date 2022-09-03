@@ -367,7 +367,7 @@ class CourseTable extends React.Component {
           code={rowData["code"]}
           link={rowData["link"]}
           // TODO @Kevin add description
-          description={""}
+          description={rowData["description"]}
           prof={rowData["prof"]}
           time={rowData["time"]}
           maxHrs={rowData[same]["max_hrs"]}

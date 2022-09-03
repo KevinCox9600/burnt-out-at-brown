@@ -32,6 +32,9 @@ class CourseRow extends React.Component {
     const avgSizeBadgeType = this.props.sortBy === "size" ? "bg-primary" : "bg-secondary";
     const avgRatingBadgeType = this.props.sortBy === "avg_rating" ? "bg-primary" : "bg-secondary";
 
+    // TODO: Add back cab search links to description text (maybe autodetect course codes?)
+    const descriptionWithoutHtml = this.props.description.replace(/<.*?>/g, '');
+
     return (
       <tr>
         <td className="text-center d-none d-sm-table-cell">{this.props.rank}</td>
@@ -52,7 +55,7 @@ class CourseRow extends React.Component {
             {this.props.time}
           </div>
           <div>
-            {this.props.description}
+            {descriptionWithoutHtml}
           </div>
           {/* Include stats under Course header as badges for mobile view. */}
           <div className="d-flex d-sm-none flex-wrap">
