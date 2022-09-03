@@ -3,5 +3,6 @@ cookie.py
 /.venv
 todo.md
 /__pycache__
-/.vscode
+.vscode
 
+.vercel
