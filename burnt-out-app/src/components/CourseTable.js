@@ -363,7 +363,7 @@ class CourseTable extends React.Component {
       .sort((a, b) => {
         const sortBy = this.state.sorts.sortBy;
         const asc = this.state.sorts.sortAsc;
-        if (sortBy === "max_hrs" || sortBy === "avg_hrs") {
+        if (sortBy === "max_hrs" || sortBy === "avg_hrs" || sortBy === "avg_rating") {
 
           if (a[same][sortBy] === b[same][sortBy]) {
             return asc && a["name"] > b["name"] ? 1 : -1;
