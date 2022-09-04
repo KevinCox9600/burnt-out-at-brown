@@ -384,7 +384,6 @@ class CourseTable extends React.Component {
           name={rowData["name"]}
           code={rowData["code"]}
           link={rowData["link"]}
-          // TODO @Kevin add description
           description={rowData["description"]}
           writ={rowData["writ"]}
           prof={rowData["prof"]}
