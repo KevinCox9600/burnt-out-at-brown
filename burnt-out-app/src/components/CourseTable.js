@@ -2,6 +2,7 @@ import React from "react";
 import ReactToolTip from "react-tooltip";
 import CourseRow from "./CourseRow";
 import { SEMESTERS, DEFAULT_SEMESTER } from '../data/constants';
+import "./CourseTable.css";
 
 /**
  * CourseTable is a table of courses + a filter form to search them.
@@ -24,6 +25,9 @@ class CourseTable extends React.Component {
         dept: "",
         days: { "M": true, "T": true, "W": true, "Th": true, "F": true },
         times: { "earlyAM": true, "AM": true, "PM": true, "latePM": true },
+        writ: false,
+        fys: false,
+        soph: false,
         sameProf: true, // whether or not the stats are based on the professor who is teaching that semester.
       }
     };
@@ -252,8 +256,9 @@ class CourseTable extends React.Component {
         </div>
         {/* Row with Days and Time filters */}
         <div className="row">
-          <div className="m-sm-3 my-1 col-sm">
-            <div className="btn-group d-flex" role="group" aria-label="Basic checkbox toggle button group">
+          <div className="mx-sm-3 my-1 col-sm">
+            <span className="text-muted">What days?</span>
+            <div className="btn-group d-flex" role="group" aria-label="Days of course">
               <input type="checkbox" name="M" className="btn-check" id="mon" autoComplete="off"
                 checked={this.state.filters.days['M']} onChange={this.handleDayFilterChange}
                 onFocus={this.blurFocus} />
@@ -276,7 +281,7 @@ class CourseTable extends React.Component {
               <label className="btn btn-outline-primary" htmlFor="fri">Fri</label>
             </div>
           </div>
-          <div className="m-sm-3 my-1 col-sm">
+          <div className="mx-sm-3 my-1 col-sm">
             <ReactToolTip place="top" type="dark" effect="solid" id="tp-early-am" >
               Starts before 10am
             </ReactToolTip>
@@ -289,7 +294,8 @@ class CourseTable extends React.Component {
             <ReactToolTip place="top" type="dark" effect="solid" id="tp-late-pm" >
               Starts after 5pm
             </ReactToolTip>
-            <div className="btn-group d-flex" role="group" aria-label="Basic checkbox toggle button group">
+            <span className="text-muted">What times?</span>
+            <div className="btn-group d-flex" role="group" aria-label="Time options">
               <input type="checkbox" name="earlyAM" className="btn-check" id="early-am" autoComplete="off"
                 checked={this.state.filters.times['earlyAM']} onChange={this.handleTimeFilterChange}
                 onFocus={this.blurFocus} />
@@ -306,6 +312,43 @@ class CourseTable extends React.Component {
                 checked={this.state.filters.times['latePM']} onChange={this.handleTimeFilterChange}
                 onFocus={this.blurFocus} />
               <label className="btn btn-outline-primary" htmlFor="late-pm" data-tip data-for="tp-late-pm">Late PM</label>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="m-sm-3 my-1 col-sm">
+            <ReactToolTip place="top" type="dark" effect="solid" id="tp-writ" >
+              Writing-designated
+            </ReactToolTip>
+            <ReactToolTip place="top" type="dark" effect="solid" id="tp-fys" >
+              First-year seminar
+            </ReactToolTip>
+            <ReactToolTip place="top" type="dark" effect="solid" id="tp-soph" >
+              Sophomore seminar
+            </ReactToolTip>
+            <span className="text-muted">Course Designations</span>
+            <div id="course-designations" className="btn-group d-flex" role="group" aria-label="Designations">
+              <input type="checkbox" name="writ" className="btn-check" id="writ" autoComplete="off"
+                checked={this.state.filters.writ} onChange={this.handleFilterChangeEvent}
+                onFocus={this.blurFocus} />
+              <label className="btn btn-outline-secondary" htmlFor="writ" data-tip data-for="tp-writ">
+                <i className="fa-solid fa-pen fa-sm me-1"></i>
+                WRIT
+              </label>
+              <input type="checkbox" name="fys" className="btn-check" id="fys" autoComplete="off"
+                checked={this.state.filters.fys} onChange={this.handleFilterChangeEvent}
+                onFocus={this.blurFocus} />
+              <label className="btn btn-outline-secondary" htmlFor="fys" data-tip data-for="tp-fys">
+                <i className="fa-solid fa-1 fa-sm me-1"></i>
+                FYS
+              </label>
+              <input type="checkbox" name="soph" className="btn-check" id="soph" autoComplete="off"
+                checked={this.state.filters.soph} onChange={this.handleFilterChangeEvent}
+                onFocus={this.blurFocus} />
+              <label className="btn btn-outline-secondary" htmlFor="soph" data-tip data-for="tp-soph">
+                <i className="fa-solid fa-2 fa-sm me-1"></i>
+                SOPH
+              </label>
             </div>
           </div>
         </div>
@@ -355,6 +398,9 @@ class CourseTable extends React.Component {
           rowData[same]["max_hrs"] <= this.state.filters.maxMaxHrs &&
           rowData[same]["avg_hrs"] <= this.state.filters.maxAvgHrs &&
           rowData["size"] <= this.state.filters.maxAvgSize &&
+          ((rowData["writ"] && this.state.filters.writ) || !this.state.filters.writ) &&
+          ((rowData["fys"] && this.state.filters.fys) || !this.state.filters.fys) &&
+          ((rowData["soph"] && this.state.filters.soph) || !this.state.filters.soph) &&
           rowData["dept"].toLowerCase().includes(this.state.filters.dept.toLowerCase()) &&
           rowData["prof"].toLowerCase().includes(this.state.filters.prof.toLowerCase()) &&
           this.courseOccursInScheduledTimeAndDays(rowData['time'])
