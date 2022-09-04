@@ -120,13 +120,15 @@ def scrape_cab():
                 # process results
                 for r in results:
                     details = details_view_json_by_code[r["code"]]
-                    code, title, time_of_class, prof, description, writ = (
+                    code, title, time_of_class, prof, description, writ, fys, soph = (
                         r["code"],
                         r["title"],
                         r["meets"],
                         r["instr"],
                         details["description"],
                         "WRIT" in details["attr_html"],
+                        "FYS" in details["attr_html"],
+                        "SOPH" in details["attr_html"],
                     )
 
                     # skip online courses and courses taught by multiple professors
@@ -145,6 +147,8 @@ def scrape_cab():
                             "prof": prof,
                             "description": description,
                             "writ": writ,
+                            "fys": fys,
+                            "soph": soph,
                         }
                     )
 

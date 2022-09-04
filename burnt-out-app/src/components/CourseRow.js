@@ -21,6 +21,10 @@ import "./CourseRow.css";
 class CourseRow extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      expandDesc: false,
+      hoverDesc: false,
+    };
   }
 
   render() {
@@ -55,11 +59,21 @@ class CourseRow extends React.Component {
             {this.props.time}
           </div>
           <div>
-            {/* <div style={{ height: '100px', overflow: 'hidden', textOverflow: 'ellipsis' }}> */}
-            {/* <div>
+            <span className={`p-0 text-muted user-select-none ${this.state.hoverDesc && "text-decoration-underline"}`}
+              role="button"
+              data-bs-toggle="collapse"
+              data-bs-target={`#${this.props.code}-description`}
+              onClick={() => this.setState({ 'expandDesc': !this.state.expandDesc })}
+              onMouseEnter={() => this.setState({ 'hoverDesc': true })}
+              onMouseLeave={() => this.setState({ 'hoverDesc': false })}
+            >
+              Course Description
+              {this.state.expandDesc && this.state.hoverDesc && <i className="me-1 fa-solid fa-chevron-up fa-sm"></i>}
+              {!this.state.expandDesc && this.state.hoverDesc && <i className="me-1 fa-solid fa-chevron-down fa-sm"></i>}
+            </span>
+            <div className="collapse" id={`${this.props.code}-description`}>
               {descriptionWithoutHtml}
             </div>
-            <button>Expand</button> */}
           </div>
           {/* Include stats under Course header as badges for mobile view. */}
           <div className="d-flex d-sm-none flex-wrap">
@@ -72,7 +86,7 @@ class CourseRow extends React.Component {
               {this.props.sortBy === "max_hrs" && <i className="fa-solid fa-caret-down ms-1"></i>}
             </span>
             <span className={`badge m-1 ${avgSizeBadgeType}`}>
-              {(Math.round(this.props.avgSize * 100) / 100).toFixed(1)} students
+              {(Math.round(this.props.avgSize * 100) / 100).toFixed(0)} students
               {this.props.sortBy === "size" && <i className="fa-solid fa-caret-down ms-1"></i>}
             </span>
             <span className={`badge m-1 ${avgRatingBadgeType}`}>
@@ -97,7 +111,7 @@ class CourseRow extends React.Component {
           {(Math.round(this.props.maxHrs * 100) / 100).toFixed(1)}
         </td>
         <td className="text-center d-none d-sm-table-cell">
-          {(Math.round(this.props.avgSize * 100) / 100).toFixed(1)}
+          {(Math.round(this.props.avgSize * 100) / 100).toFixed(0)}
         </td>
         <td className="text-center d-none d-sm-table-cell">
           {(Math.round(this.props.avgRating * 100) / 100).toFixed(1)}
