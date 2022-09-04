@@ -107,6 +107,8 @@ def create_course_dict_from_course(course, cr_data):
     course_dict["prof"] = course["prof"]
     course_dict["time"] = course["time"]
     course_dict["writ"] = course["writ"]
+    course_dict["fys"] = course["fys"]
+    course_dict["soph"] = course["soph"]
     course_dict["description"] = course["description"]
 
     # grab all reviews for course, returning if no reviews found
