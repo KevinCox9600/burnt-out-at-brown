@@ -72,7 +72,7 @@ class CourseRow extends React.Component {
               {this.props.sortBy === "max_hrs" && <i className="fa-solid fa-caret-down ms-1"></i>}
             </span>
             <span className={`badge m-1 ${avgSizeBadgeType}`}>
-              {(Math.round(this.props.avgSize * 100) / 100).toFixed(1)} students
+              {(Math.round(this.props.avgSize * 100) / 100).toFixed(0)} students
               {this.props.sortBy === "size" && <i className="fa-solid fa-caret-down ms-1"></i>}
             </span>
             <span className={`badge m-1 ${avgRatingBadgeType}`}>
@@ -97,7 +97,7 @@ class CourseRow extends React.Component {
           {(Math.round(this.props.maxHrs * 100) / 100).toFixed(1)}
         </td>
         <td className="text-center d-none d-sm-table-cell">
-          {(Math.round(this.props.avgSize * 100) / 100).toFixed(1)}
+          {(Math.round(this.props.avgSize * 100) / 100).toFixed(0)}
         </td>
         <td className="text-center d-none d-sm-table-cell">
           {(Math.round(this.props.avgRating * 100) / 100).toFixed(1)}
