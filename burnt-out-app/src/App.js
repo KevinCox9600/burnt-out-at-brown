@@ -1,14 +1,13 @@
 import { Routes, Route, Navigate, NavLink, Link } from 'react-router-dom';
 import './App.css';
 import Courses from './routes/courses';
-import Profs from './routes/profs';
 import About from './routes/about';
 import Departments from './routes/departments';
 
 function App({ to }) {
   return (
     <div>
-      <header className="sticky-top">
+      <header className="sticky-top shadow-sm">
         <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "rgb(196, 164, 132)" }}>
           <div className="container-fluid">
             <Link to="/courses" className="navbar-brand"><img style={{ height: '64px' }} src='/burntout_brown.png' /></Link>

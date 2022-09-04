@@ -2,6 +2,7 @@
 Scrapes CAB (Courses @ Brown) for the current term and outputs into class_list.json
 """
 
+import grequests
 import json
 import os
 import requests
@@ -56,16 +57,16 @@ def scrape_cab():
     subjects = [option["value"] for option in results_s.find_all("option")]
     filt_subjects = str_list = list(filter(None, subjects))
 
-    unique_dept = list(set(filt_subjects + filt_departments))
+    unique_depts = list(set(filt_subjects + filt_departments))
 
-    unique_dept = [c.lower() for c in unique_dept]
-    unique_dept.sort()
+    unique_depts = [c.lower() for c in unique_depts]
+    unique_depts.sort()
 
     # for each department, find all courses
     semester_text = f"{SEASON.capitalize()} {YEAR}"
     classes = []
     print("finding courses by department")
-    for department_code in unique_dept:
+    for department_code in unique_depts:
         driver.get("https://cab.brown.edu")
 
         # select semester
@@ -93,13 +94,41 @@ def scrape_cab():
 
                 print(department_code, len(results))
 
+                # load detail views
+                details_view_url = "https://cab.brown.edu/api/?page=fose&route=details"
+                get_details_payload = lambda r: {
+                    "group": f"code:{r['code']}",
+                    "key": f"crn:{r['crn']}",
+                    "srcdb": r["srcdb"],
+                    "matched": f"crn:{r['crn']}",
+                }
+                rs = (
+                    grequests.post(details_view_url, json=get_details_payload(r))
+                    for r in results
+                )
+                details_view_responses = grequests.map(rs)
+                # store responses in dictionary accessible by course code
+                details_view_json_by_code = {}
+                for response in details_view_responses:
+                    response_json = response.json()
+                    details_view_json_by_code[response_json["code"]] = response_json
+
+                # TODO: address error: cannot switch to a different thread error
+                # TODO: address error: ERR_CONNECTION_CLOSED
+                # TODO: run unique on courses, or filter by departments
+
                 # process results
                 for r in results:
-                    code, title, time_of_class, prof = (
+                    details = details_view_json_by_code[r["code"]]
+                    code, title, time_of_class, prof, description, writ, fys, soph = (
                         r["code"],
                         r["title"],
                         r["meets"],
                         r["instr"],
+                        details["description"],
+                        "WRIT" in details["attr_html"],
+                        "FYS" in details["attr_html"],
+                        "SOPH" in details["attr_html"],
                     )
 
                     # skip online courses and courses taught by multiple professors
@@ -116,6 +145,10 @@ def scrape_cab():
                             "name": title,
                             "time": time_of_class,
                             "prof": prof,
+                            "description": description,
+                            "writ": writ,
+                            "fys": fys,
+                            "soph": soph,
                         }
                     )
 
