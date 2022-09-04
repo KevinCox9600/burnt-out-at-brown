@@ -21,6 +21,10 @@ import "./CourseRow.css";
 class CourseRow extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      expandDesc: false,
+      hoverDesc: false,
+    };
   }
 
   render() {
@@ -55,11 +59,21 @@ class CourseRow extends React.Component {
             {this.props.time}
           </div>
           <div>
-            {/* <div style={{ height: '100px', overflow: 'hidden', textOverflow: 'ellipsis' }}> */}
-            {/* <div>
+            <span className={`p-0 text-muted user-select-none ${this.state.hoverDesc && "text-decoration-underline"}`}
+              role="button"
+              data-bs-toggle="collapse"
+              data-bs-target={`#${this.props.code}-description`}
+              onClick={() => this.setState({ 'expandDesc': !this.state.expandDesc })}
+              onMouseEnter={() => this.setState({ 'hoverDesc': true })}
+              onMouseLeave={() => this.setState({ 'hoverDesc': false })}
+            >
+              Course Description
+              {this.state.expandDesc && this.state.hoverDesc && <i className="me-1 fa-solid fa-chevron-up fa-sm"></i>}
+              {!this.state.expandDesc && this.state.hoverDesc && <i className="me-1 fa-solid fa-chevron-down fa-sm"></i>}
+            </span>
+            <div className="collapse" id={`${this.props.code}-description`}>
               {descriptionWithoutHtml}
             </div>
-            <button>Expand</button> */}
           </div>
           {/* Include stats under Course header as badges for mobile view. */}
           <div className="d-flex d-sm-none flex-wrap">
