@@ -64,10 +64,6 @@ class CourseTable extends React.Component {
     this.handleFilterChange(name, value);
   }
 
-  blurFocus(event) {
-    event.target.blur();
-  }
-
   /**
    * Handles changes to the days filter.
    * @param {*} event - the change event on any day checkbox.
@@ -124,6 +120,15 @@ class CourseTable extends React.Component {
   handleSortChangeEvent(event) {
     const sortBy = event.target.value;
     this.handleSortChange(sortBy);
+  }
+
+  /**
+   * Helper function to blur a target on focus attempt.
+   * Used to override annoying Bootstrap behavior.
+   * @param {*} event - the focus event.
+   */
+  blurFocus(event) {
+    event.target.blur();
   }
 
   /**
