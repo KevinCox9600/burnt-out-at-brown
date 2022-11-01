@@ -3,6 +3,6 @@ const SEMESTERS = [
   'fall2022',
   'spring2023',
 ];
-const DEFAULT_SEMESTER = 'fall2022';
+const DEFAULT_SEMESTER = 'spring2023';
 
 export { SEMESTERS, DEFAULT_SEMESTER };
