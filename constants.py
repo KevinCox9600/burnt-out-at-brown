@@ -1,6 +1,6 @@
 # local constants
-SEASON = "fall"
-YEAR = "2022"
+SEASON = "spring"
+YEAR = "2023"
 semester = SEASON.lower() + YEAR
 
 # data constants

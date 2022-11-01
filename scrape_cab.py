@@ -68,6 +68,7 @@ def scrape_cab():
     print("finding courses by department")
     for department_code in unique_depts:
         driver.get("https://cab.brown.edu")
+        driver.implicitly_wait(10)
 
         # select semester
         select = Select(driver.find_element_by_id("crit-srcdb"))
