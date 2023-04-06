@@ -6,6 +6,8 @@ from bs4 import BeautifulSoup
 from constants import CLASS_LIST_FILE, CLASS_REVIEWS_LIST_FILE, PROF_REVIEWS_LIST_FILE
 from cookie import COOKIE_CONSTANTS
 
+# TODO: don't run this on same course codes
+
 
 def scrape_cr():
     with open(CLASS_LIST_FILE) as class_list_file:

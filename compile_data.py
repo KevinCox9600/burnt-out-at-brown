@@ -24,8 +24,12 @@ def compile_data():
         courses = {}
         for course in class_data["data"]:
             course_dict = create_course_dict_from_course(course, cr_data)
-
-            courses[course_dict["code"]] = course_dict
+            code = course_dict["code"]
+            if code in courses:
+                courses[code] = merge(course_dict, courses[code])
+            else:
+                courses[code] = course_dict
+            # this will only have most recent course dict for a given course, want all section times
 
         departments = compile_department_data(courses)
 
@@ -96,6 +100,15 @@ def compile_department_data(courses):
     return departments
 
 
+def merge(new_course_dict, old_course_dict):
+    keys = ["profs", "times", "sections"]
+    if new_course_dict["sections"][0] not in old_course_dict["sections"]:
+        for key in keys:
+            old_course_dict[key] += new_course_dict[key]
+
+    return old_course_dict
+
+
 def create_course_dict_from_course(course, cr_data):
     """Creates a dictionary of compiled course data to be passed to the front end."""
     ######### default fields #########################
@@ -104,12 +117,14 @@ def create_course_dict_from_course(course, cr_data):
     course_dict["num"] = course["num"]
     course_dict["code"] = course["dept"] + "" + course["num"]
     course_dict["name"] = course["name"]
-    course_dict["prof"] = course["prof"]
-    course_dict["time"] = course["time"]
     course_dict["writ"] = course["writ"]
     course_dict["fys"] = course["fys"]
     course_dict["soph"] = course["soph"]
     course_dict["description"] = course["description"]
+    # will be different for each section
+    course_dict["profs"] = [course["prof"]]
+    course_dict["times"] = [course["time"]]
+    course_dict["sections"] = [course["section"]]
 
     # grab all reviews for course, returning if no reviews found
     course_crs = cr_data.get(course_dict["code"])

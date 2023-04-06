@@ -394,6 +394,7 @@ class CourseTable extends React.Component {
     const same = this.state.filters.sameProf ? "same_prof" : "all_reviews";
     return this.semesterData
       .filter((rowData) => {
+        const filterProfName = this.state.filters.prof.toLowerCase();
         return (
           rowData[same]["max_hrs"] <= this.state.filters.maxMaxHrs &&
           rowData[same]["avg_hrs"] <= this.state.filters.maxAvgHrs &&
@@ -402,8 +403,8 @@ class CourseTable extends React.Component {
           ((rowData["fys"] && this.state.filters.fys) || !this.state.filters.fys) &&
           ((rowData["soph"] && this.state.filters.soph) || !this.state.filters.soph) &&
           rowData["dept"].toLowerCase().includes(this.state.filters.dept.toLowerCase()) &&
-          rowData["prof"].toLowerCase().includes(this.state.filters.prof.toLowerCase()) &&
-          this.courseOccursInScheduledTimeAndDays(rowData['time'])
+          rowData["profs"].reduce((acc, prof) => acc || prof.toLowerCase().includes(filterProfName), false) &&
+          rowData['times'].reduce((acc, time) => acc || this.courseOccursInScheduledTimeAndDays(time), false)
         );
       })
       .sort((a, b) => {
@@ -432,8 +433,9 @@ class CourseTable extends React.Component {
           link={rowData["link"]}
           description={rowData["description"]}
           writ={rowData["writ"]}
-          prof={rowData["prof"]}
-          time={rowData["time"]}
+          profs={rowData["profs"]}
+          times={rowData["times"]}
+          sections={rowData["sections"]}
           maxHrs={rowData[same]["max_hrs"]}
           avgHrs={rowData[same]["avg_hrs"]}
           avgSize={rowData["size"]}

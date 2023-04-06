@@ -121,7 +121,17 @@ def scrape_cab():
                 # process results
                 for r in results:
                     details = details_view_json_by_code[r["code"]]
-                    code, title, time_of_class, prof, description, writ, fys, soph = (
+                    (
+                        code,
+                        title,
+                        time_of_class,
+                        prof,
+                        description,
+                        writ,
+                        fys,
+                        soph,
+                        section,
+                    ) = (
                         r["code"],
                         r["title"],
                         r["meets"],
@@ -130,11 +140,13 @@ def scrape_cab():
                         "WRIT" in details["attr_html"],
                         "FYS" in details["attr_html"],
                         "SOPH" in details["attr_html"],
+                        r["no"],
                     )
 
                     # skip online courses and courses taught by multiple professors
                     # do we want to do this?
-                    if prof == "Team" or time_of_class == "Course offered online":
+
+                    if time_of_class == "Course offered online" or "S" not in section:
                         continue
 
                     # Split PHP 2510 into [PHP, 2510]
@@ -150,6 +162,7 @@ def scrape_cab():
                             "writ": writ,
                             "fys": fys,
                             "soph": soph,
+                            "section": section,
                         }
                     )
 

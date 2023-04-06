@@ -9,7 +9,9 @@ import "./CourseRow.css";
  * - code (str) - the code associated with the course (e.g., CSCI0300)
  * - link (str) - the Critical Review link for the course
  * - description (str) - the description of the course 
- * - prof (str) - the professor (e.g., K. Fisler)
+ * - profs (str[]) - the professor list of professors by section (e.g., K. Fisler)
+ * - times (str[]) - the times of each section
+ * - sections (str[]) - the section numbers
  * - maxHrs (int) - the max hours for the course
  * - avgHrs (int) - the avg hours for the course
  * - avgRating (int) - the avg rating for the course
@@ -25,6 +27,28 @@ class CourseRow extends React.Component {
       expandDesc: false,
       hoverDesc: false,
     };
+  }
+
+  /**
+   * Returns the html for professor names where clicking one will filter on that professor name.
+   */
+  get profsHtml() {
+    const uniqueProfs = this.props.profs.filter((v, i, a) => a.indexOf(v) === i);
+    const profNames = uniqueProfs.join(",, ").split(', '); // TODO: add commas after prof names in less sus way
+
+    return (
+      <div>
+        {/* Clicking on the professor name will automatically filter by that prof. */}
+        <i className="fa-solid fa-chalkboard-user fa-sm me-1" ></i >
+        {
+          profNames.filter((v, i, a) => a.indexOf(v) === i).map((prof, index) => {
+            return <span className="text-secondary fw-bold hover-underline me-1" role="button" key={prof}
+              onClick={() => this.props.handleFilterChange("prof", prof)}>
+              {prof}
+            </span>;
+          })}
+      </div>
+    );
   }
 
   render() {
@@ -48,15 +72,18 @@ class CourseRow extends React.Component {
             <span className="d-inline d-sm-none">{this.props.rank}. </span>
             {this.props.code}: {this.props.name} {this.props.writ ? '(WRIT)' : ''}
           </div>
-          {/* Clicking on the professor name will automatically filter by that prof. */}
-          <div className="text-secondary fw-bold hover-underline me-1" role="button"
-            onClick={() => this.props.handleFilterChange("prof", this.props.prof)}>
-            <i className="fa-solid fa-chalkboard-user fa-sm me-1"></i>
-            {this.props.prof}
-          </div>
+          {this.profsHtml}
           <div className="text-secondary fw-bold">
             <i className="fa-regular fa-calendar me-1"></i>
-            {this.props.time}
+            {this.props.times.map((time, index) => {
+              return (time + ` (${this.props.sections[index]})`);
+            }).join(',, ').split(', ').map((timeSectionText, index) => {
+              return (
+                <span key={index}>{timeSectionText}</span>
+              );
+            })}
+            {/* {this.props.sections} */}
+            {/* {this.props.times[0]} */}
           </div>
           <div>
             <span className={`p-0 text-muted user-select-none ${this.state.hoverDesc && "text-decoration-underline"}`}
@@ -116,7 +143,7 @@ class CourseRow extends React.Component {
         <td className="text-center d-none d-sm-table-cell">
           {(Math.round(this.props.avgRating * 100) / 100).toFixed(1)}
         </td>
-      </tr>
+      </tr >
     );
   }
 }
