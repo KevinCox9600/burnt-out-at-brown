@@ -75,6 +75,10 @@ def compile_department_data(courses):
     total_hours = 0
     total_count = 0
     for dept, dept_dict in department_data.items():
+        if dept_dict["num_respondents"] == 0:
+            print(dept_dict)
+            print(f"skipping dept {dept}")
+            continue
         total_hours += dept_dict["weighted_hours"]
         total_count += dept_dict["num_respondents"]
         department_hours.append(
