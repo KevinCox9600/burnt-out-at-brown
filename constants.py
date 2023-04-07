@@ -17,10 +17,9 @@ def construct_db_string(season, year, suffix=None):
     fall 2022 = 202210
 
     """
+    db_yr = int(year)
     if season == "spring":
-        db_yr = int(year) - 1
-    elif season == "fall":
-        db_yr = int(year)
+        db_yr -= 1
 
     if not suffix:
         suffix = "20" if season == "spring" else "10"
