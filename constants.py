@@ -11,9 +11,26 @@ COMPILED_DATA_FILE = f"./burnt-out-app/src/data/{semester}/compiled_course_data.
 DEPARTMENT_DATA_FILE = f"./burnt-out-app/src/data/{semester}/department_data.json"
 
 # urls
-# TODO: automate SRC_DB
+def construct_db_string(season, year, suffix=None):
+    """
+    spring 2023 = 202220
+    fall 2022 = 202210
+
+    """
+    if season == "spring":
+        db_yr = int(year) - 1
+    elif season == "fall":
+        db_yr = int(year)
+
+    if not suffix:
+        suffix = "20" if season == "spring" else "10"
+
+    return str(db_yr) + suffix
+
+
 # SRC_DB = "202310"  # fall2023
-SRC_DB = "202320"  # spring2024
+# SRC_DB = "202320"  # spring2024
+SRC_DB = construct_db_string(SEASON, YEAR)
 CAB_URL = "https://cab.brown.edu/"
 CAB_COURSE_SEARCH_URL = (
     "https://cab.brown.edu/api/?page=fose&route=search&is_ind_study=N&is_canc=N"
