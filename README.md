@@ -3,12 +3,15 @@ A website that displays a list of courses at Brown known to have the lowest work
 students to optimize their work/life balance
 
 ## How to run
-1. Update semester (season and year) in `constants.py` and at the top of `Table.js`
+1. Update semester (season and year) in `constants.py` and in `constants.js` in format 'spring2023'
    1. In python, it will determine which semesters are scraped
    2. In the javascript, it will determine which semesters are displayed
-2. Go to critical review and get all cookies, putting them in cookies.py as a json object named
+2. Update the SRC_DB in the `constants.py` file
+   1. Find this by searching for a course within CAB for the semester that you wanna scrape
+      and examine the network request payload to find the source database string
+3. Go to critical review and get all cookies, putting them in cookies.py as a json object named
    COOKIE_CONSTANTS. Cannot be dumped with document.cookie because of HTTP only session id.
-3. Run `python main.py` which will scrape cab, scrape the critical review, and then compile data
+4. Run `python main.py` which will scrape cab, scrape the critical review, and then compile data
 
 ## How it works
 The scrape-cab.py file logs into CAB to scrape a list of courses offered this semester (spring 
