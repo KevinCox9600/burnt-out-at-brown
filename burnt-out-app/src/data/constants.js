@@ -5,6 +5,6 @@ const SEMESTERS = [
   'fall2023',
   'spring2024',
 ];
-const DEFAULT_SEMESTER = 'fall2023';
+const DEFAULT_SEMESTER = 'spring2024';
 
 export { SEMESTERS, DEFAULT_SEMESTER };
