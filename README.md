@@ -38,6 +38,10 @@ root directory (burnt-out-at-brown) by running `python -m venv .venv`.
    for the given semester you selected in `constants.py`. Repeat steps 2 and 4 for any additional
    semesters you wish to update.
 
+## Documentation
+
+The documentation folder contains further information about todos and solutions to common bugs.
+
 ## How it works (technical description)
 
 The `scrape-cab.py` file uses CAB's API to get a list of courses offered a given semester
