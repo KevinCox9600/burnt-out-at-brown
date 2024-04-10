@@ -38,21 +38,21 @@ root directory (burnt-out-at-brown) by running `python -m venv .venv`.
    for the given semester you selected in `constants.py`. Repeat steps 2 and 4 for any additional
    semesters you wish to update.
 
-## How it works
+## How it works (technical description)
 
-The scrape-cab.py file logs into CAB to scrape a list of courses offered this semester (spring 
-'22) at Brown and their corresponding data (course number, department, name, time, and 
-professor), and formats the data as a json. scrape-cr.py then reads through the json that 
-scrape-cab.py outputted. For each course in the json, scrape-cr.py goes to 
+The `scrape-cab.py` file uses CAB's API to get a list of courses offered a given semester
+at Brown and their corresponding data (course number, department, name, time, and 
+professor), and formats the data as a json. `scrape-cr.py` then reads through the json that 
+`scrape-cab.py` outputted. For each course in the json, `scrape-cr.py` goes to 
 thecriticalreview.com for that page and scrapes additional data (the critical review link, 
 the course and professor ratings, the average and max time commitment, the number of 
-respondents, class size, and additional unpublished info). scrape-cr.py creates two json 
-files from this aggregated data: (1) class_objs.json, which is a dictionary from course code to 
-a list of course reviews (and corresponding data) for that course, and (2) prof_objs.json, 
+respondents, class size, and additional unpublished info). `scrape-cr.py` creates two json 
+files from this aggregated data: (1) `class_objs.json`, which is a dictionary from course code to 
+a list of course reviews (and corresponding data) for that course, and (2) `prof_objs.json`,
 which is a dictionary from the professor to the list of course reviews (and corresponding 
-data) for courses they have taught. These two jsons allow for front-end manipulation of the 
+data) for courses they have taught. These two jsons will be compiled to allow for front-end manipulation of the 
 data, such as sorting courses or professors by least workload. Currently, we do not use
-prof_objs.json.
+`prof_objs.json`.
 
-Lastly, the data is compiled with compile_data.py, which aggregates the data into a form
-which our front end expects.
+Lastly, the data is compiled with `compile_data.py`, which aggregates the data into a form
+which our front end expects and into the `burnt-out-app/src/data` folder where the front end resides.
