@@ -21,7 +21,8 @@ export default function About() {
               Kevin Cox <br />
               Jared Dunn<br />
               Isabelle Sharon<br />
-              Leyton Ho
+              Leyton Ho<br />
+              Eitan Zemel
             </p>
             <p>For questions, comments, or concerns, contact us&nbsp;
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSebtY940Fu93KNPj52LHuz8Yha4fWiU4PlgrKI85QPcT6hEfw/viewform" target="_blank" rel="noreferrer noopener">
