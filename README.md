@@ -2,6 +2,14 @@
 A website that displays a list of courses at Brown known to have the lowest workloads to enable
 students to optimize their work/life balance
 
+## Setup
+1. Create a [Python virtual environment](https://docs.python.org/3/library/venv.html) in the 
+root directory (burnt-out-at-brown) by running `python -m venv .venv`.
+2. Start the virtual environment:
+   1. On Mac: `source .venv/bin/activate`
+   2. On PC: `.venv\Scripts\Activate.ps1` (powershell) or `.venv\Scripts\activate.bat` (cmd.exe)
+3. Install requirements: `pip install -r requirements.txt`
+
 ## How to run
 1. Update semester (season and year) in `constants.py` and in `constants.js` in format 'spring2023'
    1. In python, it will determine which semesters are scraped
