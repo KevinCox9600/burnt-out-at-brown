@@ -1,7 +1,10 @@
-# local constants
+########## local constants ############
+# update season and year every time you run main.py
 SEASON = "fall"
 YEAR = "2024"
 semester = SEASON.lower() + YEAR
+
+###### DO NOT NEED TO UPDATE BELOW #############
 
 # data constants
 CLASS_LIST_FILE = f"./data/{semester}/class_list.json"
