@@ -4,6 +4,7 @@ cookie.py
 todo.md
 /__pycache__
 .vscode
+helpers/__pycache__
 
 .vercel
 .DS_Store
