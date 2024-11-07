@@ -9,4 +9,4 @@ helpers/__pycache__
 .vercel
 .DS_Store
 
-documentation/troubleshooting.txt
+documentation/troubleshooting.md
