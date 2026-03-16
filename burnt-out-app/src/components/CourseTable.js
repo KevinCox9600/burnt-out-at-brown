@@ -223,7 +223,7 @@ class CourseTable extends React.Component {
    */
   get filterForm() {
     return (
-      <form>
+      <form className="border rounded p-3 my-3 bg-light">
         {/* Row with Semester select */}
         <div className="row">
           <div className="input-group m-sm-3 my-1 col-sm">
