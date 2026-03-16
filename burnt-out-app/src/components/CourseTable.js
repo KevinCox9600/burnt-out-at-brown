@@ -327,7 +327,7 @@ class CourseTable extends React.Component {
               Sophomore seminar
             </ReactToolTip>
             <span className="text-muted">Course Designations</span>
-            <div id="course-designations" className="btn-group d-flex" role="group" aria-label="Designations">
+            <div id="course-designations" className="btn-group d-flex bg-white" role="group" aria-label="Designations">
               <input type="checkbox" name="writ" className="btn-check" id="writ" autoComplete="off"
                 checked={this.state.filters.writ} onChange={this.handleFilterChangeEvent}
                 onFocus={this.blurFocus} />
