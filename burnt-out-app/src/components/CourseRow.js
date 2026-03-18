@@ -95,7 +95,7 @@ class CourseRow extends React.Component {
             </span>
           </div>
           <div>
-            <a href={this.props.link} target="_blank" className="d-none d-sm-block cr-link">
+            <a href={this.props.link} target="_blank" rel="noopener noreferrer" className="d-none d-sm-block cr-link">
               <i className="fa-solid fa-arrow-up-right-from-square me-1"></i>
               Critical Review
             </a>

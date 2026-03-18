@@ -12,7 +12,7 @@ function App({ to }) {
         <header>
           <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "rgb(196, 164, 132)" }}>
             <div className="container-fluid">
-              <Link to="/courses" className="navbar-brand"><img style={{ height: '64px' }} src='/burntout_brown.png' /></Link>
+              <Link to="/courses" className="navbar-brand"><img style={{ height: '64px' }} src='/burntout_brown.png' alt="logo"/></Link>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
