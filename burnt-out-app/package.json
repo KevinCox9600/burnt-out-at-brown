@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "json-loader": "^0.5.7"
+    "json-loader": "^0.5.7",
+    "playwright": "^1.58.2"
   }
 }
