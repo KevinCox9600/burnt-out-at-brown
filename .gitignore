@@ -10,3 +10,4 @@ helpers/__pycache__
 .DS_Store
 
 documentation/troubleshooting.md
+.playwright-mcp

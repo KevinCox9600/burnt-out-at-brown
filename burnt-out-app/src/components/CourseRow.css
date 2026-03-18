@@ -1,3 +1,11 @@
 .hover-underline:hover {
   text-decoration: underline;
 }
+
+.cr-link {
+  color: #7D5A3C;
+}
+
+.cr-link:hover {
+  color: #4a3728;
+}

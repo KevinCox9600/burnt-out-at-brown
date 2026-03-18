@@ -1,0 +1,38 @@
+#recruiting-advert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #f0e6da;
+  border-bottom: 1px solid #c4a484;
+  font-size: 0.9rem;
+  color: #4a3728;
+}
+
+#recruiting-advert a {
+  color: #7D5A3C;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#recruiting-advert a:hover {
+  text-decoration: underline;
+}
+
+#recruiting-advert-dismiss {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #7D5A3C;
+  padding: 0 0.25rem;
+  position: absolute;
+  right: 1rem;
+}
+
+#recruiting-advert-dismiss:hover {
+  color: #4a3728;
+}
