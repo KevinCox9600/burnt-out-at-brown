@@ -1,18 +1,16 @@
 import React from "react";
 import "./RecruitingAdvert.css";
 
-const DISMISSED_KEY = "recruitingAdvertDismissed";
 
 class RecruitingAdvert extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      dismissed: localStorage.getItem(DISMISSED_KEY) === "true",
+      dismissed: false,
     };
   }
 
   dismiss() {
-    localStorage.setItem(DISMISSED_KEY, "true");
     this.setState({ dismissed: true });
   }
 
@@ -23,7 +21,7 @@ class RecruitingAdvert extends React.Component {
       <div id="recruiting-advert">
         <span>
           Want to improve this site? We&rsquo;re looking for student developers &mdash;{" "}
-          <a href="mailto:contact@burntoutatbrown.com">get involved &rarr;</a>
+          <a href="">get involved &rarr;</a>
         </span>
         <button
           id="recruiting-advert-dismiss"
