@@ -1,5 +1,6 @@
 import React from "react";
-import ReactToolTip from "react-tooltip";
+// import Tooltip from "react-tooltip";
+import { Tooltip } from 'react-tooltip';
 import CourseRow from "./CourseRow";
 import { SEMESTERS, DEFAULT_SEMESTER } from '../data/constants';
 import "./CourseTable.css";
@@ -282,18 +283,18 @@ class CourseTable extends React.Component {
             </div>
           </div>
           <div className="mx-sm-3 my-1 col-sm">
-            <ReactToolTip place="top" type="dark" effect="solid" id="tp-early-am" >
+            <Tooltip place="top" type="dark" effect="solid" id="tp-early-am" >
               Starts before 10am
-            </ReactToolTip>
-            <ReactToolTip place="top" type="dark" effect="solid" id="tp-am" >
+            </Tooltip>
+            <Tooltip place="top" type="dark" effect="solid" id="tp-am" >
               10am-12pm
-            </ReactToolTip>
-            <ReactToolTip place="top" type="dark" effect="solid" id="tp-pm" >
+            </Tooltip>
+            <Tooltip place="top" type="dark" effect="solid" id="tp-pm" >
               12pm-5pm
-            </ReactToolTip>
-            <ReactToolTip place="top" type="dark" effect="solid" id="tp-late-pm" >
+            </Tooltip>
+            <Tooltip place="top" type="dark" effect="solid" id="tp-late-pm" >
               Starts after 5pm
-            </ReactToolTip>
+            </Tooltip>
             <span className="text-muted">What times?</span>
             <div className="btn-group d-flex" role="group" aria-label="Time options">
               <input type="checkbox" name="earlyAM" className="btn-check" id="early-am" autoComplete="off"
@@ -317,15 +318,15 @@ class CourseTable extends React.Component {
         </div>
         <div className="row">
           <div className="m-sm-3 my-1 col-sm">
-            <ReactToolTip place="top" type="dark" effect="solid" id="tp-writ" >
+            <Tooltip place="top" type="dark" effect="solid" id="tp-writ" >
               Writing-designated
-            </ReactToolTip>
-            <ReactToolTip place="top" type="dark" effect="solid" id="tp-fys" >
+            </Tooltip>
+            <Tooltip place="top" type="dark" effect="solid" id="tp-fys" >
               First-year seminar
-            </ReactToolTip>
-            <ReactToolTip place="top" type="dark" effect="solid" id="tp-soph" >
+            </Tooltip>
+            <Tooltip place="top" type="dark" effect="solid" id="tp-soph" >
               Sophomore seminar
-            </ReactToolTip>
+            </Tooltip>
             <span className="text-muted">Course Designations</span>
             <div id="course-designations" className="btn-group d-flex bg-white" role="group" aria-label="Designations">
               <input type="checkbox" name="writ" className="btn-check" id="writ" autoComplete="off"
