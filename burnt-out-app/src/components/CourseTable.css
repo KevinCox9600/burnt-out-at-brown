@@ -1,17 +1,32 @@
-.btn-group .btn:hover {
-  background-color: #5894ee;
-  /* background-color: #0b5dd7a5; */
-  /* outline: red 1px solid; */
+.btn-outline-brown {
+  color: #7D5A3C;
+  border-color: #7D5A3C;
 }
 
-.btn-group input:checked+label:hover{
-  background-color: #0b5ed7;
+.btn-check:checked + .btn-outline-brown,
+.btn-outline-brown.active {
+  color: #fff;
+  background-color: #7D5A3C;
+  border-color: #7D5A3C;
 }
 
-#course-designations.btn-group .btn:hover {
+.btn-group .btn-outline-brown:hover {
+  color: #fff;
+  /* background-color: #7D5A3C; */
+  background-color: #c4a484;
+  /* border-color: #7D5A3C; */
+  border-color: #c4a484;
+}
+
+.btn-group input:checked+label.btn-outline-brown:hover{
+  background-color: #5e4229;
+  border-color: #5e4229;
+}
+
+/* #course-designations.btn-group .btn:hover {
   background-color: #6c757dc2;
 }
  
 #course-designations.btn-group input:checked+label:hover{
   background-color: #565e64;
-}
+} */
