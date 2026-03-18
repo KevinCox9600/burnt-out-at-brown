@@ -89,3 +89,13 @@ The frontend defaults to using `same_prof` stats (reviews only from the current 
 - `prof_objs.json` is scraped but currently unused by the frontend.
 - The `components-old/` folder contains deprecated components.
 - See `documentation/common_bugs.md` for known scraping issues and `documentation/todos.md` for planned work.
+
+### RecruitingAdvert
+
+**Files:** `burnt-out-app/src/components/RecruitingAdvert.js`, `burnt-out-app/src/components/RecruitingAdvert.css`
+
+**Used in:** `burnt-out-app/src/routes/courses.js` — rendered above `<CourseTable />` as the first element inside `<main>`
+
+An alert banner displayed at the top of the Courses page advertising that the website is seeking students to help with development.
+
+The component is class-based with `expandDesc` and `hoverDesc` state, likely intended to support an expandable/hoverable description interaction. The render output and CSS are currently empty stubs awaiting implementation.
