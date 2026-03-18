@@ -20,8 +20,10 @@ class RecruitingAdvert extends React.Component {
     return (
       <div id="recruiting-advert">
         <span>
-          Want to improve this site? We&rsquo;re looking for student developers &mdash;{" "}
-          <a href="">get involved &rarr;</a>
+          Want to help improve Burnt Out @ Brown? We&rsquo;re looking for more developers &mdash;{" "}
+          <a href="https://forms.gle/55zTFajTZMWYKf7n9" target="_blank" rel="noopener noreferrer">
+            get involved (Apply by March 31)&rarr;
+          </a> 
         </span>
         <button
           id="recruiting-advert-dismiss"
