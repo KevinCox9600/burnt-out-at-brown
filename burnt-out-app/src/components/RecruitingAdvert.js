@@ -16,7 +16,7 @@ class RecruitingAdvert extends React.Component {
         <span>
           Want to help improve Burnt Out @ Brown? We&rsquo;re looking for more developers &mdash;{" "}
           <a href="https://forms.gle/55zTFajTZMWYKf7n9" target="_blank" rel="noopener noreferrer">
-            get involved! (Apply by March 31) &rarr;
+            get involved! (Apply by April 5) &rarr;
           </a> 
         </span>
       </div>
