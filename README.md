@@ -34,9 +34,7 @@ root directory (burnt-out-at-brown) by running `python -m venv .venv`.
    Put this into a file called cookie.py.
    1. If `cookie.py` does not already exist, make a copy of `cookie_template.py`, rename it
       `cookie.py` and insert the connect.sid where suggested.
-4. Run `python main.py` which will scrape cab, scrape the critical review, and then compile data
-   for the given semester you selected in `constants.py`. Repeat steps 2 and 4 for any additional
-   semesters you wish to update.
+4. Run `python main.py` which will scrape cab, scrape the critical review, and then compile data for the given semester you selected in `constants.py`. Repeat steps 2 and 4 for any additional semesters you wish to update.
 
 ## Documentation
 

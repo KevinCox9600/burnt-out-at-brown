@@ -1,6 +1,6 @@
 ########## local constants ############
 # update season and year every time you run main.py
-SEASON = "spring"
+SEASON = "fall"
 YEAR = "2025"
 semester = SEASON.lower() + YEAR
 
