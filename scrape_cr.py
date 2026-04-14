@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from constants import CLASS_LIST_FILE, CLASS_REVIEWS_LIST_FILE, PROF_REVIEWS_LIST_FILE
-from cookie import COOKIE_CONSTANTS
+from cookie_template import COOKIE_CONSTANTS
 
 
 def scrape_cr():
@@ -21,6 +21,10 @@ def scrape_cr():
     data_length = len(data)
     print("data length:", data_length)
     for iterations, c in enumerate(data):
+        print("entered loop", iterations)
+        if iterations >= 2:
+            break
+
         if iterations % 100 == 0:
             print(f"iterations: {iterations} / {data_length}")
 
@@ -84,6 +88,8 @@ def scrape_cr():
     os.makedirs(os.path.dirname(PROF_REVIEWS_LIST_FILE), exist_ok=True)
     with open(PROF_REVIEWS_LIST_FILE, "w") as prof_reviews_file:
         prof_reviews_file.write(profs_json)
+
+    print(courses)
 
 
 if __name__ == "__main__":
