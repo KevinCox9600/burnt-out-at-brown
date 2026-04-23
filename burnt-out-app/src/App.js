@@ -29,7 +29,6 @@ function App({ to }) {
             </div>
           </nav>
         </header>
-        <RecruitingAdvert />
       </div>
       <div id="page-content" className="container-fluid" style={{ padding: "0 20px 0 20px", marginBottom: '56px' }}>
         <Routes>
