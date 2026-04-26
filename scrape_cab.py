@@ -6,15 +6,15 @@ import grequests
 import json
 import os
 import requests
-import time
-from bs4 import BeautifulSoup
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import Select
+# import time
+# from bs4 import BeautifulSoup
+# from selenium.webdriver.common.by import By
+# from selenium.webdriver.common.keys import Keys
+# from selenium.webdriver.support.ui import Select
 
-from seleniumwire import webdriver
-from seleniumwire.utils import decode
-from webdriver_manager.chrome import ChromeDriverManager
+# from seleniumwire import webdriver
+# from seleniumwire.utils import decode
+# from webdriver_manager.chrome import ChromeDriverManager
 
 from constants import (
     CLASS_LIST_FILE,
@@ -23,6 +23,7 @@ from constants import (
     YEAR,
     CAB_COURSE_SEARCH_URL,
     CAB_SEARCH_PAYLOAD,
+    CAB_HEADERS
 )
 
 
@@ -30,7 +31,7 @@ def scrape_cab():
     page = requests.get(CAB_URL)
 
     # get all courses
-    courses = requests.post(CAB_COURSE_SEARCH_URL, json=CAB_SEARCH_PAYLOAD).json()[
+    courses = requests.post(CAB_COURSE_SEARCH_URL, json=CAB_SEARCH_PAYLOAD, headers=CAB_HEADERS).json()[
         "results"
     ]
 
@@ -43,7 +44,7 @@ def scrape_cab():
         "matched": f"crn:{r['crn']}",
     }
     rs = (
-        grequests.post(details_view_url, json=get_details_payload(r)) for r in courses
+        grequests.post(details_view_url, json=get_details_payload(r), headers=CAB_HEADERS) for r in courses
     )
     details_view_responses = grequests.map(rs)
 
