@@ -1,6 +1,6 @@
 ########## local constants ############
 # update season and year every time you run main.py
-SEASON = "spring"
+SEASON = "fall"
 YEAR = "2025"
 semester = SEASON.lower() + YEAR
 
@@ -43,4 +43,12 @@ CAB_SEARCH_PAYLOAD = {
         {"field": "is_ind_study", "value": "N"},
         {"field": "is_canc", "value": "N"},
     ],
+}
+
+CAB_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/147.0.0.0 Safari/537.36"
+    ),
 }
