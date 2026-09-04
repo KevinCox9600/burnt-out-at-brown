@@ -42,7 +42,6 @@ function get_rows(departments) {
 
 export default function Departments() {
   const departments = departments_data.data;
-  console.log(departments);
 
   const rows = get_rows(departments);
   return (
