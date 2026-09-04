@@ -4,18 +4,19 @@ import os
 import re
 
 from constants import (
-    CLASS_LIST_FILE,
-    CLASS_REVIEWS_LIST_FILE,
-    COMPILED_DATA_FILE,
-    DEPARTMENT_DATA_FILE,
+    class_list_file,
+    class_reviews_list_file,
+    compiled_data_file,
+    department_data_file,
+    semester as CURRENT_SEMESTER,
 )
 from helpers.stats import calc_max_hrs, calc_avg_hrs, calc_avg_rating
 
 
-def compile_data():
+def compile_data(sem=CURRENT_SEMESTER):
     cr_data = {}
-    with open(CLASS_LIST_FILE) as class_file, open(
-        CLASS_REVIEWS_LIST_FILE
+    with open(class_list_file(sem)) as class_file, open(
+        class_reviews_list_file(sem)
     ) as reviews_file:
         class_data = json.load(class_file)
         cr_data = json.load(reviews_file)
@@ -33,16 +34,16 @@ def compile_data():
     if courses:
         print("courses compiled properly")
     courses_json = json.dumps(courses)
-    os.makedirs(os.path.dirname(COMPILED_DATA_FILE), exist_ok=True)
-    with open(COMPILED_DATA_FILE, "w") as f:
+    os.makedirs(os.path.dirname(compiled_data_file(sem)), exist_ok=True)
+    with open(compiled_data_file(sem), "w") as f:
         f.write(courses_json)
 
     # write department data to file
     if departments:
         print("departments compiled properly")
     department_json = json.dumps(departments)
-    os.makedirs(os.path.dirname(DEPARTMENT_DATA_FILE), exist_ok=True)
-    with open(DEPARTMENT_DATA_FILE, "w") as f:
+    os.makedirs(os.path.dirname(department_data_file(sem)), exist_ok=True)
+    with open(department_data_file(sem), "w") as f:
         f.write(department_json)
 
 

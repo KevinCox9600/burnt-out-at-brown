@@ -1,52 +1,101 @@
 """
-Scrapes CAB (Courses @ Brown) for the current term and outputs into class_list.json
+Scrapes CAB (Courses @ Brown) for a given term and outputs into class_list.json
 """
 
-import grequests
 import json
 import os
+import threading
+from concurrent.futures import ThreadPoolExecutor
+
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 from constants import (
-    CLASS_LIST_FILE,
-    CAB_URL,
     CAB_COURSE_SEARCH_URL,
-    CAB_SEARCH_PAYLOAD,
-    CAB_HEADERS
+    CAB_DETAILS_URL,
+    CAB_HEADERS,
+    CAB_URL,
+    cab_search_payload,
+    class_list_file,
+    semester as CURRENT_SEMESTER,
 )
 
+MAX_WORKERS = 100
 
-def scrape_cab():
-    page = requests.get(CAB_URL)
+# requests.Session is not thread-safe, so each worker thread gets its own
+_thread_local = threading.local()
+
+
+def get_session():
+    session = getattr(_thread_local, "session", None)
+    if session is None:
+        session = requests.Session()
+        session.headers.update(CAB_HEADERS)
+        retry = Retry(
+            total=4,
+            backoff_factor=0.5,
+            status_forcelist=(429, 500, 502, 503, 504),
+            allowed_methods=frozenset(["GET", "POST"]),
+        )
+        # pool sized to the worker count so threads reuse connections instead of
+        # discarding them under contention
+        session.mount(
+            "https://", HTTPAdapter(max_retries=retry, pool_maxsize=MAX_WORKERS)
+        )
+        _thread_local.session = session
+    return session
+
+
+def fetch_details(course):
+    """Fetches one course's detail view. Returns None if CAB never answered."""
+    payload = {
+        "group": f"code:{course['code']}",
+        "key": f"crn:{course['crn']}",
+        "srcdb": course["srcdb"],
+        "matched": f"crn:{course['crn']}",
+    }
+    try:
+        response = get_session().post(CAB_DETAILS_URL, json=payload, timeout=30)
+        response.raise_for_status()
+        return response.json()
+    except (requests.RequestException, ValueError) as err:
+        print(f"  failed details for {course['code']} (crn {course['crn']}): {err}")
+        return None
+
+
+def scrape_cab(sem=CURRENT_SEMESTER):
+    print(f"scraping CAB for {sem}")
+    session = get_session()
+    session.get(CAB_URL, timeout=30)  # pick up any cookies CAB hands out
 
     # get all courses
-    courses = requests.post(CAB_COURSE_SEARCH_URL, json=CAB_SEARCH_PAYLOAD, headers=CAB_HEADERS).json()[
-        "results"
-    ]
-
-    # get detail views for all courses
-    details_view_url = "https://cab.brown.edu/api/?page=fose&route=details"
-    get_details_payload = lambda r: {
-        "group": f"code:{r['code']}",
-        "key": f"crn:{r['crn']}",
-        "srcdb": r["srcdb"],
-        "matched": f"crn:{r['crn']}",
-    }
-    rs = (
-        grequests.post(details_view_url, json=get_details_payload(r), headers=CAB_HEADERS) for r in courses
+    search = session.post(
+        CAB_COURSE_SEARCH_URL, json=cab_search_payload(sem), timeout=60
     )
-    details_view_responses = grequests.map(rs)
+    search.raise_for_status()
+    courses = search.json()["results"]
+    print(f"  {len(courses)} course sections returned")
+
+    # get detail views for all courses, 100 at a time
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        details_view_responses = list(executor.map(fetch_details, courses))
 
     # format courses: store responses in dictionary accessible by course code
     details_view_json_by_code = {}
-    for response in details_view_responses:
-        response_json = response.json()
-        details_view_json_by_code[response_json["code"]] = response_json
+    for response_json in details_view_responses:
+        if response_json is not None:
+            details_view_json_by_code[response_json["code"]] = response_json
 
     # construct classes list
     classes = []
+    skipped = 0
     for c in courses:
-        details = details_view_json_by_code[c["code"]]
+        details = details_view_json_by_code.get(c["code"])
+        if details is None:
+            skipped += 1
+            continue
+
         code, title, time_of_class, prof, description, writ, fys, soph = (
             c["code"],
             c["title"],
@@ -79,12 +128,18 @@ def scrape_cab():
             }
         )
 
+    if skipped:
+        print(f"  warning: {skipped} sections dropped, no detail view returned")
+    print(f"  {len(classes)} classes kept")
+
     # write classes to a JSON file
     classes_dict = {"data": classes}
     classes_json = json.dumps(classes_dict)
-    os.makedirs(os.path.dirname(CLASS_LIST_FILE), exist_ok=True)
-    with open(CLASS_LIST_FILE, "w") as class_list_file:
-        class_list_file.write(classes_json)
+    out_file = class_list_file(sem)
+    os.makedirs(os.path.dirname(out_file), exist_ok=True)
+    with open(out_file, "w") as class_list_file_handle:
+        class_list_file_handle.write(classes_json)
+    print(f"  wrote {out_file}")
 
 
 if __name__ == "__main__":
