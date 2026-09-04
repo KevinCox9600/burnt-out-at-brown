@@ -1,17 +1,50 @@
 ########## local constants ############
 # update season and year every time you run main.py
 SEASON = "fall"
-YEAR = "2025"
+YEAR = "2026"
 semester = SEASON.lower() + YEAR
 
 ###### DO NOT NEED TO UPDATE BELOW #############
 
+
+def split_semester(sem):
+    """'fall2026' -> ('fall', '2026')"""
+    for season in ("spring", "fall"):
+        if sem.startswith(season):
+            return season, sem[len(season) :]
+    raise ValueError(f"unrecognized semester {sem!r}, expected e.g. 'fall2026'")
+
+
 # data constants
-CLASS_LIST_FILE = f"./data/{semester}/class_list.json"
-CLASS_REVIEWS_LIST_FILE = f"./data/{semester}/class_objs.json"
-PROF_REVIEWS_LIST_FILE = f"./data/{semester}/prof_objs.json"
-COMPILED_DATA_FILE = f"./burnt-out-app/src/data/{semester}/compiled_course_data.json"
-DEPARTMENT_DATA_FILE = f"./burnt-out-app/src/data/{semester}/department_data.json"
+def class_list_file(sem=semester):
+    return f"./data/{sem}/class_list.json"
+
+
+def class_reviews_list_file(sem=semester):
+    return f"./data/{sem}/class_objs.json"
+
+
+def prof_reviews_list_file(sem=semester):
+    return f"./data/{sem}/prof_objs.json"
+
+
+def compiled_data_file(sem=semester):
+    return f"./burnt-out-app/src/data/{sem}/compiled_course_data.json"
+
+
+def department_data_file(sem=semester):
+    return f"./burnt-out-app/src/data/{sem}/department_data.json"
+
+
+CLASS_LIST_FILE = class_list_file()
+CLASS_REVIEWS_LIST_FILE = class_reviews_list_file()
+PROF_REVIEWS_LIST_FILE = prof_reviews_list_file()
+COMPILED_DATA_FILE = compiled_data_file()
+DEPARTMENT_DATA_FILE = department_data_file()
+
+# every Critical Review review ever scraped, unioned across past semesters
+CR_AGGREGATED_FILE = "./data/cr_aggregated.json"
+
 
 # urls
 def construct_db_string(season, year, suffix=None):
@@ -30,21 +63,27 @@ def construct_db_string(season, year, suffix=None):
     return str(db_yr) + suffix
 
 
-# SRC_DB = "202310"  # fall2023
-# SRC_DB = "202320"  # spring2024
 SRC_DB = construct_db_string(SEASON, YEAR)
 CAB_URL = "https://cab.brown.edu/"
 CAB_COURSE_SEARCH_URL = (
     "https://cab.brown.edu/api/?page=fose&route=search&is_ind_study=N&is_canc=N"
 )
-CAB_SEARCH_PAYLOAD = {
-    "other": {"srcdb": SRC_DB},  # TODO: Check if this needs to be updated
-    "criteria": [
-        {"field": "is_ind_study", "value": "N"},
-        {"field": "is_canc", "value": "N"},
-    ],
-}
+CAB_DETAILS_URL = "https://cab.brown.edu/api/?page=fose&route=details"
 
+
+def cab_search_payload(sem=semester):
+    return {
+        "other": {"srcdb": construct_db_string(*split_semester(sem))},
+        "criteria": [
+            {"field": "is_ind_study", "value": "N"},
+            {"field": "is_canc", "value": "N"},
+        ],
+    }
+
+
+CAB_SEARCH_PAYLOAD = cab_search_payload()
+
+# CAB rejects requests without a browser User-Agent
 CAB_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "

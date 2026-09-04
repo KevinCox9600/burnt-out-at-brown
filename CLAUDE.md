@@ -38,15 +38,29 @@ npm test     # run tests
 
 ## Adding a New Semester
 
-This is the primary recurring task. Two files must be updated:
+This is the primary recurring task.
 
-1. **`constants.py`** — change `SEASON` and `YEAR` to the new semester
+1. **`constants.py`** — change `SEASON` and `YEAR` to the current semester
 2. **`burnt-out-app/src/data/constants.js`** — add the new semester string to `SEMESTERS` array and update `DEFAULT_SEMESTER`
+3. Run the pipeline, then rebuild the frontend to confirm it compiles
 
-Then:
-- Obtain a fresh `connect.sid` cookie from thecriticalreview.org and put it in `cookie.py` (copy from `cookie_template.py` if needed)
-- Run `python main.py` from repo root
-- The compiled JSON files are written to `burnt-out-app/src/data/<semester>/`
+The compiled JSON files are written to `burnt-out-app/src/data/<semester>/`.
+
+### Without a Critical Review cookie (current situation)
+
+```bash
+python update_semesters.py fall2026 spring2027
+```
+
+Scrapes CAB for each term, sources CR data from `data/cr_aggregated.json`, and
+compiles. Takes semesters as arguments, so one run covers several terms.
+
+### With a Critical Review cookie
+
+Obtain a fresh `connect.sid` cookie from thecriticalreview.org and put it in
+`cookie.py` (copy from `cookie_template.py` if needed), then run `python main.py`
+for the semester set in `constants.py`. Prefer this when it is available: it
+picks up reviews published since the aggregate was last built.
 
 ## Architecture
 
@@ -57,14 +71,19 @@ CAB API → scrape_cab.py → data/<semester>/class_list.json
                                    ↓
              scrape_cr.py → data/<semester>/class_objs.json
                                            prof_objs.json
+      (or cr_from_aggregate.py, which builds class_objs.json from
+       data/cr_aggregated.json when no CR cookie is available)
                                    ↓
              compile_data.py → burnt-out-app/src/data/<semester>/compiled_course_data.json
                                                                   department_data.json
 ```
 
-- `constants.py` defines semester, file paths, and CAB API parameters. The CAB DB string encoding: spring YYYY → `(YYYY-1)20`, fall YYYY → `(YYYY)10`.
-- `helpers/stats.py` provides `calc_max_hrs`, `calc_avg_hrs`, `calc_avg_rating` used by `compile_data.py`.
+- `constants.py` defines the current semester plus path and CAB-payload helpers that take a semester, so one run can cover several terms. The CAB DB string encoding: spring YYYY → `(YYYY-1)20`, fall YYYY → `(YYYY)10`.
+- Every stage (`scrape_cab`, `scrape_cr`, `cr_from_aggregate`, `compile_data`) takes a semester argument defaulting to the one in `constants.py`.
+- `scrape_cab.py` fans the CAB detail-view requests across a 100-thread pool and retries transient failures.
+- `helpers/stats.py` provides `calc_max_hrs`, `calc_avg_hrs`, `calc_avg_rating` used by `compile_data.py`. They return `-1` when no review reported a value; treat that as "no data", never as a number.
 - `scrape_cr.py` requires a valid `connect.sid` session cookie from thecriticalreview.org (stored in `cookie.py`, gitignored).
+- `scrape_cr.py` stamps each review's `Prof`, `Name`, `Time` and `Link` from the CAB listing, not from the Critical Review page. So `same_prof` means "reviews attached to this section's professor", and it equals `all_reviews` except for courses with multiple sections.
 
 ### Compiled Course Data Schema
 
@@ -94,8 +113,4 @@ The frontend defaults to using `same_prof` stats (reviews only from the current 
 
 **Files:** `burnt-out-app/src/components/RecruitingAdvert.js`, `burnt-out-app/src/components/RecruitingAdvert.css`
 
-**Used in:** `burnt-out-app/src/routes/courses.js` — rendered above `<CourseTable />` as the first element inside `<main>`
-
-An alert banner displayed at the top of the Courses page advertising that the website is seeking students to help with development.
-
-The component is class-based with `expandDesc` and `hoverDesc` state, likely intended to support an expandable/hoverable description interaction. The render output and CSS are currently empty stubs awaiting implementation.
+**Not currently rendered anywhere.** It was an alert banner at the top of the Courses page advertising for student contributors; #29 removed it from `routes/courses.js`, and the leftover import in `App.js` was dropped later. The component is class-based with `expandDesc` and `hoverDesc` state, but its render output and CSS are empty stubs.

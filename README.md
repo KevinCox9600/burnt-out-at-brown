@@ -26,16 +26,35 @@ root directory (burnt-out-at-brown) by running `python -m venv .venv`.
 
 1. Run setup above if you haven't already
 2. Update semester (season and year) in both `constants.py` and `constants.js` in format 'spring2023'
-   1. In python, it will determine which semesters are scraped
+   1. In python, it will determine which semester is scraped by default
    2. In the javascript, it will determine which semesters are displayed
    3. If the front end has a semester that has not yet been scraped, it will produce an error (:frowny-face:)
-3. Go to the Critical Review and log in. Get the value of the "connect.sid" cookie from the
+3. Scrape and compile, either way below
+4. Rebuild the front end (`cd burnt-out-app && npm run build`) to check it compiles
+
+### Without a Critical Review login
+
+```bash
+python update_semesters.py fall2026 spring2027
+```
+
+This scrapes CAB for each semester you name, fills in Critical Review data from
+`data/cr_aggregated.json` (every review scraped in past terms) rather than
+hitting the Critical Review, and compiles. One run covers as many semesters as
+you list.
+
+### With a Critical Review login
+
+Prefer this when you can: it picks up reviews published since the aggregate was
+last built.
+
+1. Go to the Critical Review and log in. Get the value of the "connect.sid" cookie from the
    cookies section in the developer tools (Developer Tools > Application > Cookies).
    Put this into a file called cookie.py.
    1. If `cookie.py` does not already exist, make a copy of `cookie_template.py`, rename it
       `cookie.py` and insert the connect.sid where suggested.
-4. Run `python main.py` which will scrape cab, scrape the critical review, and then compile data
-   for the given semester you selected in `constants.py`. Repeat steps 2 and 4 for any additional
+2. Run `python main.py` which will scrape cab, scrape the critical review, and then compile data
+   for the given semester you selected in `constants.py`. Repeat for any additional
    semesters you wish to update.
 
 ## Documentation

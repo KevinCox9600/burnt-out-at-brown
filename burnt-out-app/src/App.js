@@ -3,7 +3,6 @@ import './App.css';
 import Courses from './routes/courses';
 import About from './routes/about';
 import Departments from './routes/departments';
-import RecruitingAdvert from './components/RecruitingAdvert';
 
 function App({ to }) {
   return (

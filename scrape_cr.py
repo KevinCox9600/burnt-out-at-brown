@@ -3,13 +3,18 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
-from constants import CLASS_LIST_FILE, CLASS_REVIEWS_LIST_FILE, PROF_REVIEWS_LIST_FILE
+from constants import (
+    class_list_file,
+    class_reviews_list_file,
+    prof_reviews_list_file,
+    semester as CURRENT_SEMESTER,
+)
 from cookie import COOKIE_CONSTANTS
 
 
-def scrape_cr():
-    with open(CLASS_LIST_FILE) as class_list_file:
-        class_list_data = json.load(class_list_file)
+def scrape_cr(sem=CURRENT_SEMESTER):
+    with open(class_list_file(sem)) as class_list_handle:
+        class_list_data = json.load(class_list_handle)
 
     s = requests.Session()
 
@@ -76,13 +81,13 @@ def scrape_cr():
 
     # write to class and professor files
     classes_json = json.dumps(courses)
-    os.makedirs(os.path.dirname(CLASS_REVIEWS_LIST_FILE), exist_ok=True)
-    with open(CLASS_REVIEWS_LIST_FILE, "w") as class_reviews_file:
+    os.makedirs(os.path.dirname(class_reviews_list_file(sem)), exist_ok=True)
+    with open(class_reviews_list_file(sem), "w") as class_reviews_file:
         class_reviews_file.write(classes_json)
 
     profs_json = json.dumps(profs)
-    os.makedirs(os.path.dirname(PROF_REVIEWS_LIST_FILE), exist_ok=True)
-    with open(PROF_REVIEWS_LIST_FILE, "w") as prof_reviews_file:
+    os.makedirs(os.path.dirname(prof_reviews_list_file(sem)), exist_ok=True)
+    with open(prof_reviews_list_file(sem), "w") as prof_reviews_file:
         prof_reviews_file.write(profs_json)
 
 
