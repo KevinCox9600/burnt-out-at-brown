@@ -51,7 +51,10 @@ def compile_department_data(courses):
     # compile department data (department to avg num hours, weighted by respondents)
     department_data = {}  # department to list of avg hours
     for _, course_dict in courses.items():
-        if "all_reviews" in course_dict:
+        # -1 is calc_avg_hrs' "no hours reported" sentinel, not an hour count;
+        # averaging it in drags a department negative (CourseTable filters the
+        # same way, on avg_hrs > 0)
+        if "all_reviews" in course_dict and course_dict["all_reviews"]["avg_hrs"] > 0:
             dept = course_dict["dept"]
             num_respondents = course_dict["num-respondents"]
             average_hours = course_dict["all_reviews"]["avg_hrs"]
